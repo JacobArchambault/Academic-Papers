@@ -1,0 +1,106 @@
+\documentclass[]{article}
+
+%opening
+\title{Commentary on Joanna Luc, 'Necessary and Accidental Qualities in CIFOL}
+\author{Jacob Archambault}
+
+\begin{document}
+
+\maketitle
+\section{Introduction}
+Joanna Luc's paper examines the utility of CIFOL for providing a classification of different kinds of properties. Belnap and Mueller's CIFOL makes a number of remarkable contributions to first-order modal logic. CIFOL treats both constants and variables intensionally. Quantification is intensional. What is probably most distinctive about CIFOL, however, is that it also treats \textit{predication} intensionally. I begin with some remarks on CIFOL itself. Then I provide some remarks on CIFOL's prospects for providing a theory of different kinds of properties.
+
+\section{Difficulties with CIFOL as a system}
+Belnap and Mueller intend CIFOL to provide a metaphysically neutral base for a robust logic. Belnap and Mueller write: 
+
+\begin{quote}
+Logic is supposed to be formal in the sense of subject-neutral. Logical regimentation at this juncture means running the risk of artificially narrowing down the range of what can be expressed, and thus, in the end, of constraining empirical and conceptual work.' (Belnap and Mueller 2014, 395)
+\end{quote}
+
+My main objection to CIFOL is that these \textit{desiderata} - metaphysical neutrality and robustness - conflict. When faced with this conflict, Belnap and Mueller typically sacrifice metaphysical neutrality for robustness.
+
+\subsection{Terms}
+In the previous quote, Belnap and Mueller oppose regimenting the logic in ways that narrow its expressive power. But in its analysis of terms, CIFOL does exactly this: CIFOL has no way of expressing whether a term designates rigidly, even though rigid is central to many formal systems. This is all the more surprising because Belnap and Mueller tell us that CIFOL \textit{can} express the equivalent of `rigidity' for predicates through the notion of modal constancy.
+
+\subsection{Non-being}
+Belnap and Mueller use the * symbol for both a term of the CIFOL language and as a metalinguistic term to refer to an object in the extensional domain of CIFOL. When * is a taken as a CIFOL term, its intension is of the same type as any other term, i.e. $\Gamma \mapsto D$. This leads to a number of problematic claims. 
+
+\subsection{Identity}
+Quine famously connected existence and identity in the slogan `no entity without identity'. More recently, the converse claim, `no identity without entity' has been defended by a number of metaphysicians. CIFOL abundantly violates this latter claim.
+
+Because every CIFOL term maps to some individual intension, Every CIFOL term has an extension at any world - even when that extension is *. This has a number of disturbing entailments. 
+
+First, non-being itself is self-identical.
+
+$*=*$
+
+Second, if individuals fail to exist at a world, then, since their extension is * at that world, they are identical to each other, i.e. 
+
+If $ext_{M, \delta, \gamma}(\alpha)=ext_{M, \delta, \gamma}(\beta)=*$, then $M, \delta, \gamma \models \alpha = \beta$
+
+Third, though instantiation holds for $=$ unrestrictedly, elimination doesn't: substitutivity of identicals may fail for non-extensional predicates. The basic reason for this is the mismatch between extensional identity and intensional predication.
+
+\subsection{The existence predicate}
+CIFOL's existence predicate is defined in a non-standard manner. It is typical to define an existence predicate $Et$ as $\exists x x=t$. CIFOL by contrast, defines $Et$ as $t \ne *$. But it is strange, to say the least, to take non-existence as a syntactic primitive and existence as its derivative.
+
+\subsection{Modality}
+CIFOL modality is S5. Belnap and Mueller regard weaker modalities with suspicion. But adopting S5 modalities involves a substantial philosophical commitment. Leaving aside whether S5's modals are the correct ones, the exclusion of weaker systems is premature at best.
+
+\subsection{Quantification}
+In CIFOL, the classical rules for existential generalization and universal instantiation hold without restriction. But CIFOL quantifiers cannot be interpreted as expressing existence. Nor can they be interpreted as `possibilist': not the former, because since $\alpha = \alpha$ holds for any term $\alpha$, $\exists x x = \alpha $ follows by existential generalization; not the latter, because existential generalization holds for \textit{Das Nicht} itself, i.e. $\exists x x = *$ follows from $*=*$. Further, given double negation and the definition of the existence predicate, this entails $\neg E(*)$, from which $\exists x\neg Ex$ follows. Assuming the intension of * remains fixed across models, then this holds as a theorem. Similarly problematic results hold for universal instantiation. In the face of this, it is hard to see how CIFOL quantification has anything to do with natural language quantification even in an enlarged sense.
+
+The basic reasons for this are: 1) the inclusion of * in the extensional domain; and 2) the decision to allow quantification over all individual intensions. In both decisions, CIFOL sacrifices accuracy to uniformity. A more natural approach would take the quantifiers to quantify over a proper subset of those intensions, i.e. those belonging to a CIFOL sortal. For instance, while it is natural for the intension of `Gottlob Frege' to be among those quantified over, it is less so for that of `the fat man in Quine's front doorway' or `the smell of what Martha's cooking' to be so. Other options would be to let some functions in $\Gamma \mapsto D$ be partial, or to treat * as an object outside of the domain.
+
+\subsection{Quantification and modality}
+As for the interaction between modalities and quantifiers, CIFOL validates both Barcan and Converse Barcan formulas. More surprisingly, for extensional $\Theta$, CIFOL validates the following formulas:
+
+$ L\exists x\Theta x\rightarrow \exists L \Theta x$
+
+$\forall x M \Theta x \rightarrow M \forall x \Theta x$
+
+On their natural reading, these state, respectively, that if necessarily, something is $\Theta$, then something necessarily is $\Theta$; and that if everything can be $\Theta$, then it is possible that everything is $\Theta$. Applying the former schema to our previous results concerning identity, existence, and non-being, the antecedent gives us that is necessarily that something doesn't exist:
+
+$L \exists x \neg Ex$
+
+which, by \textit{modus ponens}, gives us that something is necessarily non-existent:
+
+$\exists x L \neg Ex$
+
+This something is nothing other than the Nothing itself.
+
+\subsection{Summing up}
+While CIFOL is a powerful and genuinely impressive system, a small error in foundations can be great in the end. And some aspects of CIFOL's foundational structure should give us pause.
+
+\section{CIFOL and the distinction between necessary and accidental qualities}
+Luc's specific proposal is to use three formulas, used by Belnap and Mueller to define CIFOL sortals, to distinguish different types of CIFOL properties. I have some minor complaints about Joanna's partition - for instance, if types are going to fix kinds, I don't think that kinds should be specified for a given frame or subset of frames, but rather across frames - I'd like to focus on Joanna's main proposal: the dichotomy between necessary and accidental qualities itself. According to Ms. Luc's division, the distinction is rather simple: accidental qualities are extensional, while necessary qualities are not. This contrasts with Belnap and Mueller's own approach, which implicitly assumes all CIFOL qualities are extensional. First, I address the dichotomy between necessary and accidental qualities itself. Next, I provide some reasons for thinking necessary qualities are extensional after all. Third, I provide some doubts about the utility of extensional predication altogether.
+
+\subsection{On the contrast between necessary and accidental qualities}
+First, the partition of qualities into necessary and accidental is infelicitous, since being necessary and being accidental fail to form an appropriate contrast pair. The contrary of necessity is not accidental being, but contingency; and the contrary of the accidental is the essential. Contrasting necessary and accidental qualities implies the identification of one half of each of these contrasting pairs with the corresponding half in the other. But Kit Fine, for instance, gives us reason to think that not all necessities are essential. Furthermore, Luc's own proposal could be read as suggesting that not all accidents are contingent, since what Luc calls `necessary quality' could just as easily have been labeled `necessary accident', as indeed it was on standard medieval accounts.
+
+\subsection{Are necessary qualities non-extensional?}
+Granting the dichotomy, we might still question whether necessary qualities are extensional. Luc's own example, A horse's being able to neigh involves assuming the identity of a horse and a dog when they don't exist. But it would be much simpler to assume that the difficulty lies not in extensionality, but in assuming that non-existent objects are identical to each other. Moreover, it seems natural enough to assume that necessary qualities of contingently existent beings \textit{do} presuppose the existence of those beings, and so must be extensional on CIFOL semantics. Belnap and Mueller themselves presuppose this in their discussion of sex as an essential property. Sex \textit{does} follow necessarily from something's belonging to a gendered kind, even though non-existents objects of CIFOL heaven are neither male nor female. If we take the implications of Luc's example seriously, then we should also hold that properties presupposed by being able to neigh, e.g. having vocal chords, are also not existence entailing, and hence not extensional. But this only shows the original proposal goes too far.
+
+\section{Conclusion}
+In conclusion, we should thank Joanna Luc for giving us a great and thought-provoking paper. I thoroughly enjoyed running through the main ideas of the paper, and profited much in doing so. I hope the same has been true for the rest of us.
+\subsubsection{pro} 
+Indeed, Belnap and Mueller's sex example gives us reason to doubt the utility of intensional predication altogether. The main reason for adopting intensional predication is to allow expression of properties connected to a natural kind as such. 
+
+the formalization is elegant, and makes the notion of a predicate as a propositional function sensible. 
+
+Makes the notion of tracing possible. This undergirds the characterization of certain predicates as absolute.
+
+absolute properties are not existence entailing; accidental properties are - this is the view of Radulphus Brito.
+
+Examples of non-extensional accidental predicates: being risible; being sighted; being colored. Necessary accidents. Socrates' singleton
+
+does intensional predication give essential qualities of types, or of their members?
+
+The problem with this proposal is that if necessary qualities are non-extensional but follow necessarily from one's membership in a sortal, then the property will be intensionally identical the sortal itself, and so will be . If it is existence-implying, then it will be identical in intension to the existence-implying version of the sortal.
+
+`One-word examples of non-extensional English predicates would be \textit{soluble} and \textit{aggressive}, which are naturally taken to involve reference to possible cases.' - but at the alternative cases, we \textit{aren't} evaluating whether the predicate `soluble' applies there: we're looking for whether something is \textit{dissolved}.
+
+e.g. the temperature is 90; the temperature rises: therefore, 90 rises.
+
+Other cases, like `will be at home tomorrow' could easily be expressed by more complex logical machinery. Monadic predicates should be reserved for simple properties. Such expressions shouldn't be treated as monadic predicates, because they don't represent simple properties.
+
+\end{document}

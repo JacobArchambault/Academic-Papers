@@ -1,0 +1,87 @@
+\documentclass[]{article}
+
+%opening
+\title{Model-theoretic inferentialism for bilateral natural deduction}
+\author{Jacob Archambault, Fordham University}
+
+\begin{document}
+
+\maketitle
+\section{Handout}
+Structural rules:
+\begin{quote}
+$\Gamma \vdash \phi$, provided $\phi$ is in $\Gamma$ (Hypothesis)
+
+$\frac{\Gamma \vdash \phi}{\Gamma, \Gamma' \vdash \phi}$ (Weakening)
+
+$\frac{\Gamma \vdash \phi, \Gamma', \phi \vdash \psi}{\Gamma, \Gamma' \vdash \psi}$ (Restricted Cut)
+
+$\frac{\Gamma, +\phi \vdash +\psi, \Gamma, +\phi \vdash -\psi}{\Gamma \vdash -\phi}$
+
+$\frac{\Gamma, -\phi \vdash +\psi, \Gamma -\phi \vdash -\psi}{\Gamma \vdash +\phi}$
+\end{quote}
+
+Assertion rules:
+
+\begin{quote}
+$\frac{\Gamma \vdash +\phi, +\psi}{\Gamma \vdash +\phi\wedge\psi}$ $(+\wedge int)$ 
+$\frac{\Gamma \vdash +\phi\wedge\psi}{\Gamma \vdash +\phi}$ $(+\wedge out^{1})$ 
+$\frac{\Gamma \vdash +\phi\wedge\psi}{\Gamma \vdash +\psi}$ $(+\wedge out^{2})$
+
+$\frac{\Gamma \vdash +\phi}{\Gamma \vdash +\phi\vee\psi}$ $(+\vee int^{1})$ 
+$\frac{\Gamma \vdash +\psi}{\Gamma \vdash +\phi\vee\psi}$ $(+\vee int^{2})$ 
+$\frac{\Gamma \vdash +\phi\vee\psi, \Gamma, +\phi \vdash \chi, \Gamma +\psi \vdash \chi}{\Gamma \vdash \chi}$ $(+\vee out)$
+
+$\frac{\Gamma +\phi \vdash +\psi}{\Gamma \vdash +\phi\rightarrow\psi}$ $(+\rightarrow int)$ 
+$\frac{\Gamma \vdash +\phi, \Gamma \vdash +\phi\rightarrow\psi}{\Gamma \vdash +\psi}$ $(+\rightarrow out)$
+
+$\frac{\Gamma, +\phi \vdash +\psi, \Gamma, +\phi \vdash +\neg \psi}{\Gamma \vdash +\neg\phi} (+\neg int)$
+$\frac{\Gamma, +\neg\phi \vdash +\psi, \Gamma +\neg\phi \vdash +\neg\psi}{\Gamma \vdash \phi} (+\neg out)$
+\end{quote}
+
+Denial rules:
+
+\begin{quote}
+$\frac{\Gamma \vdash -\phi}{\Gamma \vdash -\phi\wedge\psi}$ $(-\wedge int^{1})$ 
+$\frac{\Gamma \vdash -\psi}{\Gamma \vdash -\phi\wedge\psi}$ $(-\wedge int^{2})$ 
+$\frac{\Gamma \vdash -\phi\wedge\psi, \Gamma -\phi \vdash \chi, \Gamma -\psi \vdash \chi}{\chi}$ $(-\wedge out)$
+
+$\frac{\Gamma \vdash -\phi, \Gamma \vdash -\psi}{\Gamma \vdash -\phi\vee\psi}$ $(-\vee int)$ 
+$\frac{\Gamma \vdash -\phi\vee\psi}{\Gamma \vdash -\phi}$ $(-\vee out^{1})$ 
+$\frac{\Gamma \vdash -\phi\vee\psi}{\Gamma \vdash -\psi}$ $(-\vee out^{2})$
+
+$\frac{\Gamma \vdash +\phi, \Gamma \vdash -\psi}{\Gamma \vdash -\phi\rightarrow\psi}$ $(-\rightarrow int)$
+$\frac{\Gamma \vdash -\phi\rightarrow\psi}{\Gamma \vdash +\phi}$ $(-\rightarrow out^{1})$
+$\frac{\Gamma \vdash -\phi\rightarrow\psi}{\Gamma \vdash -psi}$ $(-\rightarrow out^{2})$
+
+$\frac{\Gamma \vdash +\phi}{\Gamma \vdash -\neg\phi}$ $(-\neg int)$
+$\frac{\Gamma \vdash -\neg\phi}{\Gamma \vdash +\phi}$ $(-\neg out)$
+\end{quote}
+\section{Definitions}
+\begin{quote}
+(valuation) Any minimally consistent function from the set of well-formed formulas (wffs) of $L$ to the set $\{t, f\}$ of truth-values
+
+(Model) A \textit{model} $V$ for a language $L$ is any set of valuations for $L$
+
+(satisfaction of an argument)$v$ \textit{satisfies} an argument $\Gamma / \phi$ iff whenever $v$ assigns the value corresponding to the appropriate force marker - $t$ for $+$, $f$ for $-$ - to all members of $\Gamma$, $v$ assigns the value indicated by $\phi$'s force marker to $\phi$
+
+(V-Validity) an argument $\Gamma / \phi$ is $V-valid$, abbreviated $\Gamma \models_{v} \phi$, iff it is satisfied by every valuation in $V$
+
+(Deductive Model)Letting $S$ be a proof system, we call $V$ a \textit{deductive model} of $S$ iff the provable arguments of $S$ are all $V-valid$
+
+(Deductive expression) A system $S$ \textit{deductively expresses} property $P$ iff for every model $V$, $V$ is a deductive model of $S$ exactly when $V$ has property $P$
+
+(Valuation $v$ satisfies Rule $R$) $v$ \textit{satisfies rule} $R$ iff if $v$ satisfies the inputs of $R$, then $v$ satisfies the output of $R$.
+
+(Local Model of a Rule) $V$ is a \textit{local model of rule} $R$ iff every member of $V$ satisfies $R$.
+
+(Local Expression) A system S \textit{locally expresses} property P iff for every model $V$, $V$ is a local model of the rules of S exactly when $V$ has property P.
+
+(Preservation of Validity) Rule $R$ \textit{preserves V validity} iff whenever the inputs of $R$ are all V-valid, the output of $R$ is also V-valid.
+
+(Global Model of a Rule) $V$ is a \textit{global model} of rule $R$ iff $R$ preserves V-validity.
+
+(Global Expression) A system $S$ \textit{globally expresses} property $P$ iff for all models $V$ for a language $L$ for $S$, $V$ is a global model of the rules of $S$ exactly when $V$ has property $P$.
+\end{quote}
+
+\end{document}

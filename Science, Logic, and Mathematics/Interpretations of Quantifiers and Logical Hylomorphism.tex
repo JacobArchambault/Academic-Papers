@@ -1,0 +1,171 @@
+\documentclass[]{article}
+
+%opening
+\title{Interpretations of Quantifiers and Logical Hylomorphism}
+\author{Jacob Archambault}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Introduction}
+The immediate aim of this paper is to open up a new perspective on the interpretations of quantifiers. A consequence of this shift in perspective will be to show that the differences between the best-known interpretations of quantifiers from Quine to the present day, as interpreted by their respective partisans, are of little importance.\footnote{Cf. Anscombe 1958, 1} However, the new standpoint will also allow us to see some basic differences of a much larger magnitude.
+
+In the first section of the paper, I lay out the semantics for four different interpretations of quantification within the framework of modal logic - substitutional, objectual, conceptual, and intensional. Next, I rehearse the philosophical justifications for each of these. After this, I introduce the notion of \textit{logical hylomorphism}, as discussed in the work of John MacFarlane, Catarina Dutilh Novaes, and others. This allows us to map the various philosophical interpretations of quantification to different outlooks on the nature of ontology.
+\section{Semantics}
+\subsection{Basics of modal logic}
+Philosophical disputes concerning the interpretations of quantifiers tend to arise in two basic areas: the first, philosophical interpretations of mathematics; the second, disputes surrounding the combination of quantification and modality. Given that modal logic has a somewhat broader presence in philosophy at large than philosophical interpretations of arithmetic, we will place our explication within a modal context.
+
+Roughly, the semantics for any first-order modal logic begins with four things: 1) a collection of points, usually thought of as worlds, symbolized by the letter $W$; 2) a relation relating these points to each other, $R$; and 3) a collection of objects, called our \textit{domain} $D$; and 4) an interpretation $a$ of the different elements of the formalized language we are working with, \textit{assigning} different types of strings within a language to the appropriate extensions for those objects: constants to objects, predicates to sets of objects, sentences to truth values, etc. In propositional logic, a pair $(W, R)$ of a collection of worlds $W$ and a relation $R$ is called a \textit{frame}. In predicate logic, a triple $(W, R, D)$ of worlds, their relations, and objects is called an \textit{augmented frame}.
+
+In both propositional and first-order cases, an assignment $a$ is always an assignment on a frame. A quadruple $M = (W, R, D, a)$ consisting of a frame and an assignment is called a \textit{Model}. A collection of formulae $H$ in a language is said to be \textit{satisfiable} if there is an assignment on a model at some world that makes all the elements of $H$ true. An argument consisting of a (possibly empty) set of sentences $H$ and a single sentence $K$ - written $H / K$ - is said to have a counterexample if there is a model and a world $W$ in that model satisfying all the members of $H$, but at which $K$ is not satisfied. And an argument is said to be \textit{valid in a model} iff it has no counterexample at \textit{any} point in the model.
+
+From here, two different notions of the validity of an argument can be defined with respect to a collection of frames. An argument $H / K$ is said to be \textit{locally valid} for a class of frames $C$ exactly when, for every frame in $C$, for every model on that frame, every world in that model modeling all the members of $H$ also models $K$. And an argument $H / K$ is said to be \textit{globally valid} iff for every frame in $C$, for every model on that frame where all members of $H$ are \textit{valid}, $K$ is also valid. And so, the class of globally valid arguments is determined by a subset of the models considered to assess local validity. In either case, there are certain arguments that are valid exactly when we have a certain well defined classes of frames. For instance, the (T) argument is valid for the collection of frames on which each point in $W$ is related to itself; and the formula $\diamondsuit Ex \rightarrow Ex$ holds exactly for the set of anti-monotonic augmented frames, i.e. those frames where if a world $w$ relates to a world $w'$, then the set of objects at $w'$ is a subset of those at $w$.
+
+\subsection{Substitutional semantics}
+The simplest semantics for quantification is substitutional, and the simplest form of substitutional semantics makes no reference to a domain at all. According to this interpretation,
+
+\begin{quote}
+$a_{w}(\Pi x \Phi) = T$ iff for every constant $c$, if $a_{w}(Ec) = T$, then $a_{w}(\Phi(x/c)) = T$, where $\Phi(x/c)$ is the sentence resulting from replacing each free instance of $x$ with $c$.
+\end{quote}
+
+And for the existential quantifier,
+
+\begin{quote}
+$a_{w}(\Sigma x \Phi) = T$ iff for some constant $c$, $a_{w}(Ec) = T$ and $a_{w}(\Phi(x/c)) = T$,where $(\Phi(x/c))$ is the sentence resulting from replacing each free instance of $x$ in $\Phi$ with $c$.
+\end{quote}
+
+If classical conditions for quantification are desired, then one simply drops that portion of the above condition referring to the existence predicate.
+
+A drawback of the above is that here, truth conditions have to be given in terms of an existence predicate which cannot, on pain of circularity, be defined in terms of the existential quantifier, and so must be taken as primitive. Sometimes, a more nuanced version of substitutional quantification is desired. According to this interpretation,
+
+\begin{quote}
+$a_{w}(\Pi x \Phi) = T$ iff for every term $c$, if $a_{w}(c)\in D(w)$, then $a_{w}(\Phi(x/c)) = T$, where $(\Phi(x/c))$ is the sentence resulting from replacing each free instance of $x$ in $\Phi$ with $c$.
+\end{quote}
+
+and for the existential quantifier, 
+
+\begin{quote}
+$a_{w} (\Sigma x \Phi) = T$ iff for some term $c$, $a_{w}(c) \in D(w)$ and $a_{w}\Phi(x/c) = T$, where $\Phi(x/c)$ is the result of replacing each free instance of $x$ in $\Phi$ with $c$.
+\end{quote}
+
+Note that the first of the above kinds of substitutional semantics interprets quantification in terms of new truth values for sentences where the variable has been replaced. For the second of the above, The truth of a quantified formula at a world is interpreted by recourse to those terms of the language that attach to elements in the domain of that world.
+\subsection{The objectual interpretation}
+The objectual interpretation of quantification differs from the substitutional interpretation in that rather than making a detour through the language, it gives the semantics of quantifiers by referring to the domain of objects directly. The simplest form of objectual semantics is due to Raymond Smullyan, and relies on the notion of a hybrid sentence. Briefly, a hybrid sentence is one that we can think of as substituting not a term as the argument for a predicate or function, but rather an object itself. According to this interpretation, 
+
+\begin{quote}
+$a_{w}(\forall x \Phi) = T$ iff for each object $d \in D(w)$, $a_{w}(\Phi(x/d)) = T$, where $\Phi(x/d)$ is the hybrid sentence resulting from replacing each free instance of $x$ with $d$.
+\end{quote}
+
+And, accordingly, 
+
+\begin{quote}
+$a_{w}(\exists x \Phi) = T$ iff from some object $d \in D(w)$, $a_{w}(\Phi(x/d)) = T$, where $\Phi(x/d)$ is the hybrid sentence resulting from replacing each free instance of $x$ with $d$.
+\end{quote}
+
+A more common way of giving the semantics for the objectual interpretation, originally due to Church, involves the introduction of a separate class of valuation functions for interpreting variables in a model. According to this interpretation, for each variable $x$, we say that a valuation $v'$ is an $x-variant$ of a valuation $v$ iff $v'$ is exactly like $v$ except perhaps with respect to what it assigns to $x$. I.e. Being an $x-variant$ is an equivalence relation, i.e. each valuation $v$ is an $x-variant$ of itself, the relation is symmetrical, and the relation is transitive.
+
+Accordingly, 
+\begin{quote}
+$M, w\vdash_{v} (\forall x) \Phi$ iff for every $x-variant$ $v'$ of $v$, $M, w \vdash_{v'} \Phi$
+\end{quote}
+and 
+\begin{quote}
+$M, w \vdash{v} (\exists x) \Phi$ iff for some $x-variant$ $v'$ of $v$, $M, w \vdash_{v'} \Phi$
+\end{quote}
+
+\subsubsection{An aside}
+The dichotomy between substitutional and objectual quantification is usually thought of as one between a `new sentences' and `new objects' approach to quantification. However, the above shows this is incorrect. An objectual semantics can be given by valuating new sentences, as the hybrid approach of Smullyan shows, and a substitutional semantics can be formulated so as to make reference to an objectual domain.
+\subsection{The conceptual interpretation}
+From here, we move to more two more recent approaches to quantifiers. The first of these, the conceptual interpretation, results from making one major change to objectual semantics: rather than taking the quantifiers to range over objects in the domain, quantifiers are taken to range over individual intensions, i.e. functions in $W \mapsto D$. Since constants are also assigned to functions of this type, the conceptual interpretation of quantifiers effectively eliminates the contrast found in systems forcing extensional treatment of variables, but permitting intensional terms. This greatly increases the uniformity and power of first-order modal systems adopting this approach: the conceptual interpretation validates classical quantifier rules for systems where predication is extensional; if intensional predication is allowed as well, the system still allows unrestricted use of classical rules for universal instantiation and existential generalization, and has the expressive power to define a sub-class of formulas for which classical quantification holds unrestrictedly. Perhaps the best-known system making use of conceptual quantifiers is Nuel Belnap and and Thomas Mueller's Case Intensional First-Order Logic (CIFOL), introduced in Belnap and Mueller (2014a) and expanded to include tense operators in their (2014b). In order give the quantification rules for the conceptual interpretation, we introduce the notation $a_{w}(f)$ to indicate the function $f(w)$, and treat functions as honorary terms of our language. Given this, quantifier semantics are as follows
+\begin{quote}
+$a_{w}(\forall x \Phi) = T$ iff for all $f$, if $f(w) \in Dw$, then $a_{w}(\Phi(x/f)) = T$, where $\Phi(x/f)$ is the hybrid sentence resulting from replacing each free instance of $x$ with $f$.
+\end{quote}
+\begin{quote}
+$a_{w}(\exists x \Phi) = T$ iff for some $f$, $f(w) \in Dw$, and $a_{w}(\Phi(x/f)) = T$, where $\Phi(x/f)$ is the hybrid sentence resulting from replacing each free instance of $x$ with $f$.
+\end{quote}
+ 
+\subsection{The intensional interpretation}
+The intensional interpretation is slightly more complicated than the substitutional, objectual, and conceptual interpretations. Rather than constructing a model as a quadruple, an intensional model $M = (W, R, D, I, a)$ is a quintuple, where $I$ is a subset of the set of functions from $W$ into $D$. Like Smullyan's objectual semantics, the intensional interpretation makes use of hybrid formulae. But in this case, the foreign elements are not from $D$, but from $I$. On this interpretation, 
+\begin{quote}
+$a_{w} (\forall x \Phi) = T$ iff for every $i \in I$, if $i(w) \in D(w)$, then $a_{w}(\Phi(x/i) = T$, where $\Phi(x/i)$ is the hybrid sentence resulting from replacing each free instance of $x$ in $\Phi$ with $i$.
+\end{quote}
+
+and, accordingly, 
+
+\begin{quote}
+$a_{w} (\exists x \Phi) = T$ iff for some $i \in I$, $i(w) \in (D(w)$ and $a_{w} (\Phi(x/i) = T$, where $\Phi(x/i)$ is the hybrid sentence resulting from replacing each free instance of $x$ in $\Phi$ with $i$.
+\end{quote}
+
+The Intensional interpretation was first introduced in (Garson 2005), though similar semantics were proposed in (Garson 1984) and (2001). An alternative intensional approach to quantification was recently proposed in (Belnap and Mueller 2014).
+\subsection{Relations between the semantics}
+The intensional interpretation provides an excellent general framework for studying the relations between the different modal systems, since adding certain conditions to intensional semantics allows us to recapture the other systems considered. If we assume $c \in C$ iff $a(c) \in I$, then the intensional interpretation validates exactly those arguments validated by the substitutional interpretation. Objectual semantics can be obtained by identifying $I$ with the set of constant functions with values in $D$, since quantifying over a constant function amounts to the same thing as quantifying over its extension. The conceptual interpretation can be obtained by letting $I$ be the set of all functions from $W$ to $D$.
+\section{Philosophical interpretations}
+\subsection{The substitutional quantifier}
+The earliest development of substitutional semantics goes back to Marcus, but though many of the philosophical elements behind it can already be found in Carnap's 1947 \textit{Meaning and Necessity}. There, Carnap introduces the notion of the intension of a term, and philosophically interprets the intension of a term as an `individual concept.' In accordance with Carnap's wider project, this serves to provide a philosophical framework for exploring the semantics of necessity and possibility without thereby committing oneself to the existence of modal properties. For Carnap, modality is not a function of the objects themselves, but of our way of thinking about or referring to them.
+
+Though there are some exceptions to the rule, the better known uses of the substitutional quantifier have proceeded along these same lines. We might, for instance, consider Ruth Barcan Marcus' words advocating the quantifier's utility for a certain kind of nominalism: 
+\begin{quote}
+Translation into a substitutional language does not force an ontology. It remains, literally, and until the case for reference can be made, \textit{\`{a} fa\c{c}on de parler}. That is the way the nominalist would like to keep it. (Barcan Marcus 1978)
+\end{quote}
+
+\subsection{Ontology and objectual quantification}
+Correlatively, the objectual quantifier has been interpreted - most famously by Quine but already by Russell - as ontologically committing in a way that substitutional quantification is not. According to a Quine's criticism of the substitutional interpretation, ``the very notion of singular terms [involved in substitutional interpretation] appeals implicitly to classical or objectual quantification." (Quine 1969, 106). And according to his even better known statement regarding objectual quantification, ``to be is to be the value of a bound variable" (Quine 1950).
+
+The above slogan is most often associated with an understanding of ontology as providing an exhaustive classification of which kinds of beings there are in the universe, but precisely by reference to concrete particulars. If ontology asks the question `what exists?', the sort of answer it envisions could be given in the form of a universal quantifier ranging over a disjunction, with each disjunct attributing a monadic predicate to the value of a variable bound by the universal quantifier, such that the empty set is the value of no predicate, the intersection of the range of any two predicates is the empty set, and the union of all of them yields the domain of quantification. More succinctly, ontology ultimately aims to provide a disjoint and exhaustive classification of the most basic kinds of existents. 
+
+The Quinean understanding of ontology, and its alignment with objectual quantification, is best seen against the backdrop of Carnap's approach to the substitutional quantifier. If substitutional quantification is associated with concepts, objectual quantification aims to capture existence. What Quine inherits from Carnap is the idea that modality attaches to meanings rather than things; granting the assumption that ontology is concerned with things rather than the ways they are understood or talked about, it follows that quantifying into modal contexts - and thereby ascribing modal properties to objects - would be quite senseless.
+
+When, then, Kripke moves to explicitly associate necessity with \textit{naming} rather than meaning, this is a move well within the confines of the dialectic set up by Carnap and Quine. In his (1963), Kripke introduced semantics for the objectual interpretation for several quantified modal logics, taking the logics \textbf{M, S4, B}, and \textbf{S5} to be suitable propositional bases for a quantified modal logic. In that paper, Kripke advocated an objectual interpretation of the quantifiers on which sentences with free terms received the same interpretation as their universal closure; and so, for instance, $Lx=x$ was interpreted as $\forall x Lx=x$. And so, in this system, all constants are rigid constants. What makes a constant a constant is that it picks out the same object in every world: constants have denotation rather than connotation. The effect of restricting constants to those elements in a language satisfying a causal account of naming is to open up a space for turning Quine's \textit{modus ponens} into a \textit{modus tollens}: where Quine took terms to express meanings rather than reference and therefore to not capture real modality, Kripke assumed the presence of real modal properties, and so took names to fix the reference to objects that had these properties, rather than their meaning. 
+\subsection{The philosophical underpinnings of intensional semantics}
+In each of the above interpretations, we see a divide open up between meaning, concepts, language, on the one hand, and objects, on the other. The objects are `out there' in the world, whereas meanings are linguistic  or mental. The advocate of the intensional interpretation aims to close this gap. As Belnap and Mueller write, 
+\begin{quote}
+Both Extensions and intensions are [...] thoroughly objective: in contrast to standard philosophical usage, intensions are not taken to be analytic of meanings, nor indeed to be always of a kind that a human mind can grasp. (Belnap and Mueller 2014, 397)
+\end{quote}
+A particularly clear case of this arises in the temporal interpretation of the intensional interpretation. On such an interpretation, the members of the extensional domain would not be ordinary objects, but time-slices of individuals. The members of $I$, by contrast, would pick out a subset of functions those functions mapping to different time-slices at different times, intended as those functions that capture unified histories for individual substances. Expanding the point to the modal sphere, Jim Garson writes: 
+\begin{quote}
+I claim that for something to be real, it must have a modal ``history'' as well as a temporal one. In the same way that certain properties such as changing do not apply to time slices, the notion of what is possible for a thing does not apply to members of $D$, the things we paradoxically call \textit{possible} objects. The members of $D$ are modally bare particulars, in the sense that though they may have actual properties, it makes no sense to talk of what is possible or not possible for them. On the other hand the members of $I$, the substances, have a modal history, which reflects the nature of things we take to be fully real. On this account, it is the objectual interpretation that is ontologically mistaken, for it quantifies over ``things" that are shorn of their modal aspects. (Garson 2006, 293)
+\end{quote}
+In short, intensional logicians have questioned rather the things of our modal universe are extensions at all.
+\section{Logical hylomorphism and the nature of ontology}
+Now let's step back into history to say a little about how we got here. 
+
+Already in the later middle ages, we see a growing opposition between a thing and its way of being understood. Here, for instance, is William of Ockham:
+
+\begin{quote}
+We must understand that it does not depend on your consideration or mine whether a thing is mutable or immutable, contingent or necessary or incorruptible, any more than it does whether you are white or black, or whether you are inside or outside your house. (Ockham 1957, 14)
+\end{quote}
+
+The attitude motivating Ockham here is precisely that which motivated Quine to question that the mathematical cyclist was necessarily either rational or bipedal. In earlier scholasticism, one of the names by which form is designated is `idea'. In the philosophy of Ockham, ideas retain precisely the function that forms have in the earlier thinkers. But rather than belonging primarily to objects and derivatively to individuals as concepts, ideas in the Ockhamist ontology are ontologically distinct from that to which they refer.
+
+By the time of Descartes' second meditation, this idea has been stretched to the point where it has given birth to two different kinds of beings: mental-being and being-being. And when Descartes tells us that the mind is better known than the body, he means to indicate not merely a distinction between the mental and the physical realm, but also a hierarchical relation between the two: objects are granted their appearing on account of what the mind contributes to them.  The dichotomy between the mental and the physical is a dichotomy between what shapes and that which is shaped. When the linguistic turn occurs at the start of the 20th century, it merely replaces the kind element taking the former place in this dichotomy. 
+
+In short, we might think of the dichotomy between the mental and the physical, on the one hand, and language and ontology, on the other, not so much as alternatives to hylomorphism but as highly particularized manifestations of it, manifestations on which the dichotomy between matter and form is a dichotomy between different realms of objects, with the former kind of object doing all of the work associated with meaning or sense, but only the latter kind meriting the name of 'object' or `thing'. One of the ways this dichotomy is enforced in logic is by a partition between the terms of a language, on the one hand, and the objects named in it, on the other. This is why, for Quine and Carnap, modality must be thought of as something `linguistic'. And it is also why, for Kripke, modal properties must \textit{not} be linguistic in this sense.
+
+It is in the light of this dichotomy that the different philosophical uses of different quantifiers have been adopted. When the substitutional quantifier is adopted to avoid ontological commitment, one invariably cedes an entire way of thinking about ontology. Let me explain.
+
+The understanding of ontology implicit in the philosophical use of objectual interpretation, as well as in that of the substitutionalist who demurs from it, is what I should like to call `broadly materialist,' by way of an analogy with the understanding of ontology present in the materialist Antiphon in Aristotle's \textit{Physics} B. Antiphon, Aristotle tells us, believes that the only things that exist are earth, air, fire, and water. But Aristotle would not be satisfied with Antiphon's position if he simply added forms to his ontology alongside these others. The primary disagreement between Aristotle and Antiphon is not one about what things exist, but rather one of what existence \textit{is}. When a contemporary hylomorphist like Katherine Koslicki or Mark Johnston adds forms to their ontology alongside persons, numbers, and baseballs, they accept an understanding of ontology where the aim of ontology is to give the ultimate `building blocks' of reality - i.e. the stuff from which the world is made. Their only disagreement with Antiphon is in regarding his base set as insufficient to do the job. 
+
+When contemporary essentialists assume that some objects have necessary properties, they often assume the entire baggage of the Kripkean apparatus. And in particular, they intend to say that an object has a property necessarily \textit{rather than} on account of some description ascribed to it. 
+
+The intensional interpretation of quantification, by contrast, allows for a completely different take on ontology. On this approach, quantification ranges over objects \textit{as} indicated by a unifying function. Putting it back into the language of Aristotle, we can say that quantifiers range over objects as they are gathered into a unity by their substantial form. The mistake implicit in the philosophical use of the objectual interpretation of quantification is to take ontology to be concerned with `building blocks' at all. And so forms are not one kind of object among others in an ontology. Rather, as that on account of which a being is unified; on account of which it has its peculiar operation and movement, shape and limits; on account of which it is capable of being present to an understanding and thereby having a certain meaning, form is that which ontology is \textit{always} concerned with in the first place. 
+
+An understanding of ontology that fails to heed this is, quite literally, senseless. And against both the objectualist and the substitutionalist quantifier, that is my complaint.
+
+\section{Conclusion}
+Thomas Aquinas says that essence is signified by four different names 1) `essence', 2) `quiddity', and 3) `form', and 4) `nature' 
+
+Three kinds of hylomorphism: 1) terms to objects, 2) sentences to nouns/verbs, 3) figure and mood, 4) way of saying and what it said, 5) categorematic and syncategorematic.
+
+Most advocates of the objectual quantifier take the aim of quantification to be to express what there is (and derivatively, to express our ontological commitments); while many partisans of the substitutional interpretation adopt it to avoid building ontological commitments into the quantifier, instead giving the quantifier a linguistic interpretation. Both parties, however, work with an understanding of being and language as corollaries; both work with a domain consisting (at least outside of the setting of quantified fuzzy logic) entirely of perdurant, discrete particulars; and both belong to a tradition taking language to be that which gives sense and shape to this domain of particulars – that is, the pair object/language, as a dichotomy between what is shaped and what shapes it, is a particular historical manifestation of the broader structural pair matter/form. Correlatively, that the understanding of the ontological enterprise behind the adoption of the objectual interpretation is what I shall call broadly materialist, by analogy with a view of the ontological enterprise advocated by early Greek materialism, and addressed by Aristotle in Physics Β. Today’s broadly materialist ontologist need not think that everything is earth, air, fire, or water; but she does agree in taking the task of ontology to be the generation of some such (ideally exhaustive) list, even if it may also include numbers, possible worlds, or structures. 
+
+Each of the above kinds of semantics has greater expressive power than the previous; and, accordingly, has a weaker consequence relation than the previous. For instance, the substitution interpretation validates standard free logic rules for the quantifiers, while the objectual interpretation, if embedded in a language that also contains non-rigid constants, does not. For instance, if a term $t$ is non-rigid, one cannot infer $\exists x Lx=t$ from $Lt=t$. The situation remains the same when classical rules for quantification are replaced by those of free logic.
+
+In addition, the less expressive semantics can be derived from the more expressive one by placing certain constraints on the latter. For instance, the set of inferences that are substitutionally valid can be obtained from the objectual interpretation by restricting the models considered to those where all objects have rigid designators. Similarly, one may obtain the objectual interpretation of the quantifier from the intensional by identifying the functions in $I$ as all and only the constant functions with values in $D$.
+
+
+\end{document}

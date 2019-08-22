@@ -1,0 +1,87 @@
+\documentclass[]{article}
+
+%opening
+\title{Axiom systems and failure of deductive expression}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Deductive expression was first studied in Carnap (1943), in his proof of the failure of categoricity for classical proof systems. It has recently received renewed interest among inferentialists, in particular in the work of Garson (2013), as a way of determining the semantic content expressed by different sorts of proof systems. In this short note, I show that though axiomatic systems express a semantics, all axiom systems express the \textit{same} semantics, and the semantics they express is a bizarre one: a semantics deductively expresses a property P if and only if that property is not instantiated by any model. 
+\end{abstract}
+
+\section{Introduction}
+Inferentialists hold that the meaning of a term is determined by its use. Logical inferentialists are committed to a restricted version of inferentialism, according to which the meaning of the logical vocabulary of an artificial language is determined by the rules governing it in some formal proof system. Many inferentialists also advocate \textit{Proof-theoretic semantics} (PTS), according to which \textit{only} the concepts available in proof theory ought to be used in determining the meaning of the logical connectives. An alternative approach accepts the broader project of logical inferentialism, but also allows that proof systems may determine a \textit{semantic} content, and thereby does not eschew the tools of model theory. This approach was coined \textit{Model-theoretic inferentialism} in Garson (2013), but has predecessors in earlier texts from Stevenson (1961), Wagner (1981), Garson (1990), Belnap and Massey (1990), Smiley (1996), Rumfitt (1997) to Hjortland (2013).
+
+In broad outline, the model-theoretic inferentialist project aims to ``read off'' truth conditions from proof systems via a suitable criterion for what a system semantically expresses. Garson (2013) offers three benchmarks for what a logic expresses - deductive, local, and global expression, the simplest of these being deductive expression. Further, he shows that the answer to what a logic semantically expresses may differ depending on whether the kind of proof system under discussion is an axiom system, natural deduction system, or sequent calculus, as well as whether the criterion for expression is global, local, or deductive.\footnote{For further discussion of local and global expression, as well as natural deduction systems, see Humberstone (1996), Garson (2001), and Garson (2010). For discussions of sequent calculi, see Garson (2013), ch. 11, Shoesmith and Smiley (1978), and Hacking (1979).}
+
+Axiom systems have never been popular among inferentialists, and are typically regarded as failing to capture anything that one would naturally call `inference'. Garson (2013) conjectures that not only do classical axiom systems fail to deductively express classical semantics, as was proven by Carnap (1943), but that they fail to express any truth conditions at all. This paper confirms that conjecture, not only for classical systems, but for axiom systems as such: no axiom system - classical or otherwise, unilateral, bilateral, or multilateral - deductively expresses any semantics. 
+
+In the following section, I define deductive expression and the notions upon which it depends. After this, I prove that axiomatic systems fail to deductively express a semantics at all.
+
+\section{Deductive expression}
+The basic idea behind deductive expression is to capture the provable arguments of a system: a system deductively expresses the semantics forced by the requirement that it make all of the provable sequents of the system valid. 
+
+More formally, let $L$ be a language for a system $S$, and a \textit{valuation} $v$ be any function from the well-formed formulas of $L$ to the set of truth values $\{t, f, ...\}$, which we allow to be of arbitrary finite length.\footnote{The definition of valuation here differs from that in Garson (2013) in two respects: first, Garson requires that valuations be minimally consistent, whereas we do not; second, Garson restricts the set of truth values to {t, f}. As the reader will be able to see, the proof below is indifferent to these restrictions, and so we leave them aside for generality.} Next, we call a set of valuations $V$ for $L$ a \textit{model} of $L$. From here, we define the satisfaction of a sequent $\Gamma / \Delta$ thus:
+
+\begin{quote}
+(satisfaction of a sequent) $v$ \textit{satisfies} a sequent $\Gamma / \Delta$ iff whenever $v$ assigns an appropriate value to each member of $\Gamma$, $v$ assigns an appropriate value to at least one member of $\Delta$.
+\end{quote}
+
+We clarify two points in the above definition: first, why the definition is formulated in terms of sequents; second, what is meant by `an appropriate value''. 
+
+The definition of satisfaction is formulated in terms of sequents for generality. It will be helpful to think of premise-conclusion sets found in ND and axiomatic systems as special kinds of sequents: in natural deduction (ND) systems, the sequents are all single-conclusion, and are called \textit{arguments}; while the sequents in axiom systems, which we call \textit{assertions}, are those having the empty set as their set of hypotheses.
+
+Intuitively, an appropriate value will be one corresponding to the intended truth value - $t$ for asserted formulae, $f$ for denied formulae, etc. In systems where only truth is under consideration, the set of appropriate values for all formulae of an argument will be $\{t\}$. And so, the definition can be reformulated to say that whenever $v$ assigns $t$ to each member of $\Gamma$, $v$ assigns $t$ to at least one member of $\Delta$. For instance, a valuation $v$ will satisfy the sequent 
+\begin{quote}$\phi\vee\psi / \phi, \psi$ 
+\end{quote}
+just in case whenever it assigns $t$ to $\phi\vee\psi$, it assigns $t$ to either $\phi$ or $\psi$. In multilateral systems, more values than $t$ will be under consideration. For instance, in a bilateral classical ND system, where $+$ and $-$ are metalinguistic symbols respectively indicating assertion and denial, the following is valid:
+\begin{quote}
+$+\phi\vee\psi, -\phi, \vdash +\psi$
+\end{quote}
+
+In this case, $t$ would be an appropriate value for $\phi\vee\psi$ and $\psi$, but the appropriate value for $\phi$ is $f$. In short, where force markers are present, each force marker $+, -, * ...$ is correlated with a corresponding truth value $t, f, n...$. The notion of an appropriate value allows this general formulation.
+
+From here, the concept of deductive expression is built up as follows:
+
+\begin{quote}
+(V-Validity) a sequent $\Gamma / \Delta$ is $V-valid$, abbreviated $\Gamma \models_{v} \Delta$, iff it is satisfied by every valuation in $V$.
+
+(Deductive Model)Letting $S$ be a proof system, we call $V$ a \textit{deductive model} of $S$ iff the provable sequents of $S$ are all $V-valid$.
+
+(Deductive expression) A system $S$ \textit{deductively expresses} property $P$ iff for every model $V$, $V$ is a deductive model of $S$ exactly when $V$ has property $P$.
+\end{quote}
+
+\section{What Axiomatic systems deductively express}
+We can now determine what axiomatic systems, as such, deductively express.
+
+The proof is from the definition of deductive expression. A system $S$ deductively expresses a property $P$ iff, for every model $V$, $V$ is a deductive model of $S$ exactly when $V$ has property $P$. Now, a model $V$ is a deductive model of $S$ iff it makes all the provable sequents of $S$ $V-valid$, i.e. iff it is satisfied by every valuation $v$ in $V$.
+
+According to the definition of satisfaction, a sequent $\Gamma / \Delta$ is satisfied by a valuation $v$ just when, if $v$ assigns an appropriate value to each member of $\Gamma$, it assigns an appropriate value to at least one member of $\Delta$. More perspicuously, $v$ either assigns an appropriate value to at least one member of $\Delta$ or fails to assign an appropriate value to at least one member of $\Gamma$. 
+
+In every axiomatic system, the provable sequents are all assertions. This is so whether the system is unilateral, bilateral, or multilateral. Hence, in axiomatic systems, $\Gamma$ is always empty. This means that for any axiomatic system, the satisfaction condition is satisfied trivially by any valuation $v$: since $\Gamma$ is empty, $v$ fails to assign appropriate values to some of its members - actually, to any of them. Hence, the antecedent of the conditional expressing the satisfaction condition is itself never satisfied, and so the conditional itself is always satisfied.
+
+Moving to $V-Validity$, we note that for any sequent $ \emptyset / \phi $, and any model $V$, $ \emptyset / \phi $ is $V-valid$: it is satisfied by any valuation $v$; hence, for a set $V$ of valuations, $\emptyset / \phi $ is satisfied by every valuation $v$ in $V$.  But a straightforward consequence of this is that for a non-trivial system $S$, $S$ has no deductive models. Proof: assume the contrary. Then there is a model $V$ of valuations $v$, each of which validates exactly the assertions proven in $S$: that is, if $\emptyset / \phi$ is valid in $S$, then it is satisfied by every valuation $v$ in $V$; and for a sequent $\emptyset / \phi$ not valid in $S$, there is a set of valuations $V$ and a valuation $v$ in $V$ such that $v$ assigns appropriate values to all the members of $\emptyset$, but not to $\phi$. But since there is no such $v$ that assigns appropriate values to all the members of $\emptyset$, \textit{a fortiori} there is no $v$ that assigns appropriate values to all the members of $\emptyset$ but not to $\phi$. Hence, for no set of valuations $V$ is $V$ a deductive model of $S$.
+
+Lastly, deductive expression tells us that for a system $S$ and property $P$, $S$ deductively expresses $P$ exactly when for every model $V$, $V$ is a deductive model of $S$ exactly when $V$ has property $P$. Using $s$, $p$, and $v$ as restricted variables, this can be symbolically expressed as follows:
+\begin{quote}
+$\forall s, p(Expresses(s, p) \leftrightarrow \forall v(Models(v, s) \leftrightarrow Has(v, p)))$
+\end{quote}
+Assume this condition is met for some $s$ and $p$. Instantiating, the biconditional can be broken down into 
+\begin{quote}
+$Expresses(s_{1}, p_{1}) \rightarrow \forall v(Models(v, s_{1}) \leftrightarrow Has(v, p_{1}))$
+\end{quote}
+and 
+\begin{quote}
+$\neg Expresses(s_{1}, p_{1})\rightarrow \neg\forall v(Models(v, s_{1}) \leftrightarrow Has(v, p_{1})) $
+\end{quote}
+Let's begin with the left-to-right direction. Assume $Expresses(s_{1},p_{1})$. Then $\forall v(Models(v, s_{1}) \leftrightarrow Has(v, p_{1}))$. Instantiating for $v$, we get that $Models(v_{1}, s_{1}) \leftrightarrow Has(v_{1}, p_{1})$. But since there are no deductive models of $S$, we also have that $\forall v\neg Models(v, s_{1})$, and so have $\neg Models(v_{1}, s_{1})$, hence $\neg Has(v_{1}, p_{1})$. Since $v$ is not free in any hypotheses, we can generalize to $\forall v \neg Has(v, p_{1})$. And so we have $Expresses(s_{1}, p_{1}) \rightarrow \forall v \neg Has(v, p_{1})$.
+
+For the contraposited right-to-left direction, assume $\neg Expresses(s_{1}, p_{1})$. Then $\neg\forall v(Models(v, s_{1}) \leftrightarrow Has(v, p_{1}))$, i.e. $\exists v \neg(Models(v, s_{1}) \leftrightarrow Has(v, p_{1}))$. Assume $\neg(Models(v_{2}, s_{1}) \leftrightarrow Has(v{2}, p_{1}))$. Hence, either $Models(v_{2}, s_{1})$ and $\neg Has(p_{1}, s{1})$, or $Has(v_{2}, p_{1})$ and $\neg Models(v_{2}, s_{1})$. Since $\forall v \neg Models(v, s_{1})$, the first horn of the dilemma fails. Hence $Has(v_{2}, p_{1})$ and $\neg Models(v_{2}, s_{1})$, and so $Has(v_{2}, p_{1})$. Using existential generalization to discharge the hypothesis, we get $\exists v(Has v, p_{1})$. So $\neg Expresses(s_{1}, p_{1}) \rightarrow \exists v Has (v, p_{1})$. Contraposited, this says that $\forall v \neg Has (v, p_{1}) \rightarrow Expresses(s_{1}, p_{1})$.
+
+By biconditional introduction, we have $Expresses(s_{1}, p_{1}) \leftrightarrow \forall v \neg Has(v, p_{1})$. From here, by universalizing, we get $\forall s, p(Expresses (s, p) \leftrightarrow forall v \neg Has(v, p))$.
+
+This is a rather bizarre condition, for it says that an axiomatic system expresses a property precisely when that property is instantiated by no model $V$.
+\end{document}

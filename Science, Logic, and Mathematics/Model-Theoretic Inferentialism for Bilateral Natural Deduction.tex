@@ -1,0 +1,310 @@
+\documentclass[]{article}
+
+%opening
+\title{Model-Theoretic Inferentialism for Bilateral Natural Deduction}
+\author{Jacob Archambault}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\textit{Inferentialism} holds that the meaning of logical terms is given by their \textit{use}. Most often, this is taken to mean that the meaning of such terms is determined by their behavior in some favored proof theory, e.g. a Gentzen-style natural deduction system.
+
+Inferentialism is usually assumed to conflict with referentialist or model-theoretic approaches to meaning. Hence, most inferentialists about logic also advocate \textit{Proof-Theoretic Semantics}, the view that `the meaning of logical terms must be characterized using only concepts found in proof theory'.\footnote{James W. Garson. \textit{What Logics Mean: From Proof-Theory to Model-Theoretic Semantics}. Cambridge: Cambridge University Press, 2013.} But inferentialism in logic - the doctrine that the meaning of logical terms is determined by inferential role - is distinct from, and does not entail Proof-Theoretic Semantics.
+
+\textit{Model-Theoretic Inferentialism}, introduced in Garson (2013) but already present in Garson (1990) and (2001), augments standard proof-theoretic approaches to inferentialism with model-theoretic resources. The presence of non-standard models for classical connectives has long established that the rules for classical logic do not force classical semantics: the semantics is `too strong' for the proof theory. Garson, however, shows this underdetermination isn't rampant: natural deduction rules for classical connectives \textit{do} fix a corresponding semantics; it's just that on the most plausible account of semantic meaning, this semantics isn't classical. Model theoretic inferentialism welcomes referential approaches to determining the meaning of logical connectives.\footnote{Some the results of Garson (2013) are the following: that the semantics determined by natural deduction rules for most classical propositional connectives is intuitionistic; that sequent calculi are strong enough to fix classical interpretations at the propositional level; and that neither sequent calculi nor natural deduction systems are strong enough to fix the standard interpretations of the quantifiers - either substitutional or objectual.}
+
+\textit{Bilateralism} is an approach to meaning treating assertion and denial (or alternatively, truth and falsity) `even-handedly', rather than letting the latter fall out of the former. Whether the approach is proof- or model-theoretic, bilateralists must give conditions for denial (falsity) explicitly. For proof-theoretic semanticists, this introduces an added complication concerning harmony: the introduction and elimination assertion rules for a connective must harmonize not only with each other, but also with the rules for denial associated with the connective.\footnote{See Nissim Francez (2014), `Bilateralism in Proof-Theoretic Semantics'. \textit{Journal of Philosophical Logic} 43: 239-59.}
+
+This paper takes bilateralist proof-theoretic semantics and gives it the model-theoretic inferentialist treatment. The second section introduces model-theoretic inferentialism as outlined in Garson (2013). Section 3 provides natural deduction rules for a negation free bilateral propositional logic according to the general elimination harmony approach of Francez (2014). From section 3 onwards, I discuss three different proposals for ascertaining connective meaning, and give the semantics fixed by these proposals. On the most plausible proposal, adding rules for denial still fixes connective meanings weaker than those required by classical model-theory. The final section explores the model-theoretic impact of expanding the original proof theory by adding negation and quantifiers.
+\end{abstract}
+\section{Introduction}
+Inferentialism is a view in the philosophy of language according to which the meaning of words is given by their use. Inferentialism in logic is a restricted case of this broader view, according to which the meaning of the logical terms in a formal language is determined by the rules governing their use in some formal deduction system.
+
+Inferentialism is usually taken to conflict with model-theoretic approaches to logical meaning, which identify the meaning of a term not with its use conditions, but with its reference. Hence, most inferentialists about logic also advocate \textit{Proof-Theoretic Semantics}, the view that `the meaning of logical terms must be characterized using only concepts found in proof theory'.\footnote{James W. Garson. \textit{What Logics Mean: From Proof-Theory to Model-Theoretic Semantics}. Cambridge: Cambridge University Press, 2013.} But inferentialism in logic - the doctrine that the meaning of logical terms is determined by inferential role - is distinct from, and does not entail Proof-Theoretic Semantics.
+
+Model-Theoretic Inferentialism, introduced in Garson (2013), takes a more conciliatory approach to model theory than usual among inferentialists, augmenting proof-theoretic approaches to inferentialism with model-theoretic resources. Results going back to Carnap (1943) have established that proof-theoretic meaning underdetermines the model-theoretic meaning normally assigned to classical logic connectives. Garson, however, shows this underdetermination isn't rampant: natural deduction rules for classical connectives \textit{do} fix a corresponding semantics; it's just that on the most plausible account of what ND rules express, this semantics isn't classical.
+
+This paper takes bilateralist proof-theoretic semantics and gives it the model-theoretic inferentialist treatment. The next section introduces model-theoretic inferentialism as outlined in Garson (2013). Section 3 provides natural deduction rules for a basic bilateral propositional logic. Sections 4 and following discuss three different proposals for ascertaining connective meaning, and discuss the semantics fixed by these proposals where there is one. On the most plausible proposal, adding rules for denial still fails to fix the connective meanings required by classical model-theory.
+
+\section{Model-theoretic inferentialism explained}
+A model-theoretic account of meaning usually begins with a language to be interpreted by a class of models. Certain elements of the language (e.g. terms and predicates in first-order logic, propositional variables in propositional logic) are directly assigned elements of the appropriate type (an object, a set of objects, a truth value) in each model; while others (e.g. quantifiers, propositional connectives) are defined recursively over these original assignments. Those members of the language assigned to elements in the model directly are regarded as the non-logical parts of the language. Given these assignments are arbitrary, the interpretation can't well tell us much about their meaning. Those linguistic elements defined recursively, by contrast, are called `logical'; and it is the meaning of these terms that the semantics is meant to capture. Assuming we're interested in inferential relations in the language, we then define the validity of an inference $\Gamma  \models \phi$ model-theoretically in terms of the absence of a countermodel. Finally, we give a system of proof to proof-theoretically capture the concept of validity embodied in the model-theoretic semantics, and prove the adequacy of this proof system with respect to the semantics by giving soundness and completeness results. In this way, one moves from satisfaction conditions to proof, using the notion of semantic validity as a bridge between the two.
+
+Model-theoretic inferentialism reverses the direction of this procedure. Rather than starting by assigning truth values to propositional variables, the model-theoretic inferentialist starts with a proof system, and moves from there to an account of what the logical symbols express by way of a notion of semantic validity. Thus, it stands to reason that the standard of validity one chooses will affect the meaning of the logical symbols obtained. Similarly, starting with different kinds of proof systems - e.g. axiom systems, natural deduction systems, sequent calculi - can have an effect on the resulting meaning of the logical terms as well.\footnote{for results concerning the expressive power of axiom systems and sequent calculi, see Garson (2013), ch. 3 and 11.}
+
+Though the meaning of the connectives will depend on the kind of proof system in which they are embedded, this does not mean the meanings of a connectives depend on that of \textit{other} connectives. While model-theoretic inferentialism leaves aside whether \textit{natural} language meaning is holistic, forms of meaning holism where the meaning of each linguistic term depends on that of every other are out of place in a discussion of the meaning of the logical connectives of an artificial language, where the meaning of the connective can be given by rules governing it alone. ``While the rules establish a holistic set of relationships between one connective and all the others, the means by which those deductive roles are specified are (for the most part) modular and local to a given connective.''\footnote{Garson (2013).}
+
+\section{Bilateral natural deduction}
+In what follows, we give the rules for a simple natural deduction system $BCND$ (bilateral classical natural deduction) for bilateral classical logic. The easiest way to obtain a bilateral ND system is to add suitable introduction and elimination rules for denialto to the standard affirmation rules for classical logic. Following Rumfitt (2000), and Francez (2014a, b, c), we prefix each formula of the object language with a force marker $+$ or $-$, respectively indicating affirmation or denial of the proposition expressed. When a formula may be either asserted or denied in a place in a rule, the force marker is there omitted. Lastly, following Rumfitt (1997), I use $(*)$ to indicate that the force marker of a formula previously appearing in a rule is to be replaced in the starred instance with its opposite. 
+
+So let us start with a system $S$, having the following structural rules:
+
+\begin{quote}
+$\Gamma \vdash \phi$, provided $\phi$ is in $\Gamma$ (Hypothesis)
+
+$\frac{\Gamma \vdash \phi}{\Gamma, \Gamma' \vdash \phi}$ (Weakening)
+
+$\frac{\Gamma \vdash \phi; \Gamma', \phi \vdash \psi}{\Gamma, \Gamma' \vdash \psi}$ (Restricted Cut)
+\end{quote}
+
+The connective rules for $S$ are as follows:
+
+\begin{quote}
+$\frac{\Gamma \vdash +\phi; \Gamma \vdash +\psi}{\Gamma \vdash +\phi\wedge\psi}$ $(+\wedge int)$ 
+
+$\frac{\Gamma \vdash +\phi\wedge\psi}{\Gamma \vdash +\phi}$ $(+\wedge out^{1})$ 
+
+$\frac{\Gamma \vdash +\phi\wedge\psi}{\Gamma \vdash +\psi}$ $(+\wedge out^{2})$
+
+$\frac{\Gamma \vdash +\phi}{\Gamma \vdash +\phi\vee\psi}$ $(+\vee int^{1})$ 
+
+$\frac{\Gamma \vdash +\psi}{\Gamma \vdash +\phi\vee\psi}$ $(+\vee int^{2})$ 
+
+$\frac{\Gamma \vdash +\phi\vee\psi; \Gamma, +\phi \vdash \chi; \Gamma +\psi \vdash \chi}{\Gamma \vdash \chi}$ $(+\vee out)$
+
+$\frac{\Gamma +\phi \vdash +\psi}{\Gamma \vdash +\phi\rightarrow\psi}$ $(+\rightarrow int)$
+
+$\frac{\Gamma \vdash +\phi; \Gamma \vdash +\phi\rightarrow\psi}{\Gamma \vdash +\psi}$ $(+\rightarrow out)$
+
+$\frac{\Gamma, +\phi \vdash +\psi; \Gamma, +\phi \vdash +\neg \psi}{\Gamma \vdash +\neg\phi} (+\neg int)$
+
+$\frac{\Gamma, +\neg\phi \vdash +\psi; \Gamma +\neg\phi \vdash +\neg\psi}{\Gamma \vdash \phi} (+\neg out)$
+\end{quote}
+
+To obtain the system $BCND$ (Bilateral classical natural deduction), we add the following structural rule to govern the relations between assertion and denial:
+
+\begin{quote}
+$\frac{\Gamma, \phi \vdash +\psi; \Gamma, \phi \vdash -\psi}{\Gamma \vdash (*)\phi}$
+\end{quote}
+
+And to the affirmative rules for the connectives, we add their corresponding denial rules:
+
+\begin{quote}
+$\frac{\Gamma \vdash -\phi}{\Gamma \vdash -\phi\wedge\psi}$ $(-\wedge int^{1})$ 
+
+$\frac{\Gamma \vdash -\psi}{\Gamma \vdash -\phi\wedge\psi}$ $(-\wedge int^{2})$ 
+
+$\frac{\Gamma \vdash -\phi\wedge\psi; \Gamma -\phi \vdash \chi; \Gamma -\psi \vdash \chi}{\chi}$ $(-\wedge out)$
+
+$\frac{\Gamma \vdash -\phi; \Gamma \vdash -\psi}{\Gamma \vdash -\phi\vee\psi}$ $(-\vee int)$ 
+
+$\frac{\Gamma \vdash -\phi\vee\psi}{\Gamma \vdash -\phi}$ $(-\vee out^{1})$ 
+
+$\frac{\Gamma \vdash -\phi\vee\psi}{\Gamma \vdash -\psi}$ $(-\vee out^{2})$
+
+$\frac{\Gamma \vdash +\phi; \Gamma \vdash -\psi}{\Gamma \vdash -\phi\rightarrow\psi}$ $(-\rightarrow int)$
+
+$\frac{\Gamma \vdash -\phi\rightarrow\psi}{\Gamma \vdash +\phi}$ $(-\rightarrow out^{1})$
+
+$\frac{\Gamma \vdash -\phi\rightarrow\psi}{\Gamma \vdash -\psi}$ $(-\rightarrow out^{2})$
+
+$\frac{\Gamma \vdash +\phi}{\Gamma \vdash -\neg\phi}$ $(-\neg int)$
+
+$\frac{\Gamma \vdash -\neg\phi}{\Gamma \vdash +\phi}$ $(-\neg out)$
+\end{quote}
+
+\section{Bilateralism and deductive expression}
+The simplest way to understand what the connectives express assumes the meaning of a connective in a system is given wholly by which arguments are proven in the system.
+
+Given a language $L$, we let a valuation $v$ be \textit{any} function from the set of well-formed formulas (wffs) of $L$ to the set $\{t, f\}$ of truth-values,\footnote{$t$ and $f$ need not be read as truth and falsity. Among the functions under discussion, we may include those for provability, coherence, etc. The notation is adopted for convention only, and need not prejudice the discussion in any direction as far as more substantial commitments are concerned. In the unilateral case, functions are stipulated to be minimally consistent. But happily, this is a result, and not a starting assumption, in the bilateral case. The assumption is discussed in Belnap and Massey (1990), and McCawley (1993). The innocence of the assumption is contested by Humberstone (2011).} and we say $v$ \textit{satisfies} an argument $\Gamma / \phi$ iff whenever $v$ assigns the value corresponding to the appropriate force marker - $t$ for $+$, $f$ for $-$ - to all members of $\Gamma$, $v$ assigns the value indicated by $\phi$'s force marker to $\phi$.
+
+We define a \textit{model} $V$ for a language $L$ as any set of valuations for $L$. We say an argument $\Gamma / \phi$ is $V-valid$, abbreviated $\Gamma \models_{v} \phi$, iff it is satisfied by every valuation in $V$.
+
+Next, letting $S$ be a proof system, we call $V$ a \textit{deductive model} of $S$ iff the provable arguments of $S$ are all $V-valid$. Lastly, we say that a system $S$ \textit{deductively expresses} property $P$ iff for every model $V$, $V$ is a deductive model of $S$ exactly when $V$ has property $P$.
+
+Deductive expression was first studied, albeit not under this name, in Carnap (1943), in the context of discussions of the \textit{categoricity} of classical logic. Roughly, a proof system is \textit{categorical} if all of the models for which it is adequate are \textit{standard} - that is, they exactly fix the model intended. In the case of the classical propositional calculus, the standard model is classical semantics, which gives the classical truth tables for the connectives. Classical logic has non-standard models, and hence categoricity fails for classical logic. In fact, deductive expression is not strong enough to fix connective meanings (except for $\wedge$) for classical ND systems;\footnote{See Carnap (1943).} indeed, it fails to fix any meaning at all for the other connectives. However, this underdetermination no longer holds for bilateral classical systems: bilateral ND systems fix classical connective meanings.\footnote{Cf. Smiley (1996)} The proofs are as follows:
+\subsection{$\wedge$}
+Since $+\phi, +\psi / +\phi\wedge\psi$, it follows that in every deductive model of bilateral classical ND, if $v(\phi) = t$ and $v(\psi) = t$, then  $v(\phi\wedge\psi) = t$. And since $+\phi\wedge\psi / +\phi$, $v(\phi\wedge\psi) = t$ only if $v(\phi) = t$. Similarly, since $+\phi\wedge\psi / +\psi$, if $v(\phi\wedge\psi) = t$, then $v(\psi) = t$. So for every deductive model $V$ of bilateral classical natural deduction, for each $v$ in $V$, $v(\phi\wedge\psi) = t$ iff $v(\phi) = t$ and $v(\psi) = t$. This suffices to fix the standard truth tables for $\wedge$. In other words, bilateral classical ND deductively expresses classical truth conditions for $\wedge$.
+\subsection{$\vee$}
+Since $-\phi, -\psi / -\phi\vee\psi$, then for every deductive model $V$ of bilateral classical ND, for each $v$ in $V$, if $v(\phi) = f$ and $v(\psi) = f$, then $v(\phi\vee\psi) = f$. Also, since $-\phi\vee\psi / -\phi$, and $-\phi\vee\psi / -\psi$, it follows that for every $v$ in $V$, if $v(\phi\vee\psi) = f$, then $v(\phi) = f$; and if $v(\phi\vee\psi) = f$, $v(\psi) = f$. Hence, for every valuation $v$ in $V$, $v(\phi\vee\psi) = f$ iff $v(\phi) = f$ and $v(\psi) = f$. And so bilateral classical ND deductively expresses classical truth conditions for $\vee$.
+\subsection{$\rightarrow$}
+Since $+\phi, -\psi / -\phi\rightarrow\psi$, it follows that for every deductive model $V$ of bilateral classical ND, for each $v$ in $V$, if $v(\phi) = t$ and $v(\psi) = f$, then $v(\phi\rightarrow\psi) = f$. And since $-\phi\rightarrow\psi / +\phi$ and $-\phi\rightarrow\psi / -\psi$, it follows that $v(\phi\rightarrow\psi) = f$ only if $v(\phi) = t$ and $v(\psi) = f$. So $v(\phi\rightarrow\psi) = f$ iff $v(\phi) = t$ and $v(\psi) = f$,which ensures bilateral classical ND deductively expresses classical truth conditions for $\rightarrow$.
+\subsection{$\neg$}
+Since $+\phi / -\neg\phi$, each $v$ in a deductive model $V$ of bilateral classical ND is such that if $v(\phi) = t$, then $v(\neg\phi) = f$. Accordingly, since $\neg\phi- / +\phi$, it follows that if $v(\neg\phi) = f$, then $v(\phi) = t$. So $v(\phi) = t$ iff $v(\neg\phi) = f$, and classical conditions are secured.
+
+\subsection{What the above proofs suggest about how deductive expression is fixed}
+The reader will notice first, that none of the above proofs require the use of all of the argument analogues of a connective's rules to determine its meaning. Second, the meaning is fixed in different cases by validities corresponding to \textit{different} rules. In the case of $\wedge$, the argument corresponding to the affirmation rule for $\wedge$ introduction shows the truth of both conjuncts is sufficient for the truth of a conjunction; the validity analogue of the elimination rule shows it is also necessary. However, in the case of $\vee$ and $\rightarrow$, it is the arguments corresponding to the introduction and elimination rules for denial that jointly fix the classical deductive meaning. In the case of $\neg$, the proof relies on the analogues of the introduction and elimination rules for denying a negation.
+
+This may be taken to suggest one of two things. More positively, it may be taken to show that connective meaning may be determined by different rules for different connectives. More negatively, given that arguments corresponding to the affirmation rules alone are insufficient to fix classical meanings for $\vee$ or $\rightarrow$,\footnote{See Carnap (1943, 81)} and those corresponding to denial rules alone are not sufficient to fix the meaning of $\wedge$\footnote{Since $\wedge$ is the dual of $\vee$, the ND denial rules for $\wedge$ exactly parallel the ND affirmation rules for $\vee$. The underdetermination proof proceeds in exactly the same fashion as that for the affirmation rules of $\vee$, and is left to the reader.} this suggests that the affirmation rules for $\wedge$ deductively express more than their corresponding denial rules, and that the denial rules for $\vee$ and $\rightarrow$ deductively express more than their corresponding affirmation rules - the result of adding these rules to systems containing the affirmation (denial) rules for these connectives is not conservative.
+
+\subsection{Allowing partial functions in $V$}
+However, there is another explanation available. The above proofs rely on the assumption that the functions in $V$ are all complete, i.e. that there are no partial functions in $V$. This assumption itself doesn't fit neatly with the bilateralist project. If we drop this assumption, then the above results are no longer secured: not only do they fail for $\vee$ and $\rightarrow$, they also fail for $\wedge$, the meaning of which has been assumed to be fixed by this method since Carnap. The arguments corresponding to the affirmative introduction and elimination rules for $\wedge$ fix both directions of the first row of the truth table for $\wedge$, and the denial introduction rules fix the left-to right direction of the remaining three rows. But the right-to-left direction is underdetermined. To show this, it is sufficient to provide a model where the classical interpretation for the truth tables is not fixed.
+
+Adopting the notation where $v(\phi) = i$ indicates $v$ does not assign a value to $\phi$, we let $V$ be such a model, , containing the evaluation $v$ as its only member. Assume $v(p) = i$, $v(q) = t$ and $v(p\wedge q) = f$, letting valuations for other wffs be valued accordingly - i.e. the consequences of $q$ as $t$, of $p\wedge q$ as $f$, and the all remaining formulae as $i$. In fact, so long as it is not the case that $v(p) = v(q) = t$, $p$ and $q$ can be evaluated in any of the remaining ways and still have $v(p\wedge q) = f$. Analogous results hold for the other connectives, and are left to the reader.
+
+\subsection{Deductive expression fixes classical meanings, or none at all}
+
+\section{Bilateralism and local expression}
+There are some general reasons for dissatisfaction with deductive expression as a benchmark for the meaning of the logical connectives. Most notably, the benchmark would seem to be a bit too static to genuinely capture the meanings of the logical connectives: while it tells us which arguments involving the connective are valid in the system, it tells us nothing directly about the \textit{relations} between valid arguments. For instance, if an argument $\phi\vdash\psi$ is valid, does this entail that $\vdash\phi\rightarrow\psi$ is, too? Given its focus on valid arguments, deductive expression ends up being insensitive to the very thing inferentialists usually take to define connective meaning: the rules the connective obeys. Arguably, models answering higher-order questions about how arguments relate to each other provide a better criterion for connective meaning than those that merely capture a list of valid arguments. Hence, this and the following section provide distinct criteria for what it means for a valuation to model a \textit{rule}.
+
+The definitions of `valuation', `model', `satisfaction of an argument', and `V-validity' are exactly as they were in the previous section. However, the definitions for `deductive model' and `deductive expression' are dropped and replaced with the following:
+
+\begin{quote}
+(Valuation $v$ satisfies Rule $R$) $v$ \textit{satisfies rule} $R$ iff if $v$ satisfies the inputs of $R$, then $v$ satisfies the output of $R$.
+\end{quote}
+\begin{quote}
+(Local Model of a Rule) $V$ is a \textit{local model of rule} $R$ iff every member of $V$ satisfies $R$.
+\end{quote}
+
+\begin{quote}
+(Local Expression) A system S \textit{locally expresses} property P iff for every model $V$, $V$ is a local model of the rules of S exactly when $V$ has property P.
+\end{quote}
+
+Humberstone (1996) showed that classical affirmative ND systems locally express classical semantics. However, there are two major difficulties with the notion that the meaning of the connectives is given by what they locally express. First, there are cases where ND rules locally express a semantics for which they themselves are incomplete. For instance, the implicational fragment of classical logic locally expresses classical semantics, even though that fragment is incapable of proving Peirce's law, $((\phi\rightarrow\psi) \rightarrow \phi) \rightarrow \phi$, which is classically valid. Second, local expression forces truth-functionality: the rules of a proof system, if they are to locally express a semantics at all, must express a truth-functional one (Garson (2013), ch. 3, theorem 3.5.).
+
+The central questions of this section are: 1) whether bilateral classical logic expresses classical semantics; 2) whether the anomaly of local incompleteness remains present for the bilateral case; and 3) whether local models continue to express classical conditions when we allow valuation functions to be partial. While the answer to the first question is affirmative, the answers to the others are not. We move to the first question now.
+
+\subsection{Local models of bilateral classical systems express a classical semantics}
+To show that local models express classical semantics, two things must be shown: first, that the semantics purportedly expressed does in fact qualify as a semantics; second, that the proof theory forces that semantics. Classical semantics clearly qualifies as a semantics. Forcing is shown as follows: Bilateral classical logic extends the rules of standard classical logic. Since classical logic alone locally expresses classical semantics, and since the valuations in $V$ must be minimally consistent, it follows from the soundness of bilateral classical logic for classical semantics that it will continue to express classical conditions. Alternatively, since every local model is a deductive model, the fact that deductive models of $BCND$ fix classical meanings means that $BCND$ must be at least classical; while the consistency requirement guarantees that they are at most classical.
+\subsection{Bilateral classical logic is modular and complete for classical semantics}
+
+\subsection{Local models no longer express classical conditions when partial valuations are allowed in $V$}
+As was shown in the previous section, the affirmative $\wedge$ introduction and elimination rules suffice to fix the first row of the classical truth table completely, while the $\wedge (int)$ rules for denial fix the left to right direction of the classical truth tables for the remaining rows. So in order to establish that the classical conditions are given, one would have to show that one of the rules governing $\wedge$ (or several jointly) fixed the right-to-left direction of the remaining three rows. However, the only rule that would be capable of doing this is the denial rule for $\wedge (out)$, since this is the only rule that tells us what is required if the conjunction to take a semantic value of $f$. But this rule cannot force the conjuncts of $\wedge$ to be $f$, since those conjuncts themselves don't even factor into the conclusion of $\wedge (out)$. Hence, the same model used to show underdetermination results for $\wedge$ for deductive expression also show that when partial functions are included in $v$, $\wedge$ fails to give a truth-functional semantics for $BCND$. Furthermore, since local expression must give a truth-functional semantics if it gives one at all,this shows that when partial functions are allowed in $V$, $BCND$ fails to locally express a semantics for $\wedge$ at all. Lastly, since $\wedge$ is the dual of $\vee$, the same results carry over to that connective as well by parallel reasoning. The same results can be obtained for $\rightarrow$ (but not for $\neg$, which expresses classical, albeit partial, truth conditions), and are left to the reader.  
+
+\section{Bilateralism and global expression}
+The prejudice local expression displays toward extensionality provides reason for considering other approaches to the meaning of the logical connectives. The one we shall consider here is called \textit{global expression}. The basic problem with local expression was that it enforced a stronger condition on arguments than we actually employ in evaluating arguments: when discussing whether a rule is a good one, we don't assume that the arguments employed in the argument are satisfied. Rather, a good rule takes us from an acceptable argument to another acceptable argument. So where local models preserve satisfaction, global models preserve validity. The definitions for `model', `satisfaction' and `V-validity' remain as before. To these, we add the following:
+
+\begin{quote}
+(Preservation of Validity) Rule $R$ \textit{preserves V validity} iff whenever the inputs of $R$ are all V-valid, the output of $R$ is also V-valid.
+
+(Global Model of a Rule) $V$ is a \textit{global model} of rule $R$ iff $R$ preserves V-validity.
+
+(Global Expression) A system $S$ \textit{globally expresses} property $P$ iff for all models $V$ for a language $L$ for $S$, $V$ is a global model of the rules of $S$ exactly when $V$ has property $P$.
+\end{quote}
+
+When we force all functions in our models to be complete, Bilateral natural deduction rules globally express classical semantics for the same reason that local rules do: every global model of $BCND$ is a deductive model, and deductive models alone force classical semantics. However, as before with local and global models, this no longer occurs when partial valuation functions are allowed as well. 
+
+To show this, we define the \textit{canonical model} of $BCND$; and say that a canonical model $S$ is the set of all valuations that satisfy $S$, where a valuation satisfies a system $S$ exactly when it satisfies all of its valid arguments. We let $v$ be the bilateral analogue of the provability function, and define it thus:
+\begin{quote}
+$v(\phi) = t$ iff $\phi$ is a theorem of $BCND$; $v(\phi) = f$ iff $\phi$ is refutable in $BCND$, and $v(\phi) = i$ otherwise.
+\end{quote}
+
+That the canonical model of $BCND$ is sound for the system follows immediately from its construction. That $v$ is in $V$ is proven as follows. Let $\Gamma$ be a set of formulas, and assume that $\Gamma\vdash\phi$ and $v$ satisfies $\Gamma$. Then for each $psi$ in $\Gamma$, $v$ satisfies $\psi$. By cut, it follows that $v$ satisfies $\phi$, as intended.
+
+From here, we can see that $v(\phi\vee\neg\phi) = t$, but $v(\phi) = v(\neg\phi) = i$, and so the classical truth table for $\vee$ is violated. Similarly, $v(\phi\wedge\neg\phi) = f$, thereby violating the classical truth table for $\wedge$. For $\rightarrow$, $v(\phi\rightarrow\phi) = t$, though $v(\phi) = i$. 
+
+But unlike local models or deductive models, global models do fix a semantics for bilateral natural deduction. However, before giving these results, we will have to clarify the structure of global models more than we have.
+
+\subsection{Bilateral Intuitionistic frames}
+According to what we have right now, global models are simply collections of valuation functions. However, by virtue of the functions being given in whatever way they are, we can identify relationships between them. One such relationship is the \textit{extension} relation. For valuations $v$ and $v'$ in $V$ for a language $L$, let us say that $v'$ \textit{extends} $v$ (written $v\leq v'$) iff for all wffs $\phi$ of $L$, if $v(\phi) = t (f)$, then $v'(\phi) = t (f)$. And we call a pair $<V, \leq>$ a \textit{bilateral intuitionistic frame} for $L$ iff it satisfies following conditions for the connectives that are in $L$:
+
+\begin{quote}
+$\wedge+$ $v(\phi\wedge\psi) = t$ iff $(v\phi) = v(\psi) = t$.
+
+$\wedge-$ $v(\phi\wedge\psi) = f$ iff $v(\phi) = f$ or $v(\psi) = f$.
+
+$\vee+$ $v(\phi\vee\psi) = t$ iff$ v(\phi) = t$ or $v(\psi) = t$.
+
+$\vee-$ $v(\phi\vee\psi) = f$ iff $v(\phi) = v(\psi) =f$
+
+$\rightarrow+$ $v(\phi\rightarrow\psi) = t$ iff for all $v'$ in $V$, if $v\leq v'$, then $v'(\phi) = f$ or $v'(\psi) = t$
+
+$\rightarrow-$ $v(\phi\rightarrow\psi) = f$ iff $v(\phi) = t$ and $v(\psi) = f$
+
+$\leftrightarrow+$ $v(\phi\leftrightarrow\psi) = t$ iff for all $v'$ in $V$, if $v\leq v'$, then $v'(\phi) = v'(\psi)$
+
+$\leftrightarrow+$ $v(\phi\leftrightarrow\psi) = f$ iff for all $v'$ in $V$, if $v\leq v'$, then $v'(\phi) \ne v'(\psi)$
+\end{quote}
+\subsection{$\wedge$ and $\vee$}
+\subsubsection{What the $\wedge$ affirmation rules fix}
+
+To see how global expression works, we begin by reviewing the affirmation rules for $\wedge$.
+
+Taking the introduction rule first, we recall that $V$ is a global model of the rule $R$ iff the rule $R$ preserves $V$-validity; that is, iff whenever the inputs of R $R$ are all $V$-Valid, the output is as well; that is, iff whenever the inputs are all satisfied by every valuation in $V$, the output is also satisfied in every valuation in $V$.
+
+So for $\wedge(int)$, this means that $V$ is a global model of $\wedge (int)$ iff whenever for all $v$ in $V$, if $v(\Gamma) = t$, then $v(\phi) = v(\psi) = t$: then for every valuation in v, if $v(\Gamma) = t$, then $v(\phi\wedge\psi) = t$. The elimination rule secures the converse of the right hand side of the biconditional. So we can conclude that $V$ is a global model of the affirmation rules for $BCND$ iff: all $v$ in $V$ are such that $v(\phi) = v(\psi) = t$ exactly when $v(\phi\wedge\psi) = t$. Call this condition $||S\wedge||$. Then we can say that 
+
+One of the interesting things about the $\wedge$ connective is that the standard affirmation and denial rules for it don't interact. This means that the truth conditions are determined entirely independently of the falsity conditions, and vice versa.
+\subsubsection{What the $\wedge$ denial rules fix}
+Next, we applying the same method to the denial rules, which we repeat here for ease of access: 
+
+$\frac{\Gamma \vdash -\phi}{\Gamma \vdash -\phi\wedge\psi}$ $(-\wedge int^{1})$ 
+
+$\frac{\Gamma \vdash -\psi}{\Gamma \vdash -\phi\wedge\psi}$ $(-\wedge int^{2})$ 
+
+$\frac{\Gamma \vdash -\phi\wedge\psi, \Gamma -\phi \vdash \chi, \Gamma -\psi \vdash \chi}{\chi}$ $(-\wedge out)$
+
+Beginning with the introduction rules, we see that being a global model $V$ of the denial rules for $BCND$ requires that if for all $v$ in $V$, $v(\phi) = f$, then for all $v$ in $V$, $v(\phi\wedge\psi) = f$; and if for all $v$ in $V$, $v(\psi) = f$, then for all $v$ in $V$, $v(\phi\wedge\psi) = f$. So $V$ is a global model of $\wedge$ only if: if for all $v$ in $V$, $v(\phi) = f$ or for all $v$ in $V$, $v(\psi) = f$, then for all $v$ in $V$, $v(\phi\wedge\psi) = f$.
+
+So far, so good. The condition forced by the elimination rule, however, is rather complicated. For valuations $v$ and $v'$ in $V$ for a language $L$, let us say that $v'$ \textit{extends} $v$ (written $v\leq v'$) iff for all wffs $\phi$ of $L$, if $v(\phi) = t (f)$, then $v'(\phi) = t (f)$. 
+
+The rule tells us that if $V$ is a global model of $-\vee out)$ only if: if for all $v$ in $V$, $v(\phi\and\psi) = f$, and 
+
+Jointly, the denial rules force the following condition on $V$:
+
+\begin{quote}
+$v(\phi\wedge\psi) = f$ only if for every path bundle $P$ through $v$, there is a $v'$ in $P$ such that $v'(\phi) = f$ or $v'(\psi) = f$.
+\end{quote}
+
+Here, a Path bundle is defined as follows:
+
+\begin{quote}
+(Path Bundle) $P$ is a \textit{path bundle through} $v$ iff for some wff $D$, v(D) = i, and P = ${v': v\leq v' and v'(D) = f}$, where $\leq$ is defined 
+\end{quote}
+
+Lastly, since obeying the introduction rule is sufficient (but not necessary) to ensure obedience to the condition expressed by the elimination rule, the joint condition is simply the biconditional form of the elimination rule:
+
+\begin{quote}
+$v(\phi\wedge\psi) = f$ iff for every path bundle $P$ through $v$, there is a $v'$ in $P$ such that $v'(\phi) = f$ or $v'(\psi) = f$.
+\end{quote}
+
+\subsubsection{What $\vee$ expresses}
+Since $\vee$ is the dual of $\wedge$, its introduction and elimination affirmation rules exactly parallel the denial introduction and elimination rules for $\wedge$, and its denial introduction and elimination rules form negative parallels of $\wedge$'s affirmation rules. Hence, the results from the previous sections carry over to the meaning of $\vee$ in a perfectly analogous manner, and the global meaning of the connective can be given as follows:
+
+INSERT MEANING HERE
+\subsection{$\rightarrow$}
+Next, we give the meaning defined for implication. 
+
+$\frac{\Gamma +\phi \vdash +\psi}{\Gamma \vdash +\phi\rightarrow\psi}$ $(+\rightarrow int)$ 
+$\frac{\Gamma \vdash +\phi, \Gamma \vdash +\phi\rightarrow\psi}{\Gamma \vdash +\psi}$ $(+\rightarrow out)$
+
+\section{Conclusion}
+Strong conservativity
+
+Uniqueness
+
+inversion
+
+normalization
+
+consistency
+
+Furthermore, replacing the classical rules with their ge-equivalents\footnote{For more on general-elimination harmony, see Read (2010), Francez (2014).} does not solve the problem: since the standard classical rules are instances of the ge-rules, ge-rules still validate all the ND arguments used to obtain the above results, and so the problem is present with these rules as well.
+\section{Bibliography}
+Belnap and Massey (1990)
+
+McCawley (1993)
+
+Francez (2014a)
+
+Francez (2014b)
+
+Francez (2014c)
+
+Garson (1990)
+
+Garson (2001)
+
+Garson (2013)
+
+Humberstone (1996)
+
+Humberstone (2011)
+
+Salqvist (1975)
+\subsection{Hypothesis: deductive expression forces truth functional meanings, or none at all}
+In (2013), Garson assumes that every local model is a global model, and that every global model is a deductive model. Hence, the notions of validity corresponding to the various models form a hierarchy, with local validity being the strongest, and deductive validity, the weakest. The relation between global validity and local validity is as Garson states. However, the relation is not as Garson suggests between deductive validity and the other kinds of validity. There are models of the \textit{arguments} of a system that are not thereby models of that system's \textit{rules}. Not only are there global models that fail to be deductive models, there are local models that fail to do the same. To see this, consider the system $S\rightarrow$,  consisting of the structural rules of $S$ and the affirmative introduction and elimination rules for $(\rightarrow int)$. Next, we construct a local model $V$ of $S\rightarrow$ that is not a deductive model.
+
+
+
+NEGATION
+
+$\frac{(\Gamma, +\phi) \vdash +\psi, \Gamma +\psi \vdash +\phi}{\Gamma \vdash +\phi\leftrightarrow\psi}$ $(+\leftrightarrow int)$
+$\frac{(\Gamma \vdash +\phi\leftrightarrow\psi, \Gamma \vdash +\phi}{\Gamma \vdash +\psi}$ $(+\leftrightarrow out^{1})$
+$\frac{(\Gamma \vdash +\phi\leftrightarrow\psi, \Gamma \vdash +\psi}{\Gamma \vdash +\phi}$ $(+\leftrightarrow out^{2})$
+
+$\frac{\Gamma +\phi \vdash -\psi, \Gamma \-\phi \vdash +\psi}{-\phi\leftrightarrow\psi}$ $(-\leftrightarrow int)$
+$\frac{\Gamma \vdash -\phi\leftrightarrow\psi, \Gamma \vdash -\phi}{\Gamma \vdash +\psi}$ $(-\leftrightarrow out^{1})$
+$\frac{\Gamma \vdash -\phi\leftrightarrow\psi, \Gamma \vdash -\psi}{\Gamma \vdash +\phi}$ $(-\leftrightarrow out^{2})$
+\end{document}

@@ -1,0 +1,171 @@
+\documentclass[]{article}
+
+%opening
+\title{Deflating the deflationist debate}
+\author{Jacob Archambault}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+In this paper, I identify an assumption common to both deflationists and inflationalists alike - what I call the \textit{substantiality thesis}; show how failures of both inflationist and deflationist responses to the Liar paradox arise from this common thesis; show how a notion of truth for sentences can and should be anchored in the pre-sentential meaning of ‘true’, one for which paradoxes like the Liar cannot occur; and develop a semantics for a theory of truth that avoids treating truth as a substantial property, without thereby being deflationary.
+\end{abstract}
+
+\section{}
+Deflationism, liars, and the ontic use of ‘true’
+
+
+Rephrase as follows: “Both inflationists and deflationists are commited to the following thesis: [state it]”. Make your language about actors, i.e. movers and changers. 
+Eliminate lengthy, scholarly footnotes
+Eliminate unnecessary references to historical figures
+
+Keywords: inflationism; deflationism; truth; falsity; liar paradox; negation; truth-value gaps; lambda calculus.
+1 Demarcating the Inflationist/Deflationist debate 
+This paper brings together two claims surrounding the notion of truth in order to show their bearing on our treatment of Liar paradoxes and their kin. The first, frequently debated claim, is that truth is substantive. The second, put forth by Frege [1956] and hardly discussed since, is that the use of ‘true’ as applied to sentences is essentially disparate from its non-sentential uses, - the use it has when predicated of friends, love, stories, geniuses, etc.
+Let us collectively refer to those theses according to which truth is significant, important, etc. only if it is substantive as the substantiality thesis [ST]. I intend ST to capture a wide variety of different forms: one version might say that truth is a property only if it is substantive; another might take it to have a distinct domain only if it is substantive; others might take it to be meaningful, informative, metaphysically robust, etc. Note that ST is not the categorical claim that truth is substantial. Rather, it is the hypothetical claim that truth is substantial only if meaningful, etc.
+To the degree that deflationist/inflationist debates are well-defined,   ST is the fixed point around which they revolve, being the common ground on which inflationists and deflationists agree. Kevin Sharp describes deflationism as holding that “truth is not a substantial notion and has no analysis. Instead, truth predicates play an important expressive role in our linguistic practice,”  with the usual connotation that relegating the importance of truth predicates to the realm of language serves as a way of emptying them of any metaphysical baggage associated with substantiality. Asay [2014] characterizes deflationism in terms of two different kinds of substantiality claims: 1) that truth is not a (robust, metaphysically substantive, etc.) property; and 2) “that our concept of truth is explanatorily impotent.”  On the inflationist side, this same language of substantiality has been adopted by Putnam, Wright, Lynch, and others. 
+If  we might think of deflationism as roughly characterizable by the dictum that “there is no substantial property of truth, and so there is nothing – no domain of objects, or properties, or phenomena – which the theory of truth describes”,  we might characterize the inflationist as an adherent of the following thesis:
+Inflationism: There is something – some domain of objects, properties, or phenomena – that the theory of truth describes, and so there is some substantial property of truth.
+
+Doing this allows us to see that inflationism and deflationism as two sides of the same coin. Both concede the theory of truth is about something only if there is some substantial property of truth. From here, the only difference is that of the deflationist’s modus tollens to the inflationist’s modus ponens. 
+In what follows, I show that the substantiality thesis itself is mistaken. In the section immediately following, I distinguish between two different kinds of predicates, the former of which I call ‘real’, the latter ‘ontological’. From here, I show: i) that ‘true’ in its common non-sentential application is an ontological, as opposed to a real, predicate; ii) that the notion of truth applied to sentences can be defined in terms of the corresponding pre-sentential notion; and iii) that grounding sentential truth in a pre-predicative, ontological notion of truth suffices to provide principled support to what is likely still the most intuitive response to liar-like sentences: that they are syntactically ill-formed. I then provide a syntax and semantics for a logical language capable, on this assumption, of: i) expressing truth, falsity, and indeterminacy for sentences; ii) accommodating circularity for real predicates, while providing a principled rejection of it for ontological ones; and iii) accommodating and expressing certain kinds of presupposition failure that themselves trigger indeterminacy. In the penultimate section, I raise an issue about the relation between negation and falsity.
+2 Real and Ontological Predicates
+Let's begin with a look at two problematic inferences.
+(1)	Pegasus is thought about. Therefore, Pegasus is.
+(2)	This person is a good thief. Therefore, this person is good.
+The relation of these fallacies to the Liar is not immediately apparent. But Medieval logicians treated both under the same heading, that of the fallacy secundum quid et simpliciter. In each of the above cases, we have a shift from calling something something else with respect to some contextual parameter to calling it that thing absolutely.  To be with respect to thought is not the same as being tout court; and to be a good thief is not the same as being good.
+The terms “to be” and “to be good” are among the most basic terms of our language, both with respect to their importance and with respect to their range of applicability. And it is just this range of applicability that suggests that the terms are not being used in the way we use predicates like “is green,” “is five feet tall,” and “is the sister of.”  I will call these latter, unproblematic types of predicates real predicates, while I will call the predicates 'good,' 'is,' and 'true,' ontological. 
+The mark of a real predicate is that it adds some content to the concept of the thing it is predicated of.   This does not mean that the thing itself needs to sometimes be capable of lacking a property that the predicate refers to in order for the predicate to be real. For instance 'is an animal' and 'is even' are real predicates, even though they apply to the objects that they are truly predicated of necessarily. What it does mean, though, is that the predicate is in some respect informative  of the notion of the object we have in mind.
+Let’s give a few examples. One common way a term is informative with respect to another is by specification: my idea of a given triangle is made clearer by the information that it is equilateral. The converse case of placing something in a given genus is also informative: being told that a whale is a mammal tells me that whales give birth to live young. The same holds for the specification of certain qualities: being told that a person is tall, what color her hair is, her approximate age, are all informative predicates.
+When a predicate is informative in this manner, it is so because it posits the same attribute in whatever it is attributed to: and so the predicate is used univocally. 
+Now, take the use of 'good' as in the phrase, 'good thief.' The good thief is the one who has successfully instantiated the properties most conducive to thievery. The good tennis player is, similarly, the person in possession of all of the skills, powers, and technique necessary to win at tennis. The same point can be made for the comparative degree: “Venus is better than Serena,” said of the tennis players, compares respects in which the quality in question – namely tennis playing ability – has been actualized. The same sentence could be uttered with a different intent – for instance, not by an avid tennis fan, but by the mother of the sisters – to indicate that one is a better person than the other, i.e. that the former instantiates the ideal qualities of a human being to a greater degree than her sister. By contrast, “Venus is better than Serena,” where the first term refers not to the sister, but to the planet, is opaque until the respect in which 'better' is said is specified. 
+In other words, the meaning of 'good' piggybacks on the meaning of some other concept that it modifies. This suffices for it to lack the univocity had by terms like 'to the left of,' 'two-legged,' and 'toxic.' The result of this is that there are, in effect, as many different ways of saying 'good' as there are kinds of things the term can connote in the language.  
+3 'True' in its pre-sentential meaning
+Now let's apply this same point to the question of the meaning of 'true.' Since the question was first pushed aside by Frege,  little attention has been given to the relation of the sentential use of 'true' to what I shall call its pre-sentential uses. Part of what the claim that 'true' is an ontological, and not a real, predicate will do is help us to reforge this link.
+We speak of true friendship, true heroes, true love, true judgments, true beliefs, true testimonies, and a host of other cases. The last three of the above have more in common with sentential truth than with the former three: what they all prima facie suggest is that the belief, testimony, or judgment in question is adequate to what it happens to be about. A true belief, for instance, is one that believes of what is, that it is – a one-word modification of the Aristotelian definition of truth known to most of us through Tarski.  On the other hand, the former three cases are markedly different.
+A true friendship is one fully instantiating the ideals of friendship. Accordingly, a friend is regarded as less than true to the degree that he fails to live up to the ideals and aims of friendship, whatever these may be. A true hero is one that exemplifies heroism fully. Therefore, her actions instantiate the ideal of heroism. Similarly, true love is love fully actualized, just as true heroism is heroism actualized. 
+The common ingredient in each of these is the actualization of some ideal. This is not the same as the actualization of an idea: one can be surprised and struck by an ideal's ‘coming onto the scene’, while one is hardly surprised when things go exactly as one plans them. 
+More importantly, though, the actualization of this ideal must be prior to our adaptation of the ideal itself: it is on account of a prior actualization of the ideal that we can later go back and judge whether a given reality “conforms” to it. One’s idea of an ideal may be inadequate: the adage, ‘a friend is someone who supports you’ represents a concept of friendship that, while it captures something of what it means to be a friend, is enabling and unhealthy if taken for complete. Hence, we say indifferently of both the idea and sentence expressing it, that they are ‘not entirely true’. Truth as actualization gives rise to truth as correspondence.
+In short, in its pre-sentential use, 'true,' like 'good,' signifies the instantiation or actualization of what it is that the term modifies– thievery, love, friendship, heroism, etc. 
+From here, the step to a  two-place 'true of' predicate is fairly simple: To say that P is true of an object d is to say that P is actualized ‘at’ d.  And from this, as a convenient abbreviation (though one that glosses over important details) we come to the T-schema:
+(T) 	True(α)↔p,		where what replaces ‘α’ is a name of a sentence replacing ‘p’.
+This last point deserves a bit more elaboration. I’m not saying that the T-schema itself is mistaken. Rather, I’m claiming that paradoxes like the Liar arise in part because the T-Schema is taken to be fundamental in a way that it isn’t. Judgments of truth do not at bottom predicate being-true of a propositional content, however this content is understood. Rather, they are a shorthand for predicating truth in the pre-sentential sense of a predicate-subject pair, thereby signifying the actualization of a property in a subject. 
+4 Syntax and Semantics for Bridging the Truth Gap
+4.1 Syntax
+With this in mind, we can give precision to what likely remains the most intuitive response to Liar-like sentences: that they aren’t actually saying anything at all. To do so, we construct a first-order language ℒ = (C, Q, Λ, Real, Trm, Frm), where C = {~, &, v, =, ⇒, □, ♢}, Q = {∀, ∃}, Real is a set of real predicates (i.e. our set of unproblematic, 1st order predicates – not including a truth predicate), Trm = Con ⋃ Var is a set of terms, where Con = {a, b, c, d…} is our collection of constants and Var = {x, y, z, w, x'…} is a set of variables. The set Λ = T ⋃ F is a set of functions, intended as variants of lambda abstraction. The syntax here parallels that in Fitting and Mendelsohn [1998]. Frm is the set of formulas of the language, membership in which is recursively defined as follows: 
+(1)	If Fn ∈ Real and (x1…xn) ∈ Varn, then Fn(x1…xn) ∈ Frm, with x1…xn as free variable occurrences. 
+(2)	If ϕ ∈ Frm, then each of ~ϕ, □ϕ, and ♢ϕ ∈ Frm, the free variable occurrences of the resulting formula being those of ϕ. 
+(3)	If ϕ, ψ ∈ Frm, then so are (ϕ & ψ), (ϕ v ψ), and (ϕ ⇒ ψ), the free variable occurrences of which being those of ϕ together with those of ψ. 
+(4)	If ϕ ∈ Frm and x ∈ Var, then (∀x)ϕ, (∃x)ϕ ∈ Frm, with free variable occurrences being those of ϕ less its free occurrences of x.
+Membership in T is defined as follows:
+(T)	If ϕ ∈ Frm and x ∈ Var, then ⟨Tx.ϕ⟩ is a truth abstractor, the free variable occurrences of which are those of φ less its free occurrences of v.
+The syntax for functions in F is exactly parallel, and we accordingly call a function of the form ⟨Fx.φ⟩ a falsity abstractor. 
+Lastly, we give the syntax for formulae involving members of Λ. 
+(5)	If ⟨λx.φ⟩ ∈ Λ and t ∈ Trm, then ⟨λx.φ⟩(t) ∈ Frm , with free variable occurrences being those of ⟨λx.φ⟩ as well as those of t.
+⟨Tx.ϕ⟩(t) may be read in any of the following ways:
+(1)	'The truth of ϕ is with respect to t.'
+(2)	't's ϕ-ness is true.'
+(3)	'ϕ is true of t.'
+(4)	‘t is truly ϕ.’
+Note that within this syntax, it isn't possible to formulate Liars for the simple reason that all formulae involving functions in Λ ultimately have to “bottom out” in some formula ϕ not involving T or F that grounds the whole chain of functions performed on ϕ. For instance
+⟨Fx.⟨Ty.Rxy⟩(c)⟩(d).
+is well-formed, but
+⟨Fx.⟩(b)
+is not. Thereby, we concede to the deflationist that 'True' and 'False' are not substantial predicates.
+4.2 Semantics
+From here, we move to the task of explaining what truth is on such an account. Let ℳ = (𝒲, ℛ, 𝒟, ℐ) be a first-order varying-domain model. 𝒲 is our set of worlds. ℛ is a reflexive, transitive, symmetric binary relation on 𝒲. 𝒟 is a domain function, taking us from each world w in 𝒲 to the domain of that world (such that ⋃{𝒟(w): w ∈ 𝒲} gives us the domain of the model, written 𝒟(ℳ)).  ℐ is an interpretation function, mapping constants at each world to objects in 𝒟(ℳ), and n-ary predicates Pn at each world w in 𝒲  to a pair, (ℰ, 𝒜) of subsets of 𝒟(ℳ)n, where, intuitively, ℰ is the extension of the predicate Pn (i.e. the set of n-tuples of which Pn is true at w – written ℐwℰ(Pn)), and 𝒜 is its anti-extension there (i.e. the set of n-tuples for which it is false – written ℐw𝒜(Pn)). The extension and anti-extension of a predicate must be disjoint, but need not be exhaustive. 
+Given such a model, we define a valuation function v assigning variables to objects in the domain of the model; and a relation ρ relating each formula ϕ at world w on valuation v to the values {0, 1} (written ϕρwv). We allow both interpretations and valuations to be partial. Note that while interpretations of constants are world-indexed, thereby allowing for non-rigid designation, valuations are not.
+Semantics for atomic formulae are as follows:
+(α1)	Pn(x1…xn)ρwv1 iff ⟨v(x¬1), … v(xn)⟩ ∈ ℐwℰ(Pn) 
+(α2)	Pn(x1…xn)ρwv0 iff ⟨v(x¬1), … v(xn)⟩ ∈ ℐw𝒜(Pn) 
+And for connectives: 
+(&1)	(ϕ & ψ)ρwv1 iff ϕρwv1 and ψρwv1
+(&2)	(ϕ & ψ)ρwv0 iff ϕρwv0 or ψρwv0
+(v1)	(ϕ v ψ)ρwv1 iff ϕρwv1 or ψρwv1
+(v2)	(ϕ v ψ)ρwv0 iff ϕρwv0 and ψρwv0
+(~1)	(~ϕ)ρwv1 iff it is not the case that ϕρwv1
+(~2)	(~~ϕ)ρ¬wv0 iff ϕρwv0
+(□1)	(□ϕ)ρwv1 iff for all w’ s. t. wℛw’, ϕρ¬w’v1
+(□2)	(□ϕ)ρwv0 iff for some w’ s. t. wℛw’, ϕρw’v0
+(♢¬1)	(♢ϕ)ρ¬wv1 iff for some w’ s. t. wℛw’, ϕρw’v1
+(♢2)	(♢ϕ)ρwv0 iff for all w’ s. t. wℛw’, ϕρw’v0
+(⇒1)	(ϕ ⇒ ψ)ρwv1 iff for all w’ s. t. wℛw’ and ϕρw’v¬1, ψρw’v1
+(⇒2)	(ϕ ⇒ ψ)ρ¬wv0 iff for some w’ s. t. wℛw’, ϕρw’v1 and ψρw’v0
+Next, we give the semantics for quantifiers and abstractors. We begin by defining the notion of an x-variant. 
+(x-variant) – for any variable x in Var, world w and valuations v, v’, v’ is an x-variant of v at w iff: 1) v and v’ agree on all variables except perhaps x; and 2) v’(x) ∈ w.
+And now the semantics for quantifiers: 
+(∀1)	(∀x)ϕρwv1 iff for every x-variant v’ of v, ϕρwv’1
+(∀2)	(∀x)ϕρwv0 iff for some x-variant v’ of v, ϕρwv’0 
+(∃1)	(∃x)ϕρwv1 iff for some x¬-variant v’ of v, ϕρwv’1
+(∃2)	(∃x)ϕρwv0 iff for every x-variant v’ of v, ϕρwv’0
+Semantics for abstractors is as follows:
+(T1)	⟨Tx.ϕ⟩(t)ρwv1 iff ϕρwv’1, where v’ is the x-variant of v assigning: ℐw(t) to x if t is a constant; and v(t) to x if t is a variable. 
+(T2)	⟨Tx.ϕ⟩(t)ρwv0 iff ϕρwv’0, where v’ is the x-variant of v assigning: ℐw(t) to x if t is a constant; and v(t) to x if t is a variable.
+(F1)	⟨Fx.ϕ⟩(t)ρwv1 iff ϕρwv’0, where v’ is the x-variant of v assigning: ℐw(t) to x if t is a constant; and v(t) to x if t is a variable.
+(F2)	⟨Fx.ϕ⟩(t)ρwv0 iff ϕρwv’1, where v’ is the x-variant of v assigning: ℐw(t) to x if t is a constant; and v(t) to x if t is a variable.
+In order to provide a test case for models that enforce the failure of bivalence, we adopt the following neutrality constraint:
+(n)	For any w ∈ 𝒲, ⟨d1…dn⟩ ∈ (ℳ)n and Pn ∈ Real: if ⟨d1…dn⟩ ∈ ℐwℰ(Pn) or ⟨d1…dn⟩ ∈ ℐw𝒜(Pn), then di ∈ 𝒟(w) for all 1 ≤ i ≤ n.
+This condition ensures that if a term fails to designate an object existing at a given world, then the truth value of an atomic formula involving that term is undefined there. 
+Given this semantics, we can then define one-place truth and falsity operators as follows: 
+(T)	T(y) ≝ ⟨Tx.ϕ⟩(t), where y denotes the proposition resulting from assigning the value of t to each free occurrence of x in ϕ.
+(F)	F(y) ≝ ⟨Fx.ϕ⟩(t), where y denotes the proposition resulting from assigning the value of t to each free occurrence of x in ϕ.
+Lastly, we note that in the bilateral context we’ve been setting out, rather than having a single notion of logical consequence, there are several such notions that can be set out. We detail four. 
+(1)	We say that a premise set S is a positive ground of truth  w. r. t. a formula ψ iff for every model ℳ = (𝒲, ℛ, 𝒟, ℐ), for every world w in 𝒲 and valuation v in ℳ s. t. for each formula ϕ in S ϕρwv1, ψρwv1. This corresponds to the standard case where ψ is a logical consequence of all the members of S taken as local assumptions.
+(2)	We call a premise set S a privative ground of truth w. r. t. a formula ψ iff for every model ℳ = (𝒲, ℛ, 𝒟, ℐ), for every world w in 𝒲 and valuation v in ℳ s. t. for each formula ϕ in S, ϕρwv0, it is the case that ψρwv1. 
+(3)	A premise set S is a positive ground of falsity w. r. t. a formula ψ iff for every model ℳ = (𝒲, ℛ, 𝒟, ℐ), for every world w in 𝒲 and valuation v in ℳ where for each formula ϕ in S, ϕρwv1, it is also the case that ψρwv0.
+(4)	A premise set S is a privative ground of falsity w. r. t. a formula ψ iff for every model ℳ = (𝒲, ℛ, 𝒟, ℐ), for every world w in 𝒲 and valuation v in ℳ where for each formula ϕ in S, ϕρwv0, ψρwv0.
+5 Falsity, Negation, and Contrariety
+In what follows, I’d like to say a few things about the aims, presuppositions and the import of the above semantics. 
+As regards its aims, there is no pretense that the above semantics is capable of providing a notion of truth for languages sufficiently strong to express their own syntax. As has been pointed out by Field,  this cannot be done even in theories weaker than classical logic, provided that that portion of the language within which the syntax is expressible remains classical.
+Rather, my philosophical aim has been to disambiguate the genuine question ‘what is truth?’ from the question “what kind of property must truth be in order for it to do what it does?”  or from the even more attenuated “what, if anything, do I have to assume about truth in order to get it to do what it does in language?”,  by providing a model-theoretic aid to the question of what truth is; while my technical aim has been, given that the syntactic expressiveness of a language containing a truth predicate must be limited, to construct one that, for a first-order language, can still say a startling amount.
+It should be clear, given the definition of the one-place truth (falsity) predicate above, that the language must forbid circularity for formulae that themselves involve this predicate;  but it need not forbid circularity in other cases. 
+The main presuppositions whereby the semantics differs better known many-valued logics are those informing its treatment of negation. The best known many-valued logics, such as K3 and LP, take for granted that negating a formula with a classical truth value leads to another classical truth value – to negate that something is true is to assume it false, and conversely – while negating a non-classical value simply spits that same value back. By doing so, these logics turn negation into a contrariety forming device. The downside to this is that the semantics is thereby left without the most obvious means of expressing contradiction, since a formula and its negation may take the same truth value. For example, the ‘neither’ and ‘nor’ used in common English to say that a given expression is neither true nor false cannot be expressed by this kind of negation. 
+Thomas Aquinas expressed the difference in the following way:
+It must be said that the true and the false are opposed as contraries, and not like affirmation and negation, as some have said. In evidence of this, we must recognize that a negation neither posits anything, nor determines anything as subject to itself. And on account of this, [a negation] can be said both of a being and a non-being; for instance, 'not seeing' and 'not sitting.' … Now a contrary posits something and determines a subject: black is a species of color. But 'false' posits something. Something is false, as the Philosopher says in Metaphysics IV, from this, that 'it is said or seems to be that something is what it is not, or not to be what it is.' Just as 'true' posits an acceptance adequate to the thing, so 'false' [posits] an acceptance not adequate [to the thing]. From whence it is manifest that the true and the false are contraries. 
+
+Though Aquinas here, as is clear from his examples, is likely thinking of negation as an operation on terms as opposed to propositions, his general point sticks: a negation does not posit anything, and a fortiori does not posit falsity. To call something false, however, does posit something (figure 1). Aquinas calls this an ‘acceptance’ (acceptatio); and it is clear that, in linking this acceptatio to seeming as much as saying, he intends it to refer to the same phenomenon that stands behind the English phrase ‘false impression’. This acceptance is, in turn, a two-place relation that takes the subject of the statement as one term, and what is predicated of the thing as the other. For instance, ‘green’ is accepted adequately with respect to grass, but not with respect to snow, so it is true of grass and false of snow. But it is neither true nor false of Julius Caesar, centaurs, or round squares, since none of these things are around for the predicate to be true or false of: to continue with our above comparison, they make no impression one way or another. To say that a statement is false is, in turn, just to say that it predicates some attribute of an object that the object does not have, or that it denies an object an attribute that it does have.
+For this reason, the semantics obeys the relations between truth, falsity, and negation outlined in the square of opposition of figure 3. 
+The import of the semantics is that it gives us a way of expressing all of the following:
+(1)	That a given proposition is true at a world in a model; 
+(2)	That it is false;
+(3)	That it is neither true nor false;
+(4)	That a term denotes;
+(5)	That it fails to denote.
+The first two cases were shown in the previous section. To show the third, we can define an indeterminacy operator I as follows:
+(I)	I(y) ≝ ~T(y) & ~F(y)
+Where the same preconditions hold on T(y) and F(y) as before. 
+Denotation and denotation failure are easily expressed: though the semantics has changed from the classical case, the syntactical means of expressing these two remains the same as in Fitting and Mendelsohn [1998], in part because of the difference in the way negation operates. For denoting, we simply let D(t) abbreviate ⟨Tx.x=x⟩(t); while denotation failure can be expressed by ~D(t).
+In short, what we have here is not merely a philosophically grounded logic for truth and falsity, but also one capable of expressing when certain preconditions on the expressiveness of a sentence hold or fail to hold. 
+6 Conclusion
+This paper doesn't so much solve the Liar  as unmask the particular conceptual confusion that the problem rests upon, one evident in the standpoint of inflationists and the deflationists alike. Both the deflationist and the inflationist accept the claim that 'true' being about something entails that it must refer to some substantial property. We agreed with the deflationist that truth does not refer to some substantial property, but disagreed in holding that 'true' is nevertheless a meaningful term. From an analysis of the pre-sentential meaning of truth, we concluded that 'true' is not a real, but an ontological predicate, and the role it plays in sentences is fundamentally a modification of its pre-sentential meaning: 'true,' like 'good' and ‘the same as', is a piggy-back term that relies for its meaning on the significate of the term that it primarily modifies. From here, we developed a syntax and semantics adequate for these ideas based on Church's λ-calculus, followed by a more in-depth discussion of the relation between negation, truth, and falsity embodied therein. Hopefully, this has given proof to the following leading ideas.
+(1)	Truth is a robust notion. But it does not thereby signify a substantial or absolute property.
+(2)	Therefore, the semantics for representing truth in a language are somewhat more nuanced than the T-schema suggests.
+References
+Aristotle (1984a) Metaphysics. In Barnes, Jonathan (ed.) (1984). The Complete Works of Aristotle. 2 vols. (Princeton University Press), vol. 2, 1552-1728. [Metaph.]
+(1984b). Physics. In Barnes 1984, vol. 1, 315-446 [Physics]
+Asay, Jamin [2014]. “Against Truth” Erkenntnis 79, 147-64.
+Buridan, John [1976]. Tractatus de Consequentiis, ed. Hubert Hubien (Publications Universitaires) [TC].
+Edwards, Douglas [2013]. “Truth as a Substantive Property” Australasian Journal of Philosophy 91, 279-294.
+Field, Hartry [2008]. Saving Truth from Paradox (Oxford University Press).
+Fitting, Melvin and Richard L. Mendelsohn [1998]. First-Order Modal Logic (Kluwer).
+Francez, Nissim [2014]. “Bilateral Relevant Logic” Review of Symbolic Logic 7, 250-272.
+Frege, Gottlob [1948]. “Sense and Reference” Philosophical Review 57, 209-230.
+[1956]. “The Thought: A Logical Inquiry” Mind 65, 289-311.
+Geach, P. T. [1962]. Reference and Generality (Cornell University Press).
+Glanzberg, Michael [2003]. “Minimalism and Paradoxes,” Synthese 135: 13-36.
+Kant, Immanuel [1998], Critique of Pure Reason. eds & trans. Paul Guyer and Allen W. Wood. (Cambridge University Press).
+Lynch, Michael P. [2009]. Truth as One and Many (Oxford University Press). 
+Plato. The Republic, trans. Chris Emlyn-Jones and William Preddy (Harvard University Press (Loeb Classical Library 237)). [Rep.]
+Putnam, Hilary [1994]. “The Face of Cognition” Journal of Philosophy 91, 488-517.
+Ryle, Gilbert [1949]. Concept of Mind (Barnes & Noble).
+Quine, W. V. O. [1948]. “On What There Is” Review of Metaphysics 2, 21-38.
+Sharp, Kevin [2013]. Replacing Truth (Oxford University Press).
+Strawson, P. F. [1950]. “On Referring” Mind 59, 320-344.
+Tarski, Alfred [1944]. “The Semantic Conception of Truth and the Foundations of Semantics” Philosophy and Phenomenological Research 4, 341-376.
+Thomas Aquinas [1888]. Summa Theologiae. http://www.corpusthomisticum.org/sth1015.html [ST].
+[1954]. De Fallaciis. http://www.corpusthomisticum.org/dp3.html 
+[1970]. Quaestiones Disputatae de Veritate. http://www.corpusthomisticum.org/qdv01.html [DV]
+Wright, Crispin [2001]. “Minimalism, Deflationism, Pragmatism, Pluralism” in M. P. Lynch (ed.), The Nature of Truth (MIT Press), 751-87.
+
+\end{document}

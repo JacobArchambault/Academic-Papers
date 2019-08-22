@@ -1,0 +1,341 @@
+% $Header$
+
+\documentclass{beamer}
+
+% This file is a solution template for:
+
+% - Giving a talk on some subject.
+% - The talk is between 15min and 45min long.
+% - Style is ornate.
+
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  % or ...
+
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[latin1]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+
+\title[] % (optional, use only with long paper titles)
+{The semantic account of formal consequence, from Alfred Tarski back to John Buridan}
+
+\subtitle
+{} % (optional)
+
+\author[] % (optional, use only with lots of authors)
+{Jacob Archambault}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[] % (optional, but mostly needed)
+{Fordham University}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[] % (optional)
+{31 Oct 2016 / Logic and Metaphysics workshop, CUNY Graduate Center}
+
+\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection, currentsubsection]
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents[pausesections]
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+
+% Since this a solution template for a generic talk, very little can
+% be said about how it should be structured. However, the talk length
+% of between 15min and 45min and the theme suggest that you stick to
+% the following rules:  
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+\section{Introduction}
+\section{From classical consequence back to Tarski}
+\subsection{Classical consequence today}
+
+\begin{frame}{Classical consequence today: models}
+	\begin{itemize}
+		\item $M = (D, I)$ \pause 
+		\item $D$ is  a collection of objects: cats and dogs, numbers, members of the Medici family, or whatever else one likes. 
+		\pause
+		\item The interpretation function $I$ then assigns: 
+		
+		 \pause
+		 \begin{itemize}
+		 	\item each name $a$ to an element in the domain $D$
+		 	\pause
+		 	\item each n-ary relation symbol $R^{n}$ to a subset of $D^{n}$
+		 \end{itemize}
+		 \pause 
+		\item Besides interpretations, one also has \textit{valuations} $\{v, v' ...\}$ on $M$, each of which assigns values in $D$ to all the variables of the language $L$
+	\end{itemize}
+\end{frame}
+	
+\begin{frame}{Classical Consequence today: semantics}
+		Let $(v \star I)$ be the operation such that $v \star I$ agrees with $v$ on the assignment of variables, and with $I$ on the assignment of terms, and write $(v \star I)(t_{1}, ...t_{n})$ for $((v \star I)(t_{1}), ... (v \star I)(t_{n}))$. The truth value of different formulae in a model $M$ - i.e. \textit{truth in a model} - is then recursively determined as follows:
+\end{frame}
+	
+\begin{frame}{Classical consequence today: semantics}
+		\begin{enumerate}
+			\item For atomic formulae of arity $n$, $(v \star I)(Rt_{1}...t_{n}) = T$ iff $(v \star I)(t_{1}, ... t_{n}) \in I(R)$
+			\pause 
+			\item $(v \star I)(\neg\phi) = T$ iff $(v \star I)(\phi) = F$
+			\pause
+			\item $(v \star I)(\phi \wedge \psi) = T$ iff $(v \star I)(\phi) = (v \star I)(\psi) = T$
+			\pause
+			\item $(v \star I)(\phi \vee \psi) = T$ iff $(v \star I)(\phi) = T$ or $(v \star I)(\psi) = T$
+			\pause
+			\item $(v \star I)(\phi \supset \psi) = T$ iff $(v \star I)(\phi) = F$ or $(v \star I)(\psi) = T$
+			\pause
+			\item $(v \star I)(\phi \equiv \psi$ = T iff $(v \star I)(\phi) = (v \star I)(\psi)$
+			\pause
+			\item $(v \star I)(\forall x \phi) = T$ iff, for every $x$-variant $v'$ of $v$, $(v' \star I)(\phi) = T$
+			\pause
+			\item $(v \star I)(\exists x \phi) = T$ iff, for some $x$-variant $v'$ of $v$, $(v' \star I)(\phi) = T$
+		\end{enumerate}
+\end{frame}
+	
+\begin{frame}{Classical consequence today: formal consequence}
+		\begin{itemize}
+			\item A sentence $\phi$ is \textit{satisfiable} if it is made true on some model $M$. When this happens, $M$ is said to be a \textit{model} of $\phi$. 
+			\pause 
+			\item $\Gamma$ is satisfiable iff there is some model $M$ on which every sentence in $\Gamma$ is satisfiable. Similarly when this occurs, $M$ is said to be a model of $\Gamma$. 
+			\pause
+			\item A sentence $\phi$ is said to be a logical, or formal, consequence of a set $\Gamma$, written $\Gamma \models \phi$, iff every model of $\Gamma$ is a model of $\phi$.
+		\end{itemize}
+\end{frame}
+	
+\subsection{Tarskian consequence}
+\begin{frame}{Tarskian formal consequence}
+	\begin{itemize}
+		\item Both Tarskian and classical semantic accounts determine formal consequence by way of variation
+		\pause 
+		\item Classical languages are left uninterpreted. Tarskian languages are not.
+		\pause
+		\item Where classical consequences varies the interpretations of non-logical constants, Tarski's replaces these with variables.
+		\pause
+		\item A Tarskian model does not include an interpretation. It is simply a sequence of objects
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Tarskian formal consequence}
+	\begin{quote}
+		Let us assume that, in the language which we are considering, to each extra-logical constant correspond certain variable symbols, and this in such a way that, by replacing in an arbitrary sentence a constant by a corresponding variable, we transform this sentence into a sentential function. Let us further consider an arbitrary class of sentences $L$, and let us replace all extra-logical constants occurring in the sentences of class $L$ by corresponding variables (equiform constants by equiform variables, non-equiform by non-equiform); we shall obtain a class of sentential functions $L'$. 
+	\end{quote}
+\end{frame}
+
+\begin{frame}{Tarskian formal consequence}
+	\begin{quote}
+		An arbitrary sequence of objects which satisfies each sentential function of the class $L'$ we shall call a \textit{model of the class} $L$ (in just this sense one usually speaks about a model of the system of axioms of a deductive theory); if in particular the class $L$ consists of only one sentence $X$, we will simply speak about a \textit{model of the sentence} $X$ (Tarski 2002, pp. 185-186).
+	\end{quote}
+\end{frame}
+
+\subsubsection{Tarskian consequences and domain variation}
+\begin{frame}{Tarskian consequences and domain variation}
+	\begin{itemize}
+		\pause 
+		\item Tarski's pre-WWII mathematical work makes use of variable domains.
+		\pause
+		\item Where Tarski's use of domain variation is explicit in his post-WWII discussions of consequence, he refers his reader to his earlier work unproblematically.
+		\pause 
+		\item Tarski's broadest later discussion of the issues of his 1936 paper also assumes an invariant domain. 
+		\pause
+		\item All of this suggests a high level of continuity between Tarski's earlier and later work on the subject.	
+	\end{itemize}
+\end{frame}
+
+\section{Buridan's theory of formal consequence}
+\subsection{Preliminaries}
+\begin{frame}{Buridan's Treatise on Consequences}
+	\begin{itemize}
+		\item Book 1: assertoric consequences.
+		\item Book 2: modal consequences
+		\item Book 3: assertoric syllogistic
+		\item Book 4: modal syllogistic
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Buridan's Treatise on Consequences: Book 1}
+	\begin{enumerate}
+		\item Truth and falsity of propositions
+		\item Causes of truth
+		\item Definition of consequence
+		\item Division of consequence
+		\item Supposition of terms
+		\item Ampliation of terms
+		\item The matter and form of propositions
+		\item Listing of assertoric consequences		
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Buridanian consequence: preliminaries}
+	\begin{itemize}
+		\item Buridan's causes of truth play a role analogous to Tarskian models
+		\pause 
+		\item Buridan retains modality and tense
+		\pause 
+		\item Propositions remain within the range of semantic referents
+		\pause 
+		\item Truthmaker semantics
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Buridanian consequence: preliminaries}
+	\begin{quote}
+		If Colin's horse, which cantered well, is dead, `Colin's horse cantered well' ... is true because things were in reality as the proposition signifies they were. In the same way `The Antichrist will preach' is true, not because things are in reality as the proposition signifies, but because things will be in reality as the proposition signifies they will be. Similarly, `Something that never will be can be' is true, not because things are as the proposition signifies, but because things can be as it signifies them to be.' And so it is clear that it is necessary to assign causes of truth to different types of propositions in different ways [TC I. 1, p. 63].
+	\end{quote}
+\end{frame}
+
+\begin{frame}{Buridanian consequence: preliminaries}
+	\begin{quote}
+		I say that both terms being undistributed but suppositing determinately, then there are more causes of truth than if one were distributed and the other confused without distribution. This is clear because every cause of truth enough to make `Every B is A' true is enough to make `B is A' true, but not vice versa. Therefore a proposition [1] has most causes of truth with each term undistributed [2] and fewer with one term distributed and the other confused without distribution, [3] and fewer still with one distributed and the other used determinately without distribution, [4] and fewest of all with both distributed [TC I. 2, p. 66].
+	\end{quote}
+\end{frame}
+\subsection{Formal and material consequence}
+\begin{frame}{Formal and material consequence}
+	\begin{quote}
+		A consequence is a hypothetical proposition composed of an antecedent and consequent, indicating the antecedent to be antecedent and the consequent to be consequent; this designation occurs by the word `if' or by the word `therefore' or an equivalent [TC I. 3, p. 67].
+	\end{quote}
+\end{frame}
+
+\begin{frame}{Formal and material consequence}
+	\begin{quote}
+		A consequence is called `formal' if it is valid in all terms retaining a similar form. Or, if you want to put it explicitly, a formal consequence is one where every proposition similar in form that might be formed would be a good consequence.
+		\pause 
+		...A material consequence, however, is one where not every proposition similar in form would be a good consequence, or, as it is commonly put, which does not hold in all terms retaining the same form [TC I. 4, p. 68].
+	\end{quote}
+\end{frame}
+
+\begin{frame}{Formal and material consequence}
+	\begin{quote}
+		It seems to me that no material consequence is evident in inferring except by its reduction to a formal one. Now it is reduced to a formal one by the addition of some necessary proposition or propositions whose addition to the given antecedent produces a formal consequence [TC I. 4, p. 68].
+	\end{quote}
+\end{frame}
+
+\begin{frame}{Formal and material consequence}
+	\begin{quote}
+		I say that when we speak of matter and form, by the matter of a proposition or consequence we mean the purely categorematic terms, namely the subject and predicate, setting aside the syncategoremes attached to them by which they are [1] conjoined [2] or denied [3] or distributed [4] or given a certain kind of supposition; we say all the rest pertains to form [TC I. 7, p. 74].
+	\end{quote}
+\end{frame}
+
+\section{Formal consequence from Tarski back to John Buridan}
+\begin{frame}{Formal consequence from Tarski back to John Buridan}
+	\begin{itemize}
+		\pause 
+		\item Both modern and Tarskian approaches begin with a partition of all terms of a \textit{language} into logical and non-logical terms; Buridan's partition of terms into categorical and syncategorematic occurs not at the level of a language, but at that of the sentence. 
+		\pause 
+		\item Tarski's project prioritizes determining the logical terms of a language. Buridan's the categorematic
+		\pause
+		\item Tarskian consequence was designed for recursively defined artificial languages. Buridanian consequence, Buridan's stilted fourteenth-century scholastic Latin. 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Formal consequence from Tarski back to John Buridan}
+	\begin{itemize}
+		\pause 
+		\item Buridan counts the copula, negation, modalities, tenses, quantifiers, intentional operators, as well as disjunction, conjunction and negation for terms among the formal parts of a sentence. He does not mention sentential connectives as pertaining to form.
+		\pause
+		\item Tarski distinguishes consequences from hypothetical propositions. Buridan identifies them.
+		\pause 
+		\item Where Tarski provides an informative definition of consequence in terms of models, Buridan provides a deflationary one.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Formal consequence from Tarski back to John Buridan}
+	\begin{itemize}
+		\pause 
+		\item On the received classical account, a model of a sentence $\phi$ in a language $L$ consists of a domain $D$ and an interpretation $I$, i.e. a mapping of the sentences of $L$ recursively determined by a mapping of terms to elements in $D$ and n-ary predicates to sets of $n$-tuples in $D^{n}$.
+		\pause	
+		\item On Tarski's account, a model of a set of sentences $\Gamma$ is a sequence of objects in a fixed domain satisfying the sentential functions obtained by uniformly replacing each non-logical constant in the sentences of $\Gamma$ with variables of the appropriate order and arity. 
+		\pause
+		\item Buridan's account of causes of truth, by contrast, maps hypothetical propositions to states sufficient to make them true on their \textit{intended} interpretation.
+	\end{itemize}
+\end{frame}	 	
+
+\begin{frame}{Formal consequence from Tarski back to John Buridan}
+	Those developments that \textit{were} necessary historical conditions for the development of Tarski's account from the Buridanian one are comparatively few, but central. 
+	\begin{itemize}
+		\pause 
+		\item the development of the concept of a model
+		\pause 
+		\item The concept of a sentential function
+		\item The concept of a function
+		\pause
+		\item The decision to regard antecedents as premise sets closed under entailment, and hence infinite, presupposed the development of recursion and its application to logical entailment.
+	\end{itemize}
+\end{frame}
+\section{Conclusion}
+\begin{frame}{Conclusion}
+	If I put something here, does my prior outline screen show up?
+\end{frame}
+\end{document}
+
+

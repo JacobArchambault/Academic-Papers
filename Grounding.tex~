@@ -1,0 +1,138 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{amssymb}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+\title{Grounding medieval consequence}
+\author{Jacob Archambault}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\begin{abstract}
+\end{abstract}
+
+\section{Introduction}
+
+One of the basic problems of philosophy is that of why logical argument works as infallibly as it does. On the one hand, logic concerns concepts of the mind. But this does not explain why logic appears to capture real relations within the real world. On the other, if logic is taken to capture relations of following which hold between things, this does not yet adequately explicate how we can understand it.
+
+In what follows, I place the medieval development of an answer to this question against the backdrop of recent work on grounding. The order of the paper is as follows: I begin by providing a basic introduction to consequence and grounding, first in themselves, then in medieval philosophy. I then disambiguate various ways of understanding the relation between grounding and consequence. From there, I survey the changes in medieval groundings of consequence focusing on the later thirteenth to the fourteenth century. What we find are two important shifts: the first from a non-unified, topics-and analytics-based grounding of consequence to one based on the theory of supposition; the second, within the supposition-based theory, from a shift in the understanding of personal supposition - specifically, from an interpretation of it licensing appeal to concepts to one based wholly on a sparse ontology of individuals.
+
+\section{Consequence}
+A consequence is a relation obtaining between an antecedent and a consequent, signified by a sign of consequence. An antecedent is a premise or set of premises, from which a consequent follows; a consequent, a conclusion which follows from an antecedent. A sign of consequence is a word or symbol signifying a consequent's following from an antecedent. Examples include  `if', `therefore', `because' and their analogues in other natural languages, the $\vDash$ of model theory, and the proof-theoretic $\vdash$. 
+
+Discussion of consequence today centers on formal consequence, which is commonly identified with logical consequence. Such a consequence is defined model-theoretically as one where every model of the antecedent is a model of the consequent, or proof-theoretically as one where the consequent follows from the antecedent via the strict application of the rules of a given proof-system. In both these approaches, the exact interpretation of the non-logical elements of a consequence is left indeterminate so as to focus on what is demanded by the interpretation of the logical elements. Consequence, understood as a metalinguistic relation between elements within a language, is strongly distinguished from the conditional, understood as a connective internal to a proof system, or as a proposition having a conditional in the previous sense as its main connective.
+
+\subsection{Medieval views on consequence}
+The theory of consequence proper, as opposed to the more restricted treatment of the syllogism, first arises in the later medieval period. Medieval discussions of consequence differ from their modern counterparts in three important ways. 
+
+First, medieval logicians do not always distinguish consequences from conditionals. When they do, they tend to regard the conditional as the propositional medium whereby consequence, a semantic relation, is asserted to hold. Second, though the term `formal consequence' first arises in medieval logic of the later 13th century, its discussion does not dominate medieval logic the way its modern counterpart does. Third, where the breadth of modern discussions arises from the variety of systems for logical consequence, that of medieval discussions arises from its inclusion of species that we would classify as non-logical. The earliest surviving script to mention the notion of formal consequence appears to be Simon of Faversham's Questions on Aristotle's \textit{Sophistical Refutations}. 
+
+\subsubsection{Medieval divisions of consequence}
+The modern semantic notion of formal consequence derived from Tarski is largely a modification of a medieval definition common at the University of Paris. On the more basic medieval notion, a consequence is formal if every consequence like it in form is also a good consequence. Here `like it in form' is cashed out in terms of uniform substitution over categorematic terms, those terms whose primary function is to signify some being, rather than to provide structure to other elements in a proposition. The medieval theory differs from its modern counterpart in that it presupposes a notion of `good consequence' broader than that involved in logical validity, also including material consequence. Good material consequences include those, like `Socrates is Athenian. Therefore he is Greek' where the conclusion is inferred from premises with the aid of a further unstated premise or premises. In this theory, both formal and material consequences are taken to be kinds of simple consequence - i.e. consequences which hold good irrespective of their time of assertion. Simple consequence is contrasted with \textit{ut nunc} consequence, whose holding is relative to a specified time.
+
+Prior to the development of the dichotomy between formal and material consequence, earlier thinkers divide consequences into those that are natural and those that are accidental. This division, derived from Boethius,  reaches its canonical form in the 14th century \textit{De Puritate Artis Logicae} of Walter Burley.
+
+\section{Grounding}
+\subsection{Definition}
+Grounding is an irreflexive, assymetric, and transitive relation between different elements within an ontology, according to which one or several elements serve as grounds for another. Grounding elements that are themselves ungrounded are said to be fundamental. The notion of grounding is meant to capture that expressed in non-causal uses of phrases like `because' or `in virtue of',\footnote{Schnieder 2018, pp. 6-7} and commonly invoked examples of grounding include that of true statements in facts, of true non-atomic propositions in their atomic constituents, of qualities in substances, and of sets in their members. More controversial examples include the grounding of the mental in the physical, of word meaning in linguistic use, and of normative features of the world in natural ones. On one currently widespread understanding of metaphysics, the basic problem of metaphysics is to determine what beings are fundamental, and how other beings are grounded in them.\footnote{`This notion of grounding is that of \textit{partial} and \textit{relative} grounding. It is partial in that $x\\y$ is compatible with $z\\y$ (where $x \neq z$) ... It is relative in that $x\\y$ is compatible with $y\\z$ - entities may be grounded in entities that have still deeper grounds. Grounding is then irreflexive, asymmetric, and transitive.' (Schaffer 2009, 376)} The contemporary resurgence of interest in grounding can be traced back to Jonathan Schaffer's 2009 `On What Grounds What', though Schaffer's article has important antecedents in Kit Fine's work on essence.
+
+\subsection{Its distinction from supervenience}
+Grounding is distinct from supervenience: the latter is an intensional relation according to which an entity $B$ supervenes on a being $A$ if it is impossible for there to be a difference with respect to $A$ without there being a corresponding difference in $B$. This entails that necessary beings supervene on anything. Grounding, by contrast, is hyperintensional, and thus allows for non-vacuous grounding relations between necessary entities.\footnote{`Supervenience is reflexive and non-assymetric, while grounding is irreflexive and asymmetric ... supervenience is an intensional relational while grounding is hyperintensional. For instance, there are substantive grounding questions for necessary entities (like numbers), but supervenience claims go vacuous for necessary entities.' (Schaffer 2009, 364).} According to Chilovi (2018), grounding entails, but is not entailed by, supervenience.
+\subsection{Its distinction from causation}
+On recent accounts, grounding is regarded as the metaphysical analogue of the scientific notion of grounding. Hence, grounding is distinguished from causation by the disciplinary sphere it belongs to: grounding belongs to philosophy or metaphysics, while causation belongs to that of science.\footnote{See citations near top of Schaffer 2016, p. 50.} Grounding is generally thought of as a synchronic relation, and causation as a diachronic one. The analogy between the notions has been pushed furthest by Schaffer (2016), who provides an account of grounding employing structural equation models like those found in current scientific work on causation.
+\subsection{Divisions of ground}
+Grounding may be either partial or full, and a logic of ground may be pure or impure. $A$ grounds $B$ fully when some state (e.g. existence, being true, etc.) of $A$ is sufficient for a corresponding state of $B$. A grounding of $B$ in $A$ is partial when $A$ is factors into, but not does not suffice for, a full grounding of $B$. For instance, Socrates' existence fully grounds that of the set $\{Socrates\}$, and partially grounds that of the set $\{Socrates, Plato\}$. Likewise, A true conjunction is partially grounded in the truth of each conjunct and fully grounded in the truth of both. A logic of ground is pure when it abstracts from the content of non-grounding relations, while an impure logic of ground also takes the content of logical notions (such as truth-functors) into account.
+
+\subsection{Grounding in medieval philosophy}
+One does not find an explicit literature on the notion of grounding \textit{as such} in the medieval period. There was, however, substantial discussion of issues that today would be subsumed under that term, in work on predicables and categories, on habit and privation, on the relation between matter and form, and in various other places. However, unlike modern discussion of the subject, medieval discussions do not sharply distinguish metaphysical from scientific contexts. Furthermore, medieval work on causation assumes a synchronic, rather than diachronic relation between cause and effect. As such, one also finds work pertinent to what we would call grounding in medieval texts related to causation.
+\section{Grounding and consequence}
+One can consider relations between grounding and consequence in the following ways: 
+
+Most basically, one might consider the set of things of which ground and consequence are themselves predicable. Though not all examples of ground actually fit the bill, it is clear that on its intended interpretation, $A$ grounds $B$ is meant to imply that the existence of $B$ is a consequence of the existence of $A$. Consequently, grounding relations between entities may themselves serve as grounds for at least some consequences between corresponding statements about those entities.
+
+Beyond this, one might apply the notion of consequence to that of grounding, e.g. to see what results follow from a sufficiently robust formalization of the grounding relation. Much of the current literature on grounding is dedicated to uncovering precisely these kind of results.\footnote{(Chivoli 2018) (Lubrano 2018), (Werner 2018) (Dixon 2016), (Fine 2016) (Poggioliesi 2018)}
+
+%Fourth, one might define a notion of consequence in terms of the notion of ground.\footnote{See Schnieder 2018. Cf. something by Fine. As we shall see, Schnieder's work has substantive parallels with certain aspects of thinking about consequence in the medieval period.} 
+
+Lastly, one might inquire into the grounds of the consequence relation itself. Since it is here that our efforts will primarily be focused, it will be helpful to further disambiguate this last possibility.
+\subsection{Groundings \textit{of} consequence}
+The number of dependency relations involved in discussions of consequence are myriad. Considering consequences as such, every consequence is constitutively dependent on the being of its antecedent and consequent.  Conversely, the being of antecedent and consequent \textit{as} antecedent and consequent is dependent on the being of the consequence which they are parts of. Every sound conclusion is jointly grounded in the truth of its premises and the validity of its logical form. Every proof-theoretic consequence is grounded in the availability of a procedure for reducing the proof to normal form. Every model theoretic consequence is grounded in every model of its antecedent being a model of its consequent (or, more controversially, in the non-existence of its counter-models). Soundness and completeness proofs can even be construed as attempts to ground the reliability of one consequence relation in that of another. But though these might loosely be called grounding relations, I don't think they fully merit the title - partially because not all these grounds suffice for what they ground, and partially because the grounding entities are not themselves fundamental. Because of this, it will be useful to look into more basic grounds for consequence, particularly those found in medieval work on topical argument and supposition.
+
+\section{Medieval groundings of consequence}
+\subsection{Precursors to consequence}
+\subsubsection{Boethius}
+Essential as the notion is to modern logic, earlier medieval logic - like ancient logic, for that matter - lacked a univocal notion of consequence. In its stead, one finds work on categorical syllogisms, hypothetical syllogisms, topical argument, fallacies, and other topics, all under various headings without being unified into a single framework. 
+
+Following the Aristotelian commentator Themistius, Boethius had divided topics into intrinsic, extrinsic and middle topics, in accordance with the channels, or \textit{middles}, they employ. In an intrinsic topic, the argument proceeds by eliciting some property, description, or relation belonging to what is signified in the minor term to confirm or remove what is suggested of it by a major term. In an extrinsic topic, by contrast, one exploits a relation that the subject term of the desired conclusion bears to some other concept, constructs an argument about the latter, and thereafter leverages the original relation to infer something about the original subject one was inquiring about. Types of extrinsic topics include arguments from authority, from analogy, from various kinds of opposites, and \textit{a fortiori}/\textit{a minori} arguments.
+
+
+The basic reason for the lack of unified account of consequence is a holistic tendency to think of arguments not in terms of validity but more strictly in terms of whether they are \textit{good}. This notion of the goodness of an argument also includes elements such as the truth of its premises, whether the premises are better known than their conclusion, and whether the conclusion genuinely follows \textit{from} the premises. It also allows for different standards of goodness materially sensitive to the intended application of an argument form. In his \textit{Posterior Analytics} commentary, for instance, Thomas Aquinas distinguishes the subject matters of Aristotle's \textit{Topics} and \textit{Posterior Analytics} by saying that the former treats arguments applied to necessary matter, while the latter only applies to arguments \textit{in materia probabili}. 
+
+\subsubsection{Commentaries on the Posterior Analytics}
+Another important medieval locus for the justification of consequence occurs in commentaries on the \textit{Posterior Analytics}, in its discussion of the distinction between \textit{quia} and \textit{propter quid} demonstration. Briefly, a demonstration is a proof of a conclusion from premises that are both true and better known than the conclusion. Such demonstrations may occur in two ways. According to the aforementioned distinction, premises and conclusions are related to each other as cause and effect. In the highest form of demonstration, a \textit{propter quid} demonstration, the truths found in the premises are themselves causes of what is discoverered in the conclusion, and thereby serve as the intrinsic necessary, and immediate grounds for the truth of the conclusion. In a \textit{quia} demonstration, by contrast, also called a demonstration of the fact, the conclusion is itself a cause, metaphysically speaking, of what the premises assert to be the case, though from the perspective of understanding, the premises are still a cause of the knowledge of the conclusion. As I've discussed elsewhere, this distinction underlies the later distinction between \textit{a priori} and \textit{a posteriori} truths.
+\subsection{Early British  treatises on consequence}
+By the time the earliest treatises on consequences appear at the turn of the fourteenth century, the use of topics in discussions of consequence has been fundamentally altered by the development of \textit{supposition theory} - roughly analogous to modern theories of reference, but better understood as a theory governing the interpretation of terms in propositional contexts.\footnote{DutilhNovaes2007,DutilhNovaes2008b}. This shift brought about a simplification in the number of topics actually appealed to, with a vast number of inferences justified by rules like \textit{from an undistributed inferior to superior}, and \textit{from a distributed superior to a distributed inferior}.
+
+On one of the best known accounts, that of William of Ockham, supposition divides into three types: simple, material, and personal. Personal supposition occurs when a term is taken to refer to what it signifies; simple,  when a term refers to its concept (understood as an intention of the soul); material, when one refers to itself as a spoken utterance or written word. Other accounts, e.g. that of John Buridan, view simple supposition as a variety of material supposition. But on both views, Personal supposition is taken to be dominant, and is interpreted as the term's supposition for \textit{individuals}. This nominalist reading is reflected in modern formalizations of the notion, e.g. those of Klima and Parsons. On these accounts, determinate supposition of a term is interpreted in terms of the ability to descend to a disjunctive sentence where in each disjunction, the class term is replaced by the name of a different individual member of the class, with the number of disjunctions equal to the number of members. The case is similar for confused and distributed supposition, albeit employing a conjunction rather than a disjunction.
+
+Given this, and given the close connection between the rise of theories of supposition and those of consequence, it is surprising to find that the approaches to supposition in early discussions of consequence diverge from this, sometimes significantly.  In the anonymous London consequence treatise, the notion is only found in a part of the treatise asserting that convertible terms, e.g. `man' and `risible', share the same supposita. This seems to accord well with both the standard view of how supposition works and the presumed priority ascribed to personal supposition.
+
+The same pattern is found in Burley's \textit{de consequentiis} consider, for instance, the following passage on exceptive propositions:
+\begin{quote}
+With respect to the supposition of the predicate and subject in an exceptive, one should know that that from which the exception is taken, or the subject of the exceptive ... always stands confusedly and immovably with respect to the exception, and movably with respect to the predicate. With respect to the exception it stands immovably, because it is not possible to descend with respect to it; hence `every man besides Socrates runs, therefore Plato besides Socrates runs' does not follow. With respect to the predicate it is possible to descend, since every man besides Socrates runs, therefore Plato runs, and so on for singulars.'
+(par. 58).
+\end{quote}
+ Another important point made clear here is that the supposition of a term is given relative to another term or terms which are held fixed. Thus, supposition may differ based on what fixed term or terms are taken to be the comparison. 
+
+\subsection{The Parisian \textit{De consequentiis}}
+But in the anonymous work on consequences in Paris, BN lat. 16130 one finds in the majority of cases where the term `supposition' is mentioned that the term itself or concept itself is taken to be what supposits. Consider, for instance, the following:
+
+\begin{quote}
+I show the consequence `a man is a white man, therefore a man is white' by this rule: positing per accidens, also posits per se. But `white man' is a suppositum per accidens of something. With respect to the same, `white' is also posited.
+\end{quote}
+
+As we can see, what is taken to supposit here is not individual white men, but the term or concept `white man', which is `placed under' the concept `man'. 
+
+Furthermore, the dominant division of supposition in the treatise is not that between material, simple, and personal, but that between \textit{per se} and accidental. The text explains the notion of \textit{per accidens} supposition as follows:
+
+\begin{quote}
+And [those] placed under per accidens are those that are combined out of two inhering in each other contingently, as white man is combined per accidens because it is put together out of man and white, which inhere in each other contingently. So `a man is a white man', etc. is contingent. This is contingent, and its equivalents (convertibilia) are contingent, because in all of these a superior is assumed of an inferior and white per accidens (since whatever is constituted by an addition with respect to another is inferior to it. Thus, `white man' is inferior to `man' and `white').
+\end{quote}
+
+Here, it's clear that the supposita themselves are not individuals, but forms or concepts.
+\subsection{Burley's \textit{De puritate}}
+Walter Burley's \textit{Tractatus Brevior} contains two different approaches to personal supposition. On one, Burley gives an example where suppositional descent is described as licensing a descent from genus to species in his fifth principal rule for consequences: 
+
+\begin{quote}
+From the negation of the superior follows the negation of any inferior. And this rule must be understood [for] when the negated superior supposits personally. For it follows: Socrates is not an animal, therefore Socrates is not a man nor an ass, and so on of others. (p. 209.35-210.2)
+\end{quote} 
+
+The key to this understanding of personal supposition is found in Burley's introduction of the notion in the \textit{Tractatus Longior}, where he treats it as a division of \textit{suppositio formalis}.\footnote{According to Dutilh Novaes, Burley appears to revive the notion of \textit{suppositio formalis} unmentioned by Peter of Spain, Roger Bacon, or the \textit{logica Lamberti}, from William of Sherwood (Dutilh Novaes 2012, 360)} Burley writes
+\begin{quote}
+  Formal supposition is twofold, for sometimes a term supposits for its significate, sometimes for its suppositum or for some singular of which it is truly predicated. And thus formal supposition is divided into personal supposition and simple supposition. (DPAL 3.5)
+\end{quote}
+Burley continues:
+\begin{quote}
+  Personal supposition is when a common term supposits for its inferiors, \textit{whether those inferiors be singular or common, whether they be things or words,} or when a concrete accidental term or a composite term supposits for that of which it is predicated accidentally (DPAL 3.19-24).
+\end{quote}
+Burley's account here is considerably more varied than the canonical account based on Buridan and Ockham. Here, Burley includes both individuals and common natures as supposita in his account of personal supposition. When Burley states that personal supposition also captures that of composite and concrete accidental terms, he appears to have in mind those cases we found discussed earlier in the Paris treatise, like `a man is white, therefore a man is a white man'. The account thus appears to better capture uses of personal supposition in ascents and descents in the earliest treatises on consequences. 
+%\subsection{Ockham}
+%From this perspective, Ockham's innovations in the foundations of logic are not novel but iconoclastic.
+%\subsection{Buridan}
+%In Buridan, sentences themselves serve as partial grounds for their truth.
+\section{Conclusion}
+In the preceding, we've detailed a change in the foundations of logic that ultimately affects our understanding of the nature of the discipline as such. 
+
+In earlier frameworks found, for instance, in Boethius and Aquinas, good arguments are discussed under a variety of types each with different grounds: Some arguments argue from topics concerning language, others from metaphysical relations between things, others move from effects to cause, and still others relate premises to conclusion as cause to effect.
+
+At the time of the earliest \textit{consequentiae}, the vast majority of consequences discussed are based in the logic of supposition, that is, a theory of the interpretation of terms in the context of sentences. In this theory, Personal supposition is the most common interpretation of a term, but consequences involving simple supposition are not uncommon. But importantly, terms in personal supposition may be taken to refer not only to individuals, but also to types. Both readings are permissible for the anonymous London treatise, both readings are explicitly found in Burley's logic, and the latter is the only variety explicitly invoked in an anonymous Parisian treatise on consequences. 
+
+We can now see, then, that Ockham's restriction of personal supposition to exclusively refer to individuals, which today remains the dominant interpretation of \textit{all} theories of personal supposition in the secondary literature, was more novel than hitherto recognized. In adopting this change, Ockham not only changed the understanding of personal supposition. He also changed that of simple supposition - now taken to refer to a term's referring to itself as a second intention, but before taken merely to refer to what a term signifies for, leaving open whether this be an intention of the soul, a separate universal, or something else. More importantly, in changing the account of supposition, Ockham also necessarily modified that of consequence. While the earlier account of supposition, with its inclusion of forms or concepts, did better at explaining how we \textit{use} logic, Ockham's sparse focus on individuals grants logic's realism, but leaves our mind's grasp of it opaque. In this way, Ockham's anti-metaphysical foundation for his logic is actually \textit{more} metaphysical than that of Burley and his predecessors: where Burley's was consistent with, but did not require realism, Ockham's built a decision on the metaphysical foundations of logic directly into his work. And it seems to be this decision, if any, that sets the stage not only for the defects of nominalism, but also for the rise of `extreme realism' to counter it.
+
+%Not every consequence is grounded in a relation of supposition, e.g. conversions aren't. But every supposition grounds relations of consequence.
+
+\end{document}

@@ -1,0 +1,180 @@
+\chapter[Buridan and Pseudo-Scotus]{Buridanian Consequence and the Pseudo-Scotus Paradox}
+%opening
+	\section{Introduction}
+	Among the works attributed to the Franciscan John Duns Scotus in Luke Wadding's early modern edition of his works, one finds a questions commentary on Aristotle's \textit{Prior Analytics}. Critical work on Scotus' corpus has demonstrated the commentary is not authentic, though the true identity of the author remains unknown. Hence, the author is simply referred to as `Pseudo-Scotus'. Pseudo-Scotus has, however, continued to attract the attention of scholars in the history of logic, particularly for his contributions to the theories of consequences, and the introduction of an eponymous paradox, ressembling Curry's paradox today.
+	
+	A particularly important question, for both understanding the development of consequences and identifying the author of the commentary, concerns its relation to the work of the 14th century Parisian arts master John Buridan. It is beginning to be more widely assumed that Pseudo-Scotus' account of consequence antedates that Buridan offers in his \textit{Treatise on Consequences}. The principal evidence for this is that Buridan considers and rejects an analysis of divided modal propositions Pseudo-Scotus appears to advocate.\footnote{\cite[ch. 6]{Lagerlund2000} \cite[pp. 252-253]{Johnston2015}  \cite[pp. 4-5]{Read2015}. Cf. \cite[I, q. 26, pp. 143-144]{Pseudo-Scotus1891}, \cite[II. 4, p. 97]{Buridan2015}.} On Buridan's analysis, a modal of possibility is equivalent to one where the subject is ampliated to include possible instances of itself, e.g. `A can be B' is analyzed as `What is or can be A can be B'. On Pseudo-Scotus', the aforementioned proposition is said to be equivalent to `What is A can be B or what can be A can be B'.
+	
+	In this chapter, I show Pseudo-Scotus' commentary is dependent on Buridan's \textit{Treatise on Consequences}, and therefore postdates it. First, I introduce Pseudo-Scotus' paradox by way of a comparison with that of Curry. I then survey the criteria for valid consequence in Buridan's text, and show that the paradox afflicts the criterion Buridan settles on. From there, I compare several passages from both texts, and show that in each case the Pseudo-Scotus text should be construed as the later one: Lastly, I diffuse the example used to support the priority of Scotus' text, and provide an alternative account of the target of Buridan's remarks on the ampliation of modal propositions. An appendix lists textual parallels discussed in the body of the paper.
+	
+	\section{The Curry and Pseudo-Scotus paradoxes}
+	Curry's paradox is a paradox of self-reference that may be formed in any self-referential logical language $L$ including a detachable conditional, substitution, and contraction. It is formed when a term $(C)$ is defined in $L$ as follows:
+	\begin{displaymath}
+	(C) \stackrel{def}{\equiv} (C) \rightarrow \phi
+	\end{displaymath}
+	
+	Here, $(C)$ is a name for a proposition having itself as antecedent, and $\phi$ an arbitrary proposition. $\phi$ is then derived as follows:
+	
+	\fitchprf{}{
+		\subproof{\pline[1.]{C}}{
+			\pline[2.]{C \lif \phi}[Def C: 1]\\
+			\pline[3.]{\phi}[\life{1}{2}]
+		}
+		\pline[4.]{C \lif \phi}[\lifi{1-3}]\\
+		\pline[5.]{C}[Def C: 4]\\
+		\pline[6.]{\phi}[\life{4}{5}]
+	}
+	
+	Notoriously, Curry's paradox remains a problem even for logics which perform better than expected when treating other self-referential paradoxes like the Liar \cite{Restall2007} \cite{Weber2014}.
+	
+	In the above formulation, Curry's paradox involves an object-language conditional and substitution of co-referring terms. Curry's original formulation of the paradox did not use substitution, but universal instantiation and the set-theoretic membership relation \cite{Curry1942} \cite{Read2010b}. More recently, another version of the paradox has been developed not from a detachable conditional, but from a binary validity predicate $Val$,  defined as follows: 
+	\begin{center}
+		$\vdash Val(\ulcorner \alpha \urcorner , \ulcorner \beta \urcorner)$ iff  $\alpha \vdash \beta$
+	\end{center}
+	
+	Given the above schema, a deduction parallel to that above may be carried out with a sentence $\pi$, constructed as follows:
+	
+	\begin{displaymath}
+	\pi \stackrel{def}{\equiv} Val(\ulcorner \pi \urcorner , \ulcorner \phi \urcorner)\footnote{See \cite{BeallMurzi2013} \cite{Zardini2013} \cite{Murzi2014} \cite{Ripley2015}.}
+	\end{displaymath}
+	
+	In this last formulation, the paradox resembles another whose name the Curry paradox sometimes shares \cite{PriestRoutley1982}, the \textit{Pseudo-Scotus paradox}. In question ten of Pseudo-Scotus' \textit{Questions on the Prior Analytics}, the paradox has the following form:
+	
+	\begin{center}
+		God exists, therefore this consequence is not valid \cite[p. 227]{Pseudo-Scotus2001}.
+	\end{center}
+	
+	If we let $\phi$ name the proposition `God does not exist', and $\pi$ the proposition `This consequence is valid', then Pseudo-Scotus' paradox can be seen to contraposit the right-hand side of an instance of Curry's paradox. Prior to Pseudo-Scotus' formulation, a disjunctive equivalent to Curry's paradox for material implication is found in Thomas Bradwardine's \textit{Insolubilia}.\footnote{Bradwardine's example is `A man is an ass or Socrates utters a false proposition', where this is all Socrates says. \cite[6.3, p. 97]{Bradwardine2010}.} And later, a conditional version of Pseudo-Scotus' paradox appears in Albert of Saxony's \textit{Perutilis Logica}.\footnote{Albert's example is `If God exists, some conditional proposition is false', positing that this is the only conditional proposition \cite[pp. 359-360]{Albert1988}.}
+	
+	\section[Buridan's criterion for consequence]{Pseudo-Scotus' paradox and Buridan's criterion for consequence}
+	In his \textit{Treatise on Consequences}, John Buridan defines consequence as follows:
+	\begin{quote}
+		A consequence is a hypothetical proposition composed of an antecedent and consequent, indicating the antecedent to be antecedent and the consequent to be consequent; this designation occurs by the word `if' or by the word `therefore' or an equivalent \cite[I. 3, p. 67, alt.]{Buridan2015}.
+	\end{quote}
+	
+	Buridan offers this definition because of the material inadequacy of more common definitions on a token-based semantics, i.e. one where the bearers of truth are actual written or spoken sentences. The criterion according to which a consequence is good if it is impossible for the antecedent to be true and the consequent not fails in cases where the consequent may not exist, and hence be neither true nor false --- e.g. `Every man runs, therefore some man runs' is invalidated on this criterion in the case where the antecedent is uttered and the consequent is not. The same criterion amended to only consider cases where the antecedent and consequent are formed remains inadequate for propositions with self-falsifying antecedents (or self-verifying consequents) that nevertheless describe a possible situation --- e.g. `no proposition is negative, therefore no donkey runs'. A third criterion, on which `one proposition is antecedent to another which is such that it is impossible for things to be altogether as it signifies unless they are altogether as the other signifies when they are proposed together' \cite[I. 3, p. 67]{Buridan2015} is rejected for the same underlying reason as the prior two: it assumes things being as a proposition signifies suffice to make that proposition true.\footnote{\cite[I. 1, p. 63]{Buridan2015}. Cf. \cite[pp. 854,  957-958]{BuridanKlimaSD}. Since for Buridan, a proposition signifies simply what its terms signify, signification does not vary with the quality, quantity, tense, or modality of a proposition - and hence, for instance, contradictory propositions with the same terms signify the same thing.} Since Buridan's settled definition does not provide a criterion for valid consequence, Buridan frequently resorts to a variant on the third criterion, where the signification criterion shifts in accordance with the features of the proposition: a consequence with a past-tense affirmative antecedent, for instance, is good if it is impossible for things to \textit{have been} as the antecedent signifies, etc.
+			
+	Pseudo-Scotus' formulation of his paradox is given as a counterexample to an approach to consequence on which `it is necessary and sufficient that it be impossible that when the antecedent and the consequent are formed simultaneously, the antecedent is true and the consequent is false' \cite[p. 226]{Pseudo-Scotus2001} - that is, as a counterexample to the second criterion Buridan rejects above. Pseudo-Scotus considers: first, Buridan's first criterion, then his third, then his second, settling on a criterion of consequence that modifies Buridan's second [i.e. Pseudo-Scotus' third] considered criterion with an exceptive clause, excluding the case where the `the signification of the consequent is incompatible with the signification of the sign of consequence' \cite[p. 228]{Pseudo-Scotus2001}.
+	
+	What Pseudo-Scotus doesn't note, however, is that the paradox also provides a counterexample to Buridan's final, settled definition of consequence. Proof: Pseudo-Scotus' consequence is either valid or invalid. If it's valid, it's invalid, by \textit{modus ponens}. And if it's invalid, then it's invalid by reiteration. So if it's either valid or invalid, it's invalid. Hence, if God exists, the consequence is invalid. God exists. Therefore, the consequence is invalid.
+	
+	Continuing, whatever follows from a necessary truth is itself necessary. For both Buridan and Pseudo-Scotus, `God exists' is a necessary truth. Hence, the consequence is necessarily invalid. I.e. it is necessary that it is possible that God exists and the consequence is not invalid. Hence, it is possible that the consequence is not invalid, i.e. it is not necessary that the consequence is invalid. Hence, it is both necessary and not necessary that the consequence is invalid. \textit{Ergo, tu es asinus}.
+	%The proof here does not sufficiently engage with Buridan's actual definition.
+	
+	\section[Dependence of Pseudo-Scotus on Buridan]{The dependence of Pseudo-Scotus' \textit{Quaestiones Super Libros II Priorum Analyticorum} on Buridan's \textit{Tractatus de Consequentiis}}
+	\subsection{Buridan and Pseudo-Scotus on the definition and division of consequence}
+	%1. The case for Scotus' priority
+	%2. The case for Buridan's priority
+	%2.1 The addition of detail in Scotus' textual parallels
+	%2.2 The absence of a response to Pseudo-Scotus' paradox in Buridan, anywhere.
+	%2.1 Evidence already accepted (e.g. PS knows Buridan's PA commentary)
+	%3. Undermining the case for Scotus' priority
+	Let us now turn to the question of the relation between Buridan's and Pseudo-Scotus' texts.
+	
+	Pseudo-Scotus' first criterion for consequence verbally parallels Buridan's first. But a minor change leaves it closer in content to Buridan's second criterion. Where Buridan's formulation has one proposition antecedent to the other when it's impossible for it to be true with the other \textit{not being true}, Pseudo-Scotus' replaces `not being true' with `false'. Since propositions are only true or false when they exist, Buridan's counterexample to the criterion does not apply to Pseudo-Scotus' formulation: he pays heed to the verbal expression while effectively speeding up the discussion by passing over it's content. Hence, the counterexample Pseudo-Scotus applies to the criterion is similar to Buridan's for the second: Buridan offers `no proposition is negative, therefore no ass is running'; Pseudo-Scotus, `Every proposition is affirmative, therefore no proposition is negative'. In both cases, the problem addressed is one where correspondence conditions for the truth of the consequence come apart from the conditions for its being satisfied, and so the consequent cannot itself exist in the situation wherein it obtains. 
+	
+	The parallel between Buridan's formulation of his second criterion and Pseudo-Scotus' of his third is also exact, excepting Pseudo-Scotus' substitution of `false' for Buridan's `not being true'. However, Pseudo-Scotus' use of his paradox as a counterexample to his third proffered definition, rather than a conditional with a self-falsifying antecedent, as Buridan uses, suggests he understands the criterion differently than Buridan does. Where Buridan's second definition is closer to Pseudo-Scotus' third in its formulation, albeit to Pseudo-Scotus' first in its content, Pseudo-Scotus' third formulation is actually closer to Buridan's settled definition. Today, we would say Pseudo-Scotus takes the phrase `when the antecedent and consequent are formed simultaneously' to have wide scope, where Buridan construes the formation of the consequence as a condition within the scope of the phrase `it is impossible that'.\footnote{Formally, let $Val$ be a validity predicate, $\phi$ and $ \psi$ be sentences, $Formed$ a predicate meaning its argument is formed, $T$ and $F$ truth and falsity predicates, and $S$ an `are as signified' predicate. Pseudo-Scotus' third criterion for validity is: 
+		\begin{center}
+			$Val(\phi, \psi) \equiv Formed(\phi) \wedge  Formed(\psi) \wedge \neg \diamondsuit(T(\phi) \wedge F(\psi))$.
+		\end{center}
+		Buridan's second, by contrast, is:
+		\begin{center}
+			$Val(\phi, \psi) \equiv \neg \diamondsuit(Formed(\phi) \wedge Formed(\psi) \wedge T(\phi) \wedge \neg T(\psi))$
+		\end{center}. Buridan's third formulation would then be identical to Pseudo-Scotus' third, albeit substituting $S$ and $\neg S$ for Pseudo-Scotus' $T$ and $F$.} Hence, Pseudo-Scotus' understanding of the criterion requires a stronger counterexample than that Buridan offers against it.
+	
+	The same economy is present in Pseudo-Scotus' dropping the phrase `both being formed together' from the third definition Buridan offers. Since the definition is offered in terms of signification rather than truth, the actual formation of the consequent is irrelevant, and the phrase specifying its formation becomes otiose.
+	
+	Other differences include the following. Pseudo-Scotus, mentions besides form, also the disposition of the terms in his definitions of formal and material consequence. Pseudo-Scotus subdivides formal consequence, where Buridan does not. And where Buridan defines simple and as-of-now consequence in terms of the impossibility of the antecedent being true and consequent being false together, Pseudo-Scotus defines it in terms of a criterion Buridan gives later, the ability to be reduced to a formal one by adding some necessary proposition to the antecedent. Pseudo-Scotus employs the same reduction criterion in his definition of as-of-now consequence, where Buridan simply states that an \textit{ut nunc} consequence is one which is not good simply. In these last two cases, Pseudo-Scotus is actually \textit{more} faithful to Buridan's account than Buridan himself is. Buridan's assumed definition of simple consequence conflicts with his division of consequences, the reason being that the definition does nothing to exclude formal consequences from being simple, though Buridan classifies simple under material consequence. And Buridan's definition of \textit{ut nunc} consequence does nothing to distinguish \textit{ut nunc} consequences from those which are in no way valid.
+	
+	In short, close examination of parallels between the texts shows Pseudo-Scotus' formulations to be more complex than their Buridanian counterparts. This does not mean Pseudo-Scotus' formulations are more correct. But the addition of detail, whether clarifying or convoluting, suggests we are dealing with a later text.\footnote{That Pseudo-Scotus' treatise is later is assumed, without being supported, by \cite{Boh1982}, \cite{King2001}, \cite{DutilhNovaes2008}, and \cite{Knuuttila2008}.} 
+	
+	\subsection{Pseudo-Scotus' analysis of divided modality}
+	%You must describe Buridan's critique more fully before explaining what's wrong with it.
+	Buridan's remarks on the ampliation of divided modal propositions are central to the case for the priority of Pseudo-Scotus' text, as they are assumed to be the target of Buridan's critique. Buridan writes: 
+	
+	\begin{quote}
+		A divided proposition of possibility has a subject ampliated by the mode following it to supposit not only for things that exist but also for what can exist even if they do not [...]. So the proposition `B can be A' is equivalent to `That which is or can be B can be A.'
+		
+		Some say that it is equivalent to a compound disjunction, namely, to `That which is B can be A or that which can be B can be A.' But I do not accept this, because saying this and saying what I said earlier are very different. \cite[II. 4, p. 97]{Buridan2015}
+	\end{quote}
+	
+	Buridan then goes on to discuss the example `A creating God can not be God', and suggests that his disjunctive subject reading provides the correct analysis, while the disjunctive proposition analysis does not.
+	
+	Turning to Pseudo-Scotus' analysis of divided modality in question 26 of his \textit{Prior Analytics} commentary, we find that it is better analyzed as a hasty reading of Buridan's position, at worst, than as the target of Buridan's critique. 
+	
+	The structure of question 26 of the \textit{Prior Analytics} commentary is that of a comparison between two approaches to modal conversions: one, an ampliation-based reading where the subject supposits disjunctively; the other, where divided modals of possibility are ambiguous. The first reading is evidently Buridan's; the second, Ockham's.\footnote{For an analysis and extension of Ockham's approach, see the following chapter.} The question describes the manner of conducting conversions on both approaches, without deciding between the two. It is thus somewhat misleading to describe Pseudo-Scotus' description of Buridan's analysis as his own position, since he never gives it preference over the Ockhamist analysis.
+	
+	That the Pseudo-Scotus analysis is intended as one of Buridan's position is clear from its invocation of the same language one finds in Buridan's \textit{Tractatus de Consequentiis} to describe the position. Pseudo-Scotus' states that `with respect to a verb of possibility in an indefinite or particular proposition, the \textit{subject} supposits disjunctively for those which are or for those which can be'\cite[I, q. 26, p. 143]{Pseudo-Scotus1891}. This is exactly what one finds in Buridan's own account \cite[II. 4, p. 97]{Buridan2015}. This intention is further evident from Pseudo-Scotus' explicating the conversion of such a proposition as one with a disjunctive \textit{predicate} \cite[I, q. 26, p. 145]{Pseudo-Scotus1891}. 
+	
+	Further analysis, however, shows the error in analysis is not Pseudo-Scotus', but \textit{Buridan's}. On Buridan's analysis, `Some A can be B' is analyzed as `Something which is or can be A can be B'. This is formalized in turn as $\exists x((Ax \vee \diamond Ax) \wedge \diamond Bx)$, where quantification is assumed to be possibilist. Given that an assertoric proposition implies one of possibility, the disjunct from the left-hand side can be eliminated, and this simplifies to $\exists x(\diamond Ax \wedge \diamond Bx)$. Now, by disjunction introduction, this implies $\exists x(\diamond Ax \wedge \diamond Bx) \vee \exists x(Ax \wedge \diamond Bx)$. And that this is indeed equivalent to the first disjunct alone is shown by cases. If the first disjunct is true, then the conclusion is immediate. If the second, then something is both $A$ and possibly $B$. But since truth entails possibility, it follows that $\exists x(\diamond Ax \wedge \diamond Bx)$, hence, in either case, the entailment follows. Thus, the equivalence holds just as Pseudo-Scotus says it does. The argument Buridan gives in \textit{TC} II. 4 against the analysis is an \textit{ignoratio elenchus}, since it changes the example to one where the modality is before a negation. This ensures the proposition is not one of the form Buridan says it is, since the example Buridan gives is equivalent to one of the form `Some A is not necessarily B', which isn't at all an affirmative divided modal of possibility, but rather a negative one of necessity.
+	
+	Further evidence of the later date of Pseudo-Scotus' analysis may be garnered from the following observations. First, it is already accepted that the Pseudo-Scotus knows Buridan's \textit{Questions on the Posterior Analytics} \cite[pp. 4-5]{Read2015}. Second, the author additionally appears to have knowledge of the \textit{Sophismata}, since he uses a sophism Buridan admits as true - `a man will be a boy' - in an objection to the conversion of divided modals into assertoric propositions.\footnote{\cite[I, q. 26, p. 143]{Pseudo-Scotus1891}. Cf. \cite[pp. 878, 888]{BuridanKlimaSD}.} Third, one of the objections Buridan raises to the disjunctive-proposition analysis of particular divided modals of possibility is that its contradictory, would have to be not a disjunction, but a conjunction of two universal propositions \cite[II. 4, p. 98]{Buridan2015}. But this cannot be used as an objection to Pseudo-Scotus' position, since he explicitly uses such an analysis \cite[I, q. 26, p. 144]{Pseudo-Scotus1891}. Lastly, the analysis on which Pseudo-Scotus' text is earlier leaves us with an unsolved question, namely what Pseudo-Scotus' source is, if not Buridan's \textit{Tractatus}, given that the Pseudo-Scotus presentation is clearly reporting the views of others. This problem doesn't arise, however, on the view that Buridan's text is the earlier one: we can accept the analysis Pseudo-Scotus reports is Buridan's own contribution.
+	
+	%Buridan's Sophismata may be later: Buridan appears to discuss Scotus' objection to his definition. Reported in Klima (2009), p. 224
+	\subsection{The target of Buridan's critique}
+	
+	Now to dissolve the \textit{causa apparentiae}: there is a simpler explanation for the target of Buridan's remarks. According to Buridan, ambiguous written or spoken propositions are mapped to a single mental proposition, i.e. the disjunction of its specified readings \cite[sec. 3. 2]{BuridanQE}. But according to the early analysis found in Ockham and arguably even in Aristotle,\footnote{\cite[II. 25, pp. 330-332]{OckhamSL}, \cite{PriestRead1981}, \cite[I. 19, p. 32B.25-32]{AristotlePrA}, \cite[pp. 243-245]{Johnston2015}.} modals of possibility are ambiguous between just the readings one finds in Pseudo-Scotus listed as the proposition's disjuncts. Buridan is reading his own commitments concerning ambiguity back into the earlier analysis. As such, Buridan's rejection of the analysis in his \textit{Treatise on Consequences} does nothing to suggest it postdates Pseudo-Scotus' text.
+	\section{Conclusion}
+	Buridan's is a logic without truth, inasmuch as the notion of truth plays no direct role in his account of consequence \cite{Klima2008}. It is not thereby, however, a logic without paradox. The Pseudo-Scotus paradox appears to have arisen as a way of generating paradox precisely at a point where truth-based accounts of consequence were ceding to other alternatives --- for instance, Buridan's in terms of signification. Pseudo-Scotus' paradox thus would have been understood to show paradox still lurks about even when it is no longer \textit{truth} that we are concerned to save from the beast. The paradox thus represents a critical moment in the movement toward the proliferation of more \textit{ad hoc} solutions to the paradoxes of self-reference in later medieval logic.\footnote{See, for instance, the criticism of Swyneshed's solution in \cite{Read2016}.}
+	\section[Appendix: parallel passages]{Appendix: Parallel passages from Pseudo-Scotus and Buridan}
+	The following provides parallel passages from Buridan's \textit{Treatise on Consequences} and Pseudo-Scotus' \textit{Questions on the Prior Analytics} relevant to the above analysis, all but the last concerning the notion of consequence. Buridan's passages are on the left, Pseudo-Scotus' on the right. Parallels are indicated by italics. Discrepancies within parallel passages are bolded.
+	\subsection{Conditions for consequence}
+	\noindent Buridan and Pseudo-Scotus' first considered criterion:
+	\begin{Parallel}{}{}
+		\ParallelLText{Propositionum duarum illa est antecedens ad aliam quam \textit{impossibile est esse veram illa alia \textbf{non existente vera}} et illa est consequens ad reliquam quam impossibile est non esse veram reliqua existente vera, ita quod omnis propositio ad omnem aliam propositionem est antecedens quam impossibile est esse veram illa alia non existente vera \cite[I. 3, p. 21]{BuridanTC}.}
+		\ParallelRText{Primus modus est, quod ad bonitatem consequentiae requiritur, et sufficit, \textit{quod impossibile est antecedens esse verum, et consequens \textbf{falsum}} \cite[I, q. 10, p. 103]{Pseudo-Scotus1891}.}
+	\end{Parallel}
+	\noindent Buridan's second, and Pseudo-Scotus' third considered criterion:
+	\begin{Parallel}{}{}
+		\ParallelLText{Illa propositio est antecedens ad aliam propositionem quam \textit{impossibile est esse veram illa alia \textbf{non existente vera} illis simul formatis} \cite[I. 3, p. 21]{BuridanTC}.}
+		\ParallelRText{Ad bonitatem consequentiae requiritur et sufficit quod \textit{impossibile est antecedente et consequente simul formatis, antecedens esse verum, et consequens \textbf{falsum}} \cite[I, q. 10, p. 104]{Pseudo-Scotus1891}.}
+	\end{Parallel}
+	\noindent Buridan's third, and Pseudo-Scotus' second considered criterion:
+	\begin{Parallel}{}{}
+		\ParallelLText{Illa propositio est antecedens ad aliam quae sic se habet ad illam \textit{quod impossibile est qualitercumque ipsa significat sic esse quin qualitercumque illa alia significat sic sit} ipsis simul propositis \cite[I. 3, p. 22]{BuridanTC}.}
+		\ParallelRText{Ad bonitatem consequentiae requiritur, et sufficit, \textit{quod impossibile est sic esse, sicut significatur per antecedens, quin sic sit, sicut significatur per consequens} \cite[I, q. 10, p. 104]{Pseudo-Scotus1891}}
+	\end{Parallel}
+	\subsection{Definition of consequence}
+	\begin{Parallel}{}{}
+		\ParallelLText{\textit{Consequentia est propositio hypothetica ex antecedente et consequente composita}, designans antecedens esse antecedens et consequens esse consequens \cite[I. 3, p. 22]{BuridanTC}.}
+		\ParallelRText{\textit{Consequentia est propositio hypothetica, composita ex antecedente, et consequente}, mediante conjunctione conditionali, vel rationali, quae denotat, quod impossibile est ipsis, scilicet antecedente, et consequente simul formatis, quod antecedens sit verum, et consequens falsum \cite[I, q. 10, pp. 104-105]{Pseudo-Scotus1891}.}
+	\end{Parallel}
+	\subsection{Divisions of consequence}
+	\noindent Definition of formal consequence:
+	\begin{Parallel}{}{}
+		\ParallelLText{\textit{Consequentia formalis} vocatur \textit{quae in omnibus terminis valet retenta forma consimili} \cite[I. 4, p. 22]{BuridanTC}}
+		\ParallelRText{\textit{Consequentia formalis} est illa \textit{quae tenet in omnibus terminis, stante consimili \textbf{dispositione, et} forma} terminorum \cite[I, q. 10, p. 105]{Pseudo-Scotus1891}}
+	\end{Parallel}
+	\noindent Subdivisions of formal consequence:
+	\begin{Parallel}{}{}
+		\ParallelLText{[No exact parallel. Cf. \cite[III. 1, p. 79]{BuridanTC}.]}
+		\ParallelRText{Consequentia formalis subdividitur, quia quaedam est, cujus antecedens est una propositio categorica, ut \textit{conversio, aequipollentia}, et hujusmodi. Alia est, cujus antecedens est propositio hypothetica, et quilibet istorum modorum potest subdividi in plures alios modos \cite[I, q. 10, p. 105]{Pseudo-Scotus1891}.}
+	\end{Parallel}
+	\noindent Material consequence:
+	\begin{Parallel}{}{}
+		\ParallelLText{Consequentia materialis est cui non omnis propositio consimilis in forma esset bona consequentia, vel sicut communiter dicitur, \textit{quae non tenet in omnibus terminis forma consimili retenta} \cite[I. 4, p. 23]{BuridanTC}.}
+		\ParallelRText{Consequentia materialis est illa \textit{quae non tenet in omnibus terminis, retenta consimili \textbf{dispositione, et} forma} \cite[I, q. 10, p. 105]{Pseudo-Scotus1891}.}
+	\end{Parallel}
+	\noindent Simple consequence:
+	\begin{Parallel}{}{}
+		\ParallelLText{Quaedam vocantur consequentiae simplices, quia simpliciter loquendo sunt consequentiae bonae, cum non sit possibile antecedens esse verum consequente existente falso, vel esse ita etc.
+			
+			... [Consequentia materialis] reducitur ... ad formalem \textit{per additionem alicuius propositionis necessariae} vel aliquarum propositionum necessarium quarum appositio ad antecedens assumptum reddit consequentiam formalem \cite[I. 4, p. 23]{BuridanTC}}
+		\ParallelRText{Consequentia vera simpliciter est illa, quae potest reduci \textit{ad formalem, per assumptionem alicuius propositionis necessariae} \cite[I, q. 10, p. 105]{Pseudo-Scotus1891}}
+	\end{Parallel}
+	\noindent Buridan and Pseudo-Scotus' definitions of as-of-now consequence:
+	\begin{Parallel}{}{}
+		\ParallelLText{Aliae vocantur consequentiae ut nunc, quae non sunt simpliciter loquendo bonae, quia possibile est antecedens esse verum sine consequente, sed sunt bonae ut nunc, quia impossibile est rebus omnino se habentibus ut nunc se habent antecedens esse verum sine consequente \cite[I. 4, p. 23]{BuridanTC}.}
+		\ParallelRText{Consequentia materialis bona ut nunc, est illa, quae potest reduci ad formalem, \textit{per assumptionem alicujus propositionis \textbf{contingentis} verae} \cite[I, q. 10, p. 105]{Pseudo-Scotus1891}}
+	\end{Parallel}
+	\subsection{Divided modality}
+	\noindent On the supposition of divided particular modals:
+	\begin{Parallel}{}{}
+		\ParallelLText{Propositio divisa de possibili habet \textit{subiectum} ampliatum per modum sequentem ipsum \textit{ad supponendum \textbf{non solum} pro his quae sunt \textbf{sed etiam} pro his quae possunt esse} quamvis non sint \cite[II. 4, p. 58]{BuridanTC}}
+		\ParallelRText{Una ponit, quod \textit{subjectum} respectu verbi de possibili, in propositione indefinita, vel particulari, \textit{supponit \textbf{disjunctive} pro his quae sunt, \textbf{vel} pro his quae possunt esse} \cite[I, q. 26, p. 143]{Pseudo-Scotus1891}.}
+	\end{Parallel}
+	\noindent On the conversion of modal propositions:
+	\begin{Parallel}{}{}
+		\ParallelLText{Prima pars patet per syllogismum expositorium. Quia si \textit{B potest esse A}, signetur illud B et sit hoc C. Tunc sic: \textit{hoc C est vel potest esse B} et ipsum idem potest esse A; \textit{ergo quod potest esse A est vel potest esse B} \cite[II. 6, 5a conclusio, p. 66]{BuridanTC}}
+		\ParallelRText{Deinde dicendum, de modalibus de possibili, quod ipsae in sensu diviso similiter convertuntur illis de inesse, scilicet quantum ad hoc, quod universalis affirmativa convertitur in particularem affirmativam; et similiter particularis affirmativa, et universalis negativa in seipsam convertitur in universalem negativam, etc. sicut sequitur \textit{Quoddam B potest esse A, igitur quoddam A est, vel potest esse B}, et debet praedicatum esse disjunctum, ex eo, quod subjectum in antecedente \textit{supponit disjunctive, pro his quae sunt, vel pro his quae possunt esse} \cite[I, q. 26, p. 145]{Pseudo-Scotus1891}.}
+	\end{Parallel}

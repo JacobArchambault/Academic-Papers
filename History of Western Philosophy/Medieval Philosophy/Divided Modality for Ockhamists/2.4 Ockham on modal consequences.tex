@@ -1,0 +1,324 @@
+\documentclass[a4paper]{article}
+\usepackage[backend=biber]{biblatex}
+\bibliography{jacob}
+\usepackage{amssymb}
+\usepackage[all]{xy}
+%opening
+\title{Ockham's account of divided modal consequence}
+\author{Jacob Archambault}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\end{abstract}
+
+\section{Introduction}
+Standard discussions of the composite-divided distinction in Ockham's logic assimilate the difference between the one and the other to a contemporary scope distinction: in a composite modal, the modality takes wide scope, while in a divided modal it takes narrow scope.\footnote{Translations of Ockham's works, where not stated otherwise, are my own.}
+
+For example, the two senses of `Some A is necessarily B' could be represented as follows. First the composite sense: 
+
+\begin{quote}
+(COMPOSITE$_{1}$) $\square$(Some A is B)
+\end{quote}
+
+\noindent Or, sometimes more definitely:
+
+\begin{quote}
+(COMPOSITE$_{2}$) $\square(\exists x)(Ax \wedge Bx)$
+\end{quote}
+
+The divided sense, by contrast, is represented thus:
+
+\begin{quote}
+(DIVIDED$_{1}$) (Some A is $\square$B)
+\end{quote}
+
+\noindent Or more definitely:
+
+\begin{quote}
+(DIVIDED$_{2}$) $(\exists x)(Ax \wedge \square Bx)$
+\end{quote}
+
+Today, this is the dominant reading of medieval discussions of the composite-divided distinction, and can be found applied to figures including Avicenna,\footnote{\cite{Chatti2015}.} Peter Damian,\footnote{\cite{Marenbon2008}.} Anselm,\footnote{\cite{Roark2003}.} Peter Abelard,\footnote{\cite{Wilks2008}.} Robert Kilwardby,\footnote{\cite{Thom2007}.} John Buridan,\footnote{\cite{Parsons2008}, \cite{Johnston2015b}.} and Pseudo-Scotus.\footnote{\cite{McDermott1972}.} It is applied to Ockham in \cite{PriestRead1981}; \cite{Read2007} \cite[p. 350]{DutilhNovaes2007}; \cite[p. 298]{Parsons2014}; \cite[pp. 237-238]{Johnston2015}.\footnote{For a notable exception, see \cite[p. 62]{Panaccio1999}.} Call this the \textit{canonical reading} of the composite/divided distinction. Calvin Normore provides us with a good example of this:
+
+\begin{quote}
+Like most of his contemporaries, Ockham thought that most explicitly tensed sentences and sentences with a modal copula are ambiguous [...]. A sentence like `Some white thing will be black' has two readings [...]. In one [...], the subject term is treated as outside the scope of the tense indicator [...]. In the other [...], the supposition of the subject term is also altered so that it stands not for what is now white but for what will be at any future time white. This “displacement” causes the term to supposit for what it does not signify in the narrow sense but leaves it suppositing for things it signifies in the wide sense. \cite[pp. 39-40]{Normore1999}
+\end{quote}
+
+
+According to this reading: 1) the medieval composite/divided distinction is typically represented by appealing to a contemporary distinction of scope; 2) inasmuch as divided modals are represented as a case of quantifying into an intensional context, the medieval composite/divided distinction is assimilated to the contemporary parsing of the de re/de dicto distinction;  and 3) the modality in the divided case can be equally well thought of as a case of an object satisfying a complex modal predicate. Illustrating this last point, Normore writes: 
+
+\begin{quote}
+If I understand correctly Ockham's analysis of the syllogistic with all sentences in the divided sense, it can be obtained by treating `a,' `things that are necessarily a,' `things that are contingently a,' and `things that are possibly a' as distinct terms [...] and treating a modal sentence in the divided sense as an assertoric sentence with the appropriately modal predicate term and the appropriate subject term. Once the sentences have been transformed in this way, the entire modal syllogistic in the divided sense reduces to the ordinary assertoric syllogistic. \cite[p. 49]{Normore1999}; cf. \cite{DutilhNovaes2004}
+\end{quote}
+
+This assimilation is not without its consequences. In Summa Logicae, II ch. 24, for instance, Ockham offers the following as an example of an invalid conversion of a divided modal involving necessity: 
+\begin{enumerate} 
+\item[(1)] Nullum impossibile esse verum est necessarium, igitur nullum verum esse impossibile est necessarium. \cite[p. 298]{OckhamSL2}
+\end{enumerate}
+
+\noindent Freddoso and Schuurman translate (1) as follows:
+\begin{enumerate}
+	\item[(1')]	`Nothing impossible is necessarily true' therefore `Nothing true is necessarily impossible.' \cite[p. 166]{OckhamSLEng}.
+\end{enumerate}
+
+\noindent In accordance with the canonical reading of divided modality, the translation moves the `necessary' from the end of the phrase to immediately before the copula. Freddoso and Schuurman then provide the following as a translation of Ockham's argument for the invalidity of (1):
+\begin{quote}
+For the antecedent is true, and the consequent is false. For nothing impossible is possibly true, and yet something true is possibly impossible. [...] For if I go to Rome, then it will be impossible afterwards [that I have not been to Rome]. \cite[p. 166]{OckhamSLEng}
+\end{quote}
+
+And echoing Freddoso and Schuurman,\footnote{\cite[p. 203, fn. 4]{OckhamSLEng}.} \cite{Johnston2015} offers the following comment on the passage: 
+
+\begin{quote}
+All that follows is that `Something true is possibly impossible', but this is not what Ockham needs to show. He needs to show that `Something true is necessarily impossible,' which appears to be a stronger proposition.  \cite[p. 243]{Johnston2015}
+\end{quote}
+
+In short, the choice to read Ockhamist divided modals according to the canonical reading ends up invalidating some of the examples Ockham uses to illustrate his theory. While there is nothing inherently wrong with this - the history of logic is filled with great names putting forth false or inconsistent theories - it has not yet been tested whether there might be a better reading of Ockham in view. Ockham's modal theory thus remains today where his supposition theory was prior to \cite{PriestRead1977}: if it can be formalized, it appears it isn't workable.
+
+\section{The reasons for assimilating divided to narrow-scope modality}
+An important piece of evidence for the analysis of divided modals into their narrow scope formal counterparts is Ockham's account of their conversion.\footnote{For instance, \cite[p. 276]{PriestRead1981} uses conversion to show the account of divided modality in \cite[sec. 12]{Moody1952} inapplicable to Ockham.} \cite[p. 242]{Johnston2015} puts (1') alongside the following counterexamples Ockham gives to the general validity of conversion for divided necessary propositions:
+\begin{enumerate}
+	\item[(2)]	`A being which creates is necessarily God' therefore `God is necessarily a being who creates.' 
+	\item[(3)]	`A man is necessarily understood by God' therefore `Something understood by God is necessarily a man.' \cite[II. 24, p. 298]{OckhamSL2}
+\end{enumerate}
+
+Ockham then gives (4), (5), and (6) as the appropriate conversions of (1), (2), and (3):
+
+\begin{enumerate}
+\item[(4)]	Every impossibility of necessity is not true, therefore something, which of necessity is not true, is impossible.
+\item[(5)]	The Creator of necessity is God, therefore something, which of necessity is God, is creating.
+\item[(6)]	Man of necessity is understood by God, therefore something, which of necessity is understood by God, is man. \cite[II. 24, p. 298]{OckhamSL2}
+\end{enumerate}
+
+Given the consequents of the above all conform to the canonical formalization of \textit{de re} modals, it is assumed, on the assumption that convertible propositions are logically equivalent, that the antecedents do as well.
+
+\section{Divided modality in William of Ockham: a formal reconstruction}
+Ockham himself describes the truth conditions for divided modals as follows:
+
+\begin{quote}
+It should be known that for the truth of such a proposition [i.e. a modal proposition in the divided sense] we require that the predicate, under its proper form, belong to that for which the subject supposits, or to the pronoun referring to that for which the subject supposits; sc. such that the mode expressed in such a proposition may truly be predicated of an assertoric proposition in which the very same predicate is predicated of a pronoun referring to that for which the subject supposits, in a manner proportionate to that stated regarding propositions about the past and about the future. 
+
+For example, for the truth of this: `Every truth of necessity is true', we require that any given proposition be necessary in which this predicate `true' is predicated of anything for which the subject [term] `truth' supposits– that is, that any such [proposition] be necessary:  `This is true', `that is true', indicating anything for which the subject supposits. And since not every such [proposition] is true, it follows that this is false simpliciter: `Every truth of necessity is true'. \cite[II. 10, p. 249]{OckhamSL2} 
+\end{quote}
+
+We can think of this passage as giving the following procedure for determining the truth of a modal proposition. First, we introduce a collection of terms we can treat as rigid; for Ockham, both demonstrative pronouns as well as proper names have this feature;\footnote{Cf. his discussion of the expository syllogism and the Trinity in \cite[II. 27, p. 306]{OckhamSL2}.} we can achieve the same effect by letting variables do the trick, choosing one variable to uniquely designate each object belonging to the subject class. Second, we replace the subject term in the sentence with the variable. Third, we check the truth-value of the sentence(s) predicating a mode, tense, etc. of the proposition indicated by the replacement sentence. When the subject term is a name, a definite description, or is quantified by a particular quantifier, then the truth of one such sentence suffices for the truth of the divided modal claim we started with; if the subject term is universally quantified, then it is required that the number of true sentences must exhaust the variables designating objects in the subject class. For example, if the only human beings are Socrates and Plato, then for the truth of `Every human of necessity is an animal', the sentences `that x is an animal is necessary' and `that y is an animal is necessary' must be true, where x and y designate Socrates and Plato, respectively.
+
+To make this more conspicuous, let us introduce two-place modal and tense operators instead of their standard unary operators, where the first place is filled by a sentence, and the second by a term designating an object or collection of objects. For tense and possibility operators, we append subscripts to the operators to indicate whether they require their subject terms to supposit for present objects or past/future/possible objects. For instance, 
+
+\begin{enumerate}
+	\item[($W_{1}$)] $W_{1}$(`$x$ is a playwright', The pope)
+\end{enumerate}
+
+\noindent requires that something presently designated by the definite description `the pope', and rigidly designated by $x$, was a playwright; we let
+
+\begin{enumerate}
+	\item[($W_{2}$)] $W_{2}$(`$x$' is a playwright', The pope)
+\end{enumerate}
+
+\noindent be true in the case where x rigidly designates something that once answered to the definite description `the pope', but perhaps no longer does. In neither case is it required that the sentence `the pope is a playwright' have been true. As it happens, the first is false at the time of writing (since Pope Francis was never a playwright), but the second is true (since John Paul II was).
+
+For necessity, subscripts will be unnecessary, since for Ockham a true divided modal of necessity (or impossibility) only requires the subject to supposit for its presently existing supposita. Let's take a familiar example:
+\begin{enumerate}
+	\item[($\square$)] $\square$(`$x$ is greater than five', nine)
+\end{enumerate}
+
+If not only the example, but also the formulation looks familiar, it should: this is the reconstruction of Quine's third grade of modal involvement given by David Kaplan in \cite{Kaplan1968}.\footnote{\cite{Quine1976}.} But where Quine abjured the `essentialism' of the above formulation, Ockham takes it to be the only reasonable way to understand necessity. In his prologue to his exposition of Aristotle's Physics, Ockham writes: 
+
+\begin{quote}
+It does not depend on your consideration or mine whether a thing is mutable or immutable, necessary and incorruptible or contingent, any more than it does whether you are white or black, or whether you are inside or outside the house. \cite[p. 14, alt.]{Ockham1957}
+\end{quote}
+
+\noindent Here, Ockham addresses – and rejects – a medieval account of modality according to which whether a given modal proposition is true or false may depend on the manner in which its subject is designated.\footnote{Cf. \cite[ch. 3, 12]{Anselm1974}; \cite[ch. 12]{AquinasDF}} Such a view would have Quine's cycling mathematician be necessarily rational on one designation, necessarily bipedal on another. Both Quine and Ockham reject this option. But where Quine takes this as a reason to deny de re modality altogether, Ockham merely takes it to show that one way of understanding de re modality leads to incoherence, and that a stricter understanding is required.\footnote{The resulting picture has much in common with that of \cite{Kripke1980}, albeit sidestepping issues pertaining to the notion of a possible world (for Ockham, possibility and necessity are world-bound, forward looking operators ranging over times). Ockham even explicitly denies the truth of the divided reading of `All men are necessarily rational'. \cite[II. 9, p. 246]{OckhamSL2}}
+
+This way of understanding Ockham's divided modals works quite well for affirmative modals. For instance, the divided reading of `some number is necessarily greater than five' can be depicted as follows. 
+
+\begin{quote}
+$\square$(`$x$ is greater than five', some number)
+
+\end{quote}
+
+In this case, the interpretation gives us the same truth conditions as the standard narrow scope reading, i.e. $\exists x(N(x) \wedge \square G(x, 5))$. But it also gives us the correct immediate contradictory, rather than one merely semantically equivalent to it: we simply prefix the modal operator with a negation.
+
+In brief, using $M_{d}$ as a placeholder for a binary divided modal operator; $M_{c}$, for a unary composite modal operator analogous to $M_{d}$; $p_{x}$, for a sentential function with free $x$ denoting some state of affairs; $Q$, for a quantifier; and $t$, for a term denoting a class of objects, we can generalize Ockham's account as follows:
+
+$M_{d}$($p_{x}$, $Qt$) $\Leftrightarrow$ for $Q$ formula(s) $p'$, where  $p'$ is exactly like $p_{x}$ except that each free occurrence of $x$ in $p_{x}$ is replaced by $x'$, where $x'$ rigidly designates some member of $t$: $v$($M_{c}$($p'$) = True.
+
+For instance:
+
+$\square_{d}$(`$x$ is greater than five', some number) $Leftrightarrow$ for some formula `$x'$ is greater than five', where $x'$ rigidly designates some number, $v$($\square_{c}$(`x' is greater than five')) = True
+
+This condition preserves several unique aspects of Ockham's account of divided modals. First, it shows how even Ockham's account of de re modality remains, in a certain sense, decidedly linguistic,\footnote{Even if the language in question is mental. See \cite{Panaccio1999}.}  inasmuch as the de re modality is guaranteed indirectly through the verification of a particular sentence or sentences. Second, it shows how Ockham's account of divided modality presupposes his account of composite modality: a divided modal sentence is true when an appropriate collection of composite modal sentences are true. Third, it allows us to see the indirect dependence of Ockham's theory of divided modality on a kind of truthmaker theory:\footnote{Or, in Medieval terminology, causes of truth. See \cite[II. 22, p. 293]{OckhamSL2}. For a systematic treatment, see \cite[I. 2]{BuridanTC}; cf. \cite[pp. 9-10]{Read2015}.}  a divided modal has as many truthmakers as there are distinct true sentences validating it, and the truthmakers are themselves the entities rigidly designated by the subject terms factoring into the composite modal sentences on the right-hand side of the above equation. E.g. if the universe consists of the human beings Socrates, Plato and Ockham, where Socrates and Ockham are necessarily rational, but Plato is not, then the sentences `that this [pointing to Socrates] is rational is necessary' and `that that [pointing to Ockham] is rational is necessary' are both true, and the divided modal `some human is necessarily rational' has two truthmakers, i.e. Socrates and Ockham.\footnote{A happy consequence of this is that divided modals with universal negative quantity have no truthmakers. However, provided that the class denoted by the subject term is non-empty, such sentences can be verified by the truth of their corresponding particular instances. For instance, the divided sense of `necessarily no man is an ass' is not made true by anything; but the truth of the sentence can be verified by `necessarily, Socrates is not an ass'... etc. – whence Socrates, etc. \textit{are} truthmakers for the equipollent sentence `necessarily, every man is not an ass'.}
+
+\subsection{Scope and negation in Ockham's modal theory}
+Ockham's says sentences of the form `S is possibly P' are equipollent to sentences of the form `that S is P is possible'.\footnote{\cite[II. 9, p. 246; 10, p. 248]{OckhamSL2}.} This comment, however, is somewhat misleading, since it is complicated by the interaction of divided modals with negation. For instance, where Ockham's account would \textit{prima facie} take `no man can run' to be equipollent to `it is possible that no man runs', Ockham's actual practice shows that he takes its equipollent to be `every man is necessarily not running', i.e. `necessarily, no man runs'.\footnote{Cf. SL III-3. 14, par. 4; 36, par. 1.}  But this is hardly surprising. If understood in the first way, Ockham's official account would be running against the simplest and most natural way to understand the Latin sentences he's working with. Rather, in his discussion of equipollences in SL III-3 he supplements this account with a more nuanced one that better reflects both ordinary usage and his actual practice. This account also provides us with the greatest amount of detail in Ockham's thinking about what we would today describe as scope distinctions.\footnote{An interesting difference between contemporary discussions of medieval equipollences and Ockham’s own account here is that for Ockham, equipollence appears to be an assymetrical relation: more complex formulas are equipollent to their equivalent counterparts, but not conversely. Cf. SL III-3. 13-16; \cite[pp. 60-62]{Parsons2014}.}
+
+According to this account, divided modals with unresolved negations fall into three types: 1) those where the quantity alone is negated, 2) those where both the quantity and the mode are negated, and 3) those where the mode alone is negated. Each type is resolved differently, as the following table demonstrates:
+\begin{center}
+\begin{tabular}{|p{3cm}|p{4cm}|p{4cm}|}
+\hline & \textbf{Example} & \textbf{Resolution}  \\
+\hline \textbf{Quantity alone negated}  & It is necessary that not every animal be a man. & It is necessary that some animal not be a man. \\
+& It is possible that not every man be an animal. & It is possible that some man not be an animal. \\ \hline 
+\textbf{Mode and quantity negated} & It is not necessary that every animal be a man. & It is possible that some animal not be a man. \\
+& It is not possible that every animal be a man. & It is necessary that some animal not be a man. \\ \hline 
+\textbf{Mode alone negated} & No man of necessity is an animal. & Every man can not be an animal. \\
+& No man can be an animal. & Every man of necessity is not an animal.\footnote{SL III-3. 14.} \\ \hline
+\end{tabular}
+\end{center}
+\bigskip
+
+In the first case, the modality is unaffected, and the resolution occurs solely in the assertoric portion of the sentence. In the second, the modality is changed to its dual and the assertoric portion of the sentence is replaced with its contradictory. In the third, the quantity of the quantifier remains unchanged, and the negation is `pushed through' to the point where it only affects the copula, forcing the mode to change to its dual. Once this is done, we get the equivalence Ockham mentioned at the start of this section, i.e.  when a modal proposition is taken in the divided sense, it can be expressed either by `[mode] that [quantified subject] [predicate]' or by `[quantified subject] is [mode] [predicate]': modalities and quantifiers commute. Hence for Ockham, the issue of modal scope remains orthogonal to that of whether a proposition is taken in the composite or divided sense.
+
+\subsection{Relations between Ockhamist divided modal propositions}
+In this section I list the relations between three of the four modalities treated explicitly by Ockham. Ockham explicitly addresses four modes – necessity, possibility, impossibility, and contingency. There are difficulties in Ockham's treatment of contingency, and so I leave it aside.\footnote{Ockham only explicitly treats contingency for universal affirmative and negative propositions. But rather than defining contingency as $\diamondsuit\phi \wedge \diamondsuit \neg \phi$, Ockham takes contingent universals to be equivalent to the conjunction of a universal and its \textit{contrary}, each separately under a possibility operator. Letting $Q$ stand for contingency, this entails that $Q(AaB) \equiv Q(AeB) \equiv \diamondsuit(AaB) \wedge \diamondsuit(AeB)$, a result Ockham explicitly embraces. However, given this, the appropriate analysis of contingent particulars remains unclear. See SL III-3. 15.}  I use $\diamondsuit$  to symbolize possibility, $\square$ for necessity, and $I$ to symbolize impossibility. Two modes – possibility and contingency – each have two distinct divided readings: the first where the subject term supposits for present beings, the second, where it supposits for possible/contingent beings. Necessity and impossibility, by contrast, are not ambiguous in this way.\footnote{Ockham never gives a reason for this, though we might make the following conjecture. In his discussions of necessities and impossibilities, Ockham tends to focus on sentences with universal rather than particular quantity. Therefore, if a counterexample is found, on the weaker, present supposition reading, one can infer that the reading ampliating to possible existents must fail as well. However, by mixing strong modes and weak quantifiers (or conversely), we can see that there were readings within Ockham’s reach that he would have wanted to be able to assert. For instance, Ockham would likely want an Old Testament prophet’s utterance of `some man must be God', to be true of Jesus, prior to the Incarnation.}  In the former case, we shall indicate the present-supposition reading by subscripting the mode with a numeral 1; the alternative supposition with a subscript numeral 2. We always list the mode first, followed by a categorical proposition within the scope of the mode, relying on standard symbolization\footnote{See \cite{Corcoran1972b}, \cite{AristotleSmith}, \cite{Uckelman2010b}, \cite{Johnston2015b}.} to indicate the different basic categorical propositions of Aristotelian syllogistic – e.g. $\square(AaB)$ is read as `it is necessary that all A is B', `All A is necessarily B', `that every A is B is necessary', all of which are taken as equivalent in the divided sense. Negations within the scope of the mode are always given by the lowercase letter of the categorical proposition. Since it is clear that one way of attaining the contradictory of a proposition is by prefixing it with a sentential negation operator, such sentences are not listed. I assume double negations behave classically, and I assume negating a mode does not change the modality of a divided modal (though Ockham is unsure about this).\footnote{In a passage from his discussion of the conversion of divided modals of impossibility, Ockham asserts that negations change the modality of the mode of the proposition itself. But Ockham himself apparently struck out the passage making the suggestion. \cite[II. 26, p. 302]{OckhamSL2}}  The first column lists the main formula under consideration, while entries in the same row to the right of it give the contraries, contradictories, subcontraries, and immediate subalterns of that formula, with the understanding that subalternation is transitive.
+\begin{tabular}{|l|l|l|l|l|}
+\hline Equipollences & Contraries & Subcontraries	& Contradictories & Subalterns \\ \hline
+$\square(AaB)$ & $\square(AeB)$ & None & $\diamondsuit_{1}(AoB)$ & $\square(AiB)$ \\
+
+$I(AoB)$ & $\square(AoB)$ &  &  & $\diamondsuit_{1}(AaB)$ \\
+
+& $\diamondsuit_{1}(AeB)$ & & & \\ \hline
+
+$\square(AeB)$ & $\square(AaB)$ & None & $\diamondsuit_{1}(AiB)$ & $\square(AiB)$ \\
+
+$I(AiB)$ & $\square(AiB)$ & & & $\diamondsuit_{1}(AeB)$ \\
+
+& $\diamondsuit_{1}(AaB)$ &  & & \\ \hline
+
+$\square(AiB)$ & $\square(AeB)$ & $\diamondsuit_{1}(AoB)$ & $\diamondsuit_{1}(AeB)$ & $\diamondsuit_{1}(AiB)$ \\
+
+$I(AeB)$ &  & & & \\ \hline
+
+$\square(AoB)$ & $\square(AaB)$ & $\diamondsuit_{1}(AiB)$ & $\diamondsuit_{1}(AaB)$ & $\diamondsuit_{1}(AoB)$ \\
+
+$I(AaB)$ &  & & & \\ \hline
+
+$\diamondsuit_{1}(AaB)$ & $\square(AeB)$ & $\diamondsuit_{1}(AoB)$ & $\square(AoB)$ & $\diamondsuit_{1}(AiB)$ \\ \hline
+
+$\diamondsuit_{1}(AeB)$ & $\square(AaB)$ & $\diamondsuit_{1}(AiB)$ & $\square(AiB)$ & $\square_{1}(AoB)$ \\ \hline
+
+$\diamondsuit_{1}(AiB)$ & None & $\square(AoB)$ & $\square(AeB)$ & None \\
+
+& & $\diamondsuit_{1}(AeB)$ & & \\
+
+& & $\diamondsuit_{1}(AoB)$ & & \\ \hline
+
+$\diamondsuit_{1}(AoB)$ & None & $\square(AiB)$ & $\square(AaB)$ & None \\
+
+& & $\diamondsuit_{1}(AaB)$ & & \\
+
+& & $\diamondsuit_{1}(AiB)$ & & \\ \hline
+\end{tabular}
+
+In the above, we can see Ockham's necessity pairs with $\diamondsuit_{1}$. But $\diamondsuit_{2}$ has no dual. Given this, we can subscript Ockham's necessity operator as $\square_{1}$, and add a second, $\square_{2}$, to complement $\diamondsuit_{2}$. From here, we need only note the following entailments:
+\begin{enumerate}
+	\item $\square_{2}(AaB) \rightarrow \square_{1}(AaB)$, $\square_{2}(AeB) \rightarrow \square_{1}(AeB)$
+	\item $\diamondsuit_{2}(AaB) \rightarrow \diamondsuit_{1}(AaB)$, $\diamondsuit_{2}(AeB) \rightarrow \diamondsuit_{1}(AeB)$
+	\item $\square_{1}(AiB) \rightarrow \square_{2}(AiB)$, $\square_{1}(AoB) \rightarrow \square_{2}(AoB)$
+	\item $\diamondsuit_{1}(AiB) \rightarrow \diamondsuit_{2}(AiB)$, $\diamondsuit_{1}(AoB) \rightarrow \diamondsuit_{2}AoB$ 
+	\item $\square_{n}\phi \rightarrow \diamondsuit_{n}\phi$
+	\item The subalternations of the assertoric square continue to hold when embedded under any mode. 
+\end{enumerate}
+\noindent Recognizing this allows us to construct all of the relations between both sets of necessity/possibility pairs as a pair of cubes, one embedded in the other. First, we let the front face give the relations of the modal square of opposition for $\square_{1}/\diamondsuit_{1}$. Next, we add the traditional square as a depth dimension, placing universals in the back and particulars in the front. This gives us a cube for one of our pairs of modals. Lastly, we surround the whole figure in a similar square for $\square_{2}/\diamondsuit_{2}$, connecting the squares by implication arrows connecting each corner of the outer square to its counterpart in the inner square. The resulting figure looks like this:
+
+\begin{displaymath}
+\xymatrix@C=.1em{
+	 & \square_{2}(AaB) \ar[dddd] \ar[drr] \ar [dl] \ar@{-}[rrrrrr] \ar@{-}[drrrrr] &  &  &  &  &  & \square_{2}(AeB) \ar[dddd] \ar[dl] \ar[dll]\\
+	\square_{2}(AiB) \ar[dddd] \ar@{-}[urrrrrrr] &  &  & \square_{1}(AaB) \ar[dd] \ar[dl] \ar@{-}[rr] \ar@{-}[dr]
+	 &  & \square_{1}(AeB) \ar[dd] \ar[dl] \ar@{-}[dlll] & \square_{2}(AoB) \ar[dddd] &  \\
+	 &  & \square_{1}(AiB) \ar[dd] \ar[ull] &  & \square_{1}(AoB) \ar[dd] \ar[urr] &  &  &  \\
+	 &  &  & \diamondsuit_{1}(AaB) \ar[dl] \ar@{.}[dr] &  & \diamondsuit_{1}(AeB) \ar[dl] &  &  \\ 
+	 1 & \diamondsuit_{2}(AaB) \ar[dl] \ar[urr] \ar@{.}[drrrrr] & \diamondsuit_{1}(AiB) \ar[dll] \ar@{.}[rr] \ar@{.}[rrru]& & \diamondsuit_{1}(AoB) \ar[drr] &  &  & \diamondsuit_{2}(AeB) \ar[ull] \ar[dl] \\
+	\diamondsuit_{2}(AiB) \ar@{.}[rrrrrr] \ar@{.}[rrrrrrru] &  &  &  &  &  & \diamondsuit_{2}(AoB) & }
+\end{displaymath}
+
+Here, arrows indicate entailments; solid lines, contraries; dotted lines, subcontraries. Note that some pairs, e.g. $\diamondsuit(AaB), \diamondsuit(AeB)$ and $\square(AiB), \square(AoB)$, are not logically related, either as contraries, contradictories, or subcontraries.
+
+\subsection{Ockham's theory in first-order modal logic}
+Up to now, we've been describing the content of Ockham's theory in a quasi-formal way, using formal notation to aid a natural language exposition. Here, we show how a first-order modal theory can be expanded to accommodate Ockhamist divided modality.\footnote{The exposition given hereafter draws and expands on those of \cite{Klima1988}, \cite{Klima2001}.} Let $L$ be the language of a standard first-order modal logic with empty signature, expanded to include restricted quantifiers by the following syntactic rules: 
+\begin{enumerate}
+	\item All formulas of first-order modal logic with identity are formulas.
+	\item If $A$ is a formula and $x$ a variable, then $x.A$ is a restricted variable. 
+	\item If $x.a$ is a restricted variable, then $(\forall x.A)$, $(\exists x.A)$ are restricted quantifiers. 
+	\item If $(Qx.A)$ is a restricted quantifier and $B$ a formula then $(Qx.A)(B)$ is a formula. $(Qx.A)$ is said to bind free occurrences of $x.A$ in $B$. The free variable occurrences of $(Qx.A)(B)$ are those of $B$ less its free occurrences of $x.A$.
+	\item[5] If $B$ is a formula and $(Qx.A)$ a quantifier, then $\square(B, (Qx.A))$ $\diamondsuit(B, (Qx.A))$ are formulas. Its free variable occurrences are those of $B$ less its free occurrences of $x.A$.
+	\end{enumerate}
+	
+In the above, $\square$, $\diamondsuit$ are to be regarded as binary operators  - distinct from (albeit analogous to) their unary counterparts. Restricted variables may occur in the same ways standard variables do. In a variable $x.A$, $A$ is called the \textit{matrix} of $x$. To reduce clutter, we write the full restricted variable only on its first occurrence, e.g. writing $\forall x.Fx)(Gx.)$ to abbreviate $(\forall x.Fx)(G(x.Fx))$. As usual, a formula with no free variables is called a \textit{sentence}. 
+
+Having given the above syntactic rules, let $M = (W, R, D, 0, I)$ be a first-order model. $W$ is a non-empty set of situations, $R$ a reflexive, antisymmetric accessibility relation on $W$, $D$ a domain function from each situation $w$ in $W$ to its non-empty domain, and $I$ an interpretation mapping parameters in $L$ to objects of the appropriate type, e.g. n-ary predicates from n-tuples on the domain of the model to truth values at situations, etc. $0$ is the \textit{zero-entity}, intended as the semantic value of empty terms, itself not an entity in the domain of any situation. The semantics for sentential connectives and unary modal operators is as usual. Since predicates (including identity), only take objects in the domain of the model as their values, atomic sentences with empty terms must be false, hence making their negations true. To represent the different readings of the range of divided modals Ockham admits in his discussion, we allow both actualist and possibilist quantification. The default reading of quantifiers is actualist, and alternative quantifiers will be subscripted, e.g. a possibilist universal quantifier as $\forall x_{\diamondsuit}$. The truth of formulas at worlds is determined recursively given an interpretation $I$ of its parameters and valuation $v$ of its free variables. We define the \textit{range} of a restricted variable $x.A$ at $w$ as those valuations of $x$ such that $A$ is true at $w$, provided this is non-empty. Otherwise, the range of $x.A = 0$. We say a valuation $v'$ is an $x$-variant ($y$-variant, etc.) of a valuation $v$ at $w$ iff 1) $v$ and $v'$ agree on all variable assignments except perhaps $x$; 2) $v'(x) \in D(w)$; and 3) in the case of restricted variables $x.A$, $v'(x.A)$ is in the range of $x.A$ at $w$. Intuitively we can think of variables as demonstratives, taking different values with different interpretations. The semantics for restricted quantifiers is as follows: 
+\begin{enumerate}
+	\item $M, w \Vdash_{v} (\forall x.A)(B) \Leftrightarrow$ for every $x.A$-variant $v'$ of $v$, $M, w \Vdash_{v'} B$.
+	\item $M, w \Vdash_{v} (\exists x.A)(B) \Leftrightarrow$ for some $x.A$-variant $v'$ of $v$, $M, w \Vdash_{v'} B$.
+\end{enumerate}
+
+and the semantics for binary modals is as follows: 
+\begin{enumerate}
+	\item $M, w \Vdash_{v} \square(B, \forall x.A) \Leftrightarrow$ for every $x.A$-variant $v'$ of $v$, $M, w \Vdash_{v'} \square B$
+	\item $M, w \Vdash_{v} \square(B, \exists x.A) \Leftrightarrow$ for some $x.A$-variant $v'$ of $v$, $M, w \Vdash _{v'} \square B$
+	\item $M, w \Vdash_{v} \diamondsuit(B, \forall x.A) \Leftrightarrow$ for every $x.A$-variant $v'$ of $v$, $M, w \Vdash_{v'} \diamondsuit B$
+	\item $M, w \Vdash_{v} \diamondsuit(B, \exists x.A) \Leftrightarrow$ for some $x.A$-variant $v'$ of $v$, $M, w \Vdash _{v'} \diamondsuit B$
+\end{enumerate}
+
+To form negative quantifiers such as `no' we place the quantity corresponding to it (i.e. universal or particular) in the quantifier place, prefixing the formula in its first place with a negation. As is clear, in affirmative cases, the truth conditions for a binary modal operator are exactly those for a sentence with its corresponding unary operator bound by the quantifier found in its second place, e.g. $M, w \Vdash_{v} \square(B, \forall x.A)$ iff $M, w \Vdash_{v} \forall x.A \square B$ iff for every $x$-variant $v'$ of $v$, $M, w \Vdash_{v'} \square B$. But in cases where negation is involved, the negation must prefix the formula (and not the quantifier or the modal) to ensure the semantics do not misrepresent the mode as within the scope of the negation.
+\section{Resolution of difficulties}
+Having outlined Ockham's account, let us now return to the example we began with.
+
+Ockham mentions the illicit conversion in (1) at the beginning of his discussion of divided modals of necessity, after having discussed composite necessity. In the discussion of composite necessary propositions, Ockham has explained that if a conversion is licit assertorically, then by what we would now call general necessitation, the same conversion remains licit when the premise and conclusion, taken in the composite sense, are placed under necessity operators. In making his case, Ockham gives the following example:
+
+\begin{quote}
+Since these may be converted, as was said before: no man is an ass, and no ass is a man; if this is necessary: no man is an ass; then it has to be that this is necessary: no ass is a man. \cite[II. 24, p. 296]{OckhamSL2} 
+\end{quote}
+
+At the beginning of his discussion of divided necessary propositions, Ockham returns to this same case:
+
+\begin{quote}
+It does not follow by the nature of conversion: no man of necessity is an ass, therefore no ass is of necessity a man, since it does not follow in the divided sense, accepting other propositions. \cite[II. 24, p. 297]{OckhamSL2}
+\end{quote}
+
+Immediately following, Ockham continues with the passage we started with:
+\begin{quote}
+Thus it does not follow: \textit{that no impossibility is true is necessary, therefore that no truth is impossible is necessary}, since the antecedent is true and the consequent is false. For no impossibility can be true, and yet some truth can be impossible; for in this way, `I have not been to Rome' is true, and yet it can be impossible; for if I go to Rome, it will be impossible afterward.' \cite[II. 24, pp. 297-298]{OckhamSL2}
+\end{quote}
+
+As is clear from the context, Ockham intends all of the following as equivalent: 
+\begin{enumerate}
+\item That no impossibility is true is necessary
+
+\item No impossibility can be true
+
+\item Every impossibility of necessity is not true
+\end{enumerate}
+
+
+In the above, `impossible' and `true' are representable as simple monadic predicates, $I$ and $T$: their modal status has no bearing on the validity of the argument in question. The first proposition may now be formalized as $\square(\neg (\exists y.Ty)x. = y., \forall x.Ix)$; the second, as $\neg (\exists x.Ix)\diamondsuit (\exists y.Ty)x=y$; the third, as $(\forall x.Ix)\square \neg (\exists y.Ty)x.=y.$.\footnote{For the reasons for representing Ockham's statements in terms of identity, see \cite{Klima1999}, \cite{Klima2008a}.} The first two propositions are found in the above passage, while the third is taken from (4) of section 2 above. As may be checked, the standard translations of the third and (one reading of) the second into narrow scope propositions of first-order modal logic are equivalent.\footnote{Proof: \begin{enumerate}
+		\item $\neg\exists x(Ix \wedge \diamondsuit Tx)$ iff
+		\item $\forall x \neg(Ix \wedge \diamondsuit Tx)$ iff
+		\item $\forall x (\neg Ix \vee \neg\diamondsuit Tx)$ iff
+		\item $\forall x (Ix \rightarrow \neg \diamondsuit Tx)$ iff
+		\item $\forall x (Ix \rightarrow \square \neg Tx)$
+	\end{enumerate}} 
+But there is no straightforward way to translate the first into a first-order guise, since wide-scope modality in first-order modal logic forces the medieval composite reading. To remedy this, we provide a formal countermodel to the invalid conversion following Ockham's text.
+
+Let $M = (W, R, D, 0, I)$ be a model, where $W = \{w, w'\}$, $wRw'$, and $D(w)$ = $D(w)$ = \{o, p\}, where $o$ is the proposition that Ockham has not been to Rome and $p$ some other arbitrary impossible proposition, e.g. 2+2=5.\footnote{For simplification, we let these be the only propositions, and ignore difficulties caused by entailments between propositions.} Let $I(T, w) = \{o\}, I(I, w) = \{p\} I(T, w') = \emptyset$, and $I(I, w') = \{o, p\}$. 
+
+Now since $I(T, w') = \emptyset$, it follows that $M, w' \nVdash_{v} x.Ix = y.Ty$, hence that it is not the case that for some $y.T$-variant $v'$ of $v$, $M, w', Vdash_{v'} (\exists y.Ty)x.Ix = y.Ty$, i.e. that $M, w' \nVdash_{v'} (\exists y.Ty)x.Ix = y.Ty$. By the semantics for negation, this means that $M, w' \Vdash_{v'} \neg(\exists y.Ty)x.Ix = y.Ty$. Similarly, since $I(T, w) \cap I(I, w) = \emptyset$, it follows that $M, w \nVdash_{v} x.Ix = y.Ty$, and hence by  reasoning parallel to the case at $w'$, that $M, w \Vdash_{v'} \neg(\exists y.Ty)x.Ix = y.Ty$. Thus, at every world $w'$ such that $wRw'$, $M, w' \Vdash_{v'} \neg(\exists y.Ty)x.Ix=y.Ty$. Hence $M, w \Vdash_{v'} \square \neg(\exists y.Ty)x.Ix=y.Ty$. Now since $I(I, w) = \{p\}$, and $p$ is never in $I(T)$, it follows that for every $x.I$-variant $v''$ of $v'$, that $M, w, \Vdash_{v''} \square \neg (\exists y.Ty) x.Ix = y.Ty$. Hence, both that $M, w \Vdash_{v''} \square(\neg(\exists y.Ty)x.=y., \forall x.Ix)$ and that $M, w \Vdash_{v''} (\forall x.Ix) \square \neg (\exists y.Ty) x.=y.$ And since there are no free variables in this formula, the valuation drops out. Thus both `that no impossibility is true is necessary' and `every impossibility is necessarily not true' come out true on the model at $w$. 
+
+However, since $I(T, w) = \{o\}$, $o \in I(I, w')$, and $wRw'$, there is some $y.Ty$-variant $v'$ at $w$, with $x.Ix$ variant $v''$ at $w'$ such that $y.Ty = x.Ix$, namely that at which $v(y.Ty) = v(x.Tx) = o$. Hence for some $w'$ such that $wRw'$, it holds that $M, w' \Vdash (\exists x.)y.Ty = x.Ix$, hence that $M, w \Vdash \diamondsuit (\exists x.Ix)y.Ty = x.Ix$, hence that $M, w \Vdash \exists y.Ty \diamondsuit (\exists x.Ix)y.Ty = x.Ix$. Hence, some truth, namely `Ockham has not been to Rome', can be impossible, just as Ockham held. 
+
+\subsection{The reasons for the assimilation of divided modality to narrow-scope modality are insufficient}
+Though the conversions in (4), (5), and (6) give the immediate impression that the appropriate formalization of a divided modal should be one where the modality takes narrow scope over the predicate, this impression arises from the assumption that the consequent of a conversion should be equivalent to its antecedent. This is false, even in the assertoric case. A universal affirmative assertoric proposition converts to a particular affirmative. But a particular affirmative does not convert to a universal affirmative, and this does not make conversion \textit{per accidens} something other than a conversion. Of particular importance is the fact that Ockham regards the consequents of (4) through (6) as assertoric propositions with modal terms, and not themselves modal propositions.  This should give us strong reason to hold that the formalizations of the antecedents of the above conversions shouldn't be given in the standard way: a modal proposition is one where the mode is a modification of the copula; and just as prefixing a negation to a term does not make the sentence the negation occurs in negative, prefixing a modality to a term does not make the sentence the modality occurs in modal.
+
+Neither, however, does the scope of the modal require that the subject term be ampliated to cover possible a's,\footnote{See \cite{PriestRead1981}.}  as it does on John Buridan's account. Even when both take wide scope, composite and divided modals are not equivalent.\footnote{Ockham cleverly illustrates this by considering the sentence `that every contingent truth is true is necessary' (\textit{omne verum contingens esse verum est necessarium}). The sentence holds in the composite sense, but fails dramatically in the divided sense, failing for every singular the subject of the sentence supposits for. See \cite[II. 9, p. 246]{OckhamSL2}.}
+
+Lastly, Ockham's syllogistic for divided modals cannot be regarded, as Normore suggests, as a special case of the assertoric syllogistic. This is straightforwardly in accordance with the grammar of our opening example: one would not expect a sentence of the form `That no A is B is necessary' (\textit{Nullum A esse B est necessarium}) to be ambiguous between composite and divided senses, as Ockham holds, if it weren't possible for a divided modal to take `wide scope' in some sense \cite[II. 9, p. 246]{OckhamSL2}. If the situation mapped onto the contemporary scope distinction in the way often supposed, we would expect this form to be unambiguous and the form `A de necessitate est B' to be ambiguous between divided and composite senses, even though Ockham takes this sentential form to unambiguously indicate the divided sense \cite[ibid.]{OckhamSL2}.
+
+In short, the assimilation of divided modals to narrow-scope modals 1) does violence to the grammar of divided modals expressed through a dictum, as in `that no A is B is necessary'; 2) forces us to adopt invalid readings of Ockham's arguments where there are clearly valid interpretations in the vicinity; 3) effectively treats divided modal propositions as assertoric; and 4) fails to recognize a mode as a modification of the copula.
+\section{Conclusion}
+In the above, I've provided a way of construing Ockham's account of divided modality that decouples it from modern thinking about scope. On the above account, the question of the syntactic scope of the quantifier is simply orthogonal to that of whether a modal sentence is to be construed as composite or divided; rather there is a sense in which even divided modals can take `wide scope', in such that this sense will always be equivalent to a different sentence where the modal takes `narrow' scope. The real difficulties in representing Ockhamist divided modality do not so much concern the mode itself, but rather its relations to negation and quantification. With respect to the former, we must represent the quality of the formula as belonging to the \textit{predicate}, rather than the subject, if we wish to obtain the correct truth conditions for a wide-scope divided modal: the quality of a proposition belongs to its predicate.\footnote{This makes some sense of Ockham's practice of reading negations as denying the predicate of what the subject holds for. See e.g. \cite[II. 2; 5]{OckhamSL2}.} With respect to the latter, Ockhamist quantifiers do not ampliate: rather, Ockham requires that the scope of quantification - e.g. possibilist, presentist, or restricted to a particular time - be specified independently of its place in the sentence: every sentence containing an intensional operator will thus be semantically ambiguous between different readings in accordance with the different possible readings of the scope of quantification. With the above, we've staved off, albeit only in part, the concern that Ockhamist modality is incoherent. Rather, we can begin to restore Ockham to his place as a medieval logician whose theory provides a compelling alternative to that of his contemporary John Buridan, and from whom modern logicians doubtless have much to discover. 
+
+\printbibliography 
+
+
+\end{document}
