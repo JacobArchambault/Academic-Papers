@@ -4626,7 +4626,7 @@
 	author = {Benjamin Schnieder},
 	journal = {Synthese},
 	title = {On ground and consequence},
-	year = {2019}
+	year = {forthcoming}
 }
 
 @inbook{Schaffer2009,
@@ -4679,7 +4679,7 @@
 	author = {Samuele Chilovi},
 	journal = {Synthese},
 	title = {Grounding entails supervenience},
-	year = {2018}
+	year = {forthcoming}
 }
 
 @article{Schaffer2016,
@@ -4695,7 +4695,7 @@
 	author = {Saul A. Kripke},
 	journal = {Journal of Philosophical Logic},
 	title = {Ungroundedness in Tarskian Languages},
-	year = {2018}
+	year = {forthcoming}
 }
 
 @article{Archambault2018b,
@@ -4771,7 +4771,7 @@
 @article{Fine2016a,
 	author = {Kit Fine},
 	journal = {Philosophical Studies},
-	pages = {1-19},
+	pages = {1–19},
 	title = {Identity criteria and ground},
 	volume = {173},
 	year = {2016}
@@ -4781,7 +4781,7 @@
 	author = {Michele Lubrano},
 	journal = {Synthese},
 	title = {The emergence of ground: some limitative results},
-	year = {2019}
+	year = {forthcoming}
 }
 
 @article{Read2012a,
@@ -4796,6 +4796,15 @@
 	series = {Patrologia Latina},
 	title = {De Syllogismo Categorico},
 	volume = {64}
+}
+
+@article{Martin2007,
+	author = {Christopher J. Martin},
+	journal = {Vivarium},
+	pages = {153–168},
+	title = {Denying Conditionals: Abaelard and the Failure of Boethius' Account of the Hypothetical Syllogism},
+	volume = {45},
+	year = {2007}
 }
 
 @book{Anselm1968,
