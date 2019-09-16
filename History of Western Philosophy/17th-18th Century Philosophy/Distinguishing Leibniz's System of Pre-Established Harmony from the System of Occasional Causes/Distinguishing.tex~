@@ -1,20 +1,5 @@
-\documentclass{article}
-\usepackage[backend=bibtex]{biblatex}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\bibliography{jacob}
-
-\title{Distinguishing Leibniz's system of pre-established harmony from the system of occasional causes}
-\author{Jacob Archambault}
-
-\begin{document}
-
-\maketitle
-
-  
-\begin{abstract}
-One of the more persistent interpretations of
+\begin{quote}
+\textbf{Abstract} One of the more persistent interpretations of
 Leibniz's system of pre-established harmony is as a temporal dislocation
 of occasionalism: whatever God is always doing on the occasionalist
 account he need only have done once -- at creation -- on Leibniz's. In
@@ -30,14 +15,15 @@ occasionalist systems \emph{as} systems; to turn the page on discussions
 of occasionalism centered on Leibniz's interpretation; and to lay the
 groundwork for an improved taxonomy of the place of these systems in
 early modernity.
-\end{abstract}
+\end{quote}
 
 Keywords: Gottfried Wilhelm Leibniz; Nicolas Malebranche; Louis de La
 Forge; Geraud de Cordemoy; occasionalism; pre-established harmony; early
 modern theories of substance; causation in early modern physics;
 mind-body problem.
 
-\section{Introduction}
+\hypertarget{introduction}{%
+\section{1 Introduction}\label{introduction}}
 
 One of the more persistent interpretations of Leibniz's system of
 pre-established harmony is as a temporal dislocation of occasionalism:
@@ -58,7 +44,7 @@ interpretation} of the difference between the systems.\footnote{The
   rejects the division of time into instants suggested by the
   traditional understanding of the doctrine: `a literal commitment to an
   instantaneous account of continual creation would severely compromise
-  the coherence of Leibniz's theory of finite substance \ldots. If
+  the coherence of Leibniz's theory of finite substance {[}...{]}. If
   Leibniz's considered view on the ontological status of instantaneous
   states is the one suggested earlier, then it is not surprising to see
   him claiming that the continual creation doctrine seems to imply that
@@ -91,10 +77,10 @@ immediate object of God's volitions to be particular events, albeit
 events in accord with general laws. Nadler, whose work is most
 prominently associated with the particularist interpretation, first
 introduced it as a defense of a `traditional' reading he attributes to
-Leibniz,\footnote{`Leibniz accuses Malebranche of introducing
+Leibniz,\footnote{`{[}Leibniz{]} accuses Malebranche of introducing
   `continuous miracles' into the course of nature at every moment, and
   of having God `intervene' with the laws of bodies and of thought.
-  \ldots I shall argue that we ought to keep to this traditional
+  {[}\ldots{}{]} I shall argue that we ought to keep to this traditional
   reading of Malebranche's occasionalism.' (Nadler 1993, 32).} and
 maintains the alternative description `more closely resembles Leibniz's
 preestablished harmony.'\footnote{Nadler 1993, 31.} Many of his
@@ -153,15 +139,19 @@ occasionalism in the traditional way}. In untying this small knot, three
 larger goals may be attained:
 
 \begin{enumerate}
-\item We undercut the historical roots of the current paradigm of
+\def\labelenumi{(\arabic{enumi})}
+\item
+  We undercut the historical roots of the current paradigm of
   scholarship on occasionalism, thereby resetting the terms of
   discussion around which that scholarship has revolved.
-\item We arrive at an integral account of occasionalist and Leibnizian
+\item
+  We arrive at an integral account of occasionalist and Leibnizian
   systems \emph{as systems}, thereby reinstating the status of both
   Malebranche and Leibniz as systematic philosophers. In the latter
   case, this prepares the ground for a deeper and more unified
   appreciation of Leibniz's development.
-\item We achieve a deeper understanding of the \emph{differences} between
+\item
+  We achieve a deeper understanding of the \emph{differences} between
   Leibniz and Malebranche's systems, and thereby lay the groundwork for
   an improved taxonomy of the places of these systems within early
   modernity.
@@ -200,8 +190,9 @@ occasionalism, directly addressing the issues Leibniz sought to contrast
 the two systems on: the nature of substance, the communication of
 substances, and mind-body union.
 
-\section{The Defining Marks of the System of Occasional
-Causes}
+\hypertarget{the-defining-marks-of-the-system-of-occasional-causes}{%
+\section{2 The Defining Marks of the System of Occasional
+Causes}\label{the-defining-marks-of-the-system-of-occasional-causes}}
 
 While occasionalism is often associated with the problems of
 individuation and the mind-body relation, these provide it with neither
@@ -233,6 +224,7 @@ occasionalist bodies, are purely passive. Nadler defines occasionalism
 as the joint acceptance of the following theses:
 
 \begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
 \item
   Natural objects, both minds and bodies, have no causal efficacy
 \item
@@ -278,15 +270,15 @@ In \emph{On Nature Itself}, Leibniz describes occasionalism as follows:
 
 \begin{quote}
 But now let us consider a little more closely the opinion of those
-\ldots who judge not things to act, but God at the presence of
+{[}\ldots{}{]} who judge not things to act, but God at the presence of
 things and according to the aptness of things; and thus {[}judge{]}
 things to be occasions, not causes, and to receive, not to effect or
 elicit. When Cordemoy, La Forge, and other Cartesians set forth this
 doctrine, Malebranche especially adorned {[}it{]} with certain
 rhetorical lights on account of his acumen; but brought forth
-\ldots no solid reasons. Surely, if this doctrine leads to the
+{[}\ldots{}{]} no solid reasons. Surely, if this doctrine leads to the
 point of even taking the \emph{immanent actions} of substances away
-\ldots, then it appears foreign to reason like nothing
+{[}\ldots{}{]}, then it appears foreign to reason like nothing
 else.\footnote{GP IV. 509-510.}
 \end{quote}
 
@@ -306,7 +298,7 @@ something is not yet perceived clearly enough.\footnote{\emph{Treatise}
 \end{quote}
 
 Like La Forge, Cordemoy describes willing as the mind's activity:
-`{[}God{]} made minds \ldots capable of action; they
+`{[}God{]} made minds {[}\ldots{}{]} capable of action; they
 will.'\footnote{\emph{Traité de métaphysique,} CG 283, trans. from
   Nadler 2005, 52. Cf. \emph{Discours physique,} CG 255:
 
@@ -363,7 +355,7 @@ In his earlier works, Malebranche, too, does not rule out the mind being
 the productive cause of its own ideas: the mind's act `produces nothing
 \emph{material} in our substance';\footnote{\emph{Éclaircissement} 1 to
   \emph{De la recherché de la vérité} OC III, 25. Trans. from Nadler
-  2005, 52. Emphasis mine.} minds `do not \ldots produce in
+  2005, 52. Emphasis mine.} minds `do not {[}\ldots{}{]} produce in
 themselves a reality, or a modification that \emph{physically} changes
 their substance.'\footnote{\emph{Réponse à la Dissertation} = OC 7, 568,
   Trans. from Nadler 2005, 52. Emphasis mine. Cf. OC IX, 1129.} Here,
@@ -383,8 +375,8 @@ states:
 
 \begin{quote}
 If {[}ideas{]} are eternal, immutable, necessary, in a word, divine
-\ldots surely they will be more considerable than that matter
-which is inefficacious \ldots. Be careful. If it is you who give
+{[}\ldots{}{]} surely they will be more considerable than that matter
+which is inefficacious {[}\ldots{}{]}. Be careful. If it is you who give
 being to your ideas, it is by willing to think of them. Now, pray tell,
 how can you will to think of a circle, if you do not already have some
 idea of it, from which to form and complete it? Can something be willed
@@ -400,8 +392,9 @@ leaving aside whether the passivity of minds might be an untoward
 consequence of occasionalist tenets, this assumption was not itself
 among those tenets.
 
-\section{The Uses of Clock Metaphors in the Early Modern Philosophical
-Imaginary}
+\hypertarget{the-uses-of-clock-metaphors-in-the-early-modern-philosophical-imaginary}{%
+\section{3 The Uses of Clock Metaphors in the Early Modern Philosophical
+Imaginary}\label{the-uses-of-clock-metaphors-in-the-early-modern-philosophical-imaginary}}
 
 Clocks hold an important place in the early modern philosophical
 imaginary. Like computers today, clocks were put to a wide variety of
@@ -429,9 +422,9 @@ as the parts of a clock give rise to an instrument used to tell time.
 This same theme was later picked up by La Mettrie and Diderot.\footnote{Gaultier,
   \emph{Reponse}, 85-86; see Kaitaro 2016.}
 
-
-\subsection{The Two-clocks Analogy in the Traditional Interpretation
-}
+\hypertarget{the-two-clocks-analogy-in-the-traditional-interpretation}{%
+\subsection{3.1 The Two-clocks Analogy in the Traditional Interpretation
+}\label{the-two-clocks-analogy-in-the-traditional-interpretation}}
 
 Leibniz, too, makes prominent use of clock imagery to describe his
 system, famously in the two-clocks analogy distinguishing his system
@@ -468,10 +461,10 @@ clockmaker, i.e. the God of the occasionalist system, as a busybody; and
 ensuring the agreement `in advance', i.e. at a chronologically prior
 point in time.
 
-For Russell, Malebranche `held that \ldots the changes in matter
+For Russell, Malebranche `held that {[}\ldots{}{]} the changes in matter
 corresponding to those in mind must be effected by the direct operation
 of God in each case. In Leibniz, on the contrary, only one original
-miracle was required to start all the clocks \ldots---the rest
+miracle was required to start all the clocks {[}\ldots{}{]}---the rest
 was all effected naturally.'\footnote{Russell 1951, 137.} Nadler
 contrasts his reading of Malebranche, where `Malebranche's God is
 personally, directly, and immediately responsible'\footnote{Nadler 1993,
@@ -498,7 +491,7 @@ abandoning the metaphor altogether.\footnote{Scott 1997, 462. For
 reading have been advanced by Jolley,\footnote{Jolley 2002 takes Leibniz
   to describe Malebranche's system as one on which `the occasionalist
   God is a busybody God.' (246); cf. 1990, 106-107.}
-Detlefsen,\footnote{`Leibniz \ldots makes clear that
+Detlefsen,\footnote{`Leibniz {[}\ldots{}{]} makes clear that
   occasionalism is miraculous because it posits God's constant activity
   in the so-called natural world.' Detlefsen 2003, 449.} Stuart
 Brown,\footnote{`Leibniz took {[}Malebranche's thought{]} a step closer
@@ -578,9 +571,10 @@ creature at all times via divine concurrence, and does not seem to
 regard his system and occasionalism as in conflict on this
 point.\footnote{See also GP II. 91-92; IV. 588; VI. 295-296; VII. 564.}
 
-\subsection{Leibniz's Clocks and the Unity of the Pre-established
+\hypertarget{leibnizs-clocks-and-the-unity-of-the-pre-established-harmony-as-a-system}{%
+\subsection{3.2 Leibniz's Clocks and the Unity of the Pre-established
 harmony as a
-System}
+System}\label{leibnizs-clocks-and-the-unity-of-the-pre-established-harmony-as-a-system}}
 
 The difficulties with the traditional interpretation are not only
 theoretical. The mutual compatibility of Leibniz's different uses of the
@@ -648,11 +642,13 @@ not have been lost on Leibniz's contemporary readers:
 by contrast, intrinsically follow the laws of efficient and final
 causes.\footnote{Cf. GP VII. 417-418 = AG. 345-46.}
 
-\section{Reintegrating Leibniz's Pre-established
-Harmony}
+\hypertarget{reintegrating-leibnizs-pre-established-harmony}{%
+\section{4 Reintegrating Leibniz's Pre-established
+Harmony}\label{reintegrating-leibnizs-pre-established-harmony}}
 
-\subsection{The Nature of Leibnizian
-Substances}
+\hypertarget{the-nature-of-leibnizian-substances}{%
+\subsection{4.1 The Nature of Leibnizian
+Substances}\label{the-nature-of-leibnizian-substances}}
 
 In explicating the difference between occasionalism and the
 pre-established harmony, we follow the order Leibniz himself marks out
@@ -755,7 +751,8 @@ in the lowest beings. Thus, if Cartesian occasionalism constitutes being
 as the disjunction of thinking or extension, Leibniz constitutes
 thinking as appetition, and appetition as force.
 
-\subsection{Their Communication}
+\hypertarget{their-communication}{%
+\subsection{4.2 Their Communication}\label{their-communication}}
 
 By using the term `atom', Leibniz indicates not only that these forms
 are unities in themselves, but also that they serve as building blocks
@@ -809,11 +806,14 @@ universe.'\footnote{Cf. GP IV. 434. The account here offered of
   and Puryear 2006, of perception as isomorphism, but provides a basis
   for it.}
 
-\subsection{The Union of Mind and
-Body}
+\hypertarget{the-union-of-mind-and-body}{%
+\subsection{4.3 The Union of Mind and
+Body}\label{the-union-of-mind-and-body}}
 
-\subsubsection{The Relation of Mind to Body
-Generally}
+\hypertarget{the-relation-of-mind-to-body-generally}{%
+\subsubsection{4.3.1 The Relation of Mind to Body
+Generally}\label{the-relation-of-mind-to-body-generally}}
+
 Each Leibnizian nature, as force, expresses every other nature from its
 own viewpoint. It does this by producing phenomena, which through the
 harmonious laws by which they follow each other, are perceived as a
@@ -851,11 +851,11 @@ which results in a complete substance.\footnote{Cf. Furth 1967;
 mind-body interaction, Leibniz states:
 
 \begin{quote}
-And our interior sentiments \ldots being nothing besides
+And our interior sentiments {[}\ldots{}{]} being nothing besides
 phenomena consequent on external things, or better, true appearances,
 like well-ordered dreams -- it is necessary that these internal
 perceptions in the soul itself come to it by its own original
-constitution -- that is, by its representative nature \ldots
+constitution -- that is, by its representative nature {[}\ldots{}{]}
 which was given to it from its creation, and which give it its
 individual character.\footnote{GP IV. 484.}
 \end{quote}
@@ -884,8 +884,9 @@ nothing other than an old scholastic adage drastically reworked from a
 Cartesian viewpoint: that matter is the principle of
 individuation.\footnote{Cf. GP II. 118-120.}
 
-\subsubsection{The Union of Particular Minds and
-Bodies}
+\hypertarget{the-union-of-particular-minds-and-bodies}{%
+\subsubsection{4.3.2 The Union of Particular Minds and
+Bodies}\label{the-union-of-particular-minds-and-bodies}}
 
 The above considerations show how the concrete substance, as a union of
 the active and passive, form and matter, \emph{cogito} and
@@ -916,7 +917,8 @@ For Leibniz, the \emph{phenomenal} union of mind and body cannot be
 something added to the aforementioned harmony of laws; Leibniz's system
 was never meant to explain anything more than this.
 
-\section{Conclusion}
+\hypertarget{conclusion}{%
+\section{5 Conclusion}\label{conclusion}}
 
 Having unfolded the pre-established harmony in its proper order, we can
 now summarily distinguish it from the system of occasional causes.
@@ -958,7 +960,8 @@ following their proper laws -- that is, it secures a space in which to
 reach toward one of the main goals of his philosophy: the reconciliation
 of knowledge with piety.
 
-\section{Abbreviations}
+\hypertarget{abbreviations}{%
+\section{Abbreviations}\label{abbreviations}}
 
 A = Gottfried Wilhelm Leibniz. \emph{Sämtliche Schriften und Briefe}.
 Ed. Deutsche Akademier der Wissenschaften zu Berlin. Berlin: Akademie,
@@ -1039,7 +1042,8 @@ Salle, IL: Open Court, 1985.
 (1664)}. Translation with an introduction and notes by D. M. Clarke.
 Dordrecht: Kluwer, 1997.
 
-\section{Bibliography}
+\hypertarget{bibliography}{%
+\section{Bibliography}\label{bibliography}}
 
 Adams, Robert M. 1994. \emph{Leibniz: Determinist, Theist, Idealist}.
 Oxford: Oxford University Press.
@@ -1294,5 +1298,3 @@ Rationalists.} Oxford: Oxford University Press.
 
 Winkler, Kenneth P. 2011. `Continuous Creation.' \emph{Midwest Studies
 in Philosophy} \textbf{35}, 287-309.
-\printbibliography
-\end{document}
