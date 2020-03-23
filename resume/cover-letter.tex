@@ -1,0 +1,31 @@
+\newcommand{\companyname}{IO Informatics}
+\newcommand{\position}{knowledge engineer}
+\newcommand{\companystreetaddress}{2550 Ninth St. \#114.}
+\newcommand{\city}{Berkeley}
+\newcommand{\stateshort}{CA}
+\newcommand{\zipcode}{94710}
+\newcommand{\jobrequirement}{greater familiarity with basic formal ontology and the ontology engineering practices and modeling tradeoffs}
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{\companyname{}}{
+	\companystreetaddress{}
+	\\ \city{}, 
+	\stateshort{} 
+	\zipcode{}}
+\date{March 22, 2020}
+\opening{Dear Sir or Madam,}
+\closing{Cordially, \\ \includegraphics[width=4cm]{signature} \vspace{-1cm}}
+%\enclosure{enclosures}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+\input{paragraph-opening}
+
+\input{paragraph-phd}
+
+\input{paragraph-waystar} 
+More recently, I've been working directly with the semantics of RDF/RDFS and OWL and implementing them in ontologies built with Prot\'eg\'e in my spare time - from which I've gained  \jobrequirement{} the position requires.
+
+\input{paragraph-closing}
+
+\makeletterclosing
