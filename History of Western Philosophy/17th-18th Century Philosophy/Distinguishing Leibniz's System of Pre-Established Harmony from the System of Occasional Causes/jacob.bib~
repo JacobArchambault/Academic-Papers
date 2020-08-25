@@ -4837,7 +4837,7 @@
 	author = {Steven Nadler},
 	journal = {Journal of the History of Philosophy},
 	number = {1},
-	pages = {31-47},
+	pages = {31–47},
 	title = {Occasionalism and General Will in Malebranche},
 	volume = {31},
 	year = {1993}
@@ -4847,7 +4847,7 @@
 	author = {Karen Detlefsen},
 	journal = {Perspectives on Science},
 	number = {4},
-	pages = {443-483},
+	pages = {443–483},
 	title = {Supernaturalism, Occasionalism, and Preformation in Malebranche},
 	volume = {11},
 	year = {2003}
@@ -4865,7 +4865,7 @@
 	author = {Desmond M. Clarke},
 	journal = {Journal of the History of Philosophy},
 	number = {3},
-	pages = {499-504},
+	pages = {499–504},
 	title = {Malebranche and Occasionalism: A Reply to Steven Nadler},
 	volume = {33},
 	year = {1995}
@@ -4875,7 +4875,7 @@
 	author = {David Scott},
 	journal = {Journal of the History of Ideas},
 	number = {3},
-	pages = {445-463},
+	pages = {445–463},
 	title = {Leibniz and the Two Clocks},
 	volume = {58},
 	year = {1997}
@@ -4885,7 +4885,7 @@
 	author = {Nicholas Jolley},
 	journal = {Midwest Studies in Philosophy},
 	number = {1},
-	pages = {245-257},
+	pages = {245–257},
 	title = {Occasionalism and Efficacious Laws in Malebranche},
 	volume = {26},
 	year = {2002}
@@ -4903,7 +4903,7 @@
 	author = {Andrew Black},
 	journal = {Journal of the History of Philosophy},
 	number = {1},
-	pages = {27-44},
+	pages = {27–44},
 	title = {Malebranche's Theodicy},
 	volume = {35},
 	year = {1997}
@@ -4913,7 +4913,7 @@
 	author = {Sukjae Lee},
 	journal = {Philosophical Review},
 	number = {2},
-	pages = {203-248},
+	pages = {203–248},
 	title = {Leibniz on Divine Concurrence},
 	volume = {113},
 	year = {2004}
@@ -4923,7 +4923,7 @@
 	author = {Christopher Shields},
 	journal = {Journal of the History of Philosophy},
 	number = {3},
-	pages = {343-357},
+	pages = {343–357},
 	title = {Leibniz's Doctrine of the Striving Possibles},
 	volume = {24},
 	year = {1986}
@@ -4941,7 +4941,7 @@
 	author = {Tad M. Schmaltz},
 	journal = {British Journal for the History of Philosophy},
 	number = {2},
-	pages = {293-313},
+	pages = {293–313},
 	title = {Occasionalism and Mechanism: Fontenelle's Objections to Malebranche},
 	volume = {16},
 	year = {2008}
@@ -4951,10 +4951,18 @@
 	author = {Russell Wahl},
 	journal = {British Journal for the History of Philosophy},
 	number = {2},
-	pages = {219-240},
+	pages = {219–240},
 	title = {Occasional, Laws, and General Will},
 	volume = {19},
 	year = {2011}
+}
+
+@book{Adams1994,
+	address = {Oxford},
+	author = {Robert M. Adams},
+	publisher = {Oxford University Press},
+	title = {Leibniz: Determinist, Theist, Idealist.},
+	year = {1994}
 }
 
 @book{Anselm1968,
