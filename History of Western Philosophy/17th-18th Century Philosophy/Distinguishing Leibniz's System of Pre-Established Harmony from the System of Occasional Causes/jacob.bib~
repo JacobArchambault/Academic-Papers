@@ -4825,6 +4825,14 @@
 	year = {2010}
 }
 
+@book{New1,
+	author = {Bertrand Russell},
+	edition = 2,
+	publisher = {Longwood},
+	title = {A Critical Exposition of the Philosophy of Leibniz},
+	year = {1951}
+}
+
 @book{Anselm1968,
 	address = {Stuttgart-Bad Cannstatt},
 	author = {{Anselm of Canterbury}},
