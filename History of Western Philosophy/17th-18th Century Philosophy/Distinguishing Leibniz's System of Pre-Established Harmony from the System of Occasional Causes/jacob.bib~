@@ -4843,6 +4843,24 @@
 	year = {1993}
 }
 
+@article{Detlefsen2003,
+	author = {Karen Detlefsen},
+	journal = {Perspectives on Science},
+	number = {4},
+	pages = {443-483},
+	title = {Supernaturalism, Occasionalism, and Preformation in Malebranche},
+	volume = {11},
+	year = {2003}
+}
+
+@book{Clarke1989,
+	address = {Oxford},
+	author = {Desmond M. Clarke},
+	publisher = {Clarendon Press},
+	title = {Occult Powers and Hypotheses: Cartesian Natural Philosophy under Louis XIV},
+	year = {1989}
+}
+
 @book{Anselm1968,
 	address = {Stuttgart-Bad Cannstatt},
 	author = {{Anselm of Canterbury}},
