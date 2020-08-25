@@ -4909,6 +4909,34 @@
 	year = {1997}
 }
 
+@article{Lee2004,
+	author = {Sukjae Lee},
+	journal = {Philosophical Review},
+	number = {2},
+	pages = {203-248},
+	title = {Leibniz on Divine Concurrence},
+	volume = {113},
+	year = {2004}
+}
+
+@article{Shields1986,
+	author = {Christopher Shields},
+	journal = {Journal of the History of Philosophy},
+	number = {3},
+	pages = {343-357},
+	title = {Leibniz's Doctrine of the Striving Possibles},
+	volume = {24},
+	year = {1986}
+}
+
+@book{Wilson1989,
+	address = {Princeton, NJ},
+	author = {Catherine Wilson},
+	publisher = {Princeton University Press},
+	title = {Leibniz's Metaphysics},
+	year = {1989}
+}
+
 @book{Anselm1968,
 	address = {Stuttgart-Bad Cannstatt},
 	author = {{Anselm of Canterbury}},
