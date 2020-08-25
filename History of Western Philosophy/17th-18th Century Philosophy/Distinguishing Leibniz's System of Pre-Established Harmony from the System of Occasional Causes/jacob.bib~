@@ -4891,6 +4891,24 @@
 	year = {2002}
 }
 
+@book{Jolley1990,
+	address = {Oxford},
+	author = {Nicholas Jolley},
+	publisher = {Oxford University Press},
+	title = {The Light of the Soul: Theories of Ideas in Leibniz, Malebranche, and Descartes},
+	year = {1990}
+}
+
+@article{Black1997,
+	author = {Andrew Black},
+	journal = {Journal of the History of Philosophy},
+	number = {1},
+	pages = {27-44},
+	title = {Malebranche's Theodicy},
+	volume = {35},
+	year = {1997}
+}
+
 @book{Anselm1968,
 	address = {Stuttgart-Bad Cannstatt},
 	author = {{Anselm of Canterbury}},
