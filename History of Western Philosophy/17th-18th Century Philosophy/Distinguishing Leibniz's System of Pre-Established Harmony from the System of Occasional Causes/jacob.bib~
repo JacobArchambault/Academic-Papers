@@ -5005,6 +5005,17 @@
 	year = {2000}
 }
 
+@incollection{Bardout2002,
+	address = {Oxford},
+	author = {Jean-Christophe Bardout},
+	booktitle = {A Companion to Early Modern Philosophy},
+	editor = {Steven Nadler},
+	pages = {140-151},
+	publisher = {Blackwell},
+	title = {Occasionalism: Cordemoy, La Forge, Geulincx},
+	year = {2002}
+}
+
 @book{Anselm1968,
 	address = {Stuttgart-Bad Cannstatt},
 	author = {{Anselm of Canterbury}},
