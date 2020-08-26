@@ -4965,6 +4965,24 @@
 	year = {1994}
 }
 
+@book{Antognazza2009,
+	address = {Cambridge},
+	author = {Maria Rosa Antognazza},
+	publisher = {Cambridge University Press},
+	title = {Leibniz: An Intellectual Biography},
+	year = {2009}
+}
+
+@article{Arthur1998,
+	author = {Richard Arthur},
+	journal = {Perspectives on Science},
+	number = {1},
+	pages = {110-135.},
+	title = {Cohesion, Division, and Harmony: Physical Aspects of Leibniz's Continuum Problem (1671-1676)},
+	volume = {6},
+	year = {1998}
+}
+
 @book{Anselm1968,
 	address = {Stuttgart-Bad Cannstatt},
 	author = {{Anselm of Canterbury}},
