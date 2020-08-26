@@ -4983,6 +4983,28 @@
 	year = {1998}
 }
 
+@article{Baker2005,
+	author = {Alan Baker},
+	journal = {American Catholic Philosophical Quarterly},
+	number = {2},
+	pages = {251-272},
+	title = {Malebranche's Occasionalism: A Strategic Reinterpretation},
+	volume = {79},
+	year = {2005}
+}
+
+@incollection{Bardout2000,
+	address = {Cambridge},
+	author = {Jean-Christophe Bardout},
+	booktitle = {The Cambridge Companion to Malebranche},
+	chapter = {6},
+	editor = {Steven Nadler},
+	pages = {139-164},
+	publisher = {Cambridge University Press},
+	title = {Metaphysics and Philosophy},
+	year = {2000}
+}
+
 @book{Anselm1968,
 	address = {Stuttgart-Bad Cannstatt},
 	author = {{Anselm of Canterbury}},
