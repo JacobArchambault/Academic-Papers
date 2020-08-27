@@ -1306,16 +1306,6 @@
 	year = {1975}
 }
 
-@book{AG,
-	address = {Indianapolis},
-	author = {Gottfried Wilhelm Leibniz},
-	editor = {Roger Ariew and Daniel Garber},
-	publisher = {Hackett},
-	title = {Philosophical Essays},
-	translator = {Roger Ariew and Daniel Garber},
-	year = {1989}
-}
-
 @article{Lewis1970,
 	author = {David K. Lewis},
 	journal = {Noûs},
@@ -4977,7 +4967,7 @@
 	author = {Richard Arthur},
 	journal = {Perspectives on Science},
 	number = {1},
-	pages = {110-135.},
+	pages = {110–135.},
 	title = {Cohesion, Division, and Harmony: Physical Aspects of Leibniz's Continuum Problem (1671-1676)},
 	volume = {6},
 	year = {1998}
@@ -4987,7 +4977,7 @@
 	author = {Alan Baker},
 	journal = {American Catholic Philosophical Quarterly},
 	number = {2},
-	pages = {251-272},
+	pages = {251–272},
 	title = {Malebranche's Occasionalism: A Strategic Reinterpretation},
 	volume = {79},
 	year = {2005}
@@ -4998,8 +4988,9 @@
 	author = {Jean-Christophe Bardout},
 	booktitle = {The Cambridge Companion to Malebranche},
 	chapter = {6},
+	crossref = {Nadler2000},
 	editor = {Steven Nadler},
-	pages = {139-164},
+	pages = {139–164},
 	publisher = {Cambridge University Press},
 	title = {Metaphysics and Philosophy},
 	year = {2000}
@@ -5010,7 +5001,7 @@
 	author = {Jean-Christophe Bardout},
 	booktitle = {A Companion to Early Modern Philosophy},
 	editor = {Steven Nadler},
-	pages = {140-151},
+	pages = {140–151},
 	publisher = {Blackwell},
 	title = {Occasionalism: Cordemoy, La Forge, Geulincx},
 	year = {2002}
@@ -5020,10 +5011,56 @@
 	author = {Domenico {Bertoloni Meli}},
 	journal = {Journal of the History of Ideas},
 	number = {3},
-	pages = {469-486},
+	pages = {469–486},
 	title = {. `Caroline, Leibniz, and Clarke},
 	volume = {60},
 	year = {1999}
+}
+
+@article{Bobro2008,
+	author = {Marc E. Bobro},
+	journal = {Southern Journal of Philosophy},
+	number = {3},
+	pages = {317–338},
+	title = {Leibniz on Concurrence and Efficient Causation},
+	volume = {46},
+	year = {2008}
+}
+
+@incollection{Brown2007,
+	address = {Dordrecht},
+	author = {Gregory Brown},
+	booktitle = {Leibniz and the English-Speaking World},
+	editor = {Pauline Phemister and Stuart Brown},
+	pages = {145–162},
+	publisher = {Springer},
+	title = {Is the Logic in London Different from the Logic in Hanover?},
+	year = {2007}
+}
+
+@book{AG,
+	address = {Indianapolis},
+	author = {Gottfried Wilhelm Leibniz},
+	editor = {Roger Ariew and Daniel Garber},
+	publisher = {Hackett},
+	title = {Philosophical Essays},
+	translator = {Roger Ariew and Daniel Garber},
+	year = {1989}
+}
+
+@incollection{Brown2000,
+	author = {Stuart Brown},
+	crossref = {Nadler2000},
+	pages = {262-287},
+	title = {The Critical Reception of Malebranche, From His Own Time to the End of the Eighteenth Century}
+}
+
+@book{Nadler2000,
+	address = {Cambridge},
+	editor = {Steven M. Nadler},
+	publisher = {Cambridge University Press},
+	title = {The Cambridge Companion to Malebranche},
+	year = {2000}
 }
 
 @book{Anselm1968,
