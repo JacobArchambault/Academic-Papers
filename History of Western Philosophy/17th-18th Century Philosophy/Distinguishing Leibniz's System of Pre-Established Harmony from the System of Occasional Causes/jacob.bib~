@@ -4871,16 +4871,6 @@
 	year = {1997}
 }
 
-@article{Jolley2002,
-	author = {Nicholas Jolley},
-	journal = {Midwest Studies in Philosophy},
-	number = {1},
-	pages = {245–257},
-	title = {Occasionalism and Efficacious Laws in Malebranche},
-	volume = {26},
-	year = {2002}
-}
-
 @book{Jolley1990,
 	address = {Oxford},
 	author = {Nicholas Jolley},
@@ -5052,7 +5042,7 @@
 	author = {Stuart Brown},
 	booktitle = {The Cambridge Companion to Malebranche},
 	crossref = {Nadler2000},
-	pages = {262-287},
+	pages = {262–287},
 	title = {The Critical Reception of Malebranche, From His Own Time to the End of the Eighteenth Century}
 }
 
@@ -5060,7 +5050,7 @@
 	author = {Desmond M. Clarke},
 	booktitle = {Descartes' Natural Philosophy},
 	crossref = {Gaukroger2000},
-	pages = {131-148},
+	pages = {131–148},
 	title = {Causal Powers and Occasionalism from Descartes to Malebranche}
 }
 
@@ -5068,10 +5058,63 @@
 	author = {Brian Cooney},
 	journal = {Journal of the History of Philosophy},
 	number = {2},
-	pages = {167-180},
+	pages = {167–180},
 	title = {Arnold Geulincx: A Cartesian Idealist},
 	volume = {16},
 	year = {1978}
+}
+
+@book{Durant1963,
+	address = {New York},
+	author = {Will Durant and Ariel Durant},
+	publisher = {Simon \& Schuster},
+	title = {The Story of Civilization: The age of Louis XIV, 1648-1715},
+	year = {1963}
+}
+
+@article{Furth1967,
+	author = {Montgomery Furth},
+	journal = {The Philosophical Review},
+	number = {2},
+	pages = {169–200},
+	title = {Monadology},
+	volume = {76},
+	year = {1967}
+}
+
+@article{Garber1987,
+	author = {Daniel Garber},
+	journal = {Journal of Philosophy},
+	number = {10},
+	pages = {567–580},
+	title = {How God Causes Motion: Descartes, Divine Sustenance, and Occasionalism},
+	volume = {84},
+	year = {1987}
+}
+
+@book{Jolley1995,
+	address = {Cambridge},
+	editor = {Nicholas Jolley},
+	publisher = {Cambridge University Press},
+	title = {The Cambridge Companion to Leibniz},
+	year = {1995}
+}
+
+@incollection{Garber1995,
+	author = {Daniel Garber},
+	booktitle = {The Cambridge Companion to Leibniz},
+	crossref = {Jolley2002},
+	title = {Leibniz: Physics and Philosophy}
+}
+
+@article{Jolley2002,
+	author = {Nicholas Jolley},
+	journal = {Midwest Studies in Philosophy},
+	number = {1},
+	pages = {245–257},
+	title = {Occasionalism and Efficacious Laws in Malebranche},
+	volume = {26},
+	year = {2002}
 }
 
 @book{Nadler2000,
