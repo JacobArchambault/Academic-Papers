@@ -5050,6 +5050,7 @@
 
 @incollection{Brown2000,
 	author = {Stuart Brown},
+	booktitle = {The Cambridge Companion to Malebranche},
 	crossref = {Nadler2000},
 	pages = {262-287},
 	title = {The Critical Reception of Malebranche, From His Own Time to the End of the Eighteenth Century}
