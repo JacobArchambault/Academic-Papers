@@ -5164,6 +5164,7 @@
 @book{Heidegger1998,
 	address = {Cambridge},
 	author = {Martin Heidegger},
+	editor = {William McNeil},
 	publisher = {Cambridge University Press},
 	title = {Pathmarks},
 	year = {1998}
