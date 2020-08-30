@@ -5113,7 +5113,7 @@
 	author = {Daniel Garber},
 	booktitle = {Kant and the Early Moderns},
 	crossref = {GarberLonguenesse2008},
-	pages = {64-78},
+	pages = {64–78},
 	title = {What Leibniz Really Said?}
 }
 
@@ -5129,7 +5129,7 @@
 	author = {Daniel Garber},
 	booktitle = {New Essays on Leibniz's Theodicy},
 	crossref = {Jorgensen2014},
-	pages = {218-232},
+	pages = {218–232},
 	title = {Monads and the Theodicy: Reading Leibniz.}
 }
 
@@ -5137,10 +5137,28 @@
 	author = {Geoffrey Gorham},
 	journal = {Religous studies},
 	number = {4},
-	pages = {413-431},
+	pages = {413–431},
 	title = {Descartes on God's Relation to Time},
 	volume = {44},
 	year = {2008}
+}
+
+@book{Gouhier1926,
+	address = {Paris},
+	author = {Henri Gouhier},
+	publisher = {J. Vrin},
+	title = {La Vocation de Malebranche},
+	year = {1926}
+}
+
+@article{Goldenbaum2002,
+	author = {Ursula Goldenbaum},
+	journal = {American Catholic Philosophical Quarterly},
+	number = {4},
+	pages = {551-574},
+	title = {pinoza's Parrot, Socinian Syllogisms, and Leibniz's Metaphysics: Leibniz's Three Strategies for Defending Christian Mysteries},
+	volume = {76},
+	year = {2004}
 }
 
 @book{GarberLonguenesse2008,
