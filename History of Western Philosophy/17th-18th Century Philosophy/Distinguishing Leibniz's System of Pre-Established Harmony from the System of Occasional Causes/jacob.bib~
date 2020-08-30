@@ -5180,6 +5180,24 @@
 	year = {2017}
 }
 
+@article{Huffman1993,
+	author = {Tom L. Huffman},
+	journal = {American Catholic Philosophical Quarterly},
+	number = {3},
+	pages = {321-331},
+	title = {An Argument for Leibnizian Metaphysics},
+	volume = {67},
+	year = {1993}
+}
+
+@book{Husserl1960,
+	address = {The Hague},
+	author = {Edmund Husserl},
+	publisher = {Martinus Nijhoff},
+	title = {Cartesian Meditations},
+	year = {1960}
+}
+
 @book{GarberLonguenesse2008,
 	address = {Princeton, NJ},
 	editor = {Daniel Garber and Béatrice Longuenesse},
