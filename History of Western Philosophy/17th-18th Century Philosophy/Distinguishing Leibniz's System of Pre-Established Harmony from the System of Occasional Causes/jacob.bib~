@@ -5156,9 +5156,17 @@
 	journal = {American Catholic Philosophical Quarterly},
 	number = {4},
 	pages = {551-574},
-	title = {pinoza's Parrot, Socinian Syllogisms, and Leibniz's Metaphysics: Leibniz's Three Strategies for Defending Christian Mysteries},
+	title = {Spinoza's Parrot, Socinian Syllogisms, and Leibniz's Metaphysics: Leibniz's Three Strategies for Defending Christian Mysteries},
 	volume = {76},
 	year = {2004}
+}
+
+@book{Heidegger1998,
+	address = {Cambridge},
+	author = {Martin Heidegger},
+	publisher = {Cambridge University Press},
+	title = {Pathmarks},
+	year = {1998}
 }
 
 @book{GarberLonguenesse2008,
