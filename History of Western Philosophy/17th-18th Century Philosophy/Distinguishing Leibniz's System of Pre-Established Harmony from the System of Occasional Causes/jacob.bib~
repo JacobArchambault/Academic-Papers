@@ -5198,6 +5198,36 @@
 	year = {1960}
 }
 
+@article{Jorgensen2015,
+	author = {Larry M. Jorgensen},
+	journal = {Journal of the History of Philosophy},
+	number = {1},
+	pages = {49-77},
+	title = {Leibniz on Perceptual Distinctness, Activity, and Sensation},
+	volume = {53},
+	year = {2015}
+}
+
+@article{Kaitaro2016,
+	author = {Timo Kaitaro},
+	journal = {British Journal for the History of Philosophy},
+	number = {5},
+	pages = {1022-1034},
+	title = {Eighteenth-Century French Materialism Clockwise and Anticlockwise},
+	volume = {24},
+	year = {2016}
+}
+
+@article{Klima1993,
+	author = {Gyula Klima},
+	journal = {Synthese},
+	number = {1},
+	pages = {25-59},
+	title = {The Changing Role of Entia Rationis},
+	volume = {96},
+	year = {1994}
+}
+
 @book{GarberLonguenesse2008,
 	address = {Princeton, NJ},
 	editor = {Daniel Garber and Béatrice Longuenesse},
