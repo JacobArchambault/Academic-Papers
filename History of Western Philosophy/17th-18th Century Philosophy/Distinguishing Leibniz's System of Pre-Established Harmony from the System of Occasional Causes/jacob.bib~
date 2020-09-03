@@ -5155,7 +5155,7 @@
 	author = {Ursula Goldenbaum},
 	journal = {American Catholic Philosophical Quarterly},
 	number = {4},
-	pages = {551-574},
+	pages = {551–574},
 	title = {Spinoza's Parrot, Socinian Syllogisms, and Leibniz's Metaphysics: Leibniz's Three Strategies for Defending Christian Mysteries},
 	volume = {76},
 	year = {2004}
@@ -5174,7 +5174,7 @@
 	author = {Stephen Howard},
 	journal = {British Journal for the History of Philosophy},
 	number = {1},
-	pages = {22-40},
+	pages = {22–40},
 	title = {Why did Leibniz fail to complete his dynamics?},
 	volume = {25},
 	year = {2017}
@@ -5184,7 +5184,7 @@
 	author = {Tom L. Huffman},
 	journal = {American Catholic Philosophical Quarterly},
 	number = {3},
-	pages = {321-331},
+	pages = {321–331},
 	title = {An Argument for Leibnizian Metaphysics},
 	volume = {67},
 	year = {1993}
@@ -5202,7 +5202,7 @@
 	author = {Larry M. Jorgensen},
 	journal = {Journal of the History of Philosophy},
 	number = {1},
-	pages = {49-77},
+	pages = {49–77},
 	title = {Leibniz on Perceptual Distinctness, Activity, and Sensation},
 	volume = {53},
 	year = {2015}
@@ -5212,7 +5212,7 @@
 	author = {Timo Kaitaro},
 	journal = {British Journal for the History of Philosophy},
 	number = {5},
-	pages = {1022-1034},
+	pages = {1022–1034},
 	title = {Eighteenth-Century French Materialism Clockwise and Anticlockwise},
 	volume = {24},
 	year = {2016}
@@ -5222,7 +5222,7 @@
 	author = {Gyula Klima},
 	journal = {Synthese},
 	number = {1},
-	pages = {25-58},
+	pages = {25–58},
 	title = {The changing role of \emph{entia rationis} in mediaeval semantics and ontology: A comparative study with reconstruction},
 	volume = {96},
 	year = {1994}
@@ -5232,7 +5232,7 @@
 	author = {Delphine Kolesnik-Antoine},
 	journal = {Revue de métaphysique et de morale},
 	number = {1},
-	pages = {41-54},
+	pages = {41–54},
 	title = {Les occasionalismes en France à l'âge classique},
 	volume = {49},
 	year = {2006}
@@ -5242,10 +5242,20 @@
 	author = {Mark Kulstad},
 	journal = {American Catholic Philosophical Quarterly},
 	number = {4},
-	pages = {671-690},
+	pages = {671–690},
 	title = {Exploring Middle Ground: Was Leibniz's Conception of God Ever Spinozistic?},
 	volume = {76},
 	year = {2002}
+}
+
+@article{Lloyd2008,
+	author = {Rebecca J. Lloyd},
+	journal = {Southern Journal of Philosophy},
+	number = {2},
+	pages = {245-260},
+	title = {Situating Time in the Leibnizian Hierarchy of Beings},
+	volume = {46},
+	year = {2008}
 }
 
 @book{GarberLonguenesse2008,
