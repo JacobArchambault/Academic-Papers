@@ -5363,6 +5363,18 @@
 	year = {2004}
 }
 
+@article{Platt2011,
+	author = {Andrew R. Platt},
+	doi = {10.1080/09608788.2011.583415},
+	journal = {British Journal for the History of Philosophy},
+	number = {4},
+	pages = {623–646},
+	publisher = {Taylor \& Francis},
+	title = {Divine Activity and Motive Power in Descartes's Physics},
+	volume = {19},
+	year = {2011}
+}
+
 @book{GarberLonguenesse2008,
 	address = {Princeton, NJ},
 	editor = {Daniel Garber and Béatrice Longuenesse},
