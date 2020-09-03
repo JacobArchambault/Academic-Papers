@@ -5299,12 +5299,32 @@
 
 @incollection{Mercer1999,
 	author = {Christia Mercer},
+	booktitle = {The Rationalists: Critical Essays on Descartes, Spinoza, and Leibniz},
 	crossref = {Pereboom1999},
 	editor = {Derk Pereboom},
 	pages = {273–300},
 	publisher = {Rowman \& Littlefield},
 	title = {Leibniz and Spinoza on Substance and Mode},
 	year = {1999}
+}
+
+@book{Mercer2001,
+	author = {Christia Mercer},
+	publisher = {New York: Cambridge University Press},
+	title = {Leibniz' Metaphysics. Its Origins and Development},
+	year = {2001}
+}
+
+@article{Nadler1998,
+	author = {Steven M. Nadler},
+	doi = {10.1353/hph.2008.0835},
+	journal = {Journal of the History of Philosophy},
+	number = {2},
+	pages = {215–231},
+	publisher = {Johns Hopkins University Press},
+	title = {Louis de la Forge and the Development of Occasionalism: Continuous Creation and the Activity of the Soul},
+	volume = {36},
+	year = {1998}
 }
 
 @book{GarberLonguenesse2008,
