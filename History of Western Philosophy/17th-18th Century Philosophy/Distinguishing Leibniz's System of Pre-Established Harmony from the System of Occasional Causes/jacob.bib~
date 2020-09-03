@@ -5258,6 +5258,37 @@
 	year = {2008}
 }
 
+@article{Lodge2015,
+	author = {Paul Lodge},
+	journal = {British Journal for the History of Philosophy},
+	number = {6},
+	pages = {1169-1191},
+	title = {Heidegger on the Being of Monads: Lessons in Leibniz and in the Practice of Reading the History of Philosophy},
+	volume = {23},
+	year = {2015}
+}
+
+@article{McDonough2009,
+	author = {Jeffrey K. McDonough},
+	journal = {Philosophy and Phenomenological Research},
+	number = {3},
+	pages = {505-544},
+	title = {Leibniz on Natural Teleology and the Laws of Optics},
+	volume = {78},
+	year = {2009}
+}
+
+@article{McDonough2016,
+	author = {Jeffrey K. McDonough},
+	doi = {10.1215/00318108-3321711},
+	journal = {Philosophical Review},
+	number = {1},
+	pages = {1–34},
+	title = {Leibniz and the Foundations of Physics: The Later Years},
+	volume = {125},
+	year = {2016}
+}
+
 @book{GarberLonguenesse2008,
 	address = {Princeton, NJ},
 	editor = {Daniel Garber and Béatrice Longuenesse},
