@@ -4824,7 +4824,7 @@
 }
 
 @article{Nadler1993,
-	author = {Steven Nadler},
+	author = {Steven M. Nadler},
 	journal = {Journal of the History of Philosophy},
 	number = {1},
 	pages = {31–47},
@@ -5325,6 +5325,42 @@
 	title = {Louis de la Forge and the Development of Occasionalism: Continuous Creation and the Activity of the Soul},
 	volume = {36},
 	year = {1998}
+}
+
+@article{Nadler1999,
+	author = {Steven Nadler},
+	doi = {10.1080/09608789908571028},
+	journal = {British Journal for the History of Philosophy},
+	number = {2},
+	pages = {263–274},
+	publisher = {Taylor \& Francis},
+	title = {Knowledge, Volitional Agency and Causation in Malebranche and Geulincx},
+	volume = {7},
+	year = {1999}
+}
+
+@article{Nadler2005,
+	author = {Steven M. Nadler},
+	doi = {10.1353/hph.2005.0013},
+	journal = {Journal of the History of Philosophy},
+	number = {1},
+	pages = {37–54},
+	publisher = {Johns Hopkins University Press},
+	title = {Cordemoy and Occasionalism},
+	volume = {43},
+	year = {2005}
+}
+
+@article{Pessin2004,
+	author = {Andrew Pessin},
+	doi = {10.1080/00455091.2004.10716567},
+	journal = {Canadian Journal of Philosophy},
+	number = {2},
+	pages = {241–285},
+	publisher = {University of Calgary Press},
+	title = {Malebranche on Ideas},
+	volume = {34},
+	year = {2004}
 }
 
 @book{GarberLonguenesse2008,
