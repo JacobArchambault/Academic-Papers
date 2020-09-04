@@ -5440,6 +5440,14 @@
 	year = {1993}
 }
 
+@book{Rutherford1995,
+	address = {Cambridge},
+	author = {Donald Rutherford},
+	publisher = {Cambridge University Press},
+	title = {Leibniz and the Rational Order of Nature},
+	year = {1995}
+}
+
 @book{GarberLonguenesse2008,
 	address = {Princeton, NJ},
 	editor = {Daniel Garber and Béatrice Longuenesse},
