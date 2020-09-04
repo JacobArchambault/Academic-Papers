@@ -5408,6 +5408,38 @@
 	year = {2008}
 }
 
+@article{Rescher1981,
+	author = {Nicholas Rescher},
+	journal = {Studia Leibnitiana},
+	pages = {114–122},
+	publisher = {Franz Steiner Verlag},
+	title = {Leibniz and the Concept of a System},
+	volume = {13},
+	year = {1981}
+}
+
+@article{Rutherford1990,
+	author = {Donald P. Rutherford},
+	journal = {Studia Leibnitiana},
+	number = {1},
+	pages = {11–28},
+	publisher = {Franz Steiner Verlag},
+	title = {Phenomenalism and the Reality of Body in Leibniz's Later Philosophy},
+	volume = {22},
+	year = {1990}
+}
+
+@incollection{Rutherford1993,
+	address = {University Park},
+	author = {Donald Rutherford},
+	booktitle = {Causation in Early Modern Philosophy},
+	editor = {Steven Nadler},
+	pages = {135–58},
+	publisher = {Pennsylvania State University Press},
+	title = {Natures, Laws, and Miracles: The Roots of Leibniz's Critique of Occasionalism},
+	year = {1993}
+}
+
 @book{GarberLonguenesse2008,
 	address = {Princeton, NJ},
 	editor = {Daniel Garber and Béatrice Longuenesse},
