@@ -5252,7 +5252,7 @@
 	author = {Rebecca J. Lloyd},
 	journal = {Southern Journal of Philosophy},
 	number = {2},
-	pages = {245-260},
+	pages = {245–260},
 	title = {Situating Time in the Leibnizian Hierarchy of Beings},
 	volume = {46},
 	year = {2008}
@@ -5262,7 +5262,7 @@
 	author = {Paul Lodge},
 	journal = {British Journal for the History of Philosophy},
 	number = {6},
-	pages = {1169-1191},
+	pages = {1169–1191},
 	title = {Heidegger on the Being of Monads: Lessons in Leibniz and in the Practice of Reading the History of Philosophy},
 	volume = {23},
 	year = {2015}
@@ -5272,7 +5272,7 @@
 	author = {Jeffrey K. McDonough},
 	journal = {Philosophy and Phenomenological Research},
 	number = {3},
-	pages = {505-544},
+	pages = {505–544},
 	title = {Leibniz on Natural Teleology and the Laws of Optics},
 	volume = {78},
 	year = {2009}
@@ -5388,6 +5388,24 @@
 	publisher = {Routledge},
 	title = {Malebranche},
 	year = {2003}
+}
+
+@incollection{Radner1993,
+	address = {New York},
+	author = {Daisie Radner},
+	booktitle = {The Renaissance and Seventeenth-Century Rationalism},
+	editor = {G. H. R. Parkinson},
+	publisher = {Routledge},
+	series = {Routledge History of Philosophy},
+	title = {Occasionalism},
+	year = {1993}
+}
+
+@book{Rateau2008,
+	author = {Paul Rateau},
+	publisher = {Honoré Champion},
+	title = {La Question du Mal Chez Leibniz: Fondements et elaboration de la Théodicée},
+	year = {2008}
 }
 
 @book{GarberLonguenesse2008,
