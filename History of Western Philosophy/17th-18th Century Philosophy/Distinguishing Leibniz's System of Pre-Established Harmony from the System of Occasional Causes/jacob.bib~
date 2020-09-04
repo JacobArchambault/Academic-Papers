@@ -5513,6 +5513,24 @@
 	year = {2011}
 }
 
+@article{Whipple2015,
+	author = {John Whipple},
+	journal = {Philosophers' Imprint},
+	title = {Leibniz and the Art of Exoteric Writing},
+	volume = {15},
+	year = {2015}
+}
+
+@incollection{Wilson1999,
+	address = {Oxford},
+	author = {Catherine Wilson},
+	booktitle = {New Essays on the Rationalists},
+	editor = {Rocco J. Gennaro and Charles Huenemann},
+	publisher = {Oxford University Press},
+	title = {The illusory Nature of Leibniz's System},
+	year = {1999}
+}
+
 @book{GarberLonguenesse2008,
 	address = {Princeton, NJ},
 	editor = {Daniel Garber and Béatrice Longuenesse},
