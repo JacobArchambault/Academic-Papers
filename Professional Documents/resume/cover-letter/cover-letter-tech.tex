@@ -1,0 +1,33 @@
+\newcommand{\companyname}{Semantic Arts}
+\newcommand{\position}{data-centric architecture developer}
+\newcommand{\companystreetaddress}{11 Old Town Square \#200}
+\newcommand{\city}{Fort Collins}
+\newcommand{\stateshort}{CO}
+\newcommand{\zipcode}{80524}
+\newcommand{\jobrequirement}{extensive experience with ontologies, formal semantics, and natural and formal languages}
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{\companyname{}}{
+	\companystreetaddress{}
+	\\
+	\city{}, 
+	\stateshort{} 
+	\zipcode{}}
+\date{\today}
+\opening{Dear Sir or Madam,}
+\closing{Cordially, \\ \includegraphics[width=4cm]{cover-letter/signature} \vspace{-1cm}}
+%\enclosure{enclosures}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+\input{cover-letter/paragraph-opening}
+
+\input{cover-letter/paragraph-phd} 
+
+\input{cover-letter/paragraph-waystar} 
+
+\input{cover-letter/paragraph-hls} 
+
+\input{cover-letter/paragraph-closing}
+
+\makeletterclosing
