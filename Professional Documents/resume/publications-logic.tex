@@ -1,0 +1,18 @@
+\section{Select publications}
+\newcounter{publicationCounter}			% We set an publication counter, we can continue counting the publications when switchen from conferences to workshop etc.
+\input{publications-edited-volume}
+
+\subsection{Journal articles}
+\begin{enumerate}
+\setcounter{enumi}{\value{publicationCounter}}	% Continue counting
+\input{publications-articles-logic}
+\setcounter{publicationCounter}{\value{enumi}}
+\end{enumerate}
+
+\input{publications-conference-proceedings}
+
+\subsection{Web publications}
+\begin{enumerate}
+	\setcounter{enumi}{\value{publicationCounter}}	% Continue counting
+	\input{publications-web-logic}
+\end{enumerate}

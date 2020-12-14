@@ -6,7 +6,7 @@
 \definecolor{highlight}{HTML}{283559}
 \definecolor{highlight2}{HTML}{1A2640}
 \definecolor{link}{HTML}{5C6273}
-
+\usepackage{multicol}
 \usepackage{lipsum}
 \usepackage{siunitx}							% package to properly set units
 \usepackage{fontawesome5}						% package for icons (see list of available icons here: http://mirrors.ibiblio.org/CTAN/fonts/fontawesome5/doc/fontawesome5.pdf)
@@ -65,32 +65,11 @@
 
 \input{contact-info}
 \input{education.tex}
-\input{publications.tex}
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%%%%%%%%%%%% HONORS and SCHOLARSHIPS %%%%%%%%%%%% 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Honors}
-	\input{honors.tex}
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%%%%%%%%%%%% SKILLS %%%%%%%%%%%% 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Skills}
-	\input{skills.tex}
-	
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%%%%%%%%%%%% SERVICE %%%%%%%%%%%% 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Service To The Scientific Community}
-	\input{service}
-	
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%%%%%%%%%%%% EXTRAS %%%%%%%%%%%% 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Extracurricular Activities}
-	\input{extra.tex}
-	
+\input{experience}
+\input{honors.tex}
+\input{projects-ontology-focus}
+\input{publications-logic}
+\input{skills-programming}
+%\input{skills.tex}
+\input{references-ontology}	
 \end{document}
