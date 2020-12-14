@@ -1,6 +1,7 @@
 \documentclass{prometheus_cv}
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper, total={5.3in, 10in}, top=2cm]{geometry}		% width=5.3in, height=10in, top margin=2cm on each page
+\usepackage{multicol}
 
 \usepackage{xcolor}																				  % define some colors
 \definecolor{highlight}{HTML}{283559}
@@ -65,22 +66,10 @@
 
 \input{contact-info}	
 \input{education.tex}
+\section{Employment}
+\input{employment-tech}
+\input{projects-devops}
 \input{honors.tex}
-\input{publications.tex}
-\input{skills.tex}
-	
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%%%%%%%%%%%% SERVICE %%%%%%%%%%%% 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Service To The Scientific Community}
-	\input{service}
-	
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%%%%%%%%%%%% EXTRAS %%%%%%%%%%%% 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Extracurricular Activities}
-	\input{extra.tex}
-	
+\input{skills-programming}
+\input{references-tech}
 \end{document}
