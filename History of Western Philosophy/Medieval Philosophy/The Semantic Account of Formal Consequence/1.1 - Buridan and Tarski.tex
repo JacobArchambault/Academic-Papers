@@ -25,6 +25,7 @@ then its content.
 This prepares the ground for Buridan and Tarski's respective accounts of following formally to be compared directly.
 \section{From classical consequence back to Tarski}
 \subsection{Classical consequence today}
+\subsubsection{Classical syntax}
 Classical consequence today is constructed as follows. 
 One begins with an artificial language $L = (Trm, Pred, Con, F)$. 
 $Trm = N \cup Var$ is a collection of \textit{terms}, 
@@ -44,16 +45,24 @@ $Pred$ is a set of n-ary relation symbols $\{P^{1}, Q^{1}, R^{1},..., P^{2},...,
 	and so forth. 
 	In practice, the superscript is dropped, 
 	and the arity of a predicate is determined by context.} 
- $Con = \{\neg, \supset, \vee, \wedge, \equiv\, \exists, \forall, (, )\}$ is our collection of logical constants. Occasionally, the two-place identity predicate $=$ is also classified as a constant, so that $Con \cap Pred = \{=\}$ The class of formulas $F$ is then determined recursively as follows:
+$Con = \{\neg, \supset, \vee, \wedge, \equiv\, \exists, \forall, (, )\}$ is our collection of logical constants.
+The two-place identity predicate $=$ may also be classified as a constant, 
+so that $Con \cap Pred = \{=\}$. 
+The class of formulas $F$ is then determined recursively as follows:
 \begin{itemize}
-\item[1] If $t_{1} ... t_{n}$ are terms, and $P^{n}$ is an n-ary relation symbol, then $P^{n}(t_{1} ... t_{n})$ is a formula. These formulas are called \textit{atomic formulas}, and any variables among the terms of $P^{n}(t_{1} ... t_{n})$ are said to be \textit{unbound}.
+\item[1] If $t_{1} ... t_{n}$ are terms, 
+and $P^{n}$ is an n-ary relation symbol, 
+then $P^{n}(t_{1} ... t_{n})$ is a formula. 
+These formulas are called \textit{atomic formulas}. 
+Any variables among the terms of $P^{n}(t_{1} ... t_{n})$ are said to be \textit{unbound}.
 \item[2] If $A \in F$, then $\neg A \in F$. The unbound variables of $\neg A$ are the same as those of $A$.
 \item[3] If $A, B$ are formulae, then so are $(A \supset B)$, $(A \vee B)$, $(A \wedge B)$, and $(A \equiv B)$, their unbound variables being those of $A, B$.
-\item[2] If $A \in F$, and $v \in Var$, then $\forall v A$, $\exists v A$ are formulae. Here, the quantifiers $\forall v$ and $\exists v$ are said to \textit{bind} the free occurrences of $v$ in A, which thereafter is called a \textit{bound variable}. A formula all of whose variables are bound is called a \textit{sentence}.
+\item[2] If $A \in F$, and $v \in Var$, then $\forall v A$, $\exists v A$ are formulae. Here, the quantifiers $\forall v$ and $\exists v$ are said to \textit{bind} the free occurrences of $v$ in $A$. A formula all of whose variables are bound is called a \textit{sentence}.
 \item[4] Nothing else is a formula.
 \end{itemize}
-In practice, outermost parentheses are dropped, as are parentheses bracketing terms. Formulae involving the identity predicate are written $t_{1} = t_{2}$, rather than $=(t_{1}, t_{2})$, as the formalism strictly requires; and $\neg=(t_{1}, t_{2})$ is written $t_{1} \ne t_{2}$.
+In practice, outermost parentheses and those bracketing terms are dropped, formulae involving the identity predicate are written $t_{1} = t_{2}$ rather than $=(t_{1}, t_{2})$, and $\neg=(t_{1}, t_{2})$ is written as $t_{1} \ne t_{2}$.
 
+\subsubsection{Classical semantics}
 After giving conditions for what constitutes a formula, conditions are provided for determining when they are true or false. To do this, one defines a model $M = (D, I)$ as a pair of a \textit{domain}, $D$, and an \textit{interpretation} $I$. $D$ is  a collection of objects: cats and dogs, numbers, members of the Medici family, or whatever else one likes. The domain of a model may be finite, countably infinite, or even uncountably infinite, but is usually not allowed to be empty. The interpretation function $I$ then assigns: each name $a$ to an element in the domain $D$; and each n-ary relation symbol $R^{n}$ to a subset of $D^{n}$;\footnote{I.e. the nth Cartesian product of the domain, the result of multiplying the domain $n$ times with itself.}. Besides interpretations, one also has \textit{valuations} $\{v, v' ...\}$ on $M$, each of which assigns values in $D$ to all the variables of the language $L$. Valuations are normally not considered part of a model, since the truth or falsity of a \textit{sentence} relies on no one valuation in particular, though the determination of the truth-value of various \textit{formulae} is partially determined by valuations. One thus says that a formula $A$ is true in $I$ under a valuation $v$. For notational convenience, we let $(v \star I)$ be the operation such that $v \star I$ agrees with $v$ on the assignment of variables, and with $I$ on the assignment of terms, and write $(v \star I)(t_{1}, ...t_{n})$ for $((v \star I)(t_{1}), ... (v \star I)(t_{n}))$. Lastly, we call a valuation $v'$ an \textit{$x$-variant} (\textit{$y$-variant}, etc.) of a valuation $v$ iff $v'$ agrees with $v$ on all variable assignments except perhaps $x$. The truth value of different formulae in a model $M$ - i.e. \textit{truth in a model} - is then recursively determined as follows:
 
 \begin{enumerate}
