@@ -1,20 +1,20 @@
 \documentclass[]{article}
 
 %opening
-\title{The semantic account of formal consequence, from Alfred Tarski back to John Buridan}
-\author{Jacob Archambault}
+\title{Formal consequence, from Alfred Tarski back to John Buridan}
+\author{}
 
 \begin{document}
 
 \maketitle
 
 \section{Introduction}
-The resemblance between Buridan's and Tarski's theories of formal consequence has long been remarked upon, so much so that it helped accelerate the rediscovery of Buridan as a major medieval figure in the latter half of the twentieth century.\footnote{See \cite{Moody1952} \cite{Kneale1962} \cite{Dumitriu1974} \cite{DutilhNovaes2012a} \cite{DutilhNovaes2012c} \cite{Parsons2014}, and the editor introductions to \cite{BuridanTC}, \cite{Kretzmann1982} and \cite{King1985}.} But while long noticed, it has not yet been subjected to sustained analysis.
+The resemblance between Buridan's and Tarski's theories of formal consequence has long been remarked upon, so much so that it helped accelerate the rediscovery of Buridan as a major medieval figure in the latter half of the twentieth century.\footnote{See \cite{Moody1952} \cite{Kneale1962} \cite{Dumitriu1974} \cite{DutilhNovaes2012a} \cite{DutilhNovaes2012c} \cite{Parsons2014}, and the editor introductions to \cite{BuridanTC}, \cite{Kretzmann1982} and \cite{King1985}.} But while long noticed, it has not yet been subjected to sustained general analysis.
 
 In this article, I provide just such an analysis. I begin by reviewing today's understanding of classical consequence, then highlighting its differences from Tarski's 1936 account of formal consequence in \cite{Tarski2002}. Following this, I introduce Buridan's account of formal consequence, detailing its philosophical underpinnings, then its content. This then allows a clearer contrast between Buridan and Tarski's respective accounts of following formally.
 \section{From classical consequence back to Tarski}
 \subsection{Classical consequence today}
-Today, classical consequence is constructed in the following way. One begins with an artificial language $L = (Trm, Pred, Con, F)$. $Trm = N \cup Var$ is a collection of \textit{terms}, itself the union of a set of \textit{names} $N = \{a, b, c, ...\}$, and \textit{variables} $Var = \{x, y, z, w, x'...\}$. The set of non-logical constants may be empty, finite, or countably infinite, while the set of variables is usually assumed to be infinite. $Pred$ is an infinite set of n-ary relation symbols $\{P^{1}, Q^{1}, R^{1},..., P^{2},..., P^{n}\}$. Here, the superscript indicates the \textit{arity} of the relation symbol, i.e. the number of arguments it takes. Intuitively, a relation symbol of arity one is a one-place predicate, e.g. `Red'; of arity two, a two-place relation, e.g. `greater than'; of arity three, a three-place relation, e.g. `the sum of', and so forth. In practice, the superscript is dropped, and the arity of a predicate is determined by context. $Con = \{\neg, \supset, \vee, \wedge, \equiv\, \exists, \forall, (, )\}$ is our collection of logical constants. Occasionally, the two-place identity predicate $=$ is also classified as a constant, so that $Con \cap Pred = \{=\}$ The class of formulas $F$ is then determined recursively as follows:
+Classical consequence today is constructed as follows. One begins with an artificial language $L = (Trm, Pred, Con, F)$. $Trm = N \cup Var$ is a collection of \textit{terms}, itself the union of a set of \textit{names} $N = \{a, b, c, ...\}$, and \textit{variables} $Var = \{x, y, z, w, x'...\}$. The set of non-logical constants may be empty, finite, or countably infinite, while the set of variables is usually assumed to be infinite. $Pred$ is an infinite set of n-ary relation symbols $\{P^{1}, Q^{1}, R^{1},..., P^{2},..., P^{n}\}$. Here, the superscript indicates the \textit{arity} of the relation symbol, i.e. the number of arguments it takes. Intuitively, a relation symbol of arity one is a one-place predicate, e.g. `is Red'; of arity two, a two-place relation, e.g. `is greater than'; of arity three, a three-place relation, e.g. `is the sum of', and so forth. In practice, the superscript is dropped, and the arity of a predicate is determined by context. $Con = \{\neg, \supset, \vee, \wedge, \equiv\, \exists, \forall, (, )\}$ is our collection of logical constants. Occasionally, the two-place identity predicate $=$ is also classified as a constant, so that $Con \cap Pred = \{=\}$ The class of formulas $F$ is then determined recursively as follows:
 \begin{itemize}
 \item[1] If $t_{1} ... t_{n}$ are terms, and $P^{n}$ is an n-ary relation symbol, then $P^{n}(t_{1} ... t_{n})$ is a formula. These formulas are called \textit{atomic formulas}, and any variables among the terms of $P^{n}(t_{1} ... t_{n})$ are said to be \textit{unbound}.
 \item[2] If $A \in F$, then $\neg A \in F$. The unbound variables of $\neg A$ are the same as those of $A$.
