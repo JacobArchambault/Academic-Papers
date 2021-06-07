@@ -86,10 +86,34 @@ Next, let $\Gamma$ denote a (finite or infinite) string of sentences $\phi, \psi
 
 Lastly, a sentence $\phi$ is said to be a logical consequence of a sentence $\Gamma$, written $\Gamma \models \phi$, iff every model of $\Gamma$ is a model of $\phi$.
 \subsection{Tarskian consequence}
-Tarskian logical consequence is based on a \textit{permutation-invariance} criterion for logicality: $\Gamma \models \phi$ precisely when there is no uniform substitution on  non-logical constants in $\Gamma, \phi$ that models $\Gamma$ but not $\phi$. And in his post-WWII period, Tarski embraced many additional aspects of the received approach to classical consequence - for instance, he made increasing use of set theory as a metatheory, and rejected higher-order logic in favor of first-order logic \cite{Tarski1987} \cite[372]{Corcoran2011}.
+In his post-WWII period, 
+Tarski embraced many additional aspects of the received approach to classical consequence - 
+for instance, 
+he made increasing use of set theory as a metatheory, 
+and rejected higher-order logic in favor of first-order logic \cite{Tarski1987} \cite[372]{Corcoran2011}.
+Other aspects of Tarski's account, however, 
+remain distinct from the received one, even in his later texts. 
 
-Other aspects of Tarski's account remain distinct from the received one, even in his later texts. In model-theory today, the languages one works with are left uninterpreted until given an interpretation by the interpretation function. The languages Tarski worked with, by contrast, were fully interpreted artificial languages, like those for Riemannian geometry or Peano arithmetic. Thus for Tarski, there is no question of assigning an interpretation to the non-logical constant `0', say, or varying its interpretation across models. Rather, where contemporary model theory varies the interpretation of logical constants across models to determine what follows logically from what, Tarski left these constants interpreted as they were, but replaced them uniformly with variables (always avoiding clashing), whose valuations are then varied accordingly.\footnote{According to \cite[433]{Schiemer2013}, the contemporary practice originates in the work of John Kemeny. See \cite{Kemeny1956} \cite{Kemeny1956b}.} The same point also holds for predicate and relation symbols: where modern practice varies their interpretation, Tarski's replaces them with second-order variables, and varies the valuation of these. \footnote{See e.g. \cite[122-23]{Tarski1941}. Cf. \cite[69]{Etchemendy1988} \cite[448]{Schiemer2013}.} While there is a conceptual difference between the two approaches, both lead to the same material results.
+\subsubsection{Tarskian consequence and substitution}
+On Tarski's account of formal consequence, 
+$\Gamma \models \phi$ precisely when there is no uniform substitution on non-logical constants in $\Gamma, \phi$ that models $\Gamma$ but not $\phi$. 
+This agrees with the modern classical approach inasmuch as formality is determined by variation of models, though it differs with respect to what precisely is varied. 
+In model-theory today, 
+the languages one works with are left uninterpreted until given an interpretation by an interpretation function. 
+The languages Tarski worked with, 
+by contrast, 
+were fully interpreted artificial languages, 
+like those for Riemannian geometry or Peano arithmetic. 
+Thus for Tarski, 
+there is no question of assigning an interpretation to the non-logical constant `0', say, 
+or varying its interpretation across models. 
+Rather, where contemporary model theory varies the interpretation of non-logical constants across models to determine what follows logically from what, 
+Tarski leaves these constants interpreted as they were, 
+but replaces them uniformly with variables (always avoiding clashing), 
+whose valuations are then varied accordingly.\footnote{According to \cite[433]{Schiemer2013}, the contemporary practice originates in the work of John Kemeny. See \cite{Kemeny1956} \cite{Kemeny1956b}.} 
+Likewise, where modern practice varies the interpretation of n-ary predicates, Tarski's replaces them with second-order variables. \footnote{See e.g. \cite[122-23]{Tarski1941}. Cf. \cite[69]{Etchemendy1988} \cite[448]{Schiemer2013}.} While there is a conceptual difference between the two approaches, both lead to the same material results.
 
+\subsubsection{Tarskian consequence and domain variation}
 The most debated question concerning Tarski's work from both periods is whether Tarski allowed for domain variation across different classical models, and correspondingly varied or restricted the range of quantification; or whether he employed the logicist practice of assuming a fixed domain of quantification, viz. the actual universe. Unlike the previous case, however, this \textit{does} affect the extension of the class of logical consequences. For instance, if the domain of quantification is not varied, $\exists x \exists y x \ne y$ is a logical truth, and hence follows from, e.g. $\exists x x = x$. But intuitively (and on the variant-domain approach followed today), `there are at least two objects' is not a truth \textit{of logic}, nor does it follow from `there is at least one object'.
 
 \cite[325]{Church1956} had already read Tarski as varying the domain across models. The first paper to have suggested domain variation was \textit{absent} in Tarski's original account appears to have been \cite[43]{Corcoran1972}, though the point is made only in passing. That Tarski held a fixed-domain conception of logical consequence was then defended at length by Etchemendy \cite{Etchemendy1988} \cite{Etchemendy1990} \cite{Etchemendy2008}, and later taken up by Sag\"{u}illo \cite{Saguillo1997} \cite{Saguillo2009} \cite{Corcoran2011}, Bays \cite{Bays2001}, and Mancosu \cite{Mancosu2006} \cite{Mancosu2010a}. A variable-domain reading of \cite{Tarski2002} was accepted by Sher \cite{Sher1991} \cite{Sher1996}, Ray \cite{Ray1996}, and in Stroi\'{n}ska and Hitchcock's introduction to \cite{Tarski2002}, each broadly on grounds of interpretive charity. The most sophisticated proponent of a variable-domain interpretation in Tarski's pre-WWII work is G\'{o}mez-Torrente - see his \cite{Gomez-Torrente1996}  and \cite{Gomez-Torrente2009}. Mancosu has summarized the status of the current debate in \cite{Mancosu2010b}.
