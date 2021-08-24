@@ -5619,6 +5619,26 @@
 	year = {1990}
 }
 
+@article{Klima1991b,
+	author = {Gyula Klima},
+	journal = {Cahiers de L'institut du Moyen-Âge Grec et Latin},
+	pages = {78-106},
+	title = {Latin as a Formal Language: Outlines of a Buridanian Semantics},
+	volume = {61},
+	year = {1991}
+}
+
+@incollection{Klima1990,
+	author = {Gyula Klima},
+	booktitle = {Zeichen, Denken, Praxis},
+	editor = {J. Bernard and J. Kelemen},
+	location = {Vienna},
+	pages = {249-267},
+	publisher = {nstitut fur Sozio-Semiotische Studien},
+	title = {Approaching Natural Language \emph{via} Mediaeval Logic},
+	year = {1990}
+}
+
 @book{GarberLonguenesse2008,
 	address = {Princeton, NJ},
 	editor = {Daniel Garber and Béatrice Longuenesse},
