@@ -5607,18 +5607,6 @@
 	year = {2020}
 }
 
-@article{KlimaSandu1990,
-	author = {Gyula Klima and Gabriel Sandu},
-	doi = {10.1111/j.1755-2567.1990.tb00181.x},
-	journal = {Theoria},
-	number = {3},
-	pages = {173–192},
-	publisher = {Philosophy Department, Stockholm University},
-	title = {Numerical Quantifiers in Game-Theoretical Semantics},
-	volume = {56},
-	year = {1990}
-}
-
 @book{GarberLonguenesse2008,
 	address = {Princeton, NJ},
 	editor = {Daniel Garber and Béatrice Longuenesse},
