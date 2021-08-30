@@ -5670,6 +5670,17 @@
 	year = {2005}
 }
 
+@incollection{Klima2011,
+	author = {Gyula Klima},
+	booktitle = {Methods and Methodologies: Aristotelian Logic East and West 500-1500},
+	editor = {Margaret Cameron and John Marenbon},
+	location = {Leiden},
+	pages = {109-126},
+	publisher = {Brill},
+	title = {Two \emph{Summulae}, Two Ways of Doing Logic: Peter of Spain's `Realism' and John Buridan's `Nominalism'},
+	year = {2011}
+}
+
 @book{GarberLonguenesse2008,
 	address = {Princeton, NJ},
 	editor = {Daniel Garber and Béatrice Longuenesse},
