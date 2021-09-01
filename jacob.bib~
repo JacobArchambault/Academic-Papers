@@ -5675,10 +5675,21 @@
 	booktitle = {Methods and Methodologies: Aristotelian Logic East and West 500-1500},
 	editor = {Margaret Cameron and John Marenbon},
 	location = {Leiden},
-	pages = {109-126},
+	pages = {109–126},
 	publisher = {Brill},
 	title = {Two \emph{Summulae}, Two Ways of Doing Logic: Peter of Spain's `Realism' and John Buridan's `Nominalism'},
 	year = {2011}
+}
+
+@incollection{Klima2008b,
+	author = {Gyula Klima},
+	booktitle = {Whose God? Which Tradition?},
+	editor = {D. Z. Phillips},
+	location = {Aldershot},
+	pages = {53–77},
+	publisher = {Ashgate},
+	title = {The “Grammar” of `God' and `Being': Making Sense of Talking about the One True God in Different Metaphysical Traditions},
+	year = {2008}
 }
 
 @book{GarberLonguenesse2008,
