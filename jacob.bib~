@@ -5697,10 +5697,23 @@
 	booktitle = {Mind, Metaphysics, and Value in the Thomistic and Analytic Traditions},
 	editor = {John Haldane},
 	location = {Notre Dame, IN},
-	pages = {175-194},
+	pages = {175–194},
 	publisher = {University of Notre Dame Press},
 	title = {Contemporary `Essentialism' vs. Aristotelian Essentialism},
 	year = {2002}
+}
+
+@incollection{Klima2011b,
+	author = {Gyula Klima},
+	booktitle = {Categories and What is Beyond},
+	editor = {Gyula Klima and Alexander W. Hall},
+	location = {Newcastle upon Tyne},
+	pages = {49-64},
+	publisher = {Cambridge Scholars},
+	series = {Proceedings for the Society of Medieval Logic and Metaphysics},
+	title = {Thomas of Sutton and Henry of Ghent on the Analogy of Being},
+	volume = {2},
+	year = {2011}
 }
 
 @book{GarberLonguenesse2008,
