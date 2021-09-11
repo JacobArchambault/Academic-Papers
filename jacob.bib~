@@ -5719,7 +5719,7 @@
 @article{Klima2009a,
 	author = {Gyula Klima},
 	journal = {Philosophical Investigations},
-	pages = {163-182},
+	pages = {163–182},
 	title = {Aquinas on the Materiality of the Human Soul and the Immateriality of the Human Intellect},
 	volume = {32},
 	year = {2009}
@@ -5730,12 +5730,19 @@
 	booktitle = {Metaphysical Themes, Medieval and Modern},
 	editor = {Gyula Klima and Alexander W. Hall},
 	location = {Newcastle upon Tyne},
-	pages = {85-88},
+	pages = {85–88},
 	publisher = {Cambridge Scholars},
 	series = {Proceedings for the Society of Medieval Logic and Metaphysics},
 	title = {The Rises and Falls of Analysis and Metaphysics},
 	volume = {11},
 	year = {2014}
+}
+
+@unpublished{Klima2021,
+	author = {Gyula Klima},
+	pages = {31-42},
+	title = {Words and What is Beyond Words},
+	year = {2021}
 }
 
 @book{GarberLonguenesse2008,
