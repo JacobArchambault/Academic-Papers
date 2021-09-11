@@ -5745,6 +5745,16 @@
 	year = {2021}
 }
 
+@article{Klima2012,
+	author = {Gyula Klima},
+	journal = {American Catholic Philosophical Quarterly},
+	number = {3},
+	pages = {403-414},
+	title = {Ontological Reduction by Logical Analysis and the Primitive Vocabulary of Mentalese},
+	volume = {86},
+	year = {2012}
+}
+
 @book{GarberLonguenesse2008,
 	address = {Princeton, NJ},
 	editor = {Daniel Garber and Béatrice Longuenesse},
