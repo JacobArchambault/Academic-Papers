@@ -5725,6 +5725,19 @@
 	year = {2009}
 }
 
+@incollection{Klima2014,
+	author = {Gyula Klima},
+	booktitle = {Metaphysical Themes, Medieval and Modern},
+	editor = {Gyula Klima and Alexander W. Hall},
+	location = {Newcastle upon Tyne},
+	pages = {85-88},
+	publisher = {Cambridge Scholars},
+	series = {Proceedings for the Society of Medieval Logic and Metaphysics},
+	title = {The Rises and Falls of Analysis and Metaphysics},
+	volume = {11},
+	year = {2014}
+}
+
 @book{GarberLonguenesse2008,
 	address = {Princeton, NJ},
 	editor = {Daniel Garber and Béatrice Longuenesse},
