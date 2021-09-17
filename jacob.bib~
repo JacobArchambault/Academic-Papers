@@ -1935,9 +1935,14 @@
 
 @article{Kripke2015,
 	author = {Saul A. Kripke},
-	journal = {Noûs},
+	doi = {10.1111/nous.12126},
+	journal = {No\^us},
+	number = {2},
+	pages = {221–234},
+	publisher = {Wiley-Blackwell},
 	title = {Quantified Modality and Essentialism},
-	year = {2015}
+	volume = {51},
+	year = {2017}
 }
 
 @article{Kripke2015b,
@@ -5740,7 +5745,7 @@
 
 @unpublished{Klima2021,
 	author = {Gyula Klima},
-	pages = {31-42},
+	pages = {31–42},
 	title = {Words and What is Beyond Words},
 	year = {2021}
 }
@@ -5749,7 +5754,7 @@
 	author = {Gyula Klima},
 	journal = {American Catholic Philosophical Quarterly},
 	number = {3},
-	pages = {403-414},
+	pages = {403–414},
 	title = {Ontological Reduction by Logical Analysis and the Primitive Vocabulary of Mentalese},
 	volume = {86},
 	year = {2012}
@@ -5758,7 +5763,7 @@
 @article{Klima2010,
 	author = {Gyula Klima},
 	journal = {Magyar Filozófiai Szemle},
-	pages = {58-75},
+	pages = {58–75},
 	title = {Natural Logic, Medieval Logic and Formal Semantics},
 	volume = {54},
 	year = {2010}
