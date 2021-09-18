@@ -319,13 +319,20 @@ On possibilist semantics, a model $(W, R, D)$ a frame $(W, R)$
 consisting of a set of worlds $W$ and a binary relation $R$ on worlds, 
 and a set $D$ containing all elements existing at any element in $W$. 
 Quantifiers range over $D$ in its entirety, and to represent actual existence at a given world $w$, possibilist semantics employs a monadic predicate $E$ 
-whose interpretation intuitively maps to the set of actual existents at $w$.\footnote{
-	The explication here is cursory. For a full explication, see chapter 4 of \autocite{Fitting1998}.}
+whose interpretation intuitively maps to the set of actual existents at $w$. 
 Conversely, on actualist semantics, 
 we take a model $(W, R, D)$ to be as before, 
 but with $D$ being not a set, but a function from each element $w$ in $W$ to its actual existents. 
 The interpretation of a quantifier at $w$ is restricted to $D(w)$, 
 and no first-order existence predicate $E$ is admitted as a logical constant.
+Since at least \autocite{Lejewski1954},
+we've known that actualist and possibilist semantics are expressively equivalent, 
+given a one-to-one translation schema from the one to the other on which, e.g. 
+$\forall x Fx $ and $\exists x Fx$ hold in actualist semantics 
+exactly when $\forall x (Ex \rightarrow Fx)$ and $\exists x(Ex \wedge Fx)$ hold, respectively, in possibilist semantics.\footnote{
+	The full translation schema involves recursion, 
+	and the explication here is intentionally cursory.
+	For a full explication, see chapter 4 of \autocite{Fitting1998}.}
 
 In any case, it expresses a sense in which there are at least two senses of being. 
 Likewise with the acceptance or rejection of the axiom of reducibility, 
