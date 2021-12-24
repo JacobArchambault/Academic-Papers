@@ -821,20 +821,6 @@
 	year = {1999}
 }
 
-@book{ScotusIsagoge,
-	address = {St. Bonaventure, NY},
-	author = {{John Duns Scotus}},
-	booktitle = {Quaestiones in Librum Porphyrii Isagoge; Quaestiones super Praedicamenta Aristotelis},
-	crossref = {ScotusOP},
-	editor = {R. Andrews and G. Etzkorn and G. Gál and R. Green and T. Noone and R. Wood},
-	note = {Cited by question and paragraph.},
-	publisher = {Franciscan Institute},
-	series = {Opera Philosophica},
-	title = {Quaestiones in Librum Porphyrii Isagoge},
-	volume = {1},
-	year = {1999}
-}
-
 @bookinbook{BDT,
 	author = {Boethius},
 	booktitle = {Patrologia Cursus Completus. Series Latina},
@@ -1295,7 +1281,6 @@
 @article{CIFOL2,
 	author = {Nuel Belnap and Thomas Müller},
 	journal = {Journal of Philosophical Logic},
-	number = {5},
 	pages = {835–866},
 	title = {{BH-CIFOL}: Case-Intensional First-Order Logic (II) Branching Histories},
 	volume = {43},
@@ -2013,14 +1998,9 @@
 
 @article{Kripke2015,
 	author = {Saul A. Kripke},
-	doi = {10.1111/nous.12126},
-	journal = {No\^us},
-	number = {2},
-	pages = {221–234},
-	publisher = {Wiley-Blackwell},
+	journal = {Noûs},
 	title = {Quantified Modality and Essentialism},
-	volume = {51},
-	year = {2017}
+	year = {2015}
 }
 
 @article{Kripke2015b,
@@ -5626,186 +5606,6 @@
 	year = {2020}
 }
 
-@article{KlimaSandu1990,
-	author = {Gyula Klima and Gabriel Sandu},
-	doi = {10.1111/j.1755-2567.1990.tb00181.x},
-	journal = {Theoria},
-	number = {3},
-	pages = {173–192},
-	publisher = {Philosophy Department, Stockholm University},
-	title = {Numerical Quantifiers in Game-Theoretical Semantics},
-	volume = {56},
-	year = {1990}
-}
-
-@article{Klima1991b,
-	author = {Gyula Klima},
-	journal = {Cahiers de l'Institut du Moyen-Âge Grec et Latin},
-	pages = {78–106},
-	title = {Latin as a Formal Language: Outlines of a Buridanian Semantics},
-	volume = {61},
-	year = {1991}
-}
-
-@incollection{Klima1990,
-	author = {Gyula Klima},
-	booktitle = {Zeichen, Denken, Praxis},
-	editor = {J. Bernard and J. Kelemen},
-	location = {Vienna},
-	pages = {249–267},
-	publisher = {Institut für Sozio-Semiotische Studien},
-	title = {Approaching Natural Language \emph{via} Mediaeval Logic},
-	year = {1990}
-}
-
-@article{Klima1996,
-	author = {Gyula Klima},
-	journal = {Medieval Philosophy and Theology},
-	number = {1},
-	pages = {87–141},
-	title = {The Semantic Principles Underlying Saint Thomas Aquinas's Metaphysics of Being},
-	volume = {5},
-	year = {1996}
-}
-
-@article{Klima2002,
-	author = {Gyula Klima},
-	journal = {History of Philosophy \& Logical Analysis},
-	pages = {159–176},
-	publisher = {Mentis Verlag Gmbh},
-	title = {Aquinas' Theory of the Copula and the Analogy of Being},
-	volume = {5},
-	year = {2002}
-}
-
-@article{Klima2005,
-	author = {Gyula Klima},
-	journal = {Review of Metaphysics},
-	number = {4},
-	pages = {739–754},
-	publisher = {Philosophy Education Society},
-	title = {The Essentialist Nominalism of John Buridan},
-	volume = {58},
-	year = {2005}
-}
-
-@incollection{Klima2011,
-	author = {Gyula Klima},
-	booktitle = {Methods and Methodologies: Aristotelian Logic East and West 500-1500},
-	editor = {Margaret Cameron and John Marenbon},
-	location = {Leiden},
-	pages = {109–126},
-	publisher = {Brill},
-	title = {Two \emph{Summulae}, Two Ways of Doing Logic: Peter of Spain's `Realism' and John Buridan's `Nominalism'},
-	year = {2011}
-}
-
-@incollection{Klima2008b,
-	author = {Gyula Klima},
-	booktitle = {Whose God? Which Tradition?},
-	editor = {D. Z. Phillips},
-	location = {Aldershot},
-	pages = {53–77},
-	publisher = {Ashgate},
-	title = {The “Grammar” of `God' and `Being': Making Sense of Talking about the One True God in Different Metaphysical Traditions},
-	year = {2008}
-}
-
-@incollection{Klima2002b,
-	author = {Gyula Klima},
-	booktitle = {Mind, Metaphysics, and Value in the Thomistic and Analytic Traditions},
-	editor = {John Haldane},
-	location = {Notre Dame, IN},
-	pages = {175–194},
-	publisher = {University of Notre Dame Press},
-	title = {Contemporary `Essentialism' vs. Aristotelian Essentialism},
-	year = {2002}
-}
-
-@incollection{Klima2011b,
-	author = {Gyula Klima},
-	booktitle = {Categories and What is Beyond},
-	editor = {Gyula Klima and Alexander W. Hall},
-	location = {Newcastle upon Tyne},
-	pages = {49–64},
-	publisher = {Cambridge Scholars},
-	series = {Proceedings for the Society of Medieval Logic and Metaphysics},
-	title = {Thomas of Sutton and Henry of Ghent on the Analogy of Being},
-	volume = {2},
-	year = {2011}
-}
-
-@article{Klima2009a,
-	author = {Gyula Klima},
-	journal = {Philosophical Investigations},
-	pages = {163–182},
-	title = {Aquinas on the Materiality of the Human Soul and the Immateriality of the Human Intellect},
-	volume = {32},
-	year = {2009}
-}
-
-@incollection{Klima2014,
-	author = {Gyula Klima},
-	booktitle = {Metaphysical Themes, Medieval and Modern},
-	editor = {Gyula Klima and Alexander W. Hall},
-	location = {Newcastle upon Tyne},
-	pages = {85–88},
-	publisher = {Cambridge Scholars},
-	series = {Proceedings for the Society of Medieval Logic and Metaphysics},
-	title = {The Rises and Falls of Analysis and Metaphysics},
-	volume = {11},
-	year = {2014}
-}
-
-@unpublished{Klima2021,
-	author = {Gyula Klima},
-	pages = {31–42},
-	title = {Words and What is Beyond Words},
-	year = {2021}
-}
-
-@article{Klima2012,
-	author = {Gyula Klima},
-	journal = {American Catholic Philosophical Quarterly},
-	number = {3},
-	pages = {403–414},
-	title = {Ontological Reduction by Logical Analysis and the Primitive Vocabulary of Mentalese},
-	volume = {86},
-	year = {2012}
-}
-
-@article{Klima2010,
-	author = {Gyula Klima},
-	journal = {Magyar Filozófiai Szemle},
-	pages = {58–75},
-	title = {Natural Logic, Medieval Logic and Formal Semantics},
-	volume = {54},
-	year = {2010}
-}
-
-@article{Tarski1943,
-	author = {Alfred Tarski},
-	doi = {10.2307/2102968},
-	journal = {Philosophy and Phenomenological Research},
-	number = {3},
-	pages = {341–376},
-	publisher = {International Phenomenological Society},
-	title = {The Semantic Conception of Truth and the Foundations of Semantics},
-	volume = {4},
-	year = {1943}
-}
-
-@incollection{DeRijk1982,
-	author = {L. M. {De Rijk}},
-	booktitle = {The Cambridge History of Later Medieval Philosophy},
-	editor = {Norman Kretzmann and Jan Pinborg and Anthony Kenny and Eleonore Stump},
-	location = {Cambridge},
-	pages = {159–173},
-	publisher = {Cambridge University Press},
-	title = {The Origin of the Theory of the Properties of Terms},
-	year = {1982}
-}
-
 @book{GarberLonguenesse2008,
 	address = {Princeton, NJ},
 	editor = {Daniel Garber and Béatrice Longuenesse},
@@ -6153,13 +5953,18 @@
 	year = {1999}
 }
 
-@Article{Roberts1953,
-  author       = {Roberts, Louise Nisbet},
-  date         = {1953},
-  journaltitle = {Tulane Studies in Philosophy},
-  title        = {Every Proposition is False - A Medieval Paradox},
-  pages        = {95-102},
-  volume       = {2},
+@Article{KlimaSandu1990,
+  author       = {Klima, Gyula and Sandu, Gabriel},
+  date         = {1990},
+  journaltitle = {Theoria},
+  title        = {Numerical quantifiers in game-theoretical semantics},
+  number       = {3},
+  pages        = {173-192},
+  volume       = {56},
 }
 
-@Comment{jabref-meta: databaseType:biblatex;}
+@InCollection{Klima1990,
+  author    = {Klima, Gyula},
+  booktitle = {Zeichen, Denken, Praxis},
+  date      = {1990},
+  title     = {Approaching Natural Language \em
