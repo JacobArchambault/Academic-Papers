@@ -1,0 +1,14 @@
+- BETTER DEFINED WORK ITEMS
+	- azure DevOps templates
+- BETTER GIT WORKFLOW
+	- more frequent PRs
+	- trunk-based development 
+	- feature flags
+- BETTER CODE
+	- Database normalization
+	- SOLID
+	- Ports and adapters
+	- Cleaner views (no extra or unused fields)
+- LESS DEBUGGING, MORE UNIT TESTS
+- SIMPLER, MORE RELIABLE ENVIRONMENT
+	- Docker & Kubernetees = inversion of control at the application level.
