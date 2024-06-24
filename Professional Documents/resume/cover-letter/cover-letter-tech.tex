@@ -1,3 +1,13 @@
+\documentclass[]{letter}
+\usepackage{xcolor}																				  % define some colors
+\definecolor{highlight}{HTML}{283559}
+\usepackage[								% coloring of links
+colorlinks = true,
+linkcolor = highlight,
+urlcolor = highlight,
+citecolor= highlight
+]{hyperref}
+
 \newcommand{\companyname}{CyberCoders}
 \newcommand{\position}{junior business software engineer}
 %\newcommand{\companystreetaddress}{250 Northern Ave Suite 301}
@@ -5,29 +15,39 @@
 \newcommand{\stateshort}{KY}
 \newcommand{\zipcode}{}
 \newcommand{\jobrequirement}{both abstract ability and concrete experience with databases, DevOps, and multiple programming langauges}
-\clearpage
-%-----       letter       ---------------------------------------------------------
-% recipient data
-\recipient{\companyname{}}{
-%	\companystreetaddress{}
-%	\\
-	\city{}, 
-	\stateshort{} 
-	\zipcode{}}
-\date{\today}
-\opening{Dear Sir or Madam,}
-\closing{Cordially, \\ \includegraphics[width=4cm]{cover-letter/signature} \vspace{-1cm}}
-%\enclosure{enclosures}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-\makelettertitle
 
-\input{cover-letter/paragraph-opening}
-
-\input{cover-letter/paragraph-waystar} 
-
-\input{cover-letter/paragraph-phd} 
-
-\input{cover-letter/paragraph-hls} 
-
-\input{cover-letter/paragraph-closing}
-
-\makeletterclosing
+\begin{document}
+	% If you want headings on subsequent pages,
+	% remove the ``%'' on the next line:
+	% \pagestyle{headings}
+	
+	\begin{letter}{\companyname{} \\
+			\city{}, \stateshort{} \zipcode{}
+			
+			
+		}
+		\address{8404 Glaser Ln \\ Louisville, KY 40291}
+		
+		\opening{To whom it may concern,}
+		
+		\input{paragraph-opening}
+		
+		\input{paragraph-waystar} 
+		
+		\input{paragraph-phd} 
+		
+		\input{paragraph-hls} 
+		
+		\input{paragraph-closing}
+		
+		
+		
+		\signature{Jacob Archambault}
+		
+		\closing{Kind regards,}
+		
+		%enclosure listing
+		%\encl{}
+		
+	\end{letter}
+\end{document}
