@@ -119,8 +119,82 @@
 		\end{center}
 	\end{frame}
 	\begin{frame}{The Mythical Man Month, Fred Brooks (cont.)}
-			\begin{itemize}
-				\item corollary: adding more people to a project can lead not only to diminishing returns on delivery speed, but to objectively less work being completed
-			\end{itemize}
-		\end{frame}
-	\end{document}
+		\begin{itemize}
+			\item corollary: adding more people to a project can lead not only to diminishing returns on delivery speed, but to objectively less work being completed
+		\end{itemize}
+	\end{frame}
+	\subsection{its growth}
+	\subsubsection{DevOps Research and Assessment (DORA)}
+	\begin{frame}{2013: The State of DevOps Report}
+		\begin{enumerate}
+			\item a series of surveys of over 36,000 professionals \pause
+			\item Led by a PhD statistician, Nicole Forsgren, from 2013-2019 \pause
+			\item Uses \emph{cluster analysis} to discover groupings - has no prior understanding of what counts as good or bad.
+		\end{enumerate}
+	\end{frame}
+	\begin{frame}{The State of DevOps Report: throughput metrics}
+		\begin{enumerate}
+			\item lead time for changes \pause
+			\item deployment frequency 
+		\end{enumerate}
+	\end{frame}
+	\begin{frame}{The State of DevOps Report: stability metrics}
+		\begin{enumerate}
+			\item change failure rate \pause
+			\item mean time to restore
+		\end{enumerate}
+	\end{frame}
+	\begin{frame}{The State of DevOps Report: results}
+		\begin{quote}
+			`Astonishingly, these results demonstrate that there is no trade-off between improving performance and achieving higher levels of stability and quality. Rather, high performers do better at all of these measures. This is precisely what the Agile and Lean movements predict, but much dogma in our industry still rests on the false assumption that moving faster means \emph{trading off} against other performance goals, rather than enabling and reinforcing them.'  - Nicole Forsgren, Jez Humble, and Gene Kim, \emph{Accelerate} (2017), p. 14
+		\end{quote}
+	\end{frame}
+	\section{DevOps anti-patterns and applications}
+	\subsection{anti-pattern 1: local optimization}
+	\begin{frame}{anti-pattern 1: local optimization}
+		\begin{itemize}
+			\item example 1: separate (DevOps, QA, operations, support) team \pause
+			\item leads to bottlenecks \pause
+			\item delays communication 
+			\item punishes untracked work (e.g. thorough code reviews/dev testing, helping blocked colleagues)
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{anti-pattern 1 solution}
+		\begin{itemize}
+			\item cross-functional teams with `t-shaped' employees \pause
+			\item guild system 
+		\end{itemize}
+	\end{frame}
+	\subsection{Anti-pattern 2: Gandalf vs. the Balrog}
+	\begin{frame}{anti-pattern 2: Gandalf vs. the Balrog}
+		\begin{itemize}
+			\item change approval boards \pause 
+			\item pre-merge code reviews \pause 
+			\item `bridge-to-nowhere' pipelines 
+			\item these all increase lead time
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{anti-pattern 2 solutions: aggressively parallelize work}
+		\begin{itemize}
+			\item pair programming \pause 
+			\item parallelized pipeline builds for `wide' pipelines \pause
+			\item one build artifact for all pipeline stages 
+			\item share responsibility
+		\end{itemize}
+	\end{frame}
+	\section{Conclusion}
+	\begin{frame}{Conclusion}
+		\begin{enumerate}
+			\item Reduce goal misalignment \pause
+			\item stop people from waiting on each other \pause 
+			\item work in small batches \pause
+			\item That's mostly it
+			
+		\end{enumerate}
+	\end{frame}
+	\begin{frame}{Conclusion}
+		\begin{quote}
+			`DevOps is whatever you do to bridge friction created by silos, and all the rest is engineering' - Patrick Debois, Puppet State of DevOps report 2021
+		\end{quote}
+	\end{frame}
+\end{document}
