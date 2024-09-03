@@ -52,20 +52,41 @@
 		\end{itemize}
 	\end{frame}
 	\section{A short history of DevOps}
-	\subsection{its origins}
-	\begin{frame}{Origins}
+	\subsection{its beginning}
+	\begin{frame}{DevOps: its beginning}
 		\begin{itemize}
 			\item Velocity Conference 2009: John Allspaw and Paul Hammond, "10+ Deploys Per Day: Dev and Ops Cooperation at Flickr" \pause
-			\item Patrick Debois \href{https://youtu.be/EOveXZhJpr4}{DevOps Days Ghent}
+			\item Patrick Debois \href{https://youtu.be/EOveXZhJpr4}{DevOps Days 2009, Ghent, Belgium}
 		\end{itemize}
 	\end{frame}
 	\subsection{its roots}
 	\subsubsection{Throughput}
-	\begin{frame}
-		foo
-		\end{frame}
+	\begin{frame}{Goldratt's theory of constraints}
+		\begin{itemize}
+			\item Increase: throughput \pause
+			\item Decrease: \pause
+			\begin{itemize}
+				\item operating costs \pause
+				\item inventory \pause
+				\item scrap \pause
+			\end{itemize}
+			\item Remove bottlenecks
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{Goldratt's theory of constraints (cont.)}
+		\includegraphics{assemblyline}
+	\end{frame}
 	\subsubsection{Communication}
-	\begin{frame}
-		bar
-		\end{frame}
+	\begin{frame}{Conway's law}
+		\begin{quote}
+			`Organizations which design systems [...] are constrained to produce designs which are copies of the communication structures of these organizations.' - Melvin Conway, `How do Committees Invent?' Datamation, 1967
+		\end{quote}
+	\end{frame}
+	\begin{frame}{Conway's law: examples}
+		\begin{itemize}
+			\item `A contract research organization had eight people who were to produce a COBOL and an ALGOL compiler. After some initial estimates of difficulty and time, five people were assigned to the COBOL job and three to the ALGOL job. The resulting COBOL compiler ran in five phases, the ALG0L compiler ran in three.' \pause
+			\item front-end [devs] backend [devs] monolithic database [DBA team] \pause
+			\item a web api controller [manager]  delegates most business logic to business classes [developers] which are part of the same in-memory process [team], while serving as a single entry-point for wider cross-network [cross-team] communication.
+		\end{itemize}
+	\end{frame}
 \end{document}
