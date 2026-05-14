@@ -20,6 +20,36 @@
 		\tableofcontents[pausesections]
 		% You might wish to add the option [pausesections]
 	\end{frame}
+	\section{Current challenges and their canonical solutions}
+	\begin{frame}{Challenges}
+		\begin{itemize}
+			\item coordinating multiple teams working in the same repository \pause
+				\item lack of direct collaboration, and occasionally trust, between development, operations, and testing \pause
+				\item late integration of contributor code \pause
+				\begin{itemize}
+					\item feedback delays \pause
+					\item merge conflict regressions \pause
+					\item sunk costs fallacy risks \pause
+				\end{itemize}
+				\item coupling of all services at the database layer \pause
+				\begin{itemize}
+					\item high storage costs \pause
+					\item single point of failure risk \pause
+					\item risk of cross-project interference \pause
+				\end{itemize}
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{Canonical solutions to these challenges}
+		\begin{itemize}
+			\item multiple teams -> Inverse Conway Maneuver \pause
+			\item collaboration -> Business stream-aligned teams over activity oriented teams \pause
+			\item late integration -> adopting a true continuous integration workflow \pause
+			\item database coupling -> Bezos API mandate/``Microservices'' \pause
+			
+			
+		\end{itemize}
+	\end{frame}
+	
 	\section{DevOps 201}
 	\subsection{Its roots}
 	\subsubsection{Throughput}
@@ -52,12 +82,12 @@
 		\end{itemize}
 	\end{frame}
 	\begin{frame}{Conway's law: more examples}
-	\begin{itemize}
-		\item separate .csproj projects for tests written by QA \pause
-		\item separate development and config repositories for the same transaction signifying low communication between development and operations \pause
-		\item all business documentation in the same repository, separate from the repositories that the documentation is for \pause
-	\end{itemize}
-\end{frame}
+		\begin{itemize}
+			\item separate .csproj projects for tests written by QA \pause
+			\item separate development and config repositories for the same transaction signifying low communication between development and operations \pause
+			\item all business documentation in the same repository, separate from the repositories that the documentation is for \pause
+		\end{itemize}
+	\end{frame}
 	\begin{frame}{1975: The Mythical Man Month, Fred Brooks}
 		
 		\begin{itemize}
@@ -188,6 +218,6 @@
 		\end{quote}
 	\end{frame}
 	\begin{frame}[plain]
-	\titlepage
-\end{frame}
+		\titlepage
+	\end{frame}
 \end{document}
