@@ -51,6 +51,13 @@
 			\item a web api controller [manager]  delegates most business logic to business classes [developers] which are part of the same in-memory process [team], while serving as a single entry-point for wider cross-network [cross-team] communication.
 		\end{itemize}
 	\end{frame}
+	\begin{frame}{Conway's law: more examples}
+	\begin{itemize}
+		\item separate .csproj projects for tests written by QA \pause
+		\item separate development and config repositories for the same transaction signifying low communication between development and operations \pause
+		\item all business documentation in the same repository, separate from the repositories that the documentation is for \pause
+	\end{itemize}
+\end{frame}
 	\begin{frame}{1975: The Mythical Man Month, Fred Brooks}
 		
 		\begin{itemize}
