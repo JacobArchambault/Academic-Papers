@@ -192,6 +192,38 @@
 		
 		\rightline{- 2024 State of DevOps Report}
 	\end{frame}
+	\subsection{Throughput anti-pattern: Gandalf vs. the Balrog}
+\begin{frame}{Throughput anti-pattern: Gandalf vs. the Balrog}
+	\begin{center}
+		\includegraphics[width=.5\textwidth]{gandalf-balrog}
+	\end{center}
+\end{frame}
+\begin{frame}{Throughput anti-pattern: Gandalf vs. the Balrog}
+	\includegraphics[width=\textwidth]{gandalf}
+\end{frame}
+\begin{frame}{Throughput anti-pattern: Gandalf vs. the Balrog}
+	\begin{itemize}
+		\item change approval boards \pause 
+		\item pre-merge code reviews \pause 
+		\item `bridge-to-nowhere' pipelines \pause
+		\item these all increase lead time
+	\end{itemize}
+\end{frame}
+\begin{frame}{Throughput anti-pattern solutions: aggressively parallelize work}
+	\begin{itemize}
+		\item pair programming \pause 
+		\item parallelized pipeline builds for `wide' pipelines \pause
+		\item one build artifact for all pipeline stages \pause
+		\item share responsibility
+	\end{itemize}
+\end{frame}
+\begin{frame}{Defining throughput for our project}
+	\begin{itemize}
+		\item Avoid `thrashing' metrics \pause
+		\item \textit{Throughput} - the total lapsed time from local commit to production deployment \pause
+		\item \textit{Throughput*} - the total lapsed time from local commit to user acceptance testing handoff \pause
+	\end{itemize}
+\end{frame}
 	\section{Branching and continuous integration}
 	\subsection{Definition}
 	\begin{frame}{Defining continuous integration}
@@ -224,7 +256,12 @@
 		\end{itemize}
 	\end{frame}
 	\subsection{Benefits}
-	\begin{frame}{Continuous integration: benefits}
+	\begin{frame}
+		\includegraphics[width=1\textwidth]{CIBenefits}
+		
+		- Forsgren and Humble (2016), p. 10
+	\end{frame}
+	\begin{frame}{Continuous integration: benefits (cont.)}
 		\begin{itemize}
 			\item High performers have the shortest integration times and branch
 			lifetimes, with branch life and integration typically lasting hours. \pause
@@ -233,40 +270,6 @@
 			\item These differences are statistically significant
 			
 			\rightline{- 2017 State of DevOps Report, p. 41}
-		\end{itemize}
-	\end{frame}
-
-	\section{Communication and throughput anti-patterns and solutions}
-	\subsection{Throughput anti-pattern: Gandalf vs. the Balrog}
-	\begin{frame}{Throughput anti-pattern: Gandalf vs. the Balrog}
-		\begin{center}
-			\includegraphics[width=.5\textwidth]{gandalf-balrog}
-		\end{center}
-	\end{frame}
-	\begin{frame}{Throughput anti-pattern: Gandalf vs. the Balrog}
-		\includegraphics[width=\textwidth]{gandalf}
-	\end{frame}
-	\begin{frame}{Throughput anti-pattern: Gandalf vs. the Balrog}
-		\begin{itemize}
-			\item change approval boards \pause 
-			\item pre-merge code reviews \pause 
-			\item `bridge-to-nowhere' pipelines \pause
-			\item these all increase lead time
-		\end{itemize}
-	\end{frame}
-	\begin{frame}{Throughput anti-pattern solutions: aggressively parallelize work}
-		\begin{itemize}
-			\item pair programming \pause 
-			\item parallelized pipeline builds for `wide' pipelines \pause
-			\item one build artifact for all pipeline stages \pause
-			\item share responsibility
-		\end{itemize}
-	\end{frame}
-	\begin{frame}{Defining throughput for our project}
-		\begin{itemize}
-			\item Avoid `thrashing' metrics \pause
-			\item \textit{Throughput} - the total lapsed time from local commit to production deployment \pause
-			\item \textit{Throughput*} - the total lapsed time from local commit to user acceptance testing handoff \pause
 		\end{itemize}
 	\end{frame}
 	\section{Conclusion}
