@@ -172,11 +172,25 @@
 		\rightline{- 2024 State of DevOps Report}
 	\end{frame}
 	\section{Branching and continuous integration}
+	\begin{frame}{Defining continuous integration}
+		\begin{itemize}
+			\item Every developer commits at least daily to the shared mainline \pause
+			\item every commit triggers an automated build and test \pause
+			\item if build and test fails, it's repaired within 10 minutes \pause
+		\end{itemize}
+	\end{frame}
 	\begin{frame}{Continuous integration branching patterns}
 		\begin{itemize}
 			\item don't \pause
 			\item as little as possible, for as short a time as possible \pause
 		\end{itemize}
+	\end{frame}
+	\begin{frame}{Continuous integration: trade-offs}
+		\begin{quote}
+			Continuous Integration applies a different trigger for integration - you integrate whenever you've made a hunk of progress on the feature and your branch is still healthy. There's no expectation that the feature be complete, just that there's been a worthwhile amount of changes to the codebase. The rule of thumb is that “everyone commits to the mainline every day”, or more precisely: you should never have more than a day's work sitting unintegrated in your local repository. 
+
+			\rightline{- Martin Fowler}
+		\end{quote}
 	\end{frame}
 	\section{Communication and throughput anti-patterns and solutions}
 	\subsection{Communication anti-pattern: local optimization}
@@ -231,12 +245,12 @@
 		\end{itemize}
 	\end{frame}
 	\begin{frame}{Defining throughput for our project}
-	\begin{itemize}
-		\item Avoid `thrashing' metrics \pause
-		\item \textit{Throughput} - the total lapsed time from local commit to production deployment \pause
-		\item \textit{Throughput*} - the total lapsed time from local commit to user acceptance testing handoff \pause
-	\end{itemize}
-\end{frame}
+		\begin{itemize}
+			\item Avoid `thrashing' metrics \pause
+			\item \textit{Throughput} - the total lapsed time from local commit to production deployment \pause
+			\item \textit{Throughput*} - the total lapsed time from local commit to user acceptance testing handoff \pause
+		\end{itemize}
+	\end{frame}
 	\section{Conclusion}
 	\begin{frame}{Conclusion}
 		\begin{itemize}
