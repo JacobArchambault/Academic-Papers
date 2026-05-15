@@ -22,28 +22,28 @@
 	\section{Current challenges and their canonical solutions}
 	\begin{frame}{Challenges}
 		\begin{itemize}
-			\item coordinating multiple teams working in the same repository 
-			\item lack of direct collaboration, and occasionally trust, between development, operations, and testing 
-			\item late integration of contributor code 
+			\item coordinating multiple teams working in the same repository \pause
+			\item lack of direct collaboration, and occasionally trust, between development, operations, and testing \pause
+			\item late integration of contributor code \pause
 			\begin{itemize}
-				\item feedback delays 
-				\item merge conflict regressions 
-				\item sunk costs fallacy risks 
+				\item feedback delays \pause
+				\item merge conflict regressions \pause
+				\item sunk costs fallacy risks \pause
 			\end{itemize}
-			\item coupling of all services at the database layer 
+			\item coupling of all services at the database layer \pause
 			\begin{itemize}
-				\item high storage costs 
-				\item single point of failure risk 
-				\item risk of cross-project interference 
+				\item high storage costs \pause
+				\item single point of failure risk \pause
+				\item risk of cross-project interference \pause
 			\end{itemize}
 		\end{itemize}
 	\end{frame}
 	\begin{frame}{Canonical solutions to these challenges}
 		\begin{itemize}
-			\item multiple teams $\rightarrow$ inverse Conway maneuver 
-			\item collaboration $\rightarrow$ business stream-aligned teams over activity oriented teams 
-			\item late integration $\rightarrow$ adopting a true continuous integration workflow 
-			\item database coupling $\rightarrow$ Bezos API mandate/``Microservices'' 
+			\item multiple teams $\rightarrow$ inverse Conway maneuver \pause
+			\item collaboration $\rightarrow$ business stream-aligned teams over activity oriented teams \pause
+			\item late integration $\rightarrow$ adopting a true continuous integration workflow \pause
+			\item database coupling $\rightarrow$ Bezos API mandate/``Microservices'' \pause
 			
 			
 		\end{itemize}
@@ -58,25 +58,25 @@
 	\end{frame}
 	\begin{frame}{Conway's law: examples}
 		\begin{itemize}
-			\item `If you have four groups working on a compiler, you'll get a 4-pass compiler' - The New Hacker's Dictionary, 1996
-			\item front-end [devs] business layer [backend devs] monolithic database [DBA team] 
+			\item `If you have four groups working on a compiler, you'll get a 4-pass compiler' - The New Hacker's Dictionary, 1996\pause
+			\item front-end [devs] business layer [backend devs] monolithic database [DBA team] \pause
 			\item a web api controller [manager]  delegates most business logic to business classes [developers] which are part of the same in-memory process [team], while serving as a single entry-point for wider cross-network [cross-team] communication.
 		\end{itemize}
 	\end{frame}
 	\begin{frame}{Conway's law: more examples}
 		\begin{itemize}
-			\item separate \texttt{.csproj} projects for tests written by QA 
-			\item separate development and config repositories for the same transaction signifying low communication between development and operations 
-			\item all business documentation in the same repository, separate from the repositories that the documentation is for 
+			\item separate \texttt{.csproj} projects for tests written by QA \pause
+			\item separate development and config repositories for the same transaction signifying low communication between development and operations \pause
+			\item all business documentation in the same repository, separate from the repositories that the documentation is for \pause
 		\end{itemize}
 	\end{frame}
 	\begin{frame}{Conway's law: corollaries}
 		\begin{itemize}
-			\item Conway's law can't be fought 
-			\item Teams working in the same part of the same codebase at the same time are the same team 
+			\item Conway's law can't be fought \pause
+			\item Teams working in the same part of the same codebase at the same time are the same team \pause
 			\begin{itemize}
-				\item separate the codebases for improved velocity 
-				\item join the teams for improved code sharing and communication (Inverse conway maneuver)  
+				\item separate the codebases for improved velocity \pause
+				\item join the teams for improved code sharing and communication (Inverse conway maneuver) \pause 
 				\item branching-based strategies for team management compromise between the above approaches without their benefits
 			\end{itemize}
 		\end{itemize}
@@ -124,12 +124,12 @@
 	\subsection{Throughput}
 	\begin{frame}{Just-in-time manufacturing and Goldratt's theory of constraints}
 		\begin{itemize}
-			\item Increase: throughput 
-			\item Decrease: 
+			\item Increase: throughput \pause
+			\item Decrease: \pause
 			\begin{itemize}
-				\item operating costs 
-				\item inventory 
-				\item scrap 
+				\item operating costs \pause
+				\item inventory \pause
+				\item scrap \pause
 			\end{itemize}
 			\item Remove bottlenecks
 		\end{itemize}
@@ -139,20 +139,20 @@
 	\end{frame}
 	\begin{frame}{2013: The State of DevOps Report}
 		\begin{itemize}
-			\item a series of surveys of over 36,000 professionals 
-			\item Led by a PhD statistician, Nicole Forsgren, from 2013-2019 
+			\item a series of surveys of over 36,000 professionals \pause
+			\item Led by a PhD statistician, Nicole Forsgren, from 2013-2019 \pause
 			\item Uses \emph{cluster analysis} to discover groupings - has no prior understanding of what counts as good or bad.
 		\end{itemize}
 	\end{frame}
 	\begin{frame}{The State of DevOps Report: throughput metrics}
 		\begin{itemize}
-			\item lead time for changes 
+			\item lead time for changes \pause
 			\item deployment frequency 
 		\end{itemize}
 	\end{frame}
 	\begin{frame}{The State of DevOps Report: stability metrics}
 		\begin{itemize}
-			\item change failure rate 
+			\item change failure rate \pause
 			\item mean time to restore
 		\end{itemize}
 	\end{frame}
@@ -174,8 +174,8 @@
 	\subsection{CI Branching patterns}
 	\begin{frame}{Continuous integration branching patterns}
 		\begin{itemize}
-			\item  don't 
-			\item as little as possible, for as short a time as possible, at least daily 
+			\item \pause don't \pause
+			\item as little as possible, for as short a time as possible, at least daily \pause
 		\end{itemize}
 	\end{frame}
 	\subsection{Trade-offs}
@@ -192,59 +192,48 @@
 	\subsection{Enablers}	
 	\begin{frame}{Continuous integration: Enablers}
 		\begin{itemize}
-			\item fast PR turnaround 
-			\item improving CI pipeline runtime 
-			\item team discipline 
+			\item fast PR turnaround \pause
+			\item improving CI pipeline runtime \pause
+			\item team discipline \pause
 		\end{itemize}
 	\end{frame}
 	\subsection{Benefits}
 	\begin{frame}{Continuous integration: benefits}
 		\begin{itemize}
 			\item High performers have the shortest integration times and branch
-			lifetimes, with branch life and integration typically lasting hours. 
-			\item Low performers have the longest integration times and branch 
-			lifetimes, with branch life and integration typically lasting days. 
+			lifetimes, with branch life and integration typically lasting hours. \pause
+			\item Low performers have the longest integration times and branch \pause
+			lifetimes, with branch life and integration typically lasting days. \pause
 			\item These differences are statistically significant
 			
 			\rightline{- 2017 State of DevOps Report, p. 41}
 		\end{itemize}
 	\end{frame}
-	\begin{frame}{Continuous integration, benefits (cont.)}
-		\begin{quote}
-			Taken together, continuous delivery and organizational culture explain 28.8\% of the variance in IT
-			performance. 
-			
-			- Forsgren and Humble (2016), `The Role of Continuous Delivery in IT and Organizational Performance
-		\end{quote}
-	\end{frame}
-	\begin{frame}{Continuous integration, benefits (cont.)}
-		\includegraphics[width=1\textwidth]{CIbenefits}
-	\end{frame}
-	
+
 	\section{Communication and throughput anti-patterns and solutions}
 	\subsection{Communication anti-pattern: local optimization}
 	\begin{frame}{communication anti-pattern: local optimization}
 		\begin{itemize}
-			\item example: separate (DevOps, QA, operations, support) team 
-			\item leads to bottlenecks 
-			\item delays communication 
-			\item discourages cross-functional collaboration 
+			\item example: separate (DevOps, QA, operations, support) team \pause
+			\item leads to bottlenecks \pause
+			\item delays communication \pause
+			\item discourages cross-functional collaboration \pause
 			\item punishes untracked work (e.g. thorough code reviews/dev testing, helping blocked colleagues)
 		\end{itemize}
 	\end{frame}
 	\begin{frame}{Solution}
 		\begin{itemize}
-			\item autonomous, cross-functional teams with `t-shaped' employees 
-			\item communities of practice 
+			\item autonomous, cross-functional teams with `t-shaped' employees \pause
+			\item communities of practice \pause
 		\end{itemize}
 	\end{frame}
 	\begin{frame}{Revisiting Conway's law: defining a team}
 		\begin{itemize}
-			\item A \textit{team} is the minimal socio-technical unit that can deliver a production change with no additional coordination beyond mandated governance or custodial controls. 
+			\item A \textit{team} is the minimal socio-technical unit that can deliver a production change with no additional coordination beyond mandated governance or custodial controls. \pause
 			\begin{itemize}
-				\item pull requests 
-				\item testing 
-				\item deployment 
+				\item pull requests \pause
+				\item testing \pause
+				\item deployment \pause
 			\end{itemize}
 		\end{itemize}
 	\end{frame}
@@ -259,36 +248,41 @@
 	\end{frame}
 	\begin{frame}{Throughput anti-pattern: Gandalf vs. the Balrog}
 		\begin{itemize}
-			\item change approval boards  
-			\item pre-merge code reviews  
-			\item `bridge-to-nowhere' pipelines 
+			\item change approval boards \pause 
+			\item pre-merge code reviews \pause 
+			\item `bridge-to-nowhere' pipelines \pause
 			\item these all increase lead time
 		\end{itemize}
 	\end{frame}
 	\begin{frame}{Throughput anti-pattern solutions: aggressively parallelize work}
 		\begin{itemize}
-			\item pair programming  
-			\item parallelized pipeline builds for `wide' pipelines 
-			\item one build artifact for all pipeline stages 
+			\item pair programming \pause 
+			\item parallelized pipeline builds for `wide' pipelines \pause
+			\item one build artifact for all pipeline stages \pause
 			\item share responsibility
 		\end{itemize}
 	\end{frame}
 	\begin{frame}{Defining throughput for our project}
 		\begin{itemize}
-			\item Avoid `thrashing' metrics 
-			\item \textit{Throughput} - the total lapsed time from local commit to production deployment 
-			\item \textit{Throughput*} - the total lapsed time from local commit to user acceptance testing handoff 
+			\item Avoid `thrashing' metrics \pause
+			\item \textit{Throughput} - the total lapsed time from local commit to production deployment \pause
+			\item \textit{Throughput*} - the total lapsed time from local commit to user acceptance testing handoff \pause
 		\end{itemize}
 	\end{frame}
 	\section{Conclusion}
 	\begin{frame}{Conclusion}
 		\begin{itemize}
-			\item Reduce goal misalignment 
-			\item stop people from waiting on each other  
-			\item work in small batches 
+			\item Reduce goal misalignment \pause
+			\item stop people from waiting on each other \pause 
+			\item work in small batches \pause
 			\item That's mostly it
 			
 		\end{itemize}
+	\end{frame}
+	\begin{frame}{Conclusion}
+		\begin{quote}
+			`DevOps is whatever you do to bridge friction created by silos, and all the rest is engineering' - Patrick Debois, Puppet State of DevOps report 2021
+		\end{quote}
 	\end{frame}
 	\begin{frame}[plain]
 		\titlepage
