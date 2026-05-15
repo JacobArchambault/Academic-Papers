@@ -41,7 +41,7 @@
 	\begin{frame}{Canonical solutions to these challenges}
 		\begin{itemize}
 			\item multiple teams $\rightarrow$ inverse Conway maneuver \pause
-			\item collaboration $\rightarrow$ Business stream-aligned teams over activity oriented teams \pause
+			\item collaboration $\rightarrow$ business stream-aligned teams over activity oriented teams \pause
 			\item late integration $\rightarrow$ adopting a true continuous integration workflow \pause
 			\item database coupling $\rightarrow$ Bezos API mandate/``Microservices'' \pause
 			
@@ -66,7 +66,7 @@
 	\end{frame}
 	\begin{frame}{Conway's law: more examples}
 		\begin{itemize}
-			\item separate .csproj projects for tests written by QA \pause
+			\item separate \texttt{.csproj} projects for tests written by QA \pause
 			\item separate development and config repositories for the same transaction signifying low communication between development and operations \pause
 			\item all business documentation in the same repository, separate from the repositories that the documentation is for \pause
 		\end{itemize}
@@ -113,6 +113,7 @@
 		\end{center}
 	\end{frame}
 	\subsection{Throughput}
+	\subsubsection{Just-in-time manufacturing}
 	\begin{frame}{Just-in-time manufacturing and Goldratt's theory of constraints}
 		\begin{itemize}
 			\item Increase: throughput \pause
@@ -125,6 +126,7 @@
 			\item Remove bottlenecks
 		\end{itemize}
 	\end{frame}
+	\subsubsection{Goldratt's theory of constraints}
 	\begin{frame}{Goldratt's theory of constraints (cont.)}
 		\includegraphics{assemblyline}
 	\end{frame}
@@ -153,9 +155,9 @@
 			`Astonishingly, these results demonstrate that there is no trade-off between improving performance and achieving higher levels of stability and quality. Rather, high performers do better at all of these measures. This is precisely what the Agile and Lean movements predict, but much dogma in our industry still rests on the false assumption that moving faster means \emph{trading off} against other performance goals, rather than enabling and reinforcing them.'  - Nicole Forsgren, Jez Humble, and Gene Kim, \emph{Accelerate} (2017), p. 14
 		\end{quote}
 	\end{frame}
-	\section{Communication and throughput anti-patterns and applications}
-	\subsection{Anti-pattern 1: local optimization}
-	\begin{frame}{Anti-pattern 1: local optimization}
+	\section{Communication and throughput anti-patterns and solutions}
+	\subsection{Communication anti-pattern: local optimization}
+	\begin{frame}{communication anti-pattern: local optimization}
 		\begin{itemize}
 			\item example 1: separate (DevOps, QA, operations, support) team \pause
 			\item leads to bottlenecks \pause
@@ -163,14 +165,14 @@
 			\item punishes untracked work (e.g. thorough code reviews/dev testing, helping blocked colleagues)
 		\end{itemize}
 	\end{frame}
-	\begin{frame}{Anti-pattern 1 solution}
+	\begin{frame}{Solution}
 		\begin{itemize}
 			\item cross-functional teams with `t-shaped' employees \pause
 			\item guild system 
 		\end{itemize}
 	\end{frame}
-	\subsection{Anti-pattern 2: Gandalf vs. the Balrog}
-	\begin{frame}{Anti-pattern 2: Gandalf vs. the Balrog}
+	\subsection{Throughput anti-pattern: Gandalf vs. the Balrog}
+	\begin{frame}{Throughput anti-pattern: Gandalf vs. the Balrog}
 		\begin{center}
 			\includegraphics[width=.5\textwidth]{gandalf-balrog}
 		\end{center}
