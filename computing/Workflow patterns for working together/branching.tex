@@ -71,6 +71,17 @@
 			\item all business documentation in the same repository, separate from the repositories that the documentation is for \pause
 		\end{itemize}
 	\end{frame}
+	\begin{frame}{Conway's law: corollaries}
+		\begin{itemize}
+			\item Conway's law can't be fought - you must make peace with it \pause
+			\item Teams working in the same part of the same codebase at the same time are the same team \pause
+			\begin{itemize}
+				\item separate the codebases for improved velocity \pause
+				\item join the teams for improved code sharing and communication \pause 
+				\item branching-based strategies for team management compromise between the above approaches without their benefits
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
 	\subsubsection{The Mythical Man Month}
 	\begin{frame}{1975: The Mythical Man Month, Fred Brooks}
 		
@@ -132,28 +143,33 @@
 	\end{frame}
 	\subsubsection{DevOps Research and Assessment (DORA)}
 	\begin{frame}{2013: The State of DevOps Report}
-		\begin{enumerate}
+		\begin{itemize}
 			\item a series of surveys of over 36,000 professionals \pause
 			\item Led by a PhD statistician, Nicole Forsgren, from 2013-2019 \pause
 			\item Uses \emph{cluster analysis} to discover groupings - has no prior understanding of what counts as good or bad.
-		\end{enumerate}
+		\end{itemize}
 	\end{frame}
 	\begin{frame}{The State of DevOps Report: throughput metrics}
-		\begin{enumerate}
+		\begin{itemize}
 			\item lead time for changes \pause
 			\item deployment frequency 
-		\end{enumerate}
+		\end{itemize}
 	\end{frame}
 	\begin{frame}{The State of DevOps Report: stability metrics}
-		\begin{enumerate}
+		\begin{itemize}
 			\item change failure rate \pause
 			\item mean time to restore
-		\end{enumerate}
+		\end{itemize}
 	\end{frame}
 	\begin{frame}{The State of DevOps Report: results}
 		\begin{quote}
 			`Astonishingly, these results demonstrate that there is no trade-off between improving performance and achieving higher levels of stability and quality. Rather, high performers do better at all of these measures. This is precisely what the Agile and Lean movements predict, but much dogma in our industry still rests on the false assumption that moving faster means \emph{trading off} against other performance goals, rather than enabling and reinforcing them.'  - Nicole Forsgren, Jez Humble, and Gene Kim, \emph{Accelerate} (2017), p. 14
 		\end{quote}
+	\end{frame}
+	\begin{frame}{The State of DevOps Report: results}
+			\rightline{\includegraphics[width=1\textwidth]{dora2024}}
+			
+			\rightline{- 2024 State of DevOps Report}
 	\end{frame}
 	\section{Communication and throughput anti-patterns and solutions}
 	\subsection{Communication anti-pattern: local optimization}
@@ -168,7 +184,7 @@
 	\begin{frame}{Solution}
 		\begin{itemize}
 			\item cross-functional teams with `t-shaped' employees \pause
-			\item guild system 
+			\item communities of practice
 		\end{itemize}
 	\end{frame}
 	\subsection{Throughput anti-pattern: Gandalf vs. the Balrog}
@@ -198,13 +214,13 @@
 	\end{frame}
 	\section{Conclusion}
 	\begin{frame}{Conclusion}
-		\begin{enumerate}
+		\begin{itemize}
 			\item Reduce goal misalignment \pause
 			\item stop people from waiting on each other \pause 
 			\item work in small batches \pause
 			\item That's mostly it
 			
-		\end{enumerate}
+		\end{itemize}
 	\end{frame}
 	\begin{frame}{Conclusion}
 		\begin{quote}
