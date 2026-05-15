@@ -23,19 +23,19 @@
 	\begin{frame}{Challenges}
 		\begin{itemize}
 			\item coordinating multiple teams working in the same repository \pause
-				\item lack of direct collaboration, and occasionally trust, between development, operations, and testing \pause
-				\item late integration of contributor code \pause
-				\begin{itemize}
-					\item feedback delays \pause
-					\item merge conflict regressions \pause
-					\item sunk costs fallacy risks \pause
-				\end{itemize}
-				\item coupling of all services at the database layer \pause
-				\begin{itemize}
-					\item high storage costs \pause
-					\item single point of failure risk \pause
-					\item risk of cross-project interference \pause
-				\end{itemize}
+			\item lack of direct collaboration, and occasionally trust, between development, operations, and testing \pause
+			\item late integration of contributor code \pause
+			\begin{itemize}
+				\item feedback delays \pause
+				\item merge conflict regressions \pause
+				\item sunk costs fallacy risks \pause
+			\end{itemize}
+			\item coupling of all services at the database layer \pause
+			\begin{itemize}
+				\item high storage costs \pause
+				\item single point of failure risk \pause
+				\item risk of cross-project interference \pause
+			\end{itemize}
 		\end{itemize}
 	\end{frame}
 	\begin{frame}{Canonical solutions to these challenges}
@@ -50,22 +50,6 @@
 	\end{frame}
 	
 	\section{DevOps 201}
-	\subsection{Throughput}
-	\begin{frame}{Just-in-time manufacturing and Goldratt's theory of constraints}
-		\begin{itemize}
-			\item Increase: throughput \pause
-			\item Decrease: \pause
-			\begin{itemize}
-				\item operating costs \pause
-				\item inventory \pause
-				\item scrap \pause
-			\end{itemize}
-			\item Remove bottlenecks
-		\end{itemize}
-	\end{frame}
-	\begin{frame}{Goldratt's theory of constraints (cont.)}
-		\includegraphics{assemblyline}
-	\end{frame}
 	\subsection{Communication}
 	\begin{frame}{1967: Conway's law}
 		\begin{quote}
@@ -126,7 +110,23 @@
 			\end{figure}
 		\end{center}
 	\end{frame}
-	\subsection{DevOps Research and Assessment (DORA)}
+	\subsection{Throughput}
+	\begin{frame}{Just-in-time manufacturing and Goldratt's theory of constraints}
+		\begin{itemize}
+			\item Increase: throughput \pause
+			\item Decrease: \pause
+			\begin{itemize}
+				\item operating costs \pause
+				\item inventory \pause
+				\item scrap \pause
+			\end{itemize}
+			\item Remove bottlenecks
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{Goldratt's theory of constraints (cont.)}
+		\includegraphics{assemblyline}
+	\end{frame}
+	\subsubsection{DevOps Research and Assessment (DORA)}
 	\begin{frame}{2013: The State of DevOps Report}
 		\begin{enumerate}
 			\item a series of surveys of over 36,000 professionals \pause
