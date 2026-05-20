@@ -1,13 +1,52 @@
 \documentclass{beamer}
-\usetheme{default}
+\usetheme{Warsaw}
 
-\title{Beamer Template}
-\author{TeXstudio Team}
+
+\title[Working together]{Workflow and architecture patterns for working together 2: Architectures}
+\author{Jacob Archambault}
+\AtBeginSubsection[]
+{
+	\begin{frame}<beamer>{Outline}
+		\tableofcontents[currentsection, currentsubsection]
+	\end{frame}
+}
+
 \begin{document}
-\begin{frame}[plain]
-    \maketitle
+	\begin{frame}[plain]
+	\titlepage
 \end{frame}
-\begin{frame}
-    \frametitle{Frame Title}
+\begin{frame}{Outline}
+	\tableofcontents[pausesections]
+	% You might wish to add the option [pausesections]
 \end{frame}
+\section{Current challenges and their canonical solutions}
+\begin{frame}{Challenges}
+	\begin{itemize}
+		\item multiple teams working in the same repository \pause
+		\item lack of direct collaboration, and occasionally trust, between development, operations, and testing \pause
+		\item late integration of contributor code \pause
+		\begin{itemize}
+			\item feedback delays \pause
+			\item merge conflict regressions \pause
+			\item sunk costs fallacy risks \pause
+		\end{itemize}
+		\item coupling of all services at the database layer \pause
+		\begin{itemize}
+			\item high storage costs \pause
+			\item single point of failure risk \pause
+			\item risk of cross-project interference \pause
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+\begin{frame}{Canonical solutions to these challenges}
+	\begin{itemize}
+		\item multiple teams $\rightarrow$ inverse Conway maneuver \pause
+		\item collaboration $\rightarrow$ business stream-aligned teams over activity oriented teams \pause
+		\item late integration $\rightarrow$ adopting a true continuous integration workflow \pause
+		\item database coupling $\rightarrow$ Bezos API mandate/``Microservices'' \pause
+		
+		
+	\end{itemize}
+\end{frame}
+
 \end{document}
