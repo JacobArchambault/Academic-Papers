@@ -48,11 +48,12 @@
 \end{frame}
 \section{Statistics}
 \subsection{Velocity}
-- compare total commits across team branch vs. others
-- compare non-merge commits to non-PR merge commits across team branch vs. others (this represents percentage of value-adding work to maintenance work)
+- compare total commits across team branch vs. others 
+- compare non-merge commits to non-PR merge commits across team branch vs. others (this represents percentage of value-adding work to maintenance work) (git log --oneline --merges | grep -iv ``merge pull request'' | wc -l)
+
 - compare time to merge across SpecFlow branches vs. others
 \subsection{Safety}
-- compare passing to failing pipeline runs across team branch vs. others
+- compare passing to failing pipeline runs across team branch vs. others, for both simulation pipeline and unit test pipeline
 
 \section{Going forward}
 \subsection{Team Composition}
