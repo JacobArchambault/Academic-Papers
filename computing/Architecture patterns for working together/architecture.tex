@@ -46,22 +46,36 @@
 		\item database coupling $\rightarrow$ Bezos API mandate/``Microservices'' \pause		
 	\end{itemize}
 \end{frame}
+\section{Statistics}
+\subsection{Velocity}
+- compare total commits across team branch vs. others
+- compare non-merge commits to non-PR merge commits across team branch vs. others (this represents percentage of value-adding work to maintenance work)
+- compare time to merge across SpecFlow branches vs. others
+\subsection{Safety}
+- compare passing to failing pipeline runs across team branch vs. others
+
 \section{Going forward}
 \subsection{Team Composition}
 \begin{frame}{Team composition}
 \begin{itemize}
-	\item all teams in same repo are in the same daily scrum \pause
-	\item each team in the above sense has its own small Microsoft Teams channel with only its own contributors in it \pause
+	\item all teams working in same git repository are in the same daily scrum \pause
+	\item each team in the above sense has its own Microsoft Teams chat with only its own contributors in it \pause
 	\item these teams are \textit{stream-aligned}, i.e., they focus on a particular business area (in our case, a transaction type) \pause
 	\item these teams are \textit{autonomous}, i.e., they can move work forward without requiring outside assistance from another team \pause	
 \end{itemize}
 \end{frame}
 \subsection{Committing}
-- every commit gets a Jira story
+\begin{frame}
+	\begin{itemize}
+		\item every git commit message begins with a Jira ticket number \pause
+		\item every commit is pushed immediately to origin \pause
+	\end{itemize}
+\end{frame}
 \subsection{Branching}
 \begin{frame}{Branching}
 	\begin{itemize}
-		\item team branch \pause	
+		\item all commit work done by a given team, by both developers and testers, is committed directly to the same shared branch \pause	
+		\item 
 	\end{itemize}
 \end{frame}
 \subsection{Pull Requests}
@@ -70,6 +84,8 @@
 \subsection{Pipelines}
 - pipeline is definitive for deployment
 - daily stale branch job
-\subsection{Architecture}
-
+\section{Architecture}
+\subsection{Techniques for integrating partially complete work}
+\subsection{Clean code}
+\subsection{On the way to Microservices}
 \end{document}
