@@ -48,6 +48,14 @@
 \end{frame}
 \section{Branching: theory and statistics}
 \subsection{Theory}
+\begin{frame}{A naive probability theory for branch incompatibility: isolated commits}
+	\begin{itemize}
+		\item $C = \{a, b, c\}$ \pause
+		\item $\mathcal{P}(C) = \{ \{\emptyset\}, \{a\}, \{b\}, \{c\}, \{a, b\}, \{a, c\}, \{b, c\}, \{a, b, c\}\}$ \pause
+		\item $P$(\textit{no conflicts}) = probability of selecting $\{\emptyset\}$ from $\mathcal{P}(C)$ = $\frac{1}{8}$ = $12.5\%$ \pause
+		\item $P$(no conflicts) = $\frac{1}{2^n}$ where $|C| = n$ 
+	\end{itemize}
+\end{frame}
 - a simplified theory probability theory for incompatible changes
 - Cartesian products
   commits across n branches over time
