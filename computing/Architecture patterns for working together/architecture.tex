@@ -77,7 +77,7 @@
 \end{frame}
 \begin{frame}{A naive probability theory for merge consistency: general definition}
 	\begin{itemize}
-		\item Let $A$ be the set of all commits unique to a branch across $k$ distinct branches $A_1 \cdots A_k$, i. e., $A = A_1 \sqcup A_2 \sqcup \cdots \sqcup A_k$, let $n = |A|$ and $n_i = |A_i|$ for $1 \leq i \leq k$. Then \pause
+		\item Let $A$ be the set of unmerged commits across $k$ distinct branches $A_1 \cdots A_k$, where $A = A_1 \sqcup A_2 \sqcup \cdots \sqcup A_k$, $n = |A|$, and $n_i = |A_i|$ for $1 \leq i \leq k$. Then \pause
 	\end{itemize}
 	\[
 	P(compatible) = \frac{1}{2^n - \sum_{i=1}^k2^{n_i} + k}
