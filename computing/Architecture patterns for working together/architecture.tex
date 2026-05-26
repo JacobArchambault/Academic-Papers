@@ -60,15 +60,16 @@
 		\end{itemize}
 	\end{itemize}
 \end{frame}
-\begin{frame}{A naive probability theory for branch incompatibility: sets of commits}
+\begin{frame}{A naive probability theory for branch incompatibility: modeling branches as sets of commits}
 	\begin{itemize}
 		\item $A = A_1 \sqcup A_2 \sqcup \cdots \sqcup A_i$ \pause
 		\item e.g., $A_1 = \{a\}$, $A_2 = \{b, c\}$, $A_3 = \{d, e\}$ \pause
 		\item Assume $A_1 \cdots A_3$ are known good sets of commits. Then $P$(\textit{no conflicts}($A$)) = probability of selecting the null set from the null set + the set of all remaining untested potential conflicts  \pause
 		\begin{itemize}
 			\item $= \frac{1}{2^n - (2^{n_1} - 1) - (2^{n_2} - 1) - (2^{n_3} - 1)}$ where $n = |A|$ and $n_i = |A_i|$ \pause
-			\item $= \frac{1}{2^5 - (2^1 - 1) - (2^2 - 1) - (2^2 - 1)}$ \pause 
-			\item $ = \frac{1}{32 - 1 - 3 - 3}$ \pause 
+			\item $= \frac{1}{2^n - 2^{n_1} - 2^{n_2} - 2^{n_3} + i}$
+			\item $= \frac{1}{2^5 - 2^1 - 2^2 - 2^2 + 3}$ \pause 
+			\item $ = \frac{1}{32 - 2 - 4 - 4 + 3}$ \pause 
 			\item $= \frac{1}{32 - 7}$ \pause
 			\item $= \frac{1}{25}$ \pause
 			\item $= 4\%$ \pause		
