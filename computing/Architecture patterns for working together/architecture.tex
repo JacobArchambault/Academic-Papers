@@ -46,13 +46,21 @@
 		\item database coupling $\rightarrow$ Bezos API mandate/``Microservices'' \pause		
 	\end{itemize}
 \end{frame}
-\section{Statistics}
-\subsection{Velocity}
+\section{Branching: theory and statistics}
+\subsection{Theory}
+- a simplified theory probability theory for incompatible changes
+- Cartesian products
+  commits across n branches over time
+- Cartesian explosion,  
+- intra vs. inter team communication
+\subsection{Statistics}
+\subsubsection{Velocity}
 - compare total commits across team branch vs. others 
 - compare non-merge commits to non-PR merge commits across team branch vs. others (this represents percentage of value-adding work to maintenance work) (git log --oneline --merges | grep -iv ``merge pull request'' | wc -l)
 
 - compare time to merge across SpecFlow branches vs. others
-\subsection{Safety}
+
+\subsubsection{Safety}
 - compare passing to failing pipeline runs across team branch vs. others, for both simulation pipeline and unit test pipeline
 
 \section{Going forward}
@@ -61,24 +69,30 @@
 \begin{itemize}
 	\item all teams working in same git repository are in the same daily scrum \pause
 	\item each team in the above sense has its own Microsoft Teams chat with only its own contributors in it \pause
-	\item these teams are \textit{stream-aligned}, i.e., they focus on a particular business area (in our case, a transaction type) \pause
+	\item these teams are \textit{stream-aligned}, i.e., they focus on a particular business area (in our case, either a transaction type or a closely related set of transaction types) \pause
 	\item these teams are \textit{autonomous}, i.e., they can move work forward without requiring outside assistance from another team \pause	
 \end{itemize}
 \end{frame}
-\subsection{Committing}
-\begin{frame}
+\begin{frame}{Team composition: enabling teams}
 	\begin{itemize}
+		\
+		\item Strategy will be rolled out first for claims, then reimbursements, then other transactions \pause
+		\item the 837 COB team will serve as an enabling team for the new branching strategy \pause
+	\end{itemize}
+\end{frame}
+\subsection{Branching and committing}
+\begin{frame}{Branching and committing}
+	\begin{itemize}
+		\item all commit work done by a given team, by both developers and testers, is committed directly to the same shared branch \pause
+		\item every commit is pushed  to origin after passing local testing \pause
 		\item every git commit message begins with a Jira ticket number \pause
-		\item every commit is pushed immediately to origin \pause
 	\end{itemize}
 \end{frame}
-\subsection{Branching}
-\begin{frame}{Branching}
-	\begin{itemize}
-		\item all commit work done by a given team, by both developers and testers, is committed directly to the same shared branch \pause	
-		\item 
-	\end{itemize}
-\end{frame}
+\subsection{Testing}
+\begin{itemize}
+	\item Every change is tested by the test suite locally before committing \pause
+	\item tests are written against new code as that code is being written \pause
+\end{itemize}
 \subsection{Pull Requests}
 - daily PRs
 - stacked PRs
