@@ -118,7 +118,7 @@
 \subsubsection{Velocity}
 \begin{frame}{Overall velocity metrics}
 	\begin{center}
-		\begin{tabular}{ |c|c|c|c| }
+		\begin{tabular}{ lrrr }
 			Branch & Runs & Earliest run & Contributors \\ \hline
 			NG\_Claims\_837D\_COB & 74 & 23 Mar & 5 \\ \hline
 			PEDI-35120\_837D\_COB & 85 & 15 Apr & 5 \\ \hline
@@ -139,7 +139,7 @@
 \end{frame}
 \begin{frame}{Per contributor velocity metrics}
 	\begin{center}
-		\begin{tabular}{ |c|c|c|c| }
+		\begin{tabular}{ lrrr }
 	Branch & Runs & Earliest run & Contributors \\ \hline
 	NG\_Claims\_837D\_COB & 74 & 23 Mar & 5 \\ \hline
 	PEDI-35120\_837D\_COB & 85 & 15 Apr & 5 \\ \hline
@@ -158,18 +158,23 @@
 \end{frame}
 \subsubsection{Safety}
 \begin{frame}{Safety metrics}
-	\begin{center}
-\resizebox{\textwidth}{!}{\begin{tabular}{ |c|c|c|c| }
+	\begin{table}[ht]
+\resizebox{\textwidth}{!}{\begin{tabular}{ lrrr }
 			Branch & Simulation test failures & Unit test failures & Earliest commit \\ \hline
 			NG\_Claims\_837D\_COB & 56/74 (76\%) & 56/74 (76\%) & 23 Mar \\ \hline
 			PEDI-35120\_837D\_COB & 20/85 (23.5\%) & 21/85 (24.7\%) & 15 Apr \\ \hline
 			Either COB branch & 76/159 (48\%) & 77/159 (48\%) & 23 Mar \\ \hline
-			All other branches & 73/123 (59\%) & 87/123 (71\%) & 23 Mar \\ \hline
+			All extant branches & 73/123 (59\%) & 87/123 (71\%) & 23 Mar \\ \hline
 			& 50/72 (69\%) & 51/72 (71\%) & 15 Apr \\ \hline
 			& 92/161 (57\%) & 104/161 (64\%) & 21 Jan \\ \hline
 		\end{tabular}}
 		Source: GH Actions, 28 May 2026
-	\end{center}
+	\end{table}
+	\begin{itemize}
+		\item 27\% better simulation test pass rate since 23 Mar
+		\item 76\% better unit test pass rate since 23 Mar
+	\end{itemize}
+	
 \end{frame}
 - compare passing to failing pipeline runs across team branch vs. others, for both simulation pipeline and unit test pipeline
 \subsubsection{Maintenance to value-adding work percentage}
