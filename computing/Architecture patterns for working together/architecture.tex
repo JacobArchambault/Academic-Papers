@@ -83,20 +83,39 @@
 	P(\textit{no conflicts}) = \frac{1}{2^n - (\sum_{i=1}^k2^{n_i}) + k}
 	\]
 \end{frame}
-- a simplified probability theory for incompatible changes
-- Cartesian products
-  commits across n branches over time
-- Cartesian explosion,  
-- intra vs. inter team communication
 \subsection{Statistics}
+\subsubsection{Devops Statistics recapitulation}
+	\begin{frame}{The State of DevOps Report: throughput metrics}
+	\begin{itemize}
+		\item lead time for changes \pause
+		\item deployment frequency 
+	\end{itemize}
+\end{frame}
+\begin{frame}{The State of DevOps Report: stability metrics}
+	\begin{itemize}
+		\item change failure rate \pause
+		\item mean time to restore
+	\end{itemize}
+\end{frame}
+\begin{frame}{The State of DevOps Report: results}
+	\begin{quote}
+		`Astonishingly, these results demonstrate that there is no trade-off between improving performance and achieving higher levels of stability and quality. Rather, high performers do better at all of these measures. This is precisely what the Agile and Lean movements predict, but much dogma in our industry still rests on the false assumption that moving faster means \emph{trading off} against other performance goals, rather than enabling and reinforcing them.'  - Nicole Forsgren, Jez Humble, and Gene Kim, \emph{Accelerate} (2017), p. 14
+	\end{quote}
+\end{frame}
+\begin{frame}{The State of DevOps Report: results}
+	\rightline{\includegraphics[width=1\textwidth]{dora2024}}
+	
+	\rightline{- 2024 State of DevOps Report}
+\end{frame}
 \subsubsection{Velocity}
 - compare total commits across team branch vs. others 
-- compare non-merge commits to non-PR merge commits across team branch vs. others (this represents percentage of value-adding work to maintenance work) (git log --oneline --merges | grep -iv ``merge pull request'' | wc -l)
 
 - compare time to merge across SpecFlow branches vs. others
 
 \subsubsection{Safety}
 - compare passing to failing pipeline runs across team branch vs. others, for both simulation pipeline and unit test pipeline
+\subsubsection{Maintenance to value-adding work percentage}
+- compare non-merge commits to non-PR merge commits across team branch vs. others (this represents percentage of value-adding work to maintenance work) (git log --oneline --merges | grep -iv ``merge pull request'' | wc -l)
 
 \section{Going forward}
 \subsection{Team Composition}
