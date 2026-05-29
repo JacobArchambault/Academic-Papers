@@ -116,7 +116,7 @@
 	\end{itemize}
 \end{frame}	
 \subsubsection{Velocity}
-\begin{frame}{Overall velocity metrics}
+\begin{frame}{Throughput: overall velocity metrics}
 	\begin{center}
 		\begin{tabular}{ lrrr }
 			Branch & Runs & Earliest run & Contributors \\ \hline
@@ -137,7 +137,7 @@
 		\item 60\% the velocity of all other initiatives combined since 21 Jan \pause
 	\end{itemize}
 \end{frame}
-\begin{frame}{Per contributor velocity metrics}
+\begin{frame}{Throughput: per contributor velocity metrics}
 	\begin{center}
 		\begin{tabular}{ lrrr }
 	Branch & Runs & Earliest run & Contributors \\ \hline
@@ -157,7 +157,7 @@
 	\end{itemize}
 \end{frame}
 \subsubsection{Safety}
-\begin{frame}{Safety metrics}
+\begin{frame}{Stability: pipeline failure rate metrics}
 	\begin{table}[ht]
 \resizebox{\textwidth}{!}{\begin{tabular}{ lrrr }
 			Branch & Simulation test failures & Unit test failures & Earliest commit \\ \hline
@@ -170,13 +170,14 @@
 		\end{tabular}}
 		Source: GH Actions, 28 May 2026
 	\end{table}
+	\pause 
 	\begin{itemize}
-		\item 27\% better simulation test pass rate since 23 Mar
-		\item 76\% better unit test pass rate since 23 Mar
-	\end{itemize}
-	
+		\item 28\% better simulation test pass rate since 23 Mar \pause
+		\item 76\% better unit test pass rate since 23 Mar \pause 
+		\item 150\% better simulation test pass rate since 15 Apr \pause 
+		\item 158\% better unit test pass rate since 15 Apr \pause
+	\end{itemize}	
 \end{frame}
-- compare passing to failing pipeline runs across team branch vs. others, for both simulation pipeline and unit test pipeline
 \subsubsection{Maintenance to value-adding work percentage}
 - compare non-merge commits to non-PR merge commits across team branch vs. others (this represents percentage of value-adding work to maintenance work) (git log --oneline --merges | grep -iv ``merge pull request'' | wc -l)
 
