@@ -21,45 +21,45 @@
 	\end{frame}
 	\section{Current challenges and their canonical solutions}
 	\begin{frame}{1975: The Mythical Man Month, Fred Brooks}
-	
-	\begin{itemize}
-		\item number of direct communication paths for $n$ individuals= $n(n-1)/2$
-	\end{itemize}
-	\begin{center}
-		\includegraphics[width=.5\textwidth]{square}
-	\end{center}
-	
-\end{frame}
-\begin{frame}{1975: The Mythical Man Month, Fred Brooks}
-	
-	\begin{itemize}
-		\item number of direct communication paths for $n$ individuals= $n(n-1)/2$
-	\end{itemize}
-	\begin{center}
-		\includegraphics[width=.5\textwidth]{pentagon}
-	\end{center}
-	
-\end{frame}
-\begin{frame}{1975: The Mythical Man Month, Fred Brooks}
-	
-	\begin{itemize}
-		\item number of direct communication paths for $n$ individuals= $n(n-1)/2$
-	\end{itemize}
-	\begin{center}
-		\includegraphics[width=.15\textwidth]{graph}
-	\end{center}
-\end{frame}
-\begin{frame}{The Mythical Man Month, Fred Brooks (cont.)}
-	\begin{itemize}
-		\item corollary: adding more people to a project can lead not only to diminishing returns on delivery speed, but to objectively less work being completed
-	\end{itemize}
-	\begin{center}
-		\begin{figure}
-			\includegraphics[width=.9\textwidth]{developers-deployments}
-			%\caption*{Source: \url{https://devops-singularity.com/the-current-state-of-devops/}}
-		\end{figure}
-	\end{center}
-\end{frame}	
+		
+		\begin{itemize}
+			\item number of direct communication paths for $n$ individuals= $n(n-1)/2$
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=.5\textwidth]{square}
+		\end{center}
+		
+	\end{frame}
+	\begin{frame}{1975: The Mythical Man Month, Fred Brooks}
+		
+		\begin{itemize}
+			\item number of direct communication paths for $n$ individuals= $n(n-1)/2$
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=.5\textwidth]{pentagon}
+		\end{center}
+		
+	\end{frame}
+	\begin{frame}{1975: The Mythical Man Month, Fred Brooks}
+		
+		\begin{itemize}
+			\item number of direct communication paths for $n$ individuals= $n(n-1)/2$
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=.15\textwidth]{graph}
+		\end{center}
+	\end{frame}
+	\begin{frame}{The Mythical Man Month, Fred Brooks (cont.)}
+		\begin{itemize}
+			\item corollary: adding more people to a project can lead not only to diminishing returns on delivery speed, but to objectively less work being completed
+		\end{itemize}
+		\begin{center}
+			\begin{figure}
+				\includegraphics[width=.9\textwidth]{developers-deployments}
+				%\caption*{Source: \url{https://devops-singularity.com/the-current-state-of-devops/}}
+			\end{figure}
+		\end{center}
+	\end{frame}	
 	\begin{frame}{Challenges}
 		\begin{itemize}
 			\item multiple teams working in the same repository \pause
@@ -86,7 +86,42 @@
 			\item database coupling $\rightarrow$ Bezos API mandate/``Microservices'' \pause		
 		\end{itemize}
 	\end{frame}
-	\section{Branching: theory and statistics}
+	\section{Conway's law}
+	\begin{frame}{1967: Conway's law}
+		\begin{quote}
+			`Organizations which design systems [...] are constrained to produce designs which are copies of the communication structures of these organizations.' - Melvin Conway, `How do Committees Invent?' Datamation, 1967
+		\end{quote}
+	\end{frame}
+	\begin{frame}{Conway's law: examples}
+		\begin{itemize}
+			\item separate \texttt{.csproj} projects for tests written by QA 
+			\item separate development and config repositories for the same transaction signifying low communication between development and operations 
+			\item all business documentation in the same repository, separate from the repositories that the documentation is for 
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{Conway's law: corollaries}
+		\begin{itemize}
+			\item Conway's law can't be fought \pause
+			\item Teams working in the same part of the same codebase at the same time are the same team \pause
+			\begin{itemize}
+				\item separate the codebases for improved velocity \pause
+				\item join the teams for improved code sharing and communication (Inverse conway maneuver) \pause 
+				\item branching-based strategies for team management compromise between the above approaches without their benefits
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{Revisiting Conway's law: defining a team}
+		\begin{itemize}
+			\item A \textit{team} is the minimal socio-technical unit that can deliver a production change with no additional coordination beyond mandated governance or custodial controls. \pause
+			\begin{itemize}
+				\item pull requests \pause
+				\item testing \pause
+				\item deployment \pause
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	
+	\section{Branching: theory and practice}
 	\subsection{Theory}
 	\begin{frame}{A naive probability theory for merge consistency: isolated commits}
 		\begin{itemize}
@@ -123,8 +158,7 @@
 		P(\textit{no conflicts}) = \frac{1}{2^n - (\sum_{i=1}^k2^{n_i}) + k}
 		\]
 	\end{frame}
-	\subsection{Statistics}
-	\subsubsection{Devops Statistics recapitulation}
+	\subsection{Practice}
 	\begin{frame}{The State of DevOps Report: throughput metrics}
 		\begin{itemize}
 			\item lead time for changes \pause
@@ -147,7 +181,6 @@
 		
 		\rightline{- 2024 State of DevOps Report}
 	\end{frame}
-	\subsubsection{Approximating DevOps metrics in our current setup}
 	\begin{frame}{Approximating DevOps metrics in our current environment}
 		\begin{itemize}
 			\item deployment frequency $\rightarrow$ GitHub Actions run count \pause
@@ -155,7 +188,6 @@
 			\item mean time to restore $\rightarrow$ percentage of merge commits to value-adding commits \pause
 		\end{itemize}
 	\end{frame}	
-	\subsubsection{Velocity}
 	\begin{frame}{Throughput: overall velocity metrics}
 		\begin{center}
 			\begin{tabular}{ lrrr }
@@ -196,7 +228,6 @@
 			\item 158\% better per contributor velocity than all other contributions combined since 23 Mar \pause
 		\end{itemize}
 	\end{frame}
-	\subsubsection{Safety}
 	\begin{frame}{Stability: pipeline failure rate metrics}
 		\begin{table}[ht]
 			\resizebox{\textwidth}{!}{\begin{tabular}{ lrrr }
@@ -218,7 +249,6 @@
 			\item 158\% better unit test pass rate since 15 Apr \pause
 		\end{itemize}	
 	\end{frame}
-	\subsubsection{Maintenance to value-adding work percentage}
 	\begin{frame}{Stability metrics: merge work ratio}
 		\begin{tabular}{ l||r }
 			Branch & Merge commit \% since 15 Apr \\ \hline
