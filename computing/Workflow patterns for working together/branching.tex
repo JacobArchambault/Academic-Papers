@@ -21,45 +21,45 @@
 	\end{frame}
 	\section{Current challenges and their canonical solutions}
 	\begin{frame}{1975: The Mythical Man Month, Fred Brooks}
-	
-	\begin{itemize}
-		\item number of direct communication paths for $n$ individuals= $n(n-1)/2$
-	\end{itemize}
-	\begin{center}
-		\includegraphics[width=.5\textwidth]{square}
-	\end{center}
-	
-\end{frame}
-\begin{frame}{1975: The Mythical Man Month, Fred Brooks}
-	
-	\begin{itemize}
-		\item number of direct communication paths for $n$ individuals= $n(n-1)/2$
-	\end{itemize}
-	\begin{center}
-		\includegraphics[width=.5\textwidth]{pentagon}
-	\end{center}
-	
-\end{frame}
-\begin{frame}{1975: The Mythical Man Month, Fred Brooks}
-	
-	\begin{itemize}
-		\item number of direct communication paths for $n$ individuals= $n(n-1)/2$
-	\end{itemize}
-	\begin{center}
-		\includegraphics[width=.15\textwidth]{graph}
-	\end{center}
-\end{frame}
-\begin{frame}{The Mythical Man Month, Fred Brooks (cont.)}
-	\begin{itemize}
-		\item corollary: adding more people to a project can lead not only to diminishing returns on delivery speed, but to objectively less work being completed
-	\end{itemize}
-	\begin{center}
-		\begin{figure}
-			\includegraphics[width=.9\textwidth]{developers-deployments}
-			%\caption*{Source: \url{https://devops-singularity.com/the-current-state-of-devops/}}
-		\end{figure}
-	\end{center}
-\end{frame}	
+		
+		\begin{itemize}
+			\item number of direct communication paths for $n$ individuals= $n(n-1)/2$
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=.5\textwidth]{square}
+		\end{center}
+		
+	\end{frame}
+	\begin{frame}{1975: The Mythical Man Month, Fred Brooks}
+		
+		\begin{itemize}
+			\item number of direct communication paths for $n$ individuals= $n(n-1)/2$
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=.5\textwidth]{pentagon}
+		\end{center}
+		
+	\end{frame}
+	\begin{frame}{1975: The Mythical Man Month, Fred Brooks}
+		
+		\begin{itemize}
+			\item number of direct communication paths for $n$ individuals= $n(n-1)/2$
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=.15\textwidth]{graph}
+		\end{center}
+	\end{frame}
+	\begin{frame}{The Mythical Man Month, Fred Brooks (cont.)}
+		\begin{itemize}
+			\item corollary: adding more people to a project can lead not only to diminishing returns on delivery speed, but to objectively less work being completed
+		\end{itemize}
+		\begin{center}
+			\begin{figure}
+				\includegraphics[width=.9\textwidth]{developers-deployments}
+				%\caption*{Source: \url{https://devops-singularity.com/the-current-state-of-devops/}}
+			\end{figure}
+		\end{center}
+	\end{frame}	
 	\begin{frame}{Challenges}
 		\begin{itemize}
 			\item coordinating multiple teams working in the same repository \pause
@@ -122,31 +122,31 @@
 		\end{itemize}
 	\end{frame}
 	\subsection{Communication anti-pattern: local optimization}
-\begin{frame}{communication anti-pattern: local optimization}
-	\begin{itemize}
-		\item example: separate (DevOps, QA, operations, support) team \pause
-		\item leads to bottlenecks \pause
-		\item delays communication \pause
-		\item discourages cross-functional collaboration \pause
-		\item punishes untracked work (e.g. thorough code reviews/dev testing, helping blocked colleagues)
-	\end{itemize}
-\end{frame}
-\begin{frame}{Solution}
-	\begin{itemize}
-		\item autonomous, cross-functional teams with `t-shaped' employees \pause
-		\item communities of practice \pause
-	\end{itemize}
-\end{frame}
-\begin{frame}{Revisiting Conway's law: defining a team}
-	\begin{itemize}
-		\item A \textit{team} is the minimal socio-technical unit that can deliver a production change with no additional coordination beyond mandated governance or custodial controls. \pause
+	\begin{frame}{communication anti-pattern: local optimization}
 		\begin{itemize}
-			\item pull requests \pause
-			\item testing \pause
-			\item deployment \pause
+			\item example: separate (DevOps, QA, operations, support) team \pause
+			\item leads to bottlenecks \pause
+			\item delays communication \pause
+			\item discourages cross-functional collaboration \pause
+			\item punishes untracked work (e.g. thorough code reviews/dev testing, helping blocked colleagues)
 		\end{itemize}
-	\end{itemize}
-\end{frame}
+	\end{frame}
+	\begin{frame}{Solution}
+		\begin{itemize}
+			\item autonomous, cross-functional teams with `t-shaped' employees \pause
+			\item communities of practice \pause
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{Revisiting Conway's law: defining a team}
+		\begin{itemize}
+			\item A \textit{team} is the minimal socio-technical unit that can deliver a production change with no additional coordination beyond mandated governance or custodial controls. \pause
+			\begin{itemize}
+				\item pull requests \pause
+				\item testing \pause
+				\item deployment \pause
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
 	\subsection{Throughput}
 	\begin{frame}{Just-in-time manufacturing and Goldratt's theory of constraints}
 		\begin{itemize}
@@ -193,37 +193,37 @@
 		\rightline{- 2024 State of DevOps Report}
 	\end{frame}
 	\subsection{Throughput anti-pattern: Gandalf vs. the Balrog}
-\begin{frame}{Throughput anti-pattern: Gandalf vs. the Balrog}
-	\begin{center}
-		\includegraphics[width=.5\textwidth]{gandalf-balrog}
-	\end{center}
-\end{frame}
-\begin{frame}{Throughput anti-pattern: Gandalf vs. the Balrog}
-	\includegraphics[width=\textwidth]{gandalf}
-\end{frame}
-\begin{frame}{Throughput anti-pattern: Gandalf vs. the Balrog}
-	\begin{itemize}
-		\item change approval boards \pause 
-		\item pre-merge code reviews \pause 
-		\item `bridge-to-nowhere' pipelines \pause
-		\item these all increase lead time
-	\end{itemize}
-\end{frame}
-\begin{frame}{Throughput anti-pattern solutions: aggressively parallelize work}
-	\begin{itemize}
-		\item pair programming \pause 
-		\item parallelized pipeline builds for `wide' pipelines \pause
-		\item one build artifact for all pipeline stages \pause
-		\item share responsibility
-	\end{itemize}
-\end{frame}
-\begin{frame}{Defining throughput for our project}
-	\begin{itemize}
-		\item Avoid `thrashing' metrics \pause
-		\item \textit{Throughput} - the total lapsed time from local commit to production deployment \pause
-		\item \textit{Throughput*} - the total lapsed time from local commit to user acceptance testing handoff \pause
-	\end{itemize}
-\end{frame}
+	\begin{frame}{Throughput anti-pattern: Gandalf vs. the Balrog}
+		\begin{center}
+			\includegraphics[width=.5\textwidth]{gandalf-balrog}
+		\end{center}
+	\end{frame}
+	\begin{frame}{Throughput anti-pattern: Gandalf vs. the Balrog}
+		\includegraphics[width=\textwidth]{gandalf}
+	\end{frame}
+	\begin{frame}{Throughput anti-pattern: Gandalf vs. the Balrog}
+		\begin{itemize}
+			\item change approval boards \pause 
+			\item pre-merge code reviews \pause 
+			\item `bridge-to-nowhere' pipelines \pause
+			\item these all increase lead time
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{Throughput anti-pattern solutions: aggressively parallelize work}
+		\begin{itemize}
+			\item pair programming \pause 
+			\item parallelized pipeline builds for `wide' pipelines \pause
+			\item one build artifact for all pipeline stages \pause
+			\item share responsibility
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{Defining throughput for our project}
+		\begin{itemize}
+			\item Avoid `thrashing' metrics \pause
+			\item \textit{Throughput} - the total lapsed time from local commit to production deployment \pause
+			\item \textit{Throughput*} - the total lapsed time from local commit to user acceptance testing handoff \pause
+		\end{itemize}
+	\end{frame}
 	\section{Branching and continuous integration}
 	\subsection{Definition}
 	\begin{frame}{Defining continuous integration}
