@@ -179,8 +179,20 @@
 	\end{itemize}	
 \end{frame}
 \subsubsection{Maintenance to value-adding work percentage}
-- compare non-merge commits to non-PR merge commits across team branch vs. others (this represents percentage of value-adding work to maintenance work) (git log --oneline --merges | grep -iv ``merge pull request'' | wc -l)
-
+\begin{frame}{Stability metrics: merge work ratio}
+	\begin{tabular}{ l||r }
+		Branch & Merge commit \% since 15 Apr \\ \hline
+		PEDI-35120\_837D\_COB & 12/91 (13\%) \\ \hline
+		All other branches & 23/88 (26\%) \\ \hline
+		Excluding PR merges & 14/79 (18\%) \\ \hline
+	\end{tabular}
+	\pause
+	\begin{itemize}
+		\item 50\% less merge work \pause
+		\item 25\% less backmerge work \pause
+		\item 	Source command: \texttt{git log --since="2026-04-15" --oneline <--merges> <--all> <\^{}PEDI-35120\_837D\_COB> | <grep -iv ''merge pull request''> | wc -l}	
+	\end{itemize}
+\end{frame}
 \section{Going forward}
 \subsection{Team Composition}
 \begin{frame}{Team composition}
