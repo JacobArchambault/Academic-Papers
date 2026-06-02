@@ -265,12 +265,12 @@
 	\end{frame}
 	\section{Going forward}
 	\subsection{Team Composition}
-	\begin{frame}{Team composition}
+	\begin{frame}{Going forward: team composition}
 		\begin{itemize}
-			\item All individuals working in same git repository are in the same daily scrum \pause
+			\item All teams working in same git repository are in the same daily scrum \pause
 			\item Each team in the above sense has its own Microsoft Teams chat with only its own contributors in it. I can set this up. \pause
-			\item teams are \textit{stream-aligned}, i.e., they focus on a particular business area (in our case, either a transaction type or a closely related set of transaction types) \pause
-			\item these teams can move work forward without waiting on or requiring outside assistance from another team \pause	
+			\item Teams are \textit{stream-aligned}, i.e., they focus on a particular business area (in our case, either a transaction type or a closely related set of transaction types) \pause
+			\item Teams can move work forward without waiting on or requiring outside assistance from another team \pause	
 		\end{itemize}
 	\end{frame}
 	\begin{frame}{Continuous integration: Enablers}
@@ -288,7 +288,7 @@
 		\end{itemize}
 	\end{frame}
 	\subsection{Branching and committing}
-	\begin{frame}{Branching and committing}
+	\begin{frame}{Going forward: branching and committing}
 		\begin{itemize}
 			\item All commit work done by a given team, by both developers and testers, is committed directly to the same shared branch \pause
 			\item Every commit is pushed to origin only and immediately after passing local testing \pause
@@ -296,7 +296,7 @@
 		\end{itemize}
 	\end{frame}{Testing}
 	\subsection{Testing}
-	\begin{frame}
+	\begin{frame}{Going forward: testing}
 		\begin{itemize}
 			\item Every change is tested by the test suite locally before committing \pause
 			\item Tests are written against new code as that code is being written \pause
@@ -306,6 +306,14 @@
 		\end{itemize}
 	\end{frame}
 	\subsection{Pull Requests}
+	\begin{frame}{Going forward: pull requests}
+		\begin{itemize}
+			\item Pull requests occur at least daily \pause
+			\item Because the working branch is by hypothesis always releasable, any contributor can PR the working branch at any time. In practice, this will be worked out informally beforehand. \pause
+			\item To allow time for review before end of day, pull requests should generally be set up by 3-3:30pm eastern time. \pause
+			\item Because leads are also both contributing to and seeing changes to the working branch in real time, in practice PR's becomes increasingly \textit{pro forma} \pause
+		\end{itemize}
+	\end{frame}
 	- daily PRs
 	- stacked PRs
 	\subsection{Pipelines}
