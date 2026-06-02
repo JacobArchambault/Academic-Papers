@@ -264,7 +264,7 @@
 		\end{itemize}
 	\end{frame}
 	\section{Going forward}
-	\subsection{Team Composition}
+	\subsection{Team composition}
 	\begin{frame}{Going forward: team composition}
 		\begin{itemize}
 			\item All teams working in same git repository are in the same daily scrum \pause
@@ -285,7 +285,6 @@
 			\item \textit{\underline{Enabling team}} - helps a stream-aligned team to overcome obstacles. Also detects missing capabilities. \pause
 			\item I will marshal new onboarding team members into a makeshift enabling team for improving our test suite speed. This also helps them to begin contributing earlier in a low-risk way. \pause
 			\item The 837 COB team will serve as an enabling team for piloting a teams-based branching strategy in the claims (837 and 277) and auth (278) repos \pause
-			\item Strategy will be rolled out first for claims, then reimbursements, then other transactions \pause
 		\end{itemize}
 	\end{frame}
 	\subsection{Branching and committing}
@@ -333,6 +332,15 @@
 	\subsection{Pipelines}
 	- pipeline is definitive for deployment
 	- daily stale branch job
+	\subsection{Rollout}
+	\begin{frame}{Going forward: getting to square one}
+		\begin{itemize}
+			\item James, Peter, and the 837 COB team can negotiate merge order for remaining two 837 initiatives \pause
+			\item The next of these initiatives merges to develop as soon as possible \pause
+			\item Members on the previous initiatives then move onto the 837 COB team branch to a) help with merge conflict resolution, and b) refactor to allow for easily backing out of any feature should the business decide against releasing a particular feature or if they change the order.
+			\item Strategy will be rolled out first for claims (837, 277) and authorizations (278), then reimbursements (835), then other transactions \pause
+		\end{itemize}
+	\end{frame}
 	\section{Architecture}
 	\subsection{Techniques for integrating partially complete work}
 	\subsection{Clean code}
