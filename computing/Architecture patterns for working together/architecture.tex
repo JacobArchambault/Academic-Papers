@@ -268,30 +268,43 @@
 	\begin{frame}{Team composition}
 		\begin{itemize}
 			\item All individuals working in same git repository are in the same daily scrum \pause
-			\item Each team in the above sense has its own Microsoft Teams chat with only its own contributors in it. I will set this up. \pause
+			\item Each team in the above sense has its own Microsoft Teams chat with only its own contributors in it. I can set this up. \pause
 			\item teams are \textit{stream-aligned}, i.e., they focus on a particular business area (in our case, either a transaction type or a closely related set of transaction types) \pause
-			\item these teams are \textit{autonomous}, i.e., they can move work forward without waiting on or requiring outside assistance from another team \pause	
+			\item these teams can move work forward without waiting on or requiring outside assistance from another team \pause	
 		\end{itemize}
 	\end{frame}
+	\begin{frame}{Continuous integration: Enablers}
+		\begin{itemize}
+			\item improving CI pipeline runtime \pause
+			\item team discipline \pause
+			\item fast PR turnaround \pause
+		\end{itemize}
+	\end{frame}	
 	\begin{frame}{Team composition: enabling teams}
 		\begin{itemize}
+			\item \textit{\underline{Enabling team}} - helps a Stream-aligned team to overcome obstacles. Also detects missing capabilities. \pause
+			\item The 837 COB team will serve as an \textit{enabling team} for piloting a teams-based branching strategy \pause
 			\item Strategy will be rolled out first for claims, then reimbursements, then other transactions \pause
-			\item the 837 COB team will serve as an enabling team for the new branching strategy \pause
 		\end{itemize}
 	\end{frame}
 	\subsection{Branching and committing}
 	\begin{frame}{Branching and committing}
 		\begin{itemize}
-			\item all commit work done by a given team, by both developers and testers, is committed directly to the same shared branch \pause
-			\item every commit is pushed  to origin only after passing local testing \pause
-			\item every git commit message begins with a Jira ticket number \pause
+			\item All commit work done by a given team, by both developers and testers, is committed directly to the same shared branch \pause
+			\item Every commit is pushed to origin only and immediately after passing local testing \pause
+			\item Every git commit message begins with a Jira ticket number \pause
+		\end{itemize}
+	\end{frame}{Testing}
+	\subsection{Testing}
+	\begin{frame}
+		\begin{itemize}
+			\item Every change is tested by the test suite locally before committing \pause
+			\item Tests are written against new code as that code is being written \pause
+			\item We don't push up non-passing tests. Instead, we find the person we need to talk to and work out a passing solution, then push up. \pause
+			\item Testing need not be end-to-end, but may simply test a component \pause
+			\item Goal is to move most testing into the test suite so that manual checks become minimal. \pause
 		\end{itemize}
 	\end{frame}
-	\subsection{Testing}
-	\begin{itemize}
-		\item Every change is tested by the test suite locally before committing \pause
-		\item tests are written against new code as that code is being written \pause
-	\end{itemize}
 	\subsection{Pull Requests}
 	- daily PRs
 	- stacked PRs
