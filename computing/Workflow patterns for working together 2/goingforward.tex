@@ -26,26 +26,6 @@
 			\item number of direct communication paths for $n$ individuals= $n(n-1)/2$
 		\end{itemize}
 		\begin{center}
-			\includegraphics[width=.5\textwidth]{square}
-		\end{center}
-		
-	\end{frame}
-	\begin{frame}{1975: The Mythical Man Month, Fred Brooks}
-		
-		\begin{itemize}
-			\item number of direct communication paths for $n$ individuals= $n(n-1)/2$
-		\end{itemize}
-		\begin{center}
-			\includegraphics[width=.5\textwidth]{pentagon}
-		\end{center}
-		
-	\end{frame}
-	\begin{frame}{1975: The Mythical Man Month, Fred Brooks}
-		
-		\begin{itemize}
-			\item number of direct communication paths for $n$ individuals= $n(n-1)/2$
-		\end{itemize}
-		\begin{center}
 			\includegraphics[width=.15\textwidth]{graph}
 		\end{center}
 	\end{frame}
@@ -80,10 +60,10 @@
 	\end{frame}
 	\begin{frame}{Canonical solutions to these challenges}
 		\begin{itemize}
-			\item multiple teams $\rightarrow$ inverse Conway maneuver 
-			\item collaboration $\rightarrow$ business stream-aligned teams over activity oriented teams 
-			\item late integration $\rightarrow$ adopting a true continuous integration workflow 
-			\item database coupling $\rightarrow$ Bezos API mandate/``Microservices'' 		
+			\item multiple teams $\rightarrow$ inverse Conway maneuver \pause
+			\item collaboration $\rightarrow$ business stream-aligned teams over activity oriented teams \pause
+			\item late integration $\rightarrow$ adopting a true continuous integration workflow \pause
+			\item database coupling $\rightarrow$ Bezos API mandate/``Microservices'' 	
 		\end{itemize}
 	\end{frame}
 	\section{Conway's law}
@@ -107,16 +87,6 @@
 				\item separate the codebases for improved velocity 
 				\item join the teams for improved code sharing and communication (Inverse Conway maneuver)  
 				\item branching-based strategies for team management compromise between the above approaches without their benefits
-			\end{itemize}
-		\end{itemize}
-	\end{frame}
-	\begin{frame}{Conway's law: defining a team}
-		\begin{itemize}
-			\item A \textit{team} is the minimal socio-technical unit that can deliver a production change with no additional coordination beyond mandated governance or custodial controls. 
-			\begin{itemize}
-				\item pull requests 
-				\item testing 
-				\item deployment 
 			\end{itemize}
 		\end{itemize}
 	\end{frame}
@@ -163,6 +133,19 @@
 		P(\textit{no conflicts}) = \frac{1}{2^n - (\sum_{i=1}^k2^{n_i}) + k}
 		\]
 	\end{frame}
+	\begin{frame}{The State of DevOps report: branching findings}
+		\begin{quote}
+			We found that having branches or forks with very short
+			lifetimes (less than a day) before being merged into trunk,
+			and less than three active branches in total, are important
+			aspects of continuous delivery, and all contribute to
+			higher performance. So does merging code into trunk
+			or master on a daily basis. 
+			
+			--- The 2016 State of DevOps Report, p. 31
+		\end{quote}
+	\end{frame}
+	
 	\subsection{Practice}
 	\begin{frame}{The State of DevOps Report: throughput metrics}
 		\begin{itemize}
@@ -184,7 +167,7 @@
 	\begin{frame}{The State of DevOps Report: results}
 		\rightline{\includegraphics[width=1\textwidth]{dora2024}}
 		
-		\rightline{- 2024 State of DevOps Report}
+		\rightline{--- 2024 State of DevOps Report}
 	\end{frame}
 	\begin{frame}{Approximating DevOps metrics in our current environment}
 		\begin{itemize}
@@ -272,11 +255,21 @@
 	\subsection{Rollout}
 	\begin{frame}{Going forward: rollout}
 		\begin{itemize}
-			\item Strategy can be rolled out first for claims (837, 277) and authorizations (278), then reimbursements (835), then other transactions as desired \pause
-			\item Phase one focuses on a) greater integration between developers in the same repository, and b) greater integration of development and testing, with later phases targeted at improving dev/ops collaboration and intra-team CloudOps capabilities
+			\item Phase one focuses on a) greater integration between developers in the same repository, and b) greater integration of development and testing, with later phases targeted at improving dev/ops collaboration and intra-team CloudOps capabilities \pause
+			\item Strategy can be rolled out first for claims (837, 277) and authorizations (278), then other transactions as desired \pause
 		\end{itemize}
 	\end{frame}
 	\subsection{Team composition: stream aligned teams}
+	\begin{frame}{Going forward: defining a team}
+		\begin{itemize}
+			\item A \textit{team} is the minimal socio-technical unit that can deliver a production change with no additional coordination beyond mandated governance or custodial controls. 
+			\begin{itemize}
+				\item pull requests 
+				\item testing 
+				\item deployment 
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
 	\begin{frame}{Going forward: team composition}
 		\begin{itemize}
 			\item All teams working in same git repository are in the same daily scrum \pause
@@ -292,7 +285,9 @@
 			\begin{itemize}
 				\item Note: resist the temptation to branch off the shared branch \pause
 			\end{itemize}
+			\item Branch is named for the primary Jira ticket being worked
 			\item Every commit is pushed to origin only and immediately after passing local testing \pause
+			\item Anyone can revert a bad commit \pause
 			\item Every git commit message begins with a Jira ticket number \pause
 		\end{itemize}
 	\end{frame}
