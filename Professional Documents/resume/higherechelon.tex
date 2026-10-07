@@ -1,0 +1,12 @@
+\subsection{Higher Echelon}
+\datedsubsection{Oct 2025-present}{Eligibility team}{Sr. Software Engineer}{
+Introduced continuous integration and trunk-based development practices into the company, initially for work converting several thousand deprecated SpecFlow-based tests to C\# native testing, and later for initiative work on 837 healthcare transactions. Collected data from git and GH Actions pipelines to show that teams adopting these practices increased per-contributor commit rate and pipeline pass rates each by over 150\%.
+
+Revised onboarding documentation and process to cut onboarding time for new hires by ~50\%. Began co-running onboarding meetings for new hires within three months of being hired. Added to new hire interview team within six months of being hired, leading questioning related to Git, Linux, bash, and AWS cloud services for new applicants.
+
+Used bash scripting to simplify, oversee, and complete merge process for a long-lived feature across over 20 tightly coupled repositories. Leveraged the same techniques to initiate updates to pipelines, .csproj files, Dockerfiles and other infrastructure from .NET 8 to .NET 10. Created python and bash-based tooling for running .NET builds and tests across multiple repos, creating .csproj reference graphs, and gathering git contributor statistics.
+
+Consolidated and removed unnecessary Dockerfile RUN layers across all repos for improved AWS lambda and batch application startup time and reduced ECR storage costs, leading to implementation of CICD checks to ensure Dockerfile best practices. Removed redundant/overlapping test runs from GitHub Actions pipelines and moved integration services from steps-based to service-based setup to reduce CICD pipeline run time and costs.
+
+Top non-shared services contributor by Git commit count across all repositories during first 3 quarters on project. For Q1 and Q2, the number 2 contributor was a primary collaborator with me adopting the CI workflows mentioned above; during Q3, number 2 contributor was a tester I trained who had no prior experience working in C\#.
+}
